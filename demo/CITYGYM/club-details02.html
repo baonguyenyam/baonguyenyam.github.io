@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<!--
+/////////////////////////////////////////////////////////////////////////
+
+ $$$$$$\   $$$$$$\  $$\   $$\ $$\   $$\  $$$$$$\   $$$$$$\  $$\      $$\
+$$  __$$\ $$  __$$\ $$$\  $$ |$$ |  $$ |$$  __$$\ $$  __$$\ $$$\    $$$ |
+$$ /  \__|$$ /  $$ |$$$$\ $$ |$$ |  $$ |$$ /  \__|$$ /  $$ |$$$$\  $$$$ |
+$$ |      $$$$$$$$ |$$ $$\$$ |$$$$$$$$ |$$ |      $$$$$$$$ |$$\$$\$$ $$ |
+$$ |      $$  __$$ |$$ \$$$$ |$$  __$$ |$$ |      $$  __$$ |$$ \$$$  $$ |
+$$ |  $$\ $$ |  $$ |$$ |\$$$ |$$ |  $$ |$$ |  $$\ $$ |  $$ |$$ |\$  /$$ |
+\$$$$$$  |$$ |  $$ |$$ | \$$ |$$ |  $$ |\$$$$$$  |$$ |  $$ |$$ | \_/ $$ |
+ \______/ \__|  \__|\__|  \__|\__|  \__| \______/ \__|  \__|\__|     \__|
+
+Canh Cam - the best Web Solutions Provider - http://www.canhcam.vn
+156 Nguyen Van Thu, District 1, Ho Chi Minh City, Viet Nam.
+Phone: (+84) 8 38238364 – Fax: (+84) 8 38238365 - Email: info@canhcam.vn
+Facebook: https://fb.com/canhcam.vn
+
+/////////////////////////////////////////////////////////////////////////
+-->
+<html class="no-js" dir="ltr" lang="en" itemscope itemtype="http://schema.org/WebSite" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no"><!-- ////////////// Mobile title color ////////////// -->
+    <meta name="theme-color" content="#000000">
+    <meta name="msapplication-navbutton-color" content="#000000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed:100,200,300,400,500,600,700,800,900&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton&amp;amp;subset=latin-ext,vietnamese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
+    <title>club-details01 - DEMO SITE</title><!-- ////////////// CSS Include ////////////// -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/css/core.css">
+    <link rel="stylesheet" href="/css/plugins.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- endinject --><!-- ////////////// FAVICON ////////////// -->
+  </head>
+  <body class="canhcam-develop canhcam-club-details01-page" id="top-page">
+    <div id="fb-root"></div><!-- ////////////// Header ////////////// -->
+    <header class="canhcam-header-13">
+      <div class="k-menu-bar container">
+        <div class="mr-auto" id="logo"></div>
+        <div id="language"></div>
+        <button class="k-button-toggle navbar-toggler" k-toggle-for="#demoResAllInOneMenu"><i class="mdi mdi-menu"></i></button>
+      </div>
+      <div class="topbar w-100">
+        <div class="container">
+          <div class="header-top d-flex">
+            <ul class="contactinfo" k-menu-map-to="#contactinfotel">
+              <li><span class="link">Hotline: 090909090808</span></li>
+            </ul>
+            <div class="language" k-menu-map-to="#language">
+              <div class="dropdown">
+                <button class="dropdown-toggle" id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">VN<span class="lnr lnr-chevron-down ml-1"></span></button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#">EN</a></div>
+              </div>
+            </div>
+            <div class="searchbar" k-menu-map-to="#searchbox">
+              <div class="input-group">
+                <input class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
+                </div>
+              </div>
+            </div>
+            <ul class="top-nav nav" k-menu-map-to="#top-nav">
+              <li class="nav-item"><a class="nav-link" href="">Về chúng tôi</a></li>
+              <li class="nav-item"><a class="nav-link" href="">Hỏi đáp</a></li>
+              <li class="nav-item"><a class="nav-link" href="">Tuyển dụng</a></li>
+              <li class="nav-item"><a class="nav-link" href="">Liên hệ</a></li>
+            </ul>
+          </div>
+          <div class="header-right" k-menu-map-to="#header-right">
+            <div class="header-reg">
+              <button type="submit">Đăng Nhập<span class="lnr lnr-lock"></span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-menu">
+        <div class="container k-responsive-menu" id="demoResAllInOneMenu">
+          <div class="k-menu-bar">
+            <div class="k-logo navbar-brand mr-auto"><img src="./img/logo-ang.png" alt=""></div>
+            <button class="k-button-toggle navbar-toggler" k-toggle-for="#demoResAllInOneMenu"><i class="mdi mdi-close"></i></button>
+          </div>
+          <div class="d-lg-none" id="header-right"></div>
+          <div class="d-lg-none" id="searchbox"></div>
+          <div class="nav mainnav mainnav-1">
+            <ul class="nav">
+              <li class="nav-item active"><a class="nav-link" href="index.html">Trang chủ</a></li>
+              <li class="nav-item"><a class="nav-link" href="club.html">Câu lạc bộ</a></li>
+              <li class="nav-item"><a class="nav-link" href="strong.html">Điểm mạnh</a></li>
+            </ul>
+          </div>
+          <div class="k-logo navbar-brand" k-menu-map-to="#logo"><img src="./img/citigym/logo.png" alt=""></div>
+          <div class="nav mainnav mainnav-2">
+            <ul class="nav">
+              <li class="nav-item"><a class="nav-link" href="schedule.html">Lịch học</a></li>
+              <li class="nav-item"><a class="nav-link" href="service.html">Dịch vụ</a></li>
+              <li class="nav-item"><a class="nav-link" href="news.html">Tin tức</a></li>
+            </ul>
+          </div>
+          <div id="top-nav"></div>
+          <div id="contactinfotel"></div>
+          <div id="header-visit"></div>
+          <div id="contactinfo"></div>
+        </div>
+      </div>
+    </header><!-- ////////////// End Header ////////////// -->
+<!-- ////////////// Begin Main ////////////// -->
+    <main>
+      <section class="canhcam-banner-1">
+        <article class="list-items">
+          <div class="item">
+            <video id="video" autoplay loop muted style="min-width: 100%; min-height: 100%;">
+              <source src="./img/citigym/banner.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item" bg-img="./img/citigym/banner/home_banner.png">
+            <div class="title">
+              <h1 class="h1">CityGym keeps your body more healthy than ever</h1>
+            </div>
+          </div>
+          <div class="item" bg-img="./img/citigym/banner/home_banner.png">
+            <div class="title">
+              <h1 class="h1">CityGym keeps your body more healthy than ever</h1>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="canhcam-nav-1">
+        <article class="tab-list">
+          <div class="tab-control">
+            <div class="container">
+              <div class="row no-gutters nav" role="tablist"><a class="col1 tab-col active" id="club-nav-1" data-toggle="tab" href="#club-item-1" role="tab" aria-controls="club-item-1" aria-selected="true">
+                  <figure><img src="./img/citigym/icon/tab_icon1.png" alt="alt">
+                    <figcaption>
+                      <h2>thông tin câu lạc bộ</h2>
+                    </figcaption>
+                  </figure></a><a class="col2 tab-col" id="club-nav-2" data-toggle="tab" href="#club-item-2" role="tab" aria-controls="club-item-2" aria-selected="false">
+                  <figure><img src="./img/citigym/icon/tab_icon2.png" alt="alt">
+                    <figcaption>
+                      <h2>Lịch học tại câu lạc bộ</h2>
+                    </figcaption>
+                  </figure></a><a class="col3 tab-col" id="club-nav-2" data-toggle="tab" href="#club-item-3" role="tab" aria-controls="club-item-3" aria-selected="false">
+                  <figure><img src="./img/citigym/icon/tab_icon3.png" alt="alt">
+                    <figcaption>
+                      <h2>Huấn luyện viên</h2>
+                    </figcaption>
+                  </figure></a><a class="col4 tab-col" id="club-nav-2" data-toggle="tab" href="#club-item-4" role="tab" aria-controls="club-item-4" aria-selected="false">
+                  <figure><img src="./img/citigym/icon/tab_icon4.png" alt="alt">
+                    <figcaption>
+                      <h2>cơ sở vật chất</h2>
+                    </figcaption>
+                  </figure></a><a class="col5 tab-col" id="club-nav-2" data-toggle="tab" href="#club-item-5" role="tab" aria-controls="club-item-5" aria-selected="false">
+                  <figure><img src="./img/citigym/icon/tab_icon5.png" alt="alt">
+                    <figcaption>
+                      <h2>người nhà kể chuyện</h2>
+                    </figcaption>
+                  </figure></a><a class="col6 tab-col" id="club-nav-2" data-toggle="tab" href="#club-item-6" role="tab" aria-controls="club-item-6" aria-selected="false">
+                  <figure><img src="./img/citigym/icon/tab_icon6.png" alt="alt">
+                    <figcaption>
+                      <h2>chính sách giá</h2>
+                    </figcaption>
+                  </figure></a></div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="canhcam-boxes-1">
+        <div class="container text-center">
+          <h2 class="citigym-title title-white mb-3">kết nối với chúng tôi</h2>
+          <div class="lead">
+            <p>Get more active online and tag your #CitiGym moments here or leave a comment on our Facebook page with #CitiGym to be part of the conversation. After all, sharing is caring...</p>
+          </div>
+          <div class="row no-gutters">
+            <div class="col-lg-3 col-md-6"><a class="item" href="#">
+                <figure>
+                  <div class="boximg" bg-img="./img/citigym/home/home_3.png"><img class="img-fluid" src="./img/citigym/home/home_3.png" alt="alt">
+                    <div class="fb" id="fb"><em class="fab fa-facebook"></em>
+                      <div class="status">
+                        <p>dc.conditioning</p>
+                        <time>05.06.2018</time>
+                      </div>
+                    </div>
+                  </div>
+                  <figcaption>
+                    <div class="textctn">
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia accusamus officia, maxime sed, optio minima animi odit architecto labore corrupti ad debitis nobis totam facilis! Aspernatur dolores recusandae ea iste.</p>
+                    </div>
+                  </figcaption>
+                </figure></a></div>
+            <div class="col-lg-3 col-md-6"><a class="item" href="#">
+                <figure>
+                  <div class="boximg" bg-img="./img/citigym/home/home_3.png"><img class="img-fluid" src="./img/citigym/home/home_3.png" alt="alt">
+                    <div class="fb" id="fb"><em class="fab fa-facebook"></em>
+                      <div class="status">
+                        <p>dc.conditioning</p>
+                        <time>05.06.2018</time>
+                      </div>
+                    </div>
+                  </div>
+                  <figcaption>
+                    <div class="textctn">
+                      <p>Lorem ipsum dodipisicing elit. Mollitia accusamus officia, maxime sed, optio minima animi odit labore corrupti ad debitis nobis totam facilis! Aspernatur dolores recusandae ea iste.</p>
+                    </div>
+                  </figcaption>
+                </figure></a></div>
+            <div class="col-lg-3 col-md-6"><a class="item" href="#">
+                <figure>
+                  <div class="boximg" bg-img="./img/citigym/home/home_3.png"><img class="img-fluid" src="./img/citigym/home/home_3.png" alt="alt">
+                    <div class="fb" id="fb"><em class="fab fa-facebook"></em>
+                      <div class="status">
+                        <p>dc.conditioning</p>
+                        <time>05.06.2018</time>
+                      </div>
+                    </div>
+                  </div>
+                  <figcaption>
+                    <div class="textctn">
+                      <p>Lorem ipsum dodipisicing elit. Mollitia accusamus officia, maxime sed, optio minima animi odit labore corrupti ad debitis nobis totam facilis! Aspernatur dolores recusandae ea iste.</p>
+                    </div>
+                  </figcaption>
+                </figure></a></div>
+            <div class="col-lg-3 col-md-6"><a class="item" href="#">
+                <figure>
+                  <div class="boximg" bg-img="./img/citigym/home/home_3.png"><img class="img-fluid" src="./img/citigym/home/home_3.png" alt="alt">
+                    <div class="fb" id="fb"><em class="fab fa-facebook"></em>
+                      <div class="status">
+                        <p>dc.conditioning</p>
+                        <time>05.06.2018</time>
+                      </div>
+                    </div>
+                  </div>
+                  <figcaption>
+                    <div class="textctn">
+                      <p>Lorem ipsum dodipisicing elit. Mollitia accusamus officia, maxime sed, optio minima animi odit labore corrupti ad debitis nobis totam facilis! Aspernatur dolores recusandae ea iste.</p>
+                    </div>
+                  </figcaption>
+                </figure></a></div>
+            <div class="col-lg-3 col-md-6"><a class="item" href="#">
+                <figure>
+                  <div class="boximg" bg-img="https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.0-9/27331788_2058154787544882_2782047834006736231_n.jpg?_nc_cat=0&amp;oh=9d4c596f6b8db4f8a9a5e6126411861a&amp;oe=5BD67999"><img class="img-fluid" src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.0-9/27331788_2058154787544882_2782047834006736231_n.jpg?_nc_cat=0&amp;oh=9d4c596f6b8db4f8a9a5e6126411861a&amp;oe=5BD67999" alt="alt">
+                    <div class="fb" id="fb"><em class="fab fa-facebook"></em>
+                      <div class="status">
+                        <p>dc.conditioning</p>
+                        <time>05.06.2018</time>
+                      </div>
+                    </div>
+                  </div>
+                  <figcaption>
+                    <div class="textctn">
+                      <p>Lorem ipsum dodipisicing elit. Mollitia accusamus officia, maxime sed, optio minima animi</p>
+                    </div>
+                  </figcaption>
+                </figure></a></div>
+            <div class="col-lg-3 col-md-6"><a class="item" href="#">
+                <figure>
+                  <div class="boximg" bg-img="https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.0-1/29541581_2019201788406462_795251308013349146_n.jpg?_nc_cat=0&amp;oh=17dcc858e1ad1b3e32f6d756e86f0f18&amp;oe=5BD1D574"><img class="img-fluid" src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.0-1/29541581_2019201788406462_795251308013349146_n.jpg?_nc_cat=0&amp;oh=17dcc858e1ad1b3e32f6d756e86f0f18&amp;oe=5BD1D574" alt="alt">
+                    <div class="fb" id="fb"><em class="fab fa-facebook"></em>
+                      <div class="status">
+                        <p>dc.conditioning</p>
+                        <time>05.06.2018</time>
+                      </div>
+                    </div>
+                  </div>
+                  <figcaption>
+                    <div class="textctn">
+                      <p>Lorem ipsum dodipisicing elit. Mollitia accusamus officia, maxime sed, optio minima animi odit labore corrupti ad debitis nobis totam facilis! Aspernatur dolores recusandae ea iste.</p>
+                    </div>
+                  </figcaption>
+                </figure></a></div>
+            <div class="col-lg-3 col-md-6"><a class="item" href="#">
+                <figure>
+                  <div class="boximg" bg-img="./img/citigym/home/home_3.png"><img class="img-fluid" src="./img/citigym/home/home_3.png" alt="alt">
+                    <div class="fb" id="fb"><em class="fab fa-facebook"></em>
+                      <div class="status">
+                        <p>dc.conditioning</p>
+                        <time>05.06.2018</time>
+                      </div>
+                    </div>
+                  </div>
+                  <figcaption>
+                    <div class="textctn">
+                      <p>Lorem ipsum dodipisicing elit. Mollitia accusamus officia, maxime sed, optio minima animi odit labore corrupti ad debitis nobis totam facilis! Aspernatur dolores recusandae ea iste.</p>
+                    </div>
+                  </figcaption>
+                </figure></a></div>
+            <div class="col-lg-3 col-md-6"><a class="item" href="#">
+                <figure>
+                  <div class="boximg" bg-img="https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.0-9/37953414_915737181956958_4313018850271559680_n.jpg?_nc_cat=0&amp;oh=32c0f51f5452468a22a2b49672b88b53&amp;oe=5C116CA6"><img class="img-fluid" src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.0-9/37953414_915737181956958_4313018850271559680_n.jpg?_nc_cat=0&amp;oh=32c0f51f5452468a22a2b49672b88b53&amp;oe=5C116CA6" alt="alt">
+                    <div class="fb" id="fb"><em class="fab fa-facebook"></em>
+                      <div class="status">
+                        <p>dc.conditioning</p>
+                        <time>05.06.2018</time>
+                      </div>
+                    </div>
+                  </div>
+                  <figcaption>
+                    <div class="textctn">
+                      <p>Lorem ipsum dodipisicing elit. Mollitia accusamus officia, maxime sed, optio minima animi odit labore corrupti ad debitis nobis totam facilis! Aspernatur dolores recusandae ea iste.</p>
+                    </div>
+                  </figcaption>
+                </figure></a></div>
+          </div>
+        </div>
+      </section>
+      <section class="canhcam-boxes-2" bg-img="./img/citigym/bg_boxes_2.png">
+        <div class="container text-center">
+          <h2 class="citigym-title title-linear mb-4">cùng khám phá thông tin và lợi ích tập luyện của từng lớp học tại citigym</h2><a class="citi-btn btn citiBtn btnGrey">Tham gia câu lạc bộ</a>
+        </div>
+      </section>
+    </main><!-- ////////////// End Main ////////////// -->
+<!-- ////////////// Footer ////////////// -->
+    <footer class="canhcam-footer-1">
+      <div class="link-footer">
+        <div class="container">
+          <h2 class="f-title">Theo dõi cùng chúng tôi để nhận ưu đãi hấp dẫn</h2>
+          <div class="social">
+            <ul>
+              <li><a class="fab fa-facebook-f" href="#"></a></li>
+              <li><a class="fab fa-youtube" href="#"></a></li>
+              <li><a class="fab fa-twitter" href="#"></a></li>
+              <li><a class="fab fa-google-plus-g" href="#"></a></li>
+            </ul>
+          </div>
+          <div class="line"></div>
+          <div class="f-menu">
+            <nav class="f-nav f-nav-1">
+              <ul>
+                <li class="nav-item"><a class="nav-link" href="#">Giới thiệu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Khóa học</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Điểm mạnh</a></li>
+              </ul>
+            </nav>
+            <nav class="f-nav f-nav-2">
+              <ul>
+                <li class="nav-item"><a class="nav-link" href="#">Lich học</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Chuyên gia</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Hỏi đáp</a></li>
+              </ul>
+            </nav>
+            <nav class="f-nav f-nav-3">
+              <ul>
+                <li class="nav-item"><a class="nav-link" href="#">Ưu đãi</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Tuyển dụng</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Điểm mạnh</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 text-center">
+              	@ 2018 citigym. all right reserved. designed by 
+               <a href="#">P2BG.</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer><!-- ////////////// End Footer ////////////// -->
+<!-- ////////////// Back to Top ////////////// --><a href="#top-page" id="back-to-top" title="Back to top"></a><!-- ////////////// Javascript Include ////////////// -->
+    <!-- inject:js -->
+    <script src="/js/core.js"></script>
+    <script src="/js/plugins.js"></script>
+    <script src="/js/app.js"></script>
+    <!-- endinject --><!-- ////////////// Google Analytics ////////////// -->
+    <script>
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.0&autoLogAppEvents=1';
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script>
+      window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+      t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+      t._e = [];
+      t.ready = function(f) {
+      t._e.push(f);
+      };
+      return t;
+      }(document, "script", "twitter-wjs"));
+    </script>
+    <script>
+      (function() {
+      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+      po.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
+  </body>
+</html>
