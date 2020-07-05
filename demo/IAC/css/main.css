@@ -9364,9 +9364,9 @@ footer {
           color: #35618c; }
         .in-process.in-pending .tasks:nth-child(even) .owl-carousel .item figure figcaption p span {
           color: #00467c; }
-      .in-process.in-pending .tasks:nth-child(even) .owl-carousel.owl-admin .owl-dots button span {
+      .in-process.in-pending .tasks:nth-child(even) .owl-carousel .owl-dots button span {
         background: #75a1cb; }
-      .in-process.in-pending .tasks:nth-child(even) .owl-carousel.owl-admin .owl-dots button.active span {
+      .in-process.in-pending .tasks:nth-child(even) .owl-carousel .owl-dots button.active span {
         background: #00467c; }
     .in-process.in-pending .tasks:hover {
       background: #3d566e; }
@@ -9434,18 +9434,6 @@ footer {
             line-height: 1.5rem; }
       .in-process.in-pending .tasks .owl-carousel .owl-nav {
         margin-top: 0;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
         margin-bottom: 1rem; }
         .in-process.in-pending .tasks .owl-carousel .owl-nav button {
           font-size: 0.8rem;

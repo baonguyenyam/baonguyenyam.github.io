@@ -79,9 +79,9 @@ $(document).ready(function () {
 
   $('.in-pending .owl-carousel:not(.owl-admin)').owlCarousel({
     items: 1,
-    nav: true,
+    nav: false,
     loop: false,
-    dots: false,
+    dots: true,
     lazyLoad: true,
     rewind: false,
     navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
@@ -89,17 +89,17 @@ $(document).ready(function () {
       768: {
         items: 2,
         nav: false,
-        dots: false
+        dots: true
       },
       992: {
         items: 3,
         nav: false,
-        dots: false
+        dots: true
       },
       1024: {
         items: 4,
         nav: false,
-        dots: false
+        dots: true
       },
       1200: {
         items: 5,
