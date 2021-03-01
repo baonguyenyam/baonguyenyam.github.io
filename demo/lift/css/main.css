@@ -8925,91 +8925,91 @@ html, body {
 
 @-webkit-keyframes anim-text-flow-keys {
   0% {
-    color: #bc5cd6; }
+    color: #d6cc5c; }
   5% {
-    color: #78d65c; }
+    color: #d67e5c; }
   10% {
-    color: #935cd6; }
+    color: #d4d65c; }
   15% {
-    color: #d6605c; }
+    color: #d65ccc; }
   20% {
-    color: #5cabd6; }
+    color: #d65cd6; }
   25% {
-    color: #815cd6; }
+    color: #9fd65c; }
   30% {
-    color: #5cd691; }
+    color: #bc5cd6; }
   35% {
-    color: #d6ce5c; }
+    color: #5c8dd6; }
   40% {
-    color: #5ca3d6; }
+    color: #5cadd6; }
   45% {
-    color: #915cd6; }
+    color: #685cd6; }
   50% {
-    color: #785cd6; }
+    color: #c6d65c; }
   55% {
-    color: #d65cbc; }
+    color: #5cd67a; }
   60% {
-    color: #5cd6ca; }
+    color: #c05cd6; }
   65% {
-    color: #5cd683; }
+    color: #5cd6bc; }
   70% {
-    color: #5cd6a1; }
+    color: #d6d25c; }
   75% {
-    color: #5cb8d6; }
+    color: #d6605c; }
   80% {
-    color: #ab5cd6; }
+    color: #d67a5c; }
   85% {
-    color: #5cd693; }
+    color: #d65c68; }
   90% {
-    color: #b15cd6; }
+    color: #5c8fd6; }
   95% {
-    color: #5cd66c; }
+    color: #c65cd6; }
   100% {
-    color: #d65cd0; } }
+    color: #5cd66e; } }
 
 @keyframes anim-text-flow-keys {
   0% {
-    color: #bc5cd6; }
+    color: #d6cc5c; }
   5% {
-    color: #78d65c; }
+    color: #d67e5c; }
   10% {
-    color: #935cd6; }
+    color: #d4d65c; }
   15% {
-    color: #d6605c; }
+    color: #d65ccc; }
   20% {
-    color: #5cabd6; }
+    color: #d65cd6; }
   25% {
-    color: #815cd6; }
+    color: #9fd65c; }
   30% {
-    color: #5cd691; }
+    color: #bc5cd6; }
   35% {
-    color: #d6ce5c; }
+    color: #5c8dd6; }
   40% {
-    color: #5ca3d6; }
+    color: #5cadd6; }
   45% {
-    color: #915cd6; }
+    color: #685cd6; }
   50% {
-    color: #785cd6; }
+    color: #c6d65c; }
   55% {
-    color: #d65cbc; }
+    color: #5cd67a; }
   60% {
-    color: #5cd6ca; }
+    color: #c05cd6; }
   65% {
-    color: #5cd683; }
+    color: #5cd6bc; }
   70% {
-    color: #5cd6a1; }
+    color: #d6d25c; }
   75% {
-    color: #5cb8d6; }
+    color: #d6605c; }
   80% {
-    color: #ab5cd6; }
+    color: #d67a5c; }
   85% {
-    color: #5cd693; }
+    color: #d65c68; }
   90% {
-    color: #b15cd6; }
+    color: #5c8fd6; }
   95% {
-    color: #5cd66c; }
+    color: #c65cd6; }
   100% {
-    color: #d65cd0; } }
+    color: #5cd66e; } }
 
 .anim-text-flow span:nth-of-type(1) {
   -webkit-animation-delay: -19.8s;
@@ -9852,7 +9852,12 @@ footer {
     overflow: hidden;
     opacity: .3;
     -webkit-filter: grayscale(1);
-    filter: grayscale(1); }
+    filter: grayscale(1);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
     .index-fullwidth .section-fullwidth .video-inner video {
       min-width: 100%;
       min-height: 100%;
@@ -9863,7 +9868,12 @@ footer {
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
-      border: 0; }
+      border: 0;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
   .index-fullwidth .section-fullwidth figure {
     padding: 30px 80px;
     text-align: center;
@@ -10132,8 +10142,7 @@ footer {
   background: -webkit-linear-gradient(130deg, #e9087f 0%, #f1caac 100%);
   background: linear-gradient(320deg, #e9087f 0%, #f1caac 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e9087f",endColorstr="#f1caac",GradientType=1);
-  overflow: hidden;
-  background-attachment: fixed; }
+  overflow: hidden; }
   .section-plan h2 {
     font-weight: 100;
     font-size: 2rem;
@@ -10271,9 +10280,6 @@ footer {
     .home-news {
       padding: 12rem 0; } }
   .home-news:after {
-    background: #333 url("../img/brands.jpg") center center no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
     opacity: .1;
     display: block;
     content: '';
@@ -10283,6 +10289,11 @@ footer {
     width: 100%;
     height: 100%;
     z-index: -1; }
+    @media (min-width: 992px) {
+      .home-news:after {
+        background: #333 url("../img/brands.jpg") center center no-repeat;
+        background-size: cover;
+        background-attachment: fixed; } }
   .home-news:before {
     background: #3048f8;
     background: -webkit-linear-gradient(320deg, #3048f8 33%, #ff1088 100%);
@@ -10415,6 +10426,95 @@ footer {
   .home-news p {
     font-size: 1.1rem; }
 
+.section-rank {
+  padding: 6rem 0;
+  position: relative;
+  background: #f1eaac;
+  background: #2d388d;
+  background: -webkit-linear-gradient(0deg, #f1eaac -30%, #fff 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(-30%, #f1eaac), to(#fff));
+  background: -webkit-linear-gradient(bottom, #f1eaac -30%, #fff 100%);
+  background: linear-gradient(0deg, #f1eaac -30%, #fff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f1eaac",endColorstr="#fff",GradientType=1);
+  overflow: hidden; }
+  .section-rank .block {
+    position: relative;
+    z-index: 1; }
+    .section-rank .block:before {
+      display: block;
+      content: '';
+      position: absolute;
+      background: url("../img/circle-3.png") center center no-repeat;
+      background-size: contain;
+      top: -30px;
+      left: -100px;
+      width: 200px;
+      height: 200px;
+      z-index: -1;
+      opacity: .7; }
+  .section-rank h2 {
+    font-weight: 100;
+    font-size: 2rem;
+    margin-top: 2rem;
+    line-height: 2rem; }
+    .section-rank h2 em {
+      font-weight: 500; }
+    .section-rank h2 span {
+      font-weight: 700; }
+    @media (min-width: 992px) {
+      .section-rank h2 {
+        font-size: 2.5rem;
+        line-height: 2.5rem; } }
+  .section-rank p {
+    font-size: 1.3rem;
+    line-height: 1.3; }
+  .section-rank .list-item {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .section-rank .list-item li {
+      padding: 0; }
+      .section-rank .list-item li h3 {
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        color: #2d368e;
+        position: relative;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .section-rank .list-item li h3:before {
+          display: inline-block;
+          content: '';
+          background: url("../img/circle-4.png") center center no-repeat;
+          background-size: contain;
+          width: 16px;
+          height: 16px;
+          margin-right: 5px; }
+      .section-rank .list-item li .if {
+        margin-bottom: 1.8rem;
+        line-height: 1.2;
+        font-size: 1.1rem; }
+    @media (min-width: 992px) {
+      .section-rank .list-item.li-right {
+        text-align: right; }
+        .section-rank .list-item.li-right li h3 {
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: reverse;
+          -webkit-flex-direction: row-reverse;
+          -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse; } }
+
 .home-clients h2 {
   font-weight: 100;
   font-size: 2rem;
@@ -10467,9 +10567,11 @@ footer {
   padding: 6rem 0;
   position: relative; }
   .home-preview:after {
-    background: #333 url("../img/bg.jpg") center center no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background: #666666;
+    background: -webkit-linear-gradient(320deg, #666666 33%, #bfc1c2 100%);
+    background: -webkit-linear-gradient(130deg, #666666 33%, #bfc1c2 100%);
+    background: linear-gradient(320deg, #666666 33%, #bfc1c2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#666666",endColorstr="#bfc1c2",GradientType=1);
     display: block;
     content: '';
     position: absolute;
@@ -10478,6 +10580,11 @@ footer {
     width: 100%;
     height: 100%;
     z-index: -2; }
+    @media (min-width: 992px) {
+      .home-preview:after {
+        background: #333 url("../img/bg.jpg") center center no-repeat;
+        background-size: cover;
+        background-attachment: fixed; } }
   .home-preview:before {
     background: #000;
     display: block;
