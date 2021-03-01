@@ -8925,91 +8925,91 @@ html, body {
 
 @-webkit-keyframes anim-text-flow-keys {
   0% {
-    color: #d25cd6; }
+    color: #bc5cd6; }
   5% {
-    color: #5cd68b; }
+    color: #78d65c; }
   10% {
-    color: #745cd6; }
+    color: #935cd6; }
   15% {
-    color: #5cd697; }
+    color: #d6605c; }
   20% {
-    color: #d6665c; }
+    color: #5cabd6; }
   25% {
-    color: #9fd65c; }
+    color: #815cd6; }
   30% {
-    color: #5cd660; }
+    color: #5cd691; }
   35% {
-    color: #5c6cd6; }
+    color: #d6ce5c; }
   40% {
-    color: #d6d45c; }
+    color: #5ca3d6; }
   45% {
-    color: #d6c45c; }
+    color: #915cd6; }
   50% {
-    color: #5cd687; }
+    color: #785cd6; }
   55% {
-    color: #5cafd6; }
+    color: #d65cbc; }
   60% {
-    color: #5cd6a5; }
+    color: #5cd6ca; }
   65% {
-    color: #6cd65c; }
+    color: #5cd683; }
   70% {
     color: #5cd6a1; }
   75% {
-    color: #9d5cd6; }
+    color: #5cb8d6; }
   80% {
-    color: #5cd68d; }
+    color: #ab5cd6; }
   85% {
-    color: #7c5cd6; }
+    color: #5cd693; }
   90% {
-    color: #5cd68b; }
+    color: #b15cd6; }
   95% {
-    color: #9fd65c; }
+    color: #5cd66c; }
   100% {
-    color: #745cd6; } }
+    color: #d65cd0; } }
 
 @keyframes anim-text-flow-keys {
   0% {
-    color: #d25cd6; }
+    color: #bc5cd6; }
   5% {
-    color: #5cd68b; }
+    color: #78d65c; }
   10% {
-    color: #745cd6; }
+    color: #935cd6; }
   15% {
-    color: #5cd697; }
+    color: #d6605c; }
   20% {
-    color: #d6665c; }
+    color: #5cabd6; }
   25% {
-    color: #9fd65c; }
+    color: #815cd6; }
   30% {
-    color: #5cd660; }
+    color: #5cd691; }
   35% {
-    color: #5c6cd6; }
+    color: #d6ce5c; }
   40% {
-    color: #d6d45c; }
+    color: #5ca3d6; }
   45% {
-    color: #d6c45c; }
+    color: #915cd6; }
   50% {
-    color: #5cd687; }
+    color: #785cd6; }
   55% {
-    color: #5cafd6; }
+    color: #d65cbc; }
   60% {
-    color: #5cd6a5; }
+    color: #5cd6ca; }
   65% {
-    color: #6cd65c; }
+    color: #5cd683; }
   70% {
     color: #5cd6a1; }
   75% {
-    color: #9d5cd6; }
+    color: #5cb8d6; }
   80% {
-    color: #5cd68d; }
+    color: #ab5cd6; }
   85% {
-    color: #7c5cd6; }
+    color: #5cd693; }
   90% {
-    color: #5cd68b; }
+    color: #b15cd6; }
   95% {
-    color: #9fd65c; }
+    color: #5cd66c; }
   100% {
-    color: #745cd6; } }
+    color: #d65cd0; } }
 
 .anim-text-flow span:nth-of-type(1) {
   -webkit-animation-delay: -19.8s;
@@ -9505,6 +9505,39 @@ header {
   left: 0;
   margin: 0 15px;
   z-index: 1000; }
+  header.fixedheader.active {
+    position: fixed;
+    top: 0;
+    background: white;
+    width: 100%;
+    margin: 0;
+    -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.25); }
+    header.fixedheader.active .navbar {
+      padding-top: .5rem;
+      padding-bottom: .5rem; }
+      header.fixedheader.active .navbar .navbar-collapse .navbar-nav {
+        margin-top: 0;
+        padding-top: 0;
+        background: none; }
+        header.fixedheader.active .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+          color: #2d368e; }
+        header.fixedheader.active .navbar .navbar-collapse .navbar-nav .nav-item:hover .nav-link, header.fixedheader.active .navbar .navbar-collapse .navbar-nav .nav-item.active .nav-link {
+          color: #e9087f; }
+        header.fixedheader.active .navbar .navbar-collapse .navbar-nav .dropdown-menu .dropdown-item {
+          color: #2d368e; }
+          header.fixedheader.active .navbar .navbar-collapse .navbar-nav .dropdown-menu .dropdown-item:hover .dropdown-item, header.fixedheader.active .navbar .navbar-collapse .navbar-nav .dropdown-menu .dropdown-item.active .dropdown-item {
+            color: #e9087f; }
+        @media (min-width: 992px) {
+          header.fixedheader.active .navbar .navbar-collapse .navbar-nav .dropdown-menu {
+            background: white;
+            -webkit-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.25); } }
+    header.fixedheader.active .navbar-brand img {
+      -webkit-filter: none;
+      filter: none; }
+    header.fixedheader.active .menu svg {
+      stroke: #e9087f; }
   header .navbar {
     padding-top: 10px;
     padding-right: 15px;
@@ -9529,7 +9562,8 @@ header {
       background: none;
       text-align: center;
       margin: 1rem 0;
-      padding: 0; }
+      padding: 0;
+      border: 0; }
       header .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item {
         color: #fff; }
         header .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
