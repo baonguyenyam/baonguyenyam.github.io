@@ -8925,91 +8925,91 @@ html, body {
 
 @-webkit-keyframes anim-text-flow-keys {
   0% {
-    color: #5c74d6; }
-  5% {
     color: #7c5cd6; }
+  5% {
+    color: #d65cb1; }
   10% {
-    color: #5cd4d6; }
+    color: #d6ad5c; }
   15% {
-    color: #ced65c; }
+    color: #5cd683; }
   20% {
-    color: #995cd6; }
+    color: #d65cd2; }
   25% {
-    color: #d65c95; }
+    color: #5cd6ad; }
   30% {
-    color: #d65c6e; }
+    color: #d6935c; }
   35% {
-    color: #5c89d6; }
+    color: #a9d65c; }
   40% {
-    color: #ced65c; }
+    color: #5cd6b4; }
   45% {
-    color: #7ad65c; }
+    color: #d4d65c; }
   50% {
-    color: #c6d65c; }
+    color: #5cabd6; }
   55% {
-    color: #c05cd6; }
+    color: #d6605c; }
   60% {
-    color: #5c97d6; }
+    color: #d6605c; }
   65% {
-    color: #d0d65c; }
+    color: #d6bc5c; }
   70% {
-    color: #afd65c; }
+    color: #d65c81; }
   75% {
-    color: #5cd68b; }
+    color: #5cc6d6; }
   80% {
-    color: #5ca1d6; }
+    color: #5cd678; }
   85% {
-    color: #d65c8b; }
+    color: #5cd66a; }
   90% {
-    color: #5cc4d6; }
+    color: #5c72d6; }
   95% {
-    color: #5c74d6; }
+    color: #d65c8f; }
   100% {
-    color: #5cd6b4; } }
+    color: #9fd65c; } }
 
 @keyframes anim-text-flow-keys {
   0% {
-    color: #5c74d6; }
-  5% {
     color: #7c5cd6; }
+  5% {
+    color: #d65cb1; }
   10% {
-    color: #5cd4d6; }
+    color: #d6ad5c; }
   15% {
-    color: #ced65c; }
+    color: #5cd683; }
   20% {
-    color: #995cd6; }
+    color: #d65cd2; }
   25% {
-    color: #d65c95; }
+    color: #5cd6ad; }
   30% {
-    color: #d65c6e; }
+    color: #d6935c; }
   35% {
-    color: #5c89d6; }
+    color: #a9d65c; }
   40% {
-    color: #ced65c; }
+    color: #5cd6b4; }
   45% {
-    color: #7ad65c; }
+    color: #d4d65c; }
   50% {
-    color: #c6d65c; }
+    color: #5cabd6; }
   55% {
-    color: #c05cd6; }
+    color: #d6605c; }
   60% {
-    color: #5c97d6; }
+    color: #d6605c; }
   65% {
-    color: #d0d65c; }
+    color: #d6bc5c; }
   70% {
-    color: #afd65c; }
+    color: #d65c81; }
   75% {
-    color: #5cd68b; }
+    color: #5cc6d6; }
   80% {
-    color: #5ca1d6; }
+    color: #5cd678; }
   85% {
-    color: #d65c8b; }
+    color: #5cd66a; }
   90% {
-    color: #5cc4d6; }
+    color: #5c72d6; }
   95% {
-    color: #5c74d6; }
+    color: #d65c8f; }
   100% {
-    color: #5cd6b4; } }
+    color: #9fd65c; } }
 
 .anim-text-flow span:nth-of-type(1) {
   -webkit-animation-delay: -19.8s;
@@ -9886,7 +9886,8 @@ footer {
       -webkit-user-select: none;
       -moz-user-select: none;
       -ms-user-select: none;
-      user-select: none; }
+      user-select: none;
+      font-size: 2.3rem; }
       .index-fullwidth .section-fullwidth figure figcaption h1 span:nth-child(n+8):nth-child(-n+17) {
         font-style: italic;
         font-weight: 500;
@@ -9912,7 +9913,11 @@ footer {
           bottom: 70px;
           left: 0;
           width: 100%;
-          padding: 0 50px; } }
+          padding: 0 50px;
+          font-size: 2.3rem; } }
+      @media (min-width: 1200px) {
+        .index-fullwidth .section-fullwidth figure figcaption h1 {
+          font-size: 3rem; } }
     .index-fullwidth .section-fullwidth figure figcaption h2 {
       display: none; }
     .index-fullwidth .section-fullwidth figure img {
@@ -10317,7 +10322,7 @@ footer {
     column-gap: 1.25rem;
     orphans: 1;
     widows: 1; }
-    @media (min-width: 768px) {
+    @media (min-width: 576px) {
       .home-news .allitems {
         -webkit-column-count: 2;
         -moz-column-count: 2;
