@@ -8945,91 +8945,91 @@ html, body {
 
 @-webkit-keyframes anim-text-flow-keys {
   0% {
-    color: #d6c05c; }
+    color: #5c72d6; }
   5% {
-    color: #a5d65c; }
+    color: #5cabd6; }
   10% {
-    color: #d65c70; }
+    color: #d65ca5; }
   15% {
-    color: #5cd4d6; }
+    color: #d6745c; }
   20% {
-    color: #d6625c; }
+    color: #5cd6b8; }
   25% {
-    color: #d65c97; }
+    color: #5cd69b; }
   30% {
-    color: #5cd4d6; }
+    color: #5cd695; }
   35% {
-    color: #9f5cd6; }
-  40% {
-    color: #b15cd6; }
-  45% {
-    color: #5cc2d6; }
-  50% {
-    color: #5cd6a1; }
-  55% {
-    color: #d6815c; }
-  60% {
-    color: #5cd693; }
-  65% {
-    color: #d65c87; }
-  70% {
-    color: #5c99d6; }
-  75% {
-    color: #8dd65c; }
-  80% {
-    color: #975cd6; }
-  85% {
-    color: #ad5cd6; }
-  90% {
-    color: #5cd6d4; }
-  95% {
     color: #5c70d6; }
+  40% {
+    color: #725cd6; }
+  45% {
+    color: #d65ca9; }
+  50% {
+    color: #81d65c; }
+  55% {
+    color: #d6935c; }
+  60% {
+    color: #5cd6cc; }
+  65% {
+    color: #d65c74; }
+  70% {
+    color: #5cd68d; }
+  75% {
+    color: #a9d65c; }
+  80% {
+    color: #64d65c; }
+  85% {
+    color: #d6835c; }
+  90% {
+    color: #895cd6; }
+  95% {
+    color: #5c7cd6; }
   100% {
-    color: #d65c7a; } }
+    color: #8f5cd6; } }
 
 @keyframes anim-text-flow-keys {
   0% {
-    color: #d6c05c; }
+    color: #5c72d6; }
   5% {
-    color: #a5d65c; }
+    color: #5cabd6; }
   10% {
-    color: #d65c70; }
+    color: #d65ca5; }
   15% {
-    color: #5cd4d6; }
+    color: #d6745c; }
   20% {
-    color: #d6625c; }
+    color: #5cd6b8; }
   25% {
-    color: #d65c97; }
+    color: #5cd69b; }
   30% {
-    color: #5cd4d6; }
+    color: #5cd695; }
   35% {
-    color: #9f5cd6; }
-  40% {
-    color: #b15cd6; }
-  45% {
-    color: #5cc2d6; }
-  50% {
-    color: #5cd6a1; }
-  55% {
-    color: #d6815c; }
-  60% {
-    color: #5cd693; }
-  65% {
-    color: #d65c87; }
-  70% {
-    color: #5c99d6; }
-  75% {
-    color: #8dd65c; }
-  80% {
-    color: #975cd6; }
-  85% {
-    color: #ad5cd6; }
-  90% {
-    color: #5cd6d4; }
-  95% {
     color: #5c70d6; }
+  40% {
+    color: #725cd6; }
+  45% {
+    color: #d65ca9; }
+  50% {
+    color: #81d65c; }
+  55% {
+    color: #d6935c; }
+  60% {
+    color: #5cd6cc; }
+  65% {
+    color: #d65c74; }
+  70% {
+    color: #5cd68d; }
+  75% {
+    color: #a9d65c; }
+  80% {
+    color: #64d65c; }
+  85% {
+    color: #d6835c; }
+  90% {
+    color: #895cd6; }
+  95% {
+    color: #5c7cd6; }
   100% {
-    color: #d65c7a; } }
+    color: #8f5cd6; } }
 
 .anim-text-flow span:nth-of-type(1) {
   -webkit-animation-delay: -19.8s;
@@ -10144,7 +10144,8 @@ footer {
     font-size: 8rem;
     width: 300px;
     height: 100px;
-    margin-top: 5rem; }
+    margin-top: 5rem;
+    overflow: hidden; }
     .index-fullwidth .section-fullwidth svg .text-copy {
       fill: none;
       stroke: white;
