@@ -286,13 +286,10 @@ $('a[href*="#"]') // Remove links that don't actually link to anything
   }
 });
 var typed = new Typed(".typed span", {
-  // Waits 1000ms after typing "First"
   stringsElement: "#typed-strings",
   typeSpeed: 140,
   backSpeed: 50,
   smartBackspace: true,
-  // backDelay: 500,
-  // startDelay: 2000,
   loop: true
 });
 $(function () {
