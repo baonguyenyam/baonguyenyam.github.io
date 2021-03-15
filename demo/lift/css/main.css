@@ -7887,91 +7887,91 @@ html, body {
 
 @-webkit-keyframes anim-text-flow-keys {
   0% {
-    color: #5cb4d6; }
+    color: #d6d05c; }
   5% {
-    color: #c05cd6; }
+    color: #5cd6be; }
   10% {
-    color: #d6a15c; }
+    color: #d65e5c; }
   15% {
-    color: #d45cd6; }
+    color: #5cd693; }
   20% {
-    color: #5c91d6; }
+    color: #d65ca3; }
   25% {
-    color: #5c91d6; }
+    color: #d6605c; }
   30% {
-    color: #5c6ad6; }
+    color: #d6a35c; }
   35% {
-    color: #5c83d6; }
+    color: #d6ba5c; }
   40% {
-    color: #5cd6d0; }
+    color: #d65c7e; }
   45% {
-    color: #8bd65c; }
+    color: #70d65c; }
   50% {
-    color: #5cd676; }
+    color: #5c89d6; }
   55% {
-    color: #5c74d6; }
+    color: #d65c9f; }
   60% {
-    color: #d6b45c; }
+    color: #c25cd6; }
   65% {
-    color: #d6d25c; }
+    color: #5cd691; }
   70% {
-    color: #d65c8d; }
+    color: #5cd6b1; }
   75% {
-    color: #a5d65c; }
+    color: #a35cd6; }
   80% {
-    color: #5cb4d6; }
+    color: #c2d65c; }
   85% {
-    color: #c05cd6; }
+    color: #5cbad6; }
   90% {
-    color: #d6855c; }
+    color: #5c89d6; }
   95% {
-    color: #d6ad5c; }
+    color: #d0d65c; }
   100% {
-    color: #6e5cd6; } }
+    color: #cad65c; } }
 
 @keyframes anim-text-flow-keys {
   0% {
-    color: #5cb4d6; }
+    color: #d6d05c; }
   5% {
-    color: #c05cd6; }
+    color: #5cd6be; }
   10% {
-    color: #d6a15c; }
+    color: #d65e5c; }
   15% {
-    color: #d45cd6; }
+    color: #5cd693; }
   20% {
-    color: #5c91d6; }
+    color: #d65ca3; }
   25% {
-    color: #5c91d6; }
+    color: #d6605c; }
   30% {
-    color: #5c6ad6; }
+    color: #d6a35c; }
   35% {
-    color: #5c83d6; }
+    color: #d6ba5c; }
   40% {
-    color: #5cd6d0; }
+    color: #d65c7e; }
   45% {
-    color: #8bd65c; }
+    color: #70d65c; }
   50% {
-    color: #5cd676; }
+    color: #5c89d6; }
   55% {
-    color: #5c74d6; }
+    color: #d65c9f; }
   60% {
-    color: #d6b45c; }
+    color: #c25cd6; }
   65% {
-    color: #d6d25c; }
+    color: #5cd691; }
   70% {
-    color: #d65c8d; }
+    color: #5cd6b1; }
   75% {
-    color: #a5d65c; }
+    color: #a35cd6; }
   80% {
-    color: #5cb4d6; }
+    color: #c2d65c; }
   85% {
-    color: #c05cd6; }
+    color: #5cbad6; }
   90% {
-    color: #d6855c; }
+    color: #5c89d6; }
   95% {
-    color: #d6ad5c; }
+    color: #d0d65c; }
   100% {
-    color: #6e5cd6; } }
+    color: #cad65c; } }
 
 .anim-text-flow span:nth-of-type(1) {
   -webkit-animation-delay: -19.8s;
@@ -9159,7 +9159,7 @@ footer {
     -webkit-transform: rotate(-90deg) translate3d(130px, 113px, 0);
     transform: rotate(-90deg) translate3d(130px, 113px, 0);
     position: absolute;
-    z-index: 10000;
+    z-index: 600;
     right: 0;
     bottom: 0;
     text-decoration: none;
@@ -9183,7 +9183,7 @@ footer {
         height: 2px;
         overflow: hidden;
         background: #fff;
-        z-index: 2000; }
+        z-index: 500; }
         .index-fullwidth .section-fullwidth .linkdown .link__arrow span:nth-child(1) {
           -webkit-transform-origin: left bottom;
           transform-origin: left bottom;
@@ -10083,11 +10083,32 @@ footer {
       align-items: center;
       z-index: 9999; }
       .home-maps #pin .pin.pin-1 {
-        top: 60%;
-        left: 46%; }
+        top: calc(60% - 18px);
+        left: calc(45% - 2px); }
       .home-maps #pin .pin.pin-2 {
-        top: 52%;
-        left: 8%; }
+        top: calc(50% - 12px);
+        left: calc(8% - 10px); }
+      @media (min-width: 576px) {
+        .home-maps #pin .pin.pin-1 {
+          top: calc(60% - 1px);
+          left: calc(45% + 5px); }
+        .home-maps #pin .pin.pin-2 {
+          top: calc(50% + 10px);
+          left: calc(8% - 1px); } }
+      @media (min-width: 1600px) {
+        .home-maps #pin .pin.pin-1 {
+          top: calc(62% - 1px);
+          left: calc(46% + 5px); }
+        .home-maps #pin .pin.pin-2 {
+          top: calc(54% + 10px);
+          left: calc(8% - 1px); } }
+      @media (min-width: 1800px) {
+        .home-maps #pin .pin.pin-1 {
+          top: calc(63% - 1px);
+          left: calc(47% + 5px); }
+        .home-maps #pin .pin.pin-2 {
+          top: calc(55% + 10px);
+          left: calc(5% - 1px); } }
       .home-maps #pin .pin .pin-item {
         width: 30px;
         height: 30px;
@@ -10143,6 +10164,16 @@ footer {
           animation-delay: 1.1s;
           -webkit-animation: pulsate 1s ease-out infinite;
           animation: pulsate 1s ease-out infinite; }
+  .home-maps #map {
+    height: 100%;
+    width: 100%; }
+    .home-maps #map iframe {
+      height: 100%;
+      width: 100%;
+      border-radius: 5px;
+      -webkit-box-shadow: 0 0 14px 3px rgba(0, 0, 0, 0.135), 0 0 1px rgba(0, 0, 0, 0.35);
+      box-shadow: 0 0 14px 3px rgba(0, 0, 0, 0.135), 0 0 1px rgba(0, 0, 0, 0.35);
+      overflow: hidden; }
 
 #particles-js {
   position: absolute;
@@ -10167,6 +10198,20 @@ footer {
   -ms-flex-direction: row;
   flex-direction: row;
   /* If fade out option is set */ }
+
+.flit-animation {
+  visibility: hidden;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused; }
+
+.animated {
+  visibility: visible;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-play-state: running;
+  animation-play-state: running; }
 
 @-webkit-keyframes pulsate {
   0% {

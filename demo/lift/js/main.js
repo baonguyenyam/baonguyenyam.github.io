@@ -294,13 +294,26 @@ var typed = new Typed(".typed span", {
 });
 $(function () {
   setInterval(function () {
-    var $next = $('.tricker em.active').removeClass('active').next('em');
+    var $next = $(".tricker em.active").removeClass("active").next("em");
 
     if ($next.length) {
-      $next.addClass('active');
+      $next.addClass("active");
     } else {
-      $("em:first").addClass('active');
+      $("em:first").addClass("active");
     }
   }, 5000);
+});
+$(window).scroll(function () {
+  var wScroll = $(this).scrollTop();
+
+  if (wScroll > $(".flit-animation").offset().top - $(window).height() + 100) {
+    $(".flit-animation").each(function (i) {
+      setTimeout(function () {
+        $(".flit-animation").eq(i).addClass("animated");
+      }, 300 * (i + 1));
+    });
+  } else {
+    $(".flit-animation").removeClass("animated");
+  }
 });
 //# sourceMappingURL=main.js.map
