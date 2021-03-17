@@ -1,5 +1,7 @@
 "use strict";
 
+function _typeof3(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && _typeof3(Symbol.iterator) === "symbol") { _typeof3 = function _typeof(obj) { return typeof obj === "undefined" ? "undefined" : _typeof3(obj); }; } else { _typeof3 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj === "undefined" ? "undefined" : _typeof3(obj); }; } return _typeof3(obj); }
+
 eval(function (p, a, c, k, _e, r) {
   _e = function e(c) {
     return (c < a ? '' : _e(parseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36));
@@ -45,6 +47,86 @@ $(function () {
     $('select.form-control').removeClass('form-control').css('width', '100%');
   }
 });
+/*! modernizr 3.6.0 (Custom Build) | MIT *
+ * https://modernizr.com/download/?-setclasses !*/
+
+!function (n, e, s) {
+  function o(n, e) {
+    return (typeof n === "undefined" ? "undefined" : _typeof3(n)) === e;
+  }
+
+  function a() {
+    var n, e, s, a, i, l, r;
+
+    for (var c in f) {
+      if (f.hasOwnProperty(c)) {
+        if (n = [], e = f[c], e.name && (n.push(e.name.toLowerCase()), e.options && e.options.aliases && e.options.aliases.length)) for (s = 0; s < e.options.aliases.length; s++) {
+          n.push(e.options.aliases[s].toLowerCase());
+        }
+
+        for (a = o(e.fn, "function") ? e.fn() : e.fn, i = 0; i < n.length; i++) {
+          l = n[i], r = l.split("."), 1 === r.length ? Modernizr[r[0]] = a : (!Modernizr[r[0]] || Modernizr[r[0]] instanceof Boolean || (Modernizr[r[0]] = new Boolean(Modernizr[r[0]])), Modernizr[r[0]][r[1]] = a), t.push((a ? "" : "no-") + r.join("-"));
+        }
+      }
+    }
+  }
+
+  function i(n) {
+    var e = r.className,
+        s = Modernizr._config.classPrefix || "";
+
+    if (c && (e = e.baseVal), Modernizr._config.enableJSClass) {
+      var o = new RegExp("(^|\\s)" + s + "no-js(\\s|$)");
+      e = e.replace(o, "$1" + s + "js$2");
+    }
+
+    Modernizr._config.enableClasses && (e += " " + s + n.join(" " + s), c ? r.className.baseVal = e : r.className = e);
+  }
+
+  var t = [],
+      f = [],
+      l = {
+    _version: "3.6.0",
+    _config: {
+      classPrefix: "",
+      enableClasses: !0,
+      enableJSClass: !0,
+      usePrefixes: !0
+    },
+    _q: [],
+    on: function on(n, e) {
+      var s = this;
+      setTimeout(function () {
+        e(s[n]);
+      }, 0);
+    },
+    addTest: function addTest(n, e, s) {
+      f.push({
+        name: n,
+        fn: e,
+        options: s
+      });
+    },
+    addAsyncTest: function addAsyncTest(n) {
+      f.push({
+        name: null,
+        fn: n
+      });
+    }
+  },
+      Modernizr = function Modernizr() {};
+
+  Modernizr.prototype = l, Modernizr = new Modernizr();
+  var r = e.documentElement,
+      c = "svg" === r.nodeName.toLowerCase();
+  a(), i(t), delete l.addTest, delete l.addAsyncTest;
+
+  for (var u = 0; u < Modernizr._q.length; u++) {
+    Modernizr._q[u]();
+  }
+
+  n.Modernizr = Modernizr;
+}(window, document);
 particlesJS("particles-js", {
   particles: {
     number: {
@@ -149,7 +231,9 @@ particlesJS("particles-js", {
     }
   },
   retina_detect: true
-}); // Main
+}); ///////////////////////////////////
+// SLIDER
+///////////////////////////////////
 
 $(document).ready(function () {
   // Phần Slider
@@ -203,16 +287,24 @@ $(document).ready(function () {
       }
     }
   });
-});
+}); ///////////////////////////////////
+// MENU BUTTON
+///////////////////////////////////
+
 document.querySelectorAll(".menu").forEach(function (btn) {
   btn.addEventListener("click", function (e) {
     btn.classList.toggle("active");
   });
-});
+}); ///////////////////////////////////
+// HOME ANIMATION TEXT
+///////////////////////////////////
+
 $(".anim-text-flow").html(function (i, html) {
   var chars = $.trim(html).split("");
   return "<span>" + chars.join("</span><span>") + "</span>";
-});
+}); ///////////////////////////////////
+// HEADER
+///////////////////////////////////
 
 function setHeader(elm) {
   var mmn;
@@ -252,7 +344,9 @@ $(document).ready(function () {
 
 $(window).scroll(function () {
   setHeader($(document).scrollTop());
-}); // Select all links with hashes
+}); ///////////////////////////////////
+// SMOOTHLY SCROLL
+///////////////////////////////////
 
 $('a[href*="#"]') // Remove links that don't actually link to anything
 .not('[href="#"]').not('[href="#0"]').click(function (event) {
@@ -284,36 +378,60 @@ $('a[href*="#"]') // Remove links that don't actually link to anything
       });
     }
   }
-});
+}); ///////////////////////////////////
+// TYPE
+///////////////////////////////////
+
 var typed = new Typed(".typed span", {
   stringsElement: "#typed-strings",
   typeSpeed: 140,
   backSpeed: 50,
   smartBackspace: true,
   loop: true
-});
+}); ///////////////////////////////////
+// ANIMATION
+///////////////////////////////////
+
 $(function () {
-  setInterval(function () {
-    var $next = $(".tricker em.active").removeClass("active").next("em");
+  var $window = $(window),
+      win_height_padded = $window.height() * 1.1,
+      isTouch = Modernizr.touch;
 
-    if ($next.length) {
-      $next.addClass("active");
-    } else {
-      $("em:first").addClass("active");
-    }
-  }, 5000);
-});
-$(window).scroll(function () {
-  var wScroll = $(this).scrollTop();
-
-  if (wScroll > $(".flit-animation").offset().top - $(window).height() + 100) {
-    $(".flit-animation").each(function (i) {
-      setTimeout(function () {
-        $(".flit-animation").eq(i).addClass("animated");
-      }, 300 * (i + 1));
-    });
-  } else {
-    $(".flit-animation").removeClass("animated");
+  if (isTouch) {
+    $('.flit-animation').addClass('animated');
   }
+
+  $window.on('scroll', revealOnScroll);
+
+  function revealOnScroll() {
+    var scrolled = $window.scrollTop(),
+        win_height_padded = $window.height() * 1.1; // Showed...
+
+    $(".flit-animation:not(.animated)").each(function () {
+      var $this = $(this),
+          offsetTop = $this.offset().top;
+
+      if (scrolled + win_height_padded > offsetTop) {
+        if ($this.data('timeout')) {
+          window.setTimeout(function () {
+            $this.addClass('animated ' + $this.data('animation'));
+          }, parseInt($this.data('timeout'), 500));
+        } else {
+          $this.addClass('animated ' + $this.data('animation'));
+        }
+      }
+    }); // Hidden...
+
+    $(".flit-animation.animated").each(function (index) {
+      var $this = $(this),
+          offsetTop = $this.offset().top;
+
+      if (scrolled + win_height_padded < offsetTop) {
+        $(this).removeClass('animated fadeInUp flipInX lightSpeedIn');
+      }
+    });
+  }
+
+  revealOnScroll();
 });
 //# sourceMappingURL=main.js.map
