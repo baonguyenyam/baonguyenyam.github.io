@@ -20,8 +20,8 @@
 
 
     <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-md-3 col-lg-2 col-xl-auto me-0 px-3" href="index.html"><img src="./assets/img/logo.png"
-                alt=""></a>
+        <a class="navbar-brand col-md-3 col-lg-2 col-xl-auto me-0 px-3" href="index.html"><img
+                src="./assets/img/logo.png" alt=""></a>
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -71,6 +71,16 @@
                                 HTML Validator
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="chrome_extensions.html">
+                                Chrome extensions
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="change_logs.html">
+                              Changelog
+                            </a>
+                          </li>
                     </ul>
                 </div>
             </nav>
@@ -91,19 +101,21 @@
                         <textarea class="form-control text-sm" placeholder="Paste your HTML Code here" id="htmlcode"
                             rows="12"></textarea>
                         <div class="input-group mb-3 d-none">
-                            <input type="text" class="form-control" placeholder="Enter URL"
-                                aria-label="Enter URL" aria-describedby="url" id="urlsource">
+                            <input type="text" class="form-control" placeholder="Enter URL" aria-label="Enter URL"
+                                aria-describedby="url" id="urlsource">
                             <button class="btn btn-primary" type="button" id="url">Check</button>
                         </div>
                         <div class="row">
                             <div class="col-lg my-3">
-                                <button type="button" class="btn btn-success btn-lg btn-block" id="validator-btn">Validator</button>
+                                <button type="button" class="btn btn-success btn-lg btn-block"
+                                    id="validator-btn">Validator</button>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="alert alert-danger d-none" id="err_HTML"></div>
-                        <div class="alert alert-success d-none" id="done_HTML"><i class="fa fa-check"></i> Good job!</div>
+                        <div class="alert alert-success d-none" id="done_HTML"><i class="fa fa-check"></i> Good job!
+                        </div>
                         <div class="d-none" id="check_HTML"></div>
                     </div>
                 </div>
