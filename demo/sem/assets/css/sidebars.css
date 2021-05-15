@@ -121,3 +121,7 @@ body {
   padding: .075rem .5rem;
     font-size: .8rem;
 }
+
+#version {
+  color: #fff
+}
