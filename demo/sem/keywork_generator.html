@@ -20,13 +20,14 @@
 
 
     <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-md-3 col-lg-2 col-xl-auto me-0 px-3" href="#"><img src="./assets/img/logo.png" alt=""></a>
+        <a class="navbar-brand col-md-3 col-lg-2 col-xl-auto me-0 px-3" href="#"><img src="./assets/img/logo.png"
+                alt=""></a>
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <ul class="navbar-nav px-3">
+        <ul class="navbar-nav px-3 d-none d-md-flex">
             <li class="nav-item text-nowrap">
                 <a class="nav-link" href="#">LIFT</a>
             </li>
@@ -62,7 +63,12 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="post_generator.html">
-                              Wordpress posts generator
+                                Wordpress posts generator
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html_validator.html">
+                              HTML Validator
                             </a>
                           </li>
                     </ul>
@@ -89,12 +95,14 @@
                     <div class="col-lg">
                         <h3 class="mb-3"><span class="badge bg-primary">A</span> keywords</h3>
                         <div class="form-floating mb-4">
-                            <textarea class="form-control" placeholder="" id="a_kw" style="height: 70px">nguyen,van</textarea>
+                            <textarea class="form-control" placeholder="" id="a_kw"
+                                style="height: 70px">nguyen,van</textarea>
                             <label for="a_kw">enter keywords and add comma (,) end of words</label>
                         </div>
                         <h3 class="mb-3"><span class="badge bg-info">B</span> keywords</h3>
                         <div class="form-floating mb-4">
-                            <textarea class="form-control" placeholder="" id="b_kw" style="height: 70px">1,2,3</textarea>
+                            <textarea class="form-control" placeholder="" id="b_kw"
+                                style="height: 70px">1,2,3</textarea>
                             <label for="b_kw">enter keywords and add comma (,) end of words</label>
                         </div>
                         <h3 class="mb-3"><span class="badge bg-warning">C</span> keywords</h3>
@@ -109,36 +117,43 @@
                         </div>
                         <h3 class="mb-3"><span class="badge bg-secondary">E</span> keywords</h3>
                         <div class="form-floating mb-4">
-                            <textarea class="form-control" placeholder="" id="e_kw" style="height: 70px">隨,河,予</textarea>
+                            <textarea class="form-control" placeholder="" id="e_kw"
+                                style="height: 70px">隨,河,予</textarea>
                             <label for="e_kw">enter keywords and add comma (,) end of words</label>
                         </div>
                     </div>
                     <div class="col-lg">
                         <div id="boxresult">
-                            <h3 class="mb-3">Results keywords <span id="number" class="badge bg-danger text-white small"></span></h3>
+                            <h3 class="mb-3">Results keywords <span id="number"
+                                    class="badge bg-danger text-white small"></span></h3>
                             <div class="rv">
                                 <div class="alert alert-warning">Nothing to show</div>
                             </div>
-                            <div class="rs d-none">
+                            <div class="rs d-none mb-3">
                                 <textarea class="form-control mb-2" placeholder="" rows="20" id="results"></textarea>
-                                <div class="d-grid gap-2">
-                                    <button type="button" class="btn btn-success btn-lg btn-block" id="dwn-btn">Download</button>
+                                <div class="row mt-3">
+                                    <div class="col-auto">
+                                        <button type="button" class="btn btn-success btn-lg" id="dwn-btn">Download</button>
+                                    </div>
+                                    <div class="col-auto">
+                                        <button type="button" class="btn btn-primary btn-lg" id="save-btn">Save it</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                
+
 
 
             </main>
         </div>
     </div>
 
-<script src="./assets/js/function.min.js"></script>
-<script src="./assets/js/lift.min.js"></script>
-<script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/function.min.js"></script>
+    <script src="./assets/js/lift.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
