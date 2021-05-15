@@ -1,4 +1,5 @@
 var LIFT_APP = {
+    version: 'v1.0.2',
     KW: [],
     code: null,
     __a_kw: $("#a_kw"),
@@ -214,3 +215,4 @@ $("#validator-btn").on("click", function () {
         +'</div>').removeClass('d-none')
     }
 });
+$('#version').text(LIFT_APP.version)
