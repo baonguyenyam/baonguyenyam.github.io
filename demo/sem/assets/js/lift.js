@@ -1,5 +1,6 @@
 var LIFT_APP = {
     KW: [],
+    code: null,
     __a_kw: $("#a_kw"),
     __b_kw: $("#b_kw"),
     __c_kw: $("#c_kw"),

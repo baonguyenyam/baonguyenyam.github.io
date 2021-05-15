@@ -27,8 +27,8 @@ function replaceLIFT(str) {
 function unReplaceLIFT(str) {
     return str.toString().replace(/&#34;/gi, "\"").replace(/&#39;/gi, "'")
 }
-function resultHTMLValidate(key,string) {
-    return '<div class="list-group-item d-flex justify-content-between"><strong>'+key+'</strong> '+string+'</div>';
+function resultHTMLValidate(key, string) {
+    return '<div class="list-group-item d-flex justify-content-between"><strong>' + key + '</strong> ' + string + '</div>';
 }
 function loadFileAsText() {
     if (document.getElementById("fileToLoad").value) {
@@ -46,7 +46,8 @@ function loadFileAsText() {
                 matchBrackets: true,
                 smartIndent: true,
                 indentWithTabs: true
-            }).setOption("theme", 'monokai');
+            });
+            LIFT_APP.code.setOption("theme", 'monokai')
         };
         fileReader.readAsText(fileToLoad, "UTF-8");
     } else {
