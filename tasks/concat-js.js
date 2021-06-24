@@ -11,7 +11,7 @@ module.exports = function (gulp, $, browserSync) {
 				'bower_components/particles.js/particles.min.js',
 				'bower_components/typed.js/lib/typed.min.js',
 			])
-			.pipe($.concat('lift.js'))
-			.pipe(gulp.dest('./dist/js'));
+			.pipe($.concat('nguyen.js'))
+			.pipe(gulp.dest('./docs/js'));
 	});
 };

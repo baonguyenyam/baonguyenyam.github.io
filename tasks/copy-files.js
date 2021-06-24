@@ -3,7 +3,7 @@ module.exports = function (gulp, $, browserSync) {
 		return gulp.src([
 				'./src/*.*',
 			])
-			.pipe(gulp.dest('./dist'));
+			.pipe(gulp.dest('./docs'));
 	});
 };
 

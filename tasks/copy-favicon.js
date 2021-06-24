@@ -3,7 +3,7 @@ module.exports = function (gulp, $, browserSync) {
 		return gulp.src([
 				'./src/favicon/**.*',
 			])
-			.pipe(gulp.dest('./dist/favicon'));
+			.pipe(gulp.dest('./docs/favicon'));
 	});
 };
 

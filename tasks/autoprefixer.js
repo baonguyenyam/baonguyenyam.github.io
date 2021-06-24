@@ -1,7 +1,7 @@
 module.exports = function (gulp, $, browserSync) {
 	gulp.task('autoprefixer', function () {
 		return gulp.src([
-				'./dist/css/main.css',
+				'./docs/css/main.css',
 			])
 			.pipe($.autoprefixer({
 				browsers: [
@@ -13,6 +13,6 @@ module.exports = function (gulp, $, browserSync) {
 				],
 				cascade: false
 			}))
-			.pipe(gulp.dest('./dist/css'));
+			.pipe(gulp.dest('./docs/css'));
 	});
 };

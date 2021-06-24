@@ -17,7 +17,7 @@ module.exports = function (gulp, $, browserSync) {
 				$.util.log(err);
 			}).on('error', $.notify.onError(defaultNotification)))
 			.pipe($.sourcemaps.write(''))
-			.pipe(gulp.dest('./dist/css'))
+			.pipe(gulp.dest('./docs/css'))
 			.pipe(browserSync.stream())
 	});
 };

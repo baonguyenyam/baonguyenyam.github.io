@@ -3,6 +3,6 @@ module.exports = function (gulp, $, browserSync) {
 		return gulp.src([
 				'./src/img/**.*',
 			])
-			.pipe(gulp.dest('./dist/img'));
+			.pipe(gulp.dest('./docs/img'));
 	});
 };

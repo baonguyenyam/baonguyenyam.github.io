@@ -8,6 +8,6 @@ module.exports = function (gulp, $, browserSync) {
 			.pipe($.concat('main.js'))
 			.pipe($.babel())
 			.pipe($.sourcemaps.write(''))
-			.pipe(gulp.dest('./dist/js'));
+			.pipe(gulp.dest('./docs/js'));
 	});
 };

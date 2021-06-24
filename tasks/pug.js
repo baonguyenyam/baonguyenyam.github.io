@@ -13,6 +13,6 @@ module.exports = function (gulp, $, browserSync) {
 			.pipe($.pug({
 				pretty: true
 			}))
-			.pipe(gulp.dest('./dist'))
+			.pipe(gulp.dest('./docs'))
 	});
 };
