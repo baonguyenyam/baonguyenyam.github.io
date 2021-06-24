@@ -1,0 +1,424 @@
+extends _layout/layout
+
+block variables
+	- var title = 'Nguyen Pham Resume'
+	- var description = 'Tôi là Bảo Nguyên hiện là Full-Stack Developer tại nhiều công ty Nhật, USA, Singapore... Tôi cũng là giảng viên tại FPT. Tôi có hơn 8 năm làm việc trên Single Page Applications (SPA), ứng dụng mobile và website. Tôi có nhiều kinh nghiệm về Design, HTML, SASS, PUG, Ionic, Angular, NodeJS, several version control systems... là tác giả của nhiều sản phẩm phần mềm IT tại VN.'
+	- var bodyclass = 'home'
+	- var href = "/index.html"
+
+block body
+	section.section-fullwidth
+		#particles-js
+		.background-slider
+		.video-inner
+			video.video-bg(preload='auto' loop='' autoplay='' muted='' playsinline='')
+				source(type='video/mp4' src='./img/smoke.mp4')
+				source(type='video/webm' src='./img/smoke.webm')
+			noscript
+				video.video-bg(preload='auto' loop autoplay muted playsinline)
+					source(src='./img/smoke.mp4' type='video/mp4')
+					source(src='./img/smoke.webm' type='video/webm')
+		.imgp 
+			svg
+				symbol#s-text
+					text.d-none.d-lg-block(text-anchor='middle' x='50%' y='80%') NGUYEN PHAM
+					text.d-lg-none(text-anchor='middle' x='50%' y='80%') NP
+					//- text.d-xl-none(text-anchor='middle' x='50%' y='80%') Creations
+				g.g-ants
+					use.text-copy(xlink:href='#s-text')
+					use.text-copy(xlink:href='#s-text')
+					use.text-copy(xlink:href='#s-text')
+					use.text-copy(xlink:href='#s-text')
+					use.text-copy(xlink:href='#s-text')
+		figure
+			//- img.d-md-none(src="./img/agency-m.png", alt="", srcset="")
+			//- img.d-none.d-md-inline-block(src="./img/agency.png", alt="", srcset="")
+			figcaption
+				h1.mt-0.anim-text-flow Website Designers and Web Developers
+				h2 Dallas Website Design | Dallas Web Development | Dallas Web Designers | Dallas Web Designer | Dallas Web Design
+			.qrcode 
+				a(href="./img/qr.png" data-fancybox="images-qr" data-caption="QR Code")
+					img(src="./img/qr.png", alt="")
+		h3.text-rotate.text-rotate-create Creations
+		h3.text-rotate.text-rotate-marketing Marketing 
+		h3.text-rotate.text-rotate-website website
+		a.linkdown(href='#portfolio')
+			span(class='link__arrow')
+				span
+				span
+			span(class='link__line')
+			span(class='link__text') Projects
+
+	section.section-services#about-us
+		.background-slider
+		.container-fluid
+			.row.align-items-center
+				.col-lg-6.order-lg-2
+					.flit-animation.delay-0s(data-animation="fadeInUp")
+						h2 
+							span.text-main LIFT 
+							| 
+							| the 
+							| 
+							span.tricker 
+								em.text-sen.active Marketing Agency 
+								em.text-sen Me, the second
+								em.text-sen And I am the Third!
+						h3 Create Something Great
+						.liner
+					.flit-animation.faster(data-animation="fadeInUp")
+						h4.text-muted who focus on delivering excellent creative marketing.
+						p The 
+							span.highlight highest
+							| 
+							| level of creative and 
+							span.highlight professional 
+							| 
+							| engagement is what our crew brings to the brands we love. Branding, Website Design, Website Development, Social Media, Search Engine Optimization (SEO), Paid Search (PPC) and Video.
+						p.lead We are ready to partner with you!
+					p.flit-animation.fast(data-animation="fadeInUp") 
+						a.btn.btn-call-to-action(href="#") Contact us
+
+				.col-lg-6.order-lg-1.mt-5.mt-xl-0
+					a(href="./img/flyer.png" data-fancybox="images-flyer" data-caption="My caption")
+						figure 
+							img.img-fluid(src="./img/flyer.png", alt="", srcset="") 
+	section.section-plan#services
+		.container-fluid
+			.row.flit-animation.delay-0s(data-animation="fadeInUp")
+				.col-lg-6
+					h2 
+						b.text-sen This is
+						| 
+						| who
+						| 
+						span.text-white.text-shadow we are.
+					h3.text-dark Dallas Fort Worth's best of class
+					.liner.liner-sen
+					.flit-animation.faster(data-animation="fadeInUp")
+						.lead Sharing your brand-vision through beautiful web page design and website development for higher rankings and conversions.
+			.row.mt-5
+				.col-md-6.col-xl-3.mb-4.flit-animation.fast(data-animation="fadeInUp")
+					h3.d-flex.align-items-center.item
+						img(src="./img/circle-4.png", alt="", srcset="")
+						span.text-sen First we talk.
+					p Communication is key to master development for your business.
+				.col-md-6.col-xl-3.mb-4.flit-animation.delay-1s(data-animation="fadeInUp")
+					h3.d-flex.align-items-center.item
+						img(src="./img/circle-4.png", alt="", srcset="")
+						span.text-sen Then we plan.
+					p Inspiring creative fueled by exceptional web strategy.
+				.col-md-6.col-xl-3.mb-4.flit-animation.delay-2s(data-animation="fadeInUp")
+					h3.d-flex.align-items-center.item
+						img(src="./img/circle-4.png", alt="", srcset="")
+						span.text-sen Build and Launch.
+					p Your story, beautifully designed for your website audience.
+				.col-md-6.col-xl-3.mb-4.flit-animation.delay-3s(data-animation="fadeInUp")
+					h3.d-flex.align-items-center.item
+						img(src="./img/circle-4.png", alt="", srcset="")
+						span.text-sen Adapt and Iterate.
+					p Continue to learn, design and create based on good data.
+	section.section-info.bg
+		.container-fluid
+			.row
+				.col-lg-6.mb-5.pr-lg-5
+					h2 
+						b.text-main Website 
+						| 
+						| Design and Custom Web  
+						| 
+						em.text-sen Development
+
+					h3.typed
+						span
+					#typed-strings 
+						p Create something greats
+						p Website Design 
+						p Custom Web Development
+					.liner
+					h4.text-muted.flit-animation.delay-0s(data-animation="fadeInUp") We have a passion for 
+						span.highlight creating beautiful 
+						| custom web designs that tell your story in such a way that takes your users on an intentional journey with clear paths that result in a more enjoyable user experience.
+					p.mb-4.flit-animation.faster(data-animation="fadeInUp") While there are many firms who make 
+						span.highlight pretty creative
+						| 
+						| , our sites have lower bounce rates, 
+						span.highlight higher engagement 
+						| 
+						| levels, and better conversion rates.
+					.cta.mb-lg-5.flit-animation.fast(data-animation="fadeInUp")
+						.videoplay
+							a(data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk") 
+								.button-outer-circle.has-scale-animation
+								.button-outer-circle.has-scale-animation.has-delay-short
+								svg(version="1.2" height="80" width="125" xmlns="http://www.w3.org/2000/svg" viewport="0 0 125 80" xmlns:xlink="http://www.w3.org/1999/xlink")
+									polygon(points="54,25.5 77.1,40 54,55.5 ")
+									path(fill="none" stroke="#fff" stroke-miterlimit="20" d="M52,21 L81,40 L52,60 Z")
+						label Video 
+							span.sec 39 sec
+							span.info LIFT Intro
+	section.home-news#portfolio
+		.container-fluid
+			.row 
+				.col.text-center 
+					h2
+						span.text-white OUR 
+						| 
+						em.text-link Portfolio
+					h3.text-white This is what we make.
+					.liner.center.liner-sen
+			.mt-4.allitems
+				.mb-3.item
+					a(href="./img/card.jpg" data-fancybox="images-portfolio" data-caption="My caption")
+						figure
+							.blockimg.box-shadow
+								img(src="./img/card.jpg", alt="", srcset="")
+							figcaption
+								h4 Customer URL
+								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
+				.mb-3.item
+					a(href="./img/tshirt.jpg" data-fancybox="images-portfolio" data-caption="My caption")
+						figure
+							.blockimg.box-shadow
+								img(src="./img/tshirt.jpg", alt="", srcset="")
+							figcaption
+								h4 Customer URL
+								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
+				.mb-3.item
+					a(href="./img/chair.jpg" data-fancybox="images-portfolio" data-caption="My caption")
+						figure
+							.blockimg.box-shadow
+								img(src="./img/chair.jpg", alt="", srcset="")
+							figcaption
+								h4 Customer URL
+								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
+				.mb-3.item
+					a(href="./img/light.jpg" data-fancybox="images-portfolio" data-caption="My caption")
+						figure
+							.blockimg.box-shadow
+								img(src="./img/light.jpg", alt="", srcset="")
+							figcaption
+								h4 Customer URL
+								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
+				.mb-3.item
+					a(href="./img/board.jpg" data-fancybox="images-portfolio" data-caption="My caption")
+						figure
+							.blockimg.box-shadow
+								img(src="./img/board.jpg", alt="", srcset="")
+							figcaption
+								h4 Customer URL
+								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
+				.mb-3.item
+					a(href="./img/brands.jpg" data-fancybox="images-portfolio" data-caption="My caption")
+						figure
+							.blockimg.box-shadow
+								img(src="./img/brands.jpg", alt="", srcset="")
+							figcaption
+								h4 Customer URL
+								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
+			.row.mt-5
+				.col.text-center 
+					a.btn.btn-call-to-action-active(href="#") 
+						| Our portfolio
+						| 
+						i.fa.fa-long-arrow-alt-right
+	section.section-rank
+		.container-fluid
+			.row.mb-lg-5.mb-xl-0
+				.col-lg-8
+					.block.flit-animation.faster(data-animation="fadeInUp") 
+						h2 
+							span.text-main How 
+							| 
+							| do you 
+							| 
+							em.text-sen Rank?
+
+						.liner.mb-3
+						p Your customers are finding you and your competitors on Google plus on 100's of other search engines, sites, and apps. Find out how well your 
+							span.highlight ONLINE PRESENCE 
+							| ranks. 
+			.row.align-items-center
+				.order-lg-2.col-lg-4.col-xl-6.flit-animation.fast(data-animation="fadeIn")
+					a(href="./img/create.png" data-fancybox="images-create" data-caption="My caption") 
+						figure
+							img.img-fluid(src="./img/create.png", alt="", srcset="") 
+				.order-lg-1.col-lg
+					ul.list-item.li-right.flit-animation.fast(data-animation="fadeInUp")
+						li
+							h3 Web Design
+							.if Beautiful, responsive website designs and intuitive custom development.
+						li 
+							h3 Social
+							.if Let us handle the content creation and scheduling so your brand is out there consistently.
+						li 
+							h3 SEO
+							.if Search Engine Optimization – Our Organic Search ninjas allow you to climb the Google ladder.
+				.order-lg-3.col-lg
+					ul.list-item.flit-animation.fast(data-animation="fadeInUp")
+						li 
+							h3 Branding
+							.if We craft the branding your company needs to visually represent its voice and goals.
+						li 
+							h3 Video
+							.if Using beautiful motion and sound in an engaging way to capture your audience.
+						li 
+							h3 Paid Search
+							.if Get in front of your customers instantly with Pay Per Click (PPC) and Google Adwords.
+
+	section.home-clients.mt-5
+		.container-fluid
+			.row 
+				.col.text-center 
+					h2
+						em.text-main Our 
+						| 
+						b.text-sen Clients
+					h3.text-muted This is what we make.
+					.liner.liner-sen.center
+			.row
+				.col
+					.owl-carousel.owl-theme
+						- for(x=1;x<10;x++)
+							.item
+								if (x < 7)
+									img(src="./img/clients_"+x+".png", alt="")
+								else
+									img(src="./img/clients_"+(x-3)+".png", alt="")
+	section.home-preview.mt-5
+		.container-fluid
+			.row 
+				.col.text-center 
+					h2
+						em.text-white.text-shadow Our 
+						| 
+						b.text-main.text-shadow-w ideas
+					h3.text-white This is what we make.
+					.liner.center
+			.row
+				.col
+					a(href="./img/brochure-1.png" data-fancybox="images-single" data-caption="My caption") 
+						figure.d-none.d-xl-block
+							img.img-fluid(src="./img/brochure-1.png", alt="", srcset="")
+					a(href="./img/brochure-2.png" data-fancybox="images" data-caption="My caption") 
+						figure.d-xl-none
+							img.img-fluid(src="./img/brochure-2.png", alt="", srcset="")
+					a(href="./img/brochure-3.png" data-fancybox="images" data-caption="My caption") 
+						figure.d-xl-none
+							img.img-fluid(src="./img/brochure-3.png", alt="", srcset="")
+	section.home-maps
+		.container-fluid
+			.row 
+				.col.text-center 
+					h2
+						em.text-main Our 
+						| 
+						b.text-sen Locations
+					h3.text-muted This is what we make.
+					.liner.liner-sen.center
+			.row.mt-5.mb-5
+				.col-lg-6.d-flex.pr-lg-5
+					#pin.text-center
+						img.mw-100(src="./img/usmap.svg", alt="", srcset="")
+						a.pin.pin-1(target="myMapiframe" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d429157.54675741366!2d-117.389166995983!3d32.824240427869604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9530fad921e4b%3A0xd3a21fdfd15df79!2sSan%20Diego%2C%20California!5e0!3m2!1svi!2sus!4v1615779783091!5m2!1svi!2sus")
+							.pin-item
+							.pulse
+						a.pin.pin-2(target="myMapiframe" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.635923831809!2d-97.35786914868831!3d32.74885688088715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e73e3d6d893d3%3A0x82eb84a240d8d517!2sLIFT%20Marketing!5e0!3m2!1svi!2sus!4v1615778473648!5m2!1svi!2sus")
+							.pin-item
+							.pulse
+				.col-lg-6.d-flex
+					#map 
+						iframe#myMapiframe(name="myMapiframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.635923831809!2d-97.35786914868831!3d32.74885688088715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e73e3d6d893d3%3A0x82eb84a240d8d517!2sLIFT%20Marketing!5e0!3m2!1svi!2sus!4v1615778473648!5m2!1svi!2sus" style="border:0;" allowfullscreen="" loading="lazy")
+
+	section.section-testimonial#testimonial
+		.container-fluid
+			.row
+				.col-lg-6.flit-animation.fast(data-animation="fadeInUp")
+					h2 
+						b.text-link This is
+						| 
+						| who
+						| 
+						span.text-white.text-shadow we are.
+					h3.text-vang Dallas Fort Worth's best of class
+					.liner
+					.lead Sharing your brand-vision through beautiful web page design and website development for higher rankings and conversions.
+			.row.mt-5
+				.col-lg-10.offset-lg-1.col-xl-8.offset-xl-2.mb-4.mt-5.text-lg-center
+					.owl-carousel.owl-theme
+						- for(x=1;x<7;x++)
+							.item
+								figure 
+									img(src="./img/medal.png", alt="")
+								h3
+									span.text-link Adapt and Iterate.
+								p Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. 
+	section.home-faqs
+		.container-fluid
+			.row 
+				.col.text-center 
+					h2
+						em.text-main Our 
+						| 
+						b.text-sen Clients
+					h3.text-muted This is what we make.
+					.liner.liner-sen.center
+			.row
+				.col-lg-10.offset-lg-1.col-xl-8.offset-xl-2
+					#faq.accordion
+						.card
+							#faqhead1.card-header
+								a.btn.btn-header-link(href='#' data-toggle='collapse' data-target='#faq1' aria-expanded='true' aria-controls='faq1') 
+									span Dallas Fort Worth's best of class
+							#faq1.collapse.show(aria-labelledby='faqhead1' data-parent='#faq')
+								.card-body
+									| Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+									| moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+									| Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+									| shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+									| proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+									| aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+						.card
+							#faqhead2.card-header
+								a.btn.btn-header-link.collapsed(href='#' data-toggle='collapse' data-target='#faq2' aria-expanded='true' aria-controls='faq2') 
+									span Ceggings occaecat craft beer farm-to-table
+							#faq2.collapse(aria-labelledby='faqhead2' data-parent='#faq')
+								.card-body
+									| Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+									| moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+									| Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+									| shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+									| proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+									| aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+						.card
+							#faqhead3.card-header
+								a.btn.btn-header-link.collapsed(href='#' data-toggle='collapse' data-target='#faq3' aria-expanded='true' aria-controls='faq3') 
+									span Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS
+							#faq3.collapse(aria-labelledby='faqhead3' data-parent='#faq')
+								.card-body
+									| Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+									| moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+									| Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+									| shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+									| proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+									| aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+	section.home-contact.mt-5
+		.container-fluid
+			.row 
+				.col.text-center 
+					h2
+						em.text-white.text-shadow Contact 
+						| 
+						b.text-sen us
+					h3.text-white This is what we make.
+					.liner.liner-sen.center
+			.row
+				.col#form
+					form.form-signin
+						.form-label-group
+							input#inputEmail.form-control(type='email' placeholder='Email address' required autofocus)
+							label(for='inputEmail') Email address
+						.form-label-group
+							input#inputPassword.form-control(type='password' placeholder='Password' required)
+							label(for='inputPassword') Password
+						button.btn.btn-lg.btn-primary.btn-block(type='submit') Sign in

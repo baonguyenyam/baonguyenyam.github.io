@@ -1,0 +1,192 @@
+header
+	position: absolute
+	width: calc(100% - 30px)
+	top: 15px 
+	left: 0
+	margin: 0 15px 
+	z-index: 1000
+	&.fixedheader
+		// transition: all .15s ease-in-out
+		&.active
+			position: fixed
+			top: 0
+			background: rgba(255,255, 255,1)
+			width: 100%
+			margin: 0
+			box-shadow: 0 0 5px 5px  rgba(0,0, 0,.25)
+			.navbar
+				padding-top: .5rem
+				padding-bottom: .5rem
+				.navbar-collapse .navbar-nav
+					margin-top: 0
+					padding-top: 0
+					background: none
+					.nav-item
+						.nav-link
+							color: $sen
+						&:hover , &.active 
+							.nav-link
+								color: $main
+					.dropdown-menu
+						.dropdown-item
+							color: $sen
+							&:hover , &.active 
+								.dropdown-item
+									color: $main
+						+media-breakpoint-up(lg)
+							background: rgba(255,255,255,1)
+							box-shadow: 0 0 3px 3px  rgba(0,0, 0,.25)
+
+			.navbar-brand img
+				filter: none
+			.menu 
+				svg 
+					stroke: $main
+	.navbar
+		+pad(10px 15px)
+		.btn-call-to-action
+			margin-top: 1.5rem
+			+media-breakpoint-up(lg)
+				margin-top: 0
+		.navbar-toggler 
+			+media-breakpoint-up(lg)
+				order: 3
+		.navbar-collapse 
+			.navbar-nav
+				.nav-item
+					.nav-link 
+						text-transform: uppercase
+						font-weight: 700
+						letter-spacing: 1px
+					.dropdown-menu
+						background: none
+						text-align: center
+						margin: 1rem 0
+						padding: 0
+						border: 0
+						.dropdown-item 
+							color: #fff
+							&:hover 
+								color: #ee3e96
+								background: none
+					&.active,
+					&:hover
+						.nav-link 
+							color: #ee3e96
+			+media-breakpoint-down(md)
+				width: 100% 
+				.navbar-nav
+					background: rgba(0,0,0,.7)
+					overflow-y: auto
+					padding: 2rem
+					text-align: center
+					z-index: 1000
+					margin-top: 1rem
+					justify-content: center
+					.nav-link
+						color: #fff
+			+media-breakpoint-down(sm)
+				.navbar-nav
+					// top: 120px
+			+media-breakpoint-down(xs)
+				.navbar-nav
+					width: 100%
+					// width: calc(100% - 30px)
+					// top: 70px
+					// left: 15px
+			+media-breakpoint-up(lg)
+				flex-basis: auto
+				order: 2
+				flex-grow: initial
+				margin-right: 2rem
+				.navbar-nav
+					align-items: center
+					display: inline-flex
+					flex-direction: row
+					// position: absolute
+					// width: 
+					.nav-item
+						margin-left: 2rem
+						.dropdown-menu
+							background: rgba(0,0,0,.5)
+							text-align: left
+							margin: 0
+							padding: 1rem 0
+							.dropdown-item 
+						.nav-link 
+							color: #fff
+							
+		+media-breakpoint-up(lg)
+			.dropdown-menu
+				position: absolute
+	.navbar-brand
+		+media-breakpoint-up(lg)
+			margin-right: auto
+		img 
+			max-height: 2rem
+			filter: invert(1) grayscale(1) brightness(100)
+	.menu
+		width: 36px
+		height: 36px
+		padding: 0
+		margin: 0
+		outline: none
+		position: relative
+		border: none
+		background: none
+		cursor: pointer
+		-webkit-appearence: none
+		-webkit-tap-highlight-color: transparent
+		svg
+			width: 64px
+			height: 48px
+			top: -6px
+			left: -14px
+			stroke: #fff
+			stroke-width: 3px
+			// stroke-linecap: round
+			// stroke-linejoin: round
+			fill: none
+			display: block
+			position: absolute
+
+			path
+				transition: stroke-dasharray var(--duration, 0.85s) var(--easing, ease) var(--delay, 0s), stroke-dashoffset var(--duration, 0.85s) var(--easing, ease) var(--delay, 0s)
+				stroke-dasharray: var(--array-1, 26px) var(--array-2, 100px)
+				stroke-dashoffset: var(--offset, 126px)
+				transform: translateZ(0)
+
+				&:nth-child(2)
+					--duration: .7s
+					--easing: ease-in
+					--offset: 100px
+					--array-2: 74px
+
+				&:nth-child(3)
+					--offset: 133px
+					--array-2: 107px
+
+		&.active svg path
+			--offset: 57px
+
+			&:nth-child(1), &:nth-child(3)
+				--delay: .15s
+				--easing: cubic-bezier(0.2, 0.4, 0.2, 1.1)
+
+			&:nth-child(2)
+				--duration: .4s
+				--offset: 2px
+				--array-1: 1px
+
+			&:nth-child(3)
+				--offset: 58px
+	+media-breakpoint-up(sm)
+		width: calc(100% - 100px)
+		margin: 0 50px
+		top: 50px
+		.navbar
+			+pad(20px 25px)
+	+media-breakpoint-up(md)
+		.navbar-brand
+			img 
+				max-height: 3rem

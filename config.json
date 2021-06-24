@@ -1,0 +1,39 @@
+{
+	"config": {
+		"SEO": {
+			"AppName": "Nguyen Pham Resume",
+			"mobile_color": "#e9087f",
+			"cfg_name": "Nguyen Pham Resume",
+			"cfg_url": "baonguyenyam.github.io",
+			"analytics": "UA-XXXXXXXXXXX-1",
+			"seo_lang": "en",
+			"seo_geo": "EN",
+			"seo_geo_latitude": "32.7488569",
+			"seo_geo_longitude": "-97.3556751",
+			"app_facebook_ID": "100000511421818",
+			"cfg_description": "Tôi là Bảo Nguyên hiện là Full-Stack Developer tại nhiều công ty Nhật, USA, Singapore... Tôi cũng là giảng viên tại FPT. Tôi có hơn 8 năm làm việc trên Single Page Applications (SPA), ứng dụng mobile và website. Tôi có nhiều kinh nghiệm về Design, HTML, SASS, PUG, Ionic, Angular, NodeJS, several version control systems... là tác giả của nhiều sản phẩm phần mềm IT tại VN.",
+			"cfg_keywords": "Web Design & Development Company, Web Design Advertising, Web Design Agency Dallas Web Design and Build, Web Design and Development, Web Design and Development Companies, Web Design and Marketing, and Web Design and SEO Marketing. Dallas Website Design, Dallas Web Development, Dallas Web Page Designers, Dallas Web Making, Dallas Web Designer, Dallas Web Design, Bao Nguyen, Bảo Nguyên, Brands Designer, Web Developer, Apps Developer, Photograper, Front-End Developer",
+			"cfg_author": "Bao Nguyen",
+			"cfg_sitenameurl": "baonguyenyam",
+			"app_facebook_adminsID": "XXXXXXX,XXXXXXX",
+			"app_appleID": "XXX-XXX-XXX-XXXX",
+			"cfg_sitenameurlgoogle": "XXXXXXXXXXXXXX",
+			"verf_google": "VhfbPndGW-UftEvWql2Nwt7F1F5KBgd3lMcGgjn4Ovc",
+			"verf_bing": "F7679394C660249FBA58732D6100A65A",
+			"verf_yandex": "bc82adfacdd74cbf"
+		},
+		"favicondist": "./favicon/",
+		"website": "baonguyenyam.github.io",
+		"title": "by Nguyen Pham",
+		"author": {
+			"email": "baonguyenyam@gmail.com",
+			"name": "BaoNguyen",
+			"phone": "682-203-1334",
+			"link": "https://baonguyenyam.github.io",
+			"coding": "Coding by Bao Nguyen"
+		},
+		"license": "MIT",
+		"name": "Nguyen Apps",
+		"version": "1.0"
+	}
+}

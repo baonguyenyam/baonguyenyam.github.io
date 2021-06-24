@@ -1,0 +1,1355 @@
+/////////////////////////////////
+// INDEX
+/////////////////////////////////
+.index-fullwidth
+	.section-fullwidth
+		overflow: hidden
+		height: 100vh
+		width: 100vw
+		display: flex
+		justify-content: center
+		align-items: center
+		height: 100vh
+		width: 100%
+		position: relative
+		display: flex
+		flex-direction: column
+		&:after 
+			background: rgb(45,56,141)
+			background: -moz-linear-gradient(320deg, rgba(45,56,141,1) 33%, rgba(238,62,150,1) 100%)
+			background: -webkit-linear-gradient(320deg, rgba(45,56,141,1) 33%, rgba(238,62,150,1) 100%)
+			background: linear-gradient(320deg, rgba(45,56,141,1) 33%, rgba(238,62,150,1) 100%)
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2d388d",endColorstr="#ee3e96",GradientType=1)
+			display: block
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			z-index: -3
+		.background-slider
+			overflow: hidden
+			height: 100vh
+			width: 100vw
+			display: flex
+			justify-content: center
+			align-items: center
+			height: 100vh
+			width: 100%
+			position: absolute
+			&:before 
+				display: block
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				animation: fadeMe1 10s ease-in-out infinite
+				z-index: -2
+				mix-blend-mode: saturation
+			// &:after 
+			// 	background: $main
+			// 	background: -moz-linear-gradient(320deg, $main 33%,$link 100%)
+			// 	background: -webkit-linear-gradient(320deg, $main 33%,$link 100%)
+			// 	background: linear-gradient(320deg, $main 33%,$link 100%)
+			// 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#{$main}",endColorstr="#{$link}",GradientType=1)
+			// 	display: block
+			// 	content: ''
+			// 	position: absolute
+			// 	top: 0
+			// 	left: 0
+			// 	width: 100%
+			// 	height: 100%
+			// 	animation: fadeMe 35s ease-in-out infinite
+			// 	z-index: -1
+			// 	mix-blend-mode: saturation
+		&:before
+			display: block
+			content: ''
+			position: absolute
+			// z-index: -1
+			background: rgba(0,0,0,.3)
+			top: 15px
+			left: 15px
+			width: calc(100% - 30px)
+			height: calc(100% - 30px)
+			+media-breakpoint-up(sm)
+				top: 50px
+				left: 50px
+				width: calc(100% - 100px)
+				height: calc(100% - 100px)
+		.video-inner 
+			width: 100%
+			height: 100%
+			position: absolute
+			top: 0
+			left: 0
+			overflow: hidden
+			// z-index: -2
+			opacity: .3
+			filter: grayscale(1)
+			-webkit-touch-callout: none
+			-webkit-user-select: none
+			-khtml-user-select: none
+			-moz-user-select: none
+			-ms-user-select: none
+			user-select: none
+			video 
+				min-width: 100%
+				min-height: 100%
+				width: auto
+				height: auto
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%,-50%)
+				border: 0
+				-webkit-touch-callout: none
+				-webkit-user-select: none
+				-khtml-user-select: none
+				-moz-user-select: none
+				-ms-user-select: none
+				user-select: none
+		figure
+			padding: 0 80px
+			text-align: center
+			z-index: 100
+			+media-breakpoint-up(lg)
+				padding: 30px 80px
+			figcaption 
+				h1 
+					color: #fff
+					margin-top: 2rem
+					font-weight: 100
+					-webkit-touch-callout: none
+					-webkit-user-select: none
+					-khtml-user-select: none
+					-moz-user-select: none
+					-ms-user-select: none
+					user-select: none
+					font-size: 2.3rem
+					span:nth-child(n+8):nth-child(-n+17)
+						font-style: italic
+						font-weight: 500
+						-webkit-touch-callout: none
+						-webkit-user-select: none
+						-khtml-user-select: none
+						-moz-user-select: none
+						-ms-user-select: none
+						user-select: none
+					span:nth-child(n+27):nth-child(-n+36)
+						font-style: italic
+						font-weight: 500
+						-webkit-touch-callout: none
+						-webkit-user-select: none
+						-khtml-user-select: none
+						-moz-user-select: none
+						-ms-user-select: none
+						user-select: none
+					+media-breakpoint-up(md)
+						padding: 0 30px
+					+media-breakpoint-up(lg)
+						position: absolute
+						bottom: 70px
+						left: 0
+						width: 100%
+						padding: 0 50px
+						font-size: 2.3rem
+					+media-breakpoint-up(xl)
+						font-size: 3rem
+					@media (min-width: 1600px)
+						font-size: 4rem
+					@media (min-width: 1800px)
+						font-size: 5rem
+				h2 
+					display: none
+			img 
+				max-width: 200px
+				-webkit-touch-callout: none
+				-webkit-user-select: none
+				-khtml-user-select: none
+				-moz-user-select: none
+				-ms-user-select: none
+				user-select: none
+				+media-breakpoint-up(md)
+					padding: 0 30px
+					max-width: 500px
+				+media-breakpoint-up(lg)
+					max-width: 700px
+				@media (min-width: 1600px)
+					max-width: 800px
+				@media (min-width: 1800px)
+					max-width: 1000px
+			.qrcode
+				margin-top: 2rem
+				img 
+					max-width: 80px
+					padding: 0
+					@media (min-width: 1600px)
+						max-width: 90px
+					@media (min-width: 1800px)
+						max-width: 100px
+				+media-breakpoint-up(md)
+					position: absolute
+					bottom: 100px 
+					right: 100px 
+					margin-top: 0
+		
+		.text-rotate
+			z-index: 100
+			position: absolute
+			color: rgba(255,255,255,1)
+			+opacity(.075)
+			font-size: 4rem
+			margin: 0
+			line-height: 1
+			overflow: hidden
+			-webkit-touch-callout: none
+			-webkit-user-select: none
+			-khtml-user-select: none
+			-moz-user-select: none
+			-ms-user-select: none
+			user-select: none
+			&.text-rotate-marketing
+				font-size: 59px
+				height: 55px 
+				text-transform: uppercase
+				font-weight: bold
+				text-align: right
+				right: 50px
+				top: 0
+				display: none
+				animation: fadeMe2 5s ease-in-out infinite
+			&.text-rotate-create
+				font-size: 50px 
+				width: 44px 
+				text-transform: uppercase
+				font-weight: 500
+				text-align: left
+				left: 0px
+				bottom: 5px
+				-ms-writing-mode: tb-rl
+				writing-mode: vertical-rl
+				text-orientation: mixed
+				transform: rotate(180deg)
+				animation: fadeMe3 10s ease-in-out infinite
+			&.text-rotate-website
+				font-size: 65px 
+				height: 56px 
+				// text-transform: uppercase
+				font-weight: 100
+				text-align: left
+				right: 5px
+				bottom: 5px
+				text-orientation: mixed
+			+media-breakpoint-up(sm)
+				&.text-rotate-marketing
+					display: block
+				&.text-rotate-create
+					font-size: 100px 
+					width: 88px
+					left: 5px
+					bottom: 15px
+				&.text-rotate-website
+					font-size: 120px 
+					height: 104px 
+					right: -5px
+					bottom: 0
+			+media-breakpoint-up(md)
+				&.text-rotate-create
+					font-size: 100px 
+					font-weight: 400
+					width: 88px
+					left: 5px
+					bottom: 15px
+				&.text-rotate-website
+					font-size: 155px 
+					height: 136px 
+					right: -5px
+					bottom: 0
+			+media-breakpoint-up(lg)
+				&.text-rotate-create
+					font-size: 100px 
+					font-weight: 100
+					width: 88px
+					left: 5px
+					bottom: 15px
+					+opacity(.3)
+				&.text-rotate-website
+					font-size: 212px 
+					height: 180px 
+					font-weight: 500
+					right: -15px
+					bottom: 0
+					+opacity(.025)
+			+media-breakpoint-up(xl)
+				&.text-rotate-website
+					font-size: 280px 
+					height: 220px 
+					font-weight: 700
+					right: -15px
+					bottom: 0
+			@media (min-width: 1600px)
+				&.text-rotate-website
+					font-size: 320px 
+					height: 275px 
+					font-weight: 700
+					right: -15px
+					bottom: 0
+			@media (min-width: 1800px)
+				&.text-rotate-website
+					font-size: 400px 
+					height: 340px 
+					font-weight: 700
+					right: -15px
+					bottom: 0
+		.imgp 
+			position: relative 
+			display: block
+		svg
+			display: block
+			margin: 0 auto
+			margin-left: calc(50% + 30px)
+			transform: translateX(-50%)
+			animation: stroke-offset0 10s infinite 
+			-webkit-touch-callout: none
+			-webkit-user-select: none
+			-khtml-user-select: none
+			-moz-user-select: none
+			-ms-user-select: none
+			user-select: none
+			font-size: 8rem
+			width: 300px
+			height: 100px
+			margin-top: 5rem
+			overflow: hidden
+			.text-copy
+				fill: none
+				stroke: white
+				stroke-dasharray: 18% 29%
+				stroke-width: 1px
+				stroke-dashoffset: 0%
+				font-weight: 700
+				animation: stroke-offset 10.5s infinite linear
+				&:nth-child(1)
+					stroke: $main
+					animation-delay: -2s
+				&:nth-child(2)
+					stroke: $sen
+					animation-delay: -4s
+				&:nth-child(3)
+					stroke: $hover
+					animation-delay: -6s
+				&:nth-child(4)
+					stroke: $link
+					animation-delay: -8s
+				&:nth-child(5)
+					stroke: #fff
+					animation-delay: -10s
+			+media-breakpoint-up(md)
+				stroke-dasharray: 6% 29%
+				font-size: 12rem
+				width: 320px
+				height: 150px
+				.text-copy
+					stroke-width: 1px
+			+media-breakpoint-up(lg)
+				stroke-dasharray: 12% 29%
+				position: absolute
+				top: 50% 
+				left: 0%
+				transform: translateX(-50%) translateY(-50%) scale(1)
+				font-size: 7.5rem
+				width: 800px
+				height: 110px
+				margin-top: 0
+			+media-breakpoint-up(xl)
+				stroke-dasharray: 6% 29%
+				font-size: 8.5rem
+				width: 1000px
+				height: 120px
+				font-weight: 400
+			@media (min-width: 1600px)
+				font-size: 12.5rem
+				width: 1300px
+				height: 210px
+		.linkdown
+			display: none
+			align-items: center
+			padding: 5px
+			transform: rotate(-90deg) translate3d(130px, 113px, 0)
+			position: absolute
+			z-index: 600
+			right: 0 
+			bottom: 0
+			text-decoration: none
+			color: #fff
+			animation: dpl 5s 
+			+media-breakpoint-up(lg)
+				display: inline-flex
+			.link__arrow
+				display: inline-flex
+				span
+					position: relative
+					width: 14px
+					height: 2px
+					overflow: hidden
+					background: #fff
+					z-index: 500
+					&:nth-child(1)
+						transform-origin: left bottom
+						transform: rotate(45deg) translate3d(8px, -10px, 0)
+					&:nth-child(2)
+						transform-origin: left bottom
+						transform: rotate(-45deg)
+					&:after
+						content: ""
+						display: block
+						position: absolute
+						left: 0
+						width: 0
+						height: 2px
+						background: $main
+			.link__line
+				position: relative
+				margin-left: -14px
+				margin-right: 14px
+				width: 150px
+				height: 2px
+				background: #BEBDBE
+				overflow: hidden
+				z-index: 1
+				&:after
+					content: ""
+					display: block
+					position: absolute
+					left: 80px
+					width: 70px
+					height: 2px
+					background: $main
+			.link__text
+				color: #fff
+				font-size: 18px
+				text-transform: uppercase
+			&:hover
+				text-decoration: none
+				.link__line:after
+					animation: animation-line .5s forwards
+				.link__arrow span:after
+					animation: animation-arrow .5s forwards
+					animation-delay: .25s
+.section-services
+	padding: 3rem 0
+	position: relative
+	background:	rgba(0,0,0,.15)
+	overflow: hidden
+	+media-breakpoint-up(md)
+		padding: 5rem 0
+	@media (min-width: 1400px)
+		padding: 6rem 0
+	@media (min-width: 1600px)
+		padding: 9rem 0
+	@media (min-width: 1800px)
+		padding: 12rem 0
+	.background-slider
+		position: absolute
+		overflow: hidden
+		width: 100%
+		height: 100%
+		top: 0%
+		left: 0%
+		&:before
+			display: block
+			content: ''
+			position: absolute
+			background: url('../img/circle-1.png') center center no-repeat
+			background-size: cover
+			top: -100px
+			left: -100px
+			width: 400px
+			height: 400px
+			opacity: .3
+			// z-index: -1
+			+media-breakpoint-up(md)
+				top: -150px
+				left: -30%
+				width: 600px
+				height: 600px
+			+media-breakpoint-up(lg)
+				top: -50%
+				left: -20%
+				width: 1000px
+				height: 1000px
+		&:after
+			display: block
+			content: ''
+			position: absolute
+			background: url('../img/circle-1.png') center center no-repeat
+			background-size: cover
+			bottom: -50px
+			right: -50px
+			width: 300px
+			height: 300px
+			opacity: .3
+			// z-index: -1
+			+media-breakpoint-up(md)
+				bottom: -200px
+				right: -50px
+				width: 400px
+				height: 400px
+	h2 
+		font-weight: 100
+		font-size: 2rem
+		margin-top: 2rem
+		line-height: 2rem
+		.tricker
+			overflow: hidden
+			height: 2.2rem
+			line-height: 2rem
+			display: inline-flex
+			flex-direction: column
+			padding: 0 .5rem 0 0
+			em
+				transition: margin-top 0.3s ease
+				font-weight: 500
+				transition: all ease-in-out .5s
+				opacity: 0
+				order: 2
+				&.active
+					opacity: 1
+					order: 1
+		span 
+			font-weight: 700
+		+media-breakpoint-up(lg)
+			font-size: 2.5rem
+			line-height: 2.5rem
+			.tricker
+				line-height: 2.5rem
+				height: 3rem
+	h3
+		color: $brown
+		text-transform: uppercase
+		font-size: 1.3rem
+	p 
+		font-size: 1.1rem 
+	.lead 
+		font-weight: 500
+.section-plan
+	padding: 5rem 0
+	position: relative
+	background: $main
+	background: -moz-linear-gradient(320deg, $main 0%,$link 100%)
+	background: -webkit-linear-gradient(320deg, $main 0%,$link 100%)
+	background: linear-gradient(320deg, $main 0%,$link 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#{$main}",endColorstr="#{$link}",GradientType=1)
+	overflow: hidden
+	// background-attachment: fixed
+	@media (min-width: 1400px)
+		padding: 6rem 0
+	@media (min-width: 1600px)
+		padding: 8rem 0
+	@media (min-width: 1800px)
+		padding: 10rem 0
+	h2 
+		font-weight: 100
+		font-size: 2rem
+		margin-top: 2rem
+		line-height: 2rem
+		em 
+			font-weight: 500
+		span 
+			font-weight: 700
+		+media-breakpoint-up(lg)
+			font-size: 2.5rem
+			line-height: 2.5rem
+	h3
+		text-transform: uppercase
+		font-size: 1.3rem
+		&.item
+			font-weight: 700
+			font-size: 1.5rem
+			img 
+				max-width: 20px
+				margin-right: .5rem
+	.lead 
+		font-weight: 500
+		font-style: 1.5rem
+	p 
+		font-size: 1.1rem
+.section-info
+	padding: 5rem 0 0 0
+	@media (min-width: 1400px)
+		padding: 5rem 0 0 0
+	@media (min-width: 1600px)
+		padding: 7rem 0 2rem 0
+	@media (min-width: 1800px)
+		padding: 9rem 0 4rem 0
+	&.bg 
+		position: relative
+		&:after
+			content: ''
+			width: 100%
+			height: 300px
+			display: block
+			background: #333 url('../img/pc.jpg') center center no-repeat
+			background-size: cover
+		+media-breakpoint-up(lg)
+			&:after
+				height: 100%
+				width: 50%
+				position: absolute
+				top: 0
+				right: 0
+				z-index: -1
+	h3
+		text-transform: uppercase
+		font-size: 1.3rem
+		&.item
+			font-weight: 700
+			font-size: 1.5rem
+			img 
+				max-width: 20px
+				margin-right: .5rem
+	.cta
+		display: flex
+		flex-direction: row
+		align-items: center
+		label 
+			margin-left: 15px 
+			margin-bottom: 0
+			font-size: 1.3rem
+			line-height: 1.3rem
+			span.sec
+				font-weight: 700
+			span.info
+				font-size: 1rem
+				display: block
+				line-height: 1rem
+				color: #888
+		.videoplay
+			background: rgb(45,56,141)
+			background: -moz-linear-gradient(320deg, rgba(45,56,141,1) 33%, rgba(238,62,150,1) 100%)
+			background: -webkit-linear-gradient(320deg, rgba(45,56,141,1) 33%, rgba(238,62,150,1) 100%)
+			background: linear-gradient(320deg, rgba(45,56,141,1) 33%, rgba(238,62,150,1) 100%)
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2d388d",endColorstr="#ee3e96",GradientType=1)
+			display: inline-flex 
+			justify-content: center
+			align-items: center
+			height: 80px 
+			width: 80px 
+			border-radius: 50%
+			position: relative
+			.button-outer-circle
+				background: rgba(red($main),green($main),blue($main),.2)
+				border-radius: 50%
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				height: 100%
+				width: 100%
+				z-index: -1
+				
+				&.has-scale-animation
+					animation: smallScale 3s infinite
+				&.has-delay-short
+					animation-delay: .5s
+			svg
+				z-index: 1
+				polygon
+					fill: $link
+				path 
+					stroke-width: 2px
+					stroke-dasharray: 36.299235026041664, 72.59847005208333
+					-webkit-animation: wistia_dash 1s infinite linear forwards
+
+.home-news
+	padding: 6rem 0
+	position: relative
+	+media-breakpoint-up(lg)
+		padding: 12rem 0
+	&:after 
+		// background: #333 url('../img/brands.jpg') center center no-repeat
+		// background-size: cover
+		// background-attachment: fixed
+		opacity: .1
+		display: block
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		z-index: -1
+		+media-breakpoint-up(lg)
+			background: #333 url('../img/brands.jpg') center center no-repeat
+			background-size: cover
+			background-attachment: fixed
+	&:before 
+		background:#3048f8
+		background: -moz-linear-gradient(320deg, #3048f8 33%, #ff1088 100%)
+		background: -webkit-linear-gradient(320deg, #3048f8 33%, #ff1088 100%)
+		background: linear-gradient(320deg, #3048f8 33%, #ff1088 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2d388d",endColorstr="#ff1088",GradientType=1)
+		display: block
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		z-index: -2
+	.allitems 
+		-webkit-column-count: 1
+		-moz-column-count: 1
+		column-count: 1
+		-webkit-column-gap: 1.25rem
+		-moz-column-gap: 1.25rem
+		column-gap: 1.25rem
+		orphans: 1
+		widows: 1
+		+media-breakpoint-up(sm)
+			-webkit-column-count: 2
+			-moz-column-count: 2
+			column-count: 2
+		+media-breakpoint-up(lg)
+			-webkit-column-count: 3
+			-moz-column-count: 3
+			column-count: 3
+		@media (min-width: 1600px)
+			-webkit-column-count: 4
+			-moz-column-count: 4
+			column-count: 4
+	.item 
+		display: inline-block
+		width: 100%
+		figure
+			position: relative
+			overflow: hidden
+			+bor-rad(5px)
+			.blockimg
+				overflow: hidden
+				img
+					width: 100%
+			figcaption 
+				position: absolute
+				top: 0
+				left: 0
+				height: 100%
+				width: 100%
+				overflow: hidden
+				z-index: 100
+				display: flex
+				justify-content: center
+				flex-direction: column
+				padding: 3rem
+				overflow: hidden
+				opacity: 0
+				transition: all .3s ease-in-out
+				cursor: pointer
+				&:after 
+					background: $main
+					background: -moz-linear-gradient(320deg, $main 33%,$link 100%)
+					background: -webkit-linear-gradient(320deg, $main 33%,$link 100%)
+					background: linear-gradient(320deg, $main 33%,$link 100%)
+					filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#{$main}",endColorstr="#{$link}",GradientType=1)
+					opacity: .95
+					display: block
+					content: ''
+					position: absolute
+					top: 0
+					left: 0
+					width: 100%
+					height: 100%
+					z-index: -1
+					
+				h4 
+					color: #FFF
+					text-shadow: 1px 1px 1px #000
+					font-weight: 500
+					font-size: 1.8rem
+				p 
+					line-height: 1.3rem 
+					font-size: 1.1rem
+					margin-bottom: 0
+					height: 3.9rem
+					text-overflow: ellipsis
+					overflow: hidden
+					color: #000
+			&:hover 
+				box-shadow: 0px 0px 9px 3px rgba(0,0,0,.2)
+				figcaption 
+					opacity: 1
+
+	h2 
+		font-weight: 100
+		font-size: 2rem
+		margin-top: 2rem
+		line-height: 2rem
+		em 
+			font-weight: 500
+		span 
+			font-weight: 700
+		+media-breakpoint-up(lg)
+			font-size: 3.5rem
+			line-height: 3.5rem
+	h3
+		text-transform: uppercase
+		font-size: 1.3rem
+		&.item
+			font-weight: 700
+			font-size: 1.5rem
+			img 
+				max-width: 20px
+				margin-right: .5rem
+	.lead 
+		font-weight: 500
+		font-size: 1.5rem
+	p 
+		font-size: 1.1rem
+.section-rank
+	padding: 6rem 0
+	position: relative
+	background:	#f1eaac
+	background: rgb(45,56,141)
+	background: -moz-linear-gradient(0deg, #f1eaac -30%, #fff 100%)
+	background: -webkit-linear-gradient(0deg, #f1eaac -30%, #fff 100%)
+	background: linear-gradient(0deg, #f1eaac -30%, #fff 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f1eaac",endColorstr="#fff",GradientType=1)
+	overflow: hidden
+	.block 
+		position: relative
+		z-index: 1
+		&:before
+			display: block
+			content: ''
+			position: absolute
+			background: url('../img/circle-3.png') center center no-repeat
+			background-size: contain
+			top: -30px
+			left: -100px
+			width: 200px
+			height: 200px
+			z-index: -1
+			opacity: .7
+	h2 
+		font-weight: 100
+		font-size: 2rem
+		margin-top: 2rem
+		line-height: 2rem
+		em 
+			font-weight: 500
+		span 
+			font-weight: 700
+		+media-breakpoint-up(lg)
+			font-size: 2.5rem
+			line-height: 2.5rem
+	p 
+		font-size: 1.3rem 
+		line-height: 1.3
+	.list-item
+		list-style: none 
+		margin: 0
+		padding: 0
+		li 
+			padding: 0
+			h3 
+				font-weight: 500
+				text-transform: uppercase
+				font-size: 1.3rem
+				color: $sen
+				position: relative
+				display: flex
+				flex-direction: row
+				align-items: center
+				&:before
+					display: inline-block
+					content: ''
+					background: url('../img/circle-4.png') center center no-repeat
+					background-size: contain
+					width: 16px
+					height: 16px
+					margin-right: 5px
+			.if 
+				margin-bottom: 1.8rem
+				line-height: 1.2
+				font-size: 1.1rem
+		&.li-right
+			+media-breakpoint-up(lg)
+				text-align: right
+				li 
+					h3 
+						flex-direction: row-reverse
+						&:before
+							margin-right: 0
+							margin-left: 5px
+.home-clients
+	padding: 5rem 0
+	+media-breakpoint-up(md)
+		padding: 7rem 0
+	+media-breakpoint-up(lg)
+		padding: 9rem 0
+	h2 
+		font-weight: 100
+		font-size: 2rem
+		margin-top: 2rem
+		line-height: 2rem
+		em 
+			font-weight: 500
+		span 
+			font-weight: 700
+		+media-breakpoint-up(lg)
+			font-size: 2.5rem
+			line-height: 2.5rem
+	h3
+		text-transform: uppercase
+		font-size: 1.3rem
+		&.item
+			font-weight: 700
+			font-size: 1.5rem
+			img 
+				max-width: 20px
+				margin-right: .5rem
+	.owl-carousel
+		.item 
+			+pad(.5rem)
+		// Phần Control
+		.owl-nav
+			margin-bottom: 2rem
+			button 
+				background: rgb(45,56,141)
+				background: -moz-linear-gradient(320deg, rgba(45,56,141,1) 10%, rgba(238,62,150,1) 100%)
+				background: -webkit-linear-gradient(320deg, rgba(45,56,141,1) 10%, rgba(238,62,150,1) 100%)
+				background: linear-gradient(320deg, rgba(45,56,141,1) 10%, rgba(238,62,150,1) 100%)
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2d388d",endColorstr="#ee3e96",GradientType=1)
+				i 
+					display: block
+					width: 2rem
+					height: 2rem
+					+lh(2rem)
+					color: #fff
+				&:hover, &.active
+					background: $main
+					background: -moz-linear-gradient(320deg, $main 33%,$link 100%)
+					background: -webkit-linear-gradient(320deg, $main 33%,$link 100%)
+					background: linear-gradient(320deg, $main 33%,$link 100%)
+					filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#{$main}",endColorstr="#{$link}",GradientType=1)
+.home-preview
+	position: relative
+	padding: 5rem 0
+	+media-breakpoint-up(md)
+		padding: 7rem 0
+	+media-breakpoint-up(lg)
+		padding: 9rem 0
+	&:after 
+		background: $brown
+		background: -moz-linear-gradient(320deg, $brown 33%,$border 100%)
+		background: -webkit-linear-gradient(320deg, $brown 33%,$border 100%)
+		background: linear-gradient(320deg, $brown 33%,$border 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#{$brown}",endColorstr="#{$border}",GradientType=1)
+		display: block
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		z-index: -2
+		+media-breakpoint-up(lg)
+			background: #333 url('../img/bg.jpg') center center no-repeat
+			background-size: cover
+			background-attachment: fixed
+	&:before 
+		background:#000
+		display: block
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		z-index: -1
+		opacity: .3
+	h2 
+		font-weight: 100
+		font-size: 2rem
+		margin-top: 2rem
+		line-height: 2rem
+		em 
+			font-weight: 500
+		span 
+			font-weight: 700
+		+media-breakpoint-up(lg)
+			font-size: 2.5rem
+			line-height: 2.5rem
+	h3
+		text-transform: uppercase
+		font-size: 1.3rem
+		&.item
+			font-weight: 700
+			font-size: 1.5rem
+			img 
+				max-width: 20px
+				margin-right: .5rem
+.section-testimonial
+	padding: 5rem 0
+	position: relative
+	background: $main
+	background: -moz-linear-gradient(320deg, $main 0%,$sen 100%)
+	background: -webkit-linear-gradient(320deg, $main 0%,$sen 100%)
+	background: linear-gradient(320deg, $main 0%,$sen 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#{$main}",endColorstr="#{$sen}",GradientType=1)
+	overflow: hidden
+	color: #fff
+	// background-attachment: fixed
+	@media (min-width: 1400px)
+		padding: 6rem 0
+	@media (min-width: 1600px)
+		padding: 8rem 0
+	@media (min-width: 1800px)
+		padding: 10rem 0
+	.owl-carousel
+		img
+			max-width: 250px
+			margin: 0 auto
+		h3
+			text-transform: uppercase
+			font-size: 2rem
+		p 
+			font-size: 1.1rem
+		.owl-dots
+			.owl-dot:hover 
+				span 
+					background: #fff
+			.owl-dot.active 
+				span 
+					background: $sun-flower
+	h2 
+		font-weight: 100
+		font-size: 2rem
+		margin-top: 2rem
+		line-height: 2rem
+		em 
+			font-weight: 500
+		span 
+			font-weight: 700
+		+media-breakpoint-up(lg)
+			font-size: 2.5rem
+			line-height: 2.5rem
+.home-faqs
+	padding: 5rem 0
+	+media-breakpoint-up(md)
+		padding: 7rem 0
+	+media-breakpoint-up(lg)
+		padding: 9rem 0
+	h2 
+		font-weight: 100
+		font-size: 2rem
+		margin-top: 2rem
+		line-height: 2rem
+		em 
+			font-weight: 500
+		span 
+			font-weight: 700
+		+media-breakpoint-up(lg)
+			font-size: 2.5rem
+			line-height: 2.5rem
+	h3
+		text-transform: uppercase
+		font-size: 1.3rem
+		&.item
+			font-weight: 700
+			font-size: 1.5rem
+			img 
+				max-width: 20px
+				margin-right: .5rem
+	#faq 
+		.card
+			
+			overflow: hidden
+			border: 0
+			border-radius: 0
+			.card-header 
+				background: none
+				padding: 0
+				border: 0
+				border-bottom: 2px solid rgba(0,0,0,.1)
+				.btn-header-link
+					display: block
+					text-align: left
+					outline: none
+					box-shadow: none
+					display: flex
+					justify-content: space-between
+					font-weight: 400
+					padding: .5rem 0
+					font-size: 1.3rem
+					line-height: 1.4rem
+					color: $main
+					white-space: initial
+					span
+						max-width: calc(100% - 2.5rem)
+						display: block
+					+media-breakpoint-up(lg)
+						padding: 1rem 0
+						font-size: 1.3rem
+						line-height: 1.5rem
+					&:after 
+						content: "\f068"
+						font-family: 'Font Awesome 5 Free'
+						font-weight: 900
+						border: 2px solid $main 
+						border-radius: 50%
+						display: flex
+						justify-content: center
+						align-items: center
+						height: 2rem
+						width: 2rem
+						font-size: .8rem
+						color: $main
+					&.collapsed
+						color: #000
+						&:after
+							border: 2px solid #636363
+							color: #636363
+							content: "\f067"
+					&:hover
+						color: $main 
+						&:after 
+							color: $main
+							border: 2px solid $main 
+
+			.collapse, .collapsing
+				.card-body
+					border-bottom: 1px solid rgba(0,0,0,.1)
+					padding: 1rem 0 !important
+		
+.home-maps
+	padding: 5rem 0
+	+media-breakpoint-up(md)
+		padding: 7rem 0
+	+media-breakpoint-up(lg)
+		padding: 9rem 0
+	h2 
+		font-weight: 100
+		font-size: 2rem
+		margin-top: 2rem
+		line-height: 2rem
+		em 
+			font-weight: 500
+		span 
+			font-weight: 700
+		+media-breakpoint-up(lg)
+			font-size: 2.5rem
+			line-height: 2.5rem
+	h3
+		text-transform: uppercase
+		font-size: 1.3rem
+		&.item
+			font-weight: 700
+			font-size: 1.5rem
+			img 
+				max-width: 20px
+				margin-right: .5rem
+	#pin
+		position: relative
+		display: inline-flex
+		img 
+			@media (min-width: 1600px)
+				width: 900px
+			@media (min-width: 1800px)
+				width: 1000px
+		.pin
+			position: absolute
+			display: inline-flex
+			width: 30px
+			height: 30px
+			justify-content: center
+			align-items: center
+			z-index: 9999
+			&.pin-1
+				top: calc(60% - 18px)
+				left: calc(45% - 2px)
+			&.pin-2
+				top: calc(50% - 12px)
+				left: calc(8% - 10px)
+			+media-breakpoint-up(sm)
+				&.pin-1
+					top: calc(60% - 1px)
+					left: calc(45% + 5px)
+				&.pin-2
+					top: calc(50% + 10px)
+					left: calc(8% - 1px)
+			@media (min-width: 1600px)
+				&.pin-1
+					top: calc(62% - 1px)
+					left: calc(46% + 5px)
+				&.pin-2
+					top: calc(54% + 10px)
+					left: calc(8% - 1px)
+			@media (min-width: 1800px)
+				&.pin-1
+					top: calc(63% - 1px)
+					left: calc(47% + 5px)
+				&.pin-2
+					top: calc(55% + 10px)
+					left: calc(5% - 1px)
+			.pin-item
+				width: 30px
+				height: 30px
+				border-radius: 50% 50% 50% 0
+				background: $main
+				position: absolute
+				transform: rotate(-45deg) translate(-50%, -50%)
+				left: 0
+				top: 0
+				margin: 0
+				animation: bounce both 1s
+				&:after
+					content: ''
+					width: 14px
+					height: 14px
+					margin: 0
+					background: #fff
+					position: absolute
+					border-radius: 50%
+					left: 50%
+					top: 50%
+					transform: translate(-50%, -50%)
+
+			.pulse
+				background: $sen
+				border-radius: 50%
+				height: 14px
+				width: 14px
+				position: absolute
+				left: 50%
+				bottom: 0
+				margin: 0
+				transform: rotateX(55deg) translate(-50%,calc(100% + 7px))
+				z-index: -2
+
+				&:after
+					content: ""
+					border-radius: 50%
+					height: 40px
+					width: 40px
+					position: absolute
+					left: 50%
+					bottom: 50%
+					margin: 0
+					transform: translate(-50%,50%)
+					opacity: 0
+					box-shadow: 0 0 1px 2px $main
+					animation-delay: 1.1s
+					animation: pulsate 1s ease-out infinite
+	#map
+		height: 100%
+		width: 100%
+		iframe 
+			height: 100%
+			width: 100%
+			border-radius: 5px
+			box-shadow: 0 0 14px 3px rgba(0,0,0,.135), 0 0 1px rgba(0,0,0,.35)
+			overflow: hidden
+.home-contact
+	padding: 5rem 0
+	position: relative
+	background: $main
+	background: -moz-linear-gradient(320deg, $main 0%,$link 100%)
+	background: -webkit-linear-gradient(320deg, $main 0%,$link 100%)
+	background: linear-gradient(320deg, $main 0%,$link 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#{$main}",endColorstr="#{$link}",GradientType=1)
+	overflow: hidden
+	color: #fff
+	// background-attachment: fixed
+	@media (min-width: 1400px)
+		padding: 6rem 0
+	@media (min-width: 1600px)
+		padding: 8rem 0
+	@media (min-width: 1800px)
+		padding: 10rem 0
+	h2 
+		font-weight: 100
+		font-size: 2rem
+		margin-top: 2rem
+		line-height: 2rem
+		em 
+			font-weight: 500
+		span 
+			font-weight: 700
+		+media-breakpoint-up(lg)
+			font-size: 2.5rem
+			line-height: 2.5rem
+	h3
+		text-transform: uppercase
+		font-size: 1.3rem
+		&.item
+			font-weight: 700
+			font-size: 1.5rem
+			img 
+				max-width: 20px
+				margin-right: .5rem
+	#form
+		.form-signin
+			width: 100%
+			max-width: 420px
+			padding: 15px
+			margin: auto
+
+		.form-label-group
+			position: relative
+			margin-bottom: 1rem
+			label
+				height: 3.125rem
+				padding: .75rem
+				position: absolute
+				top: 0
+				left: 0
+				display: block
+				width: 100%
+				margin-bottom: 0
+
+				/* Override default `<label>` margin
+				line-height: 1.5
+				color: #495057
+				pointer-events: none
+				cursor: text
+
+				/* Match the input under the label
+				border: 1px solid transparent
+				border-radius: .25rem
+				transition: all .1s ease-in-out
+			input 
+				height: 3.125rem
+				padding: .75rem
+				+placeholder
+					color: transparent
+				&:not(:-moz-placeholder-shown), 
+				&:not(:-ms-input-placeholder), 
+				&:not(:placeholder-shown)
+					padding-top: 1.25rem
+					padding-bottom: .25rem
+				&:not(:-moz-placeholder-shown) ~ label,
+				&:not(:-ms-input-placeholder) ~ label,
+				&:not(:placeholder-shown) ~ label,
+				&:-webkit-autofill ~ label
+					padding-top: .25rem
+					padding-bottom: .25rem
+					font-size: 12px
+					color: #777
+
+		/* Fallback for Edge
+		@supports (-ms-ime-align: auto)
+			.form-label-group
+				display: -ms-flexbox
+				display: flex
+				-ms-flex-direction: column-reverse
+				flex-direction: column-reverse
+				label
+					position: static
+				input:-ms-input-placeholder
+					color: #777
