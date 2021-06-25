@@ -1,0 +1,29 @@
+
+<md-toolbar layout="row" class="md-whiteframe-glow-z1">
+  <div class="md-toolbar-tools">
+    <h1 ui-sref="home" class="md-toolbar-item md-breadcrumb md-headline"> 
+      <ext-svg data-content="config.BN_LOGO"></ext-svg>
+    </h1><span flex="flex"></span>
+    <div hide-xs="" class="md-toolbar-item">
+      <md-select ng-model="Features" placeholder="{{'Page.Features.Main'  | translate}}" class="md-subhead md-no-underline">
+        <md-option ui-sref="liverate" ui-sref-active="active">{{ 'Page.Features.Rates' | translate }} </md-option>
+        <md-option ui-sref="risk" ui-sref-active="active">{{ 'Page.Features.Management' | translate }} </md-option>
+        <md-option ui-sref="booking" ui-sref-active="active">{{ 'Page.Features.Booking' | translate }} </md-option>
+      </md-select>
+    </div>
+    <div hide-xs="" class="md-toolbar-item">
+      <md-button md-no-ink="md-no-ink" aria-label="{{ 'Page.Support' | translate }} " ui-sref="support" ui-sref-active="active" class="no-radius">{{ 'Page.Support' | translate }} </md-button>
+    </div>
+    <div hide-xs="" class="md-toolbar-item">
+      <md-button md-no-ink="md-no-ink" aria-label="{{ 'Page.News' | translate }} " ui-sref="news" ui-sref-active="active" class="no-radius">{{ 'Page.News' | translate }} </md-button>
+    </div>
+    <div hide-xs="" class="md-toolbar-item">
+      <md-button md-no-ink="md-no-ink" aria-label="{{ 'Page.Pricing' | translate }} " ui-sref="price" ui-sref-active="active" class="no-radius border">{{ 'Page.Pricing' | translate }}</md-button>
+    </div>
+    <div hide-gt-xs="" class="md-toolbar-item">
+      <md-button ng-click="toggleLeft()" aria-label="Toggle Menu" class="toggle md-icon-button md-icon-button"> 
+        <md-icon class="material-icons">menu</md-icon>
+      </md-button>
+    </div>
+  </div>
+</md-toolbar>

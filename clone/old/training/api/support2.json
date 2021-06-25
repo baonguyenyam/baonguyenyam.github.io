@@ -1,0 +1,22 @@
+    {
+        "Id": 2,
+        "name": "FX Rates",
+        "list": [
+            {
+            "ques": "1. How do I add new currencies?",
+            "desc": "[Tutorial video]"
+            },
+             {
+            "ques": "2. How do I delete existing currencies?",
+            "desc": "[Tutorial video]"
+            },
+             {
+            "ques": "3. How do I assign and customize currency pairs?",
+            "desc": "[Tutorial video]"
+            },
+             {
+            "ques": "4. How do I adjust font size and height row on Biz4x's FX console?",
+            "desc": "[Tutorial video]"
+            }
+        ]
+    }

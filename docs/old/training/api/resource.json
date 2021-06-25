@@ -1,0 +1,12 @@
+[
+    {
+        "name": "News",
+        "path": "news",
+        "icon": "keyboard_arrow_right"
+    },
+    {
+        "name": "White paper",
+        "path": "page/whitepaper",
+        "icon": "keyboard_arrow_right"
+    }
+]

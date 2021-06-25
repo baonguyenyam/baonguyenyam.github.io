@@ -1,0 +1,30 @@
+
+<div ng-controller="NewsCtrl">
+  <section layout="row" layout-padding="layout-padding" layout-align="center center" class="news-page">
+    <div flex-gt-md="80" flex="flex" layout="column" layout-gt-sm="row">
+      <md-content md-scroll-y="md-scroll-y" flex-order="0" flex-order-gt-sm="1">
+        <h2 class="md-display-1">{{ 'Page.News' | translate }} </h2>
+        <div layout="column" layout-gt-xs="row" layout-wrap="layout-wrap" layout-align="left center" class="kl-list">
+          <div class="item">
+            <md-button ui-sref="news" ui-sref-active="active" class="md-button-sm md-button-link md-block">All</md-button>
+          </div>
+          <div ng-repeat="item in news" class="item">
+            <md-button ui-sref="newsDetail({ newsID: item.Id })" ui-sref-active="active" class="md-button-sm md-button-link md-block">{{item.name}}</md-button>
+          </div>
+        </div>
+        <div layout="column" layout-wrap="layout-wrap" ng-repeat="item in items" class="list">
+          <div layout-padding="layout-padding" layout="column" layout-gt-xs="row" class="item">
+            <div flex="flex" flex-gt-xs="40">
+              <figure><img ng-src="{{config.imgpath}}{{item.thumb}}"></figure>
+            </div>
+            <div flex="flex" flex-gt-xs="60">
+              <h3 class="md-title"> <a ui-sref="newsDetail({ newsID: item.Id })" ui-sref-active="active">{{item.title}} </a></h3>
+              <p class="text-danger info"><span class="name">by {{item.name}} </span><span class="time">- </span><span class="time">{{item.time}} </span></p>
+              <p class="content mrt-xs-1r text-muted">{{item.content}} </p>
+            </div>
+          </div>
+        </div>
+      </md-content>
+    </div>
+  </section>
+</div>

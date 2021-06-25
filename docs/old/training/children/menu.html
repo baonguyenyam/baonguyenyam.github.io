@@ -1,0 +1,14 @@
+
+<div md-is-locked-open="$mdMedia('xs')" flex-order-gt-sm="0" flex-gt-sm="30" flex-gt-md="25" class="menu">
+  <md-sidemenu>
+    <md-sidemenu-group>
+      <md-sidemenu-button ng-if="!subsupport" ui-sref="support" ui-sref-active="active" ng-class="{active:childsupport}">{{ 'Page.Support' | translate }} 
+        <md-icon class="material-icons">keyboard_arrow_right</md-icon>
+      </md-sidemenu-button>
+      <md-sidemenu-button ng-if="subsupport" ui-sref="support" ui-sref-active="active" ng-class="{active:childsupport}">{{ 'Page.Support' | translate }} 
+        <md-icon class="material-icons">keyboard_arrow_down</md-icon>
+      </md-sidemenu-button>
+      <md-sidemenu-button ng-if="subsupport" ng-repeat="item in supports" ui-sref="supportDetail({ supportID: item.Id })" ui-sref-active="active" class="submenu">{{ item.name }} </md-sidemenu-button>
+    </md-sidemenu-group>
+  </md-sidemenu>
+</div>

@@ -1,0 +1,18 @@
+    {
+        "Id": 1,
+        "name": "General",
+        "list": [
+            {
+            "ques": "1. Why should I switch from my current software to Biz4x?",
+            "desc": "Biz4x is a SaaS solution which means that you do not have to install it on your own devices. All you have to do, is log in to our cloud solution to use the various features offered by Biz4x. As such, Biz4x is far cheaper than other installable software that offer FX rates because there are no hidden costs that arise from installation errors and other overheads. As your business grows, the cost of maintaining and upgrading the systems in multiple branches will too. With Biz4x, we are able to keep the cost of our solution low because any upgrades to the solution will be done on our end without expensive maintenance being paid by you. This means that you can rapidly grow your business without paying for installation, maintenance, troubleshooting and even hardware."
+            },
+             {
+            "ques": "2. If I purchase Biz4x, do I have to continuously upgrade my software to the latest version?",
+            "desc": "No, you won't have to keep upgrading your software after purchasing Biz4x. Since Biz4x is a SaaS solution, it means that it is hosted in the cloud, and any product upgrades are done on our end causing no inconvenience to the user. All you have to do with each software upgrade is to log in and we will guide you through new features with a virtual tour. It is that simple."
+            },
+             {
+            "ques": "3. Can Biz4x support multiple languages?",
+            "desc": "Biz4x is currently only available in English, however we are planning to release Biz4x in multiple languages in the near future."
+            }
+        ]
+    }

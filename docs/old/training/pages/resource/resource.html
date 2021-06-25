@@ -1,0 +1,29 @@
+
+<div ng-controller="ResourceCtrl">
+  <section layout="row" layout-padding="layout-padding" layout-align="center center" class="resource-page">
+    <div flex-gt-md="80" flex="flex" layout="column" layout-gt-sm="row">
+      <div md-is-locked-open="$mdMedia('xs')" flex-order-gt-sm="0" flex-gt-sm="30" flex-gt-md="25" class="menu">
+        <md-sidemenu>
+          <md-sidemenu-group>
+            <md-sidemenu-button ng-if="!subsupport" ui-sref="support" ui-sref-active="active" ng-class="{active:childsupport}">{{ 'Page.Support' | translate }} 
+              <md-icon class="material-icons">keyboard_arrow_right</md-icon>
+            </md-sidemenu-button>
+            <md-sidemenu-button ng-if="subsupport" ui-sref="support" ui-sref-active="active" ng-class="{active:childsupport}">{{ 'Page.Support' | translate }} 
+              <md-icon class="material-icons">keyboard_arrow_down</md-icon>
+            </md-sidemenu-button>
+            <md-sidemenu-button ng-if="subsupport" ng-repeat="item in supports" ui-sref="supportDetail({ supportID: item.Id })" ui-sref-active="active" class="submenu">{{ item.name }} </md-sidemenu-button>
+          </md-sidemenu-group>
+        </md-sidemenu>
+      </div>
+      <md-content md-scroll-y="md-scroll-y" flex="100" flex-gt-sm="70" flex-gt-md="75" flex-order="0" flex-order-gt-sm="1">
+        <h3 class="md-headline text-muted">{{ 'Page.Resource' | translate }} </h3>
+        <h2 class="md-display-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora.</h2>
+        <div layout="column" layout-gt-xs="row" layout-wrap="layout-wrap" layout-padding="layout-padding" class="sp-list">
+          <div flex="flex" flex-gt-xs="50" flex-gt-sm="33" ng-repeat="item in resources" layout="column" class="item"><a flex="flex" layout-fill="layout-fill" layout-align="center center" layout="column" href="{{item.path}}" class="block">
+              <p><img ng-src="{{item.icon}}"></p>
+              <p class="mrb-xs-1r">{{item.name}}</p></a></div>
+        </div>
+      </md-content>
+    </div>
+  </section>
+</div>

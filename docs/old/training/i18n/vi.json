@@ -1,0 +1,32 @@
+{
+    "Lang": {
+        "Root": "Ngôn ngữ",
+        "EN": "English",
+        "VN": "Vietnamese"
+    },
+    "Global": {
+        "Menu": "Danh mục",
+        "Copyright": "Bản quyền 2016 của",
+        "Name": "BaoNguyen"
+    },
+     "Page": {
+        "Home": "Trang chủ",
+        "About": "Về chúng tôi",
+        "Resource": "Tài nguyên",
+        "Privacy": "Qui định bảo mật",
+        "Knowledge": "Kiến thức",
+        "Terms": "Chính sách",
+        "Features": {
+            "Main": "Khóa học",
+            "Rates": "Front-End",
+            "Management": "Design",
+            "Booking": "PHP/.Net"
+        },
+        "Pricing": "Học phí",
+        "Login": "Đăng nhập",
+        "Try": "Dùng thử",
+        "News": "Tin tức",
+        "Support": "Hỗ trợ",
+        "Contact": "Liên hệ"
+    }
+}

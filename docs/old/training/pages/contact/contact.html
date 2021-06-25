@@ -1,0 +1,92 @@
+
+<div ng-controller="ContactCtrl">
+  <section layout="row" layout-padding="layout-padding" layout-align="center center" class="contact-page">
+    <div flex-gt-md="80" flex="flex" layout="column" layout-gt-sm="row">
+      <md-content md-scroll-y="md-scroll-y" flex-order="0" flex-order-gt-sm="1">
+        <h3 class="md-headline text-muted">{{ 'Page.Contact' | translate }} </h3>
+        <h2 class="md-display-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique veniam porro et adipisci ipsum veritatis enim.</h2>
+        <p class="text-muted mrt-xs-1r">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        <md-card md-theme-watch="md-theme-watch">
+          <md-card-title>
+            <md-card-title-text><span class="md-headline">{{ 'Page.Contact' | translate }} </span></md-card-title-text>
+          </md-card-title>
+          <md-card-content>
+            <form name="ctnForm">
+              <div layout="row">
+                <md-input-container flex="50">
+                  <label>First Name </label>
+                  <input required name="firstName" ng-model="project.firstName">
+                  <div ng-messages="ctnForm.firstName.$error">
+                    <div ng-message="required">This is required.</div>
+                  </div>
+                </md-input-container>
+                <md-input-container flex="50">
+                  <label>Last Name </label>
+                  <input required name="lastName" ng-model="project.lastName">
+                  <div ng-messages="ctnForm.lastName.$error">
+                    <div ng-message="required">This is required.</div>
+                  </div>
+                </md-input-container>
+              </div>
+              <div layout="row">
+                <md-input-container flex="50">
+                  <label>Company Name </label>
+                  <input required name="companyName" ng-model="project.companyName">
+                  <div ng-messages="ctnForm.companyName.$error">
+                    <div ng-message="required">This is required.</div>
+                  </div>
+                </md-input-container>
+                <md-input-container flex="50">
+                  <label>Number of employees </label>
+                  <md-select required name="number" ng-model="project.number">
+                    <md-option value="1">1</md-option>
+                    <md-option value="2">2</md-option>
+                  </md-select>
+                  <div ng-messages="ctnForm.number.$error">
+                    <div ng-message="required">This is required.</div>
+                  </div>
+                </md-input-container>
+              </div>
+              <div layout="row">
+                <md-input-container flex="flex">
+                  <label>Email </label>
+                  <input required type="email" name="emailAddress" ng-model="project.emailAddress" minlength="10" maxlength="100" ng-pattern="/^.+@.+..+$/">
+                  <div ng-messages="ctnForm.emailAddress.$error" role="alert">
+                    <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">Your email must be between 10 and 100 characters long and look like an e-mail address.</div>
+                  </div>
+                </md-input-container>
+              </div>
+              <div layout="row">
+                <md-input-container flex="flex">
+                  <label>Phone </label>
+                  <input required name="phoneNumber" ng-model="project.phoneNumber" minlength="9" maxlength="100" ng-pattern="/[0-9]$/">
+                  <div ng-messages="ctnForm.phoneNumber.$error">
+                    <div ng-message="pattern">Please enter a valid phone number.</div>
+                  </div>
+                </md-input-container>
+              </div>
+              <div layout="row">
+                <md-input-container flex="flex">
+                  <label>Country </label>
+                  <md-select name="countryName" ng-model="project.countryName">
+                    <md-option value="vi">Vietnam</md-option>
+                    <md-option value="sg">Singapore</md-option>
+                  </md-select>
+                </md-input-container>
+              </div>
+              <div layout="row">
+                <md-input-container flex="flex">
+                  <label>Comments </label>
+                  <textarea name="comment" ng-model="project.comment" rows="5" md-select-on-focus="md-select-on-focus"></textarea>
+                </md-input-container>
+              </div>
+              <div layout="row">
+                <md-button type="submit" class="md-button-md md-button-shadow md-button-link mrb-xs-1r">Submit now </md-button>
+              </div>
+            </form>
+          </md-card-content>
+        </md-card>
+      </md-content>
+    </div>
+  </section>
+</div>

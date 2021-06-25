@@ -1,0 +1,15 @@
+
+<div ng-controller="NewsDetailCtrl">
+  <section layout="row" layout-padding="layout-padding" layout-align="center center" class="news-page">
+    <div flex-gt-md="80" flex="flex" layout="column" layout-gt-sm="row">
+      <md-content md-scroll-y="md-scroll-y" flex-order="0" flex-order-gt-sm="1">
+        <h2 class="md-display-1">{{items.title}} </h2>
+        <p class="text-muted"> <span class="text-danger">{{items.name}} </span><span>- </span><span class="time">{{items.time}} </span></p>
+        <p class="mrt-xs-1r">
+          </p><figure><img ng-src="{{config.imgpath}}{{items.thumb}}"></figure>
+        <p></p>
+        <p class="content mrt-xs-1r text-muted">{{items.content}} </p>
+      </md-content>
+    </div>
+  </section>
+</div>

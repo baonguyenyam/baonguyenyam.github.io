@@ -1,0 +1,36 @@
+
+<div ng-controller="AboutCtrl">
+  <section layout="row" layout-padding="layout-padding" layout-align="center center" class="about-page">
+    <div flex-gt-md="80" flex="flex" layout="column" layout-gt-sm="row">
+      <md-content flex-order="0" flex-order-gt-sm="1">
+        <h3 class="md-headline text-muted">Biz4x</h3>
+        <h2 class="md-display-1">The Solution for All Money Changer Needs.</h2>
+        <hr>
+        <p class="text-muted mrt-xs-1r">In the past, traditional money changer business owners would record transactions in ledgers or spreadsheets to manage their accounting, and keep track of the amount and type of currencies in stock. Inevitably, errors make it into the records, and expanding the business becomes tricky if other employees do not keep the same detailed records as the owner. Worse, if the business is audited, proving that the business has done its due diligence on customer background checks and kept accurate records of high value transactions could become an unnecessarily complex and messy affair.</p>
+        <p class="text-muted mrt-xs-1r"> <img ng-src="{{config.imgpath}}about/company.jpg"></p>
+        <p class="text-muted mrt-xs-1r">Until now. With Biz4x, money changer business owners can gain deep insights into the overall health and performance of their business with an integrated set of features that are designed to simplify record keeping, compliance background checks and report generation all though one consolidated dashboard. Biz4x was created to provide money changers with all the data and functionality they need by leveraging modern technology and cloud services to make it easier to run their businesses.</p>
+        <h4 class="md-headline mrt-xs-1r">Our Product</h4>
+        <p class="text-muted mrt-xs-1r">Biz4x is a cloud-based solution that is helping to transform the traditional money changer business by empowering it with all the benefits of modern technology. Our all-in-one solution combines the most accurate live FX rates, with a comprehensive database for compliance background checks, and a business management platform that keeps track of your currency in stock,simplifies your workflows and makes it easier to scale your operations. Not only does Biz4x help money changers run their business more efficiently, it helps to connect them to new customers, plugging them into the worldwide community of travellers looking to get a good deal on cash exchange rates.</p>
+        <h4 class="md-headline mrt-xs-1r">Our Customers</h4>
+        <p class="text-muted mrt-xs-1r">Every day, we work with hundreds of money changers to simplify all the processes that go into the day to day operations of a cash dealer. Our goal is to provide money changers with a solution that caters to their every business need and our satisfied customers can be found in different countries all across the globe.</p>
+        <p class="mrt-xs-1r">
+          </p><figure><img ng-src="{{config.imgpath}}main/map-bg.png">
+            <figcaption>
+              <div class="areas">
+                <div toggle-area="toggle-area" class="item active {{ map.name.replace(' ', '') | lowercase}}">
+                  <div class="pulsating-circle"><span></span><i></i></div>
+                  <div class="summary"><a href="javascript:void(0);">
+                      <div class="name">{{map.name}}</div>
+                      <div class="sum"> <span>{{map.num}} </span><span>Money Changers</span></div></a></div>
+                </div>
+              </div>
+            </figcaption>
+          </figure>
+        <p></p>
+        <h4 class="md-headline mrt-xs-1r">Our Company</h4>
+        <p class="text-muted mrt-xs-1r">Biz4x is developed by 4xLabs, a technology company that is committed to bringing about innovation in the foreign exchange market. Aside from Biz4x, 4xLabs' line of products include Get4x, a mobile app for travellers to make it easier for them to locate money changers and their cash exchange rates. 4xLabs has a dedicated team of more than 30 talented individuals with different nationalities working in development, sales, marketing and product. The company is headquartered in Singapore, with additional offices in Hong Kong, India, Thailand, Malaysia and Vietnam.</p>
+        <p class="text-muted mrt-xs-1r"> <img ng-src="{{config.imgpath}}about/company-2.jpg"></p>
+      </md-content>
+    </div>
+  </section>
+</div>

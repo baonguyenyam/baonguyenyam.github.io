@@ -1,0 +1,39 @@
+
+<div ng-controller="SupportDetailCtrl">
+  <section layout="row" layout-padding="layout-padding" layout-align="center center" class="support-page">
+    <div flex-gt-md="80" flex="flex" layout-gt-sm="row">
+      <div flex-gt-sm="70" flex-gt-md="75" flex-order-gt-sm="1" class="content">
+        <h3 class="md-headline text-muted">{{items.name}} </h3>
+        <div class="accordions">
+          <div get-accordion="get-accordion" ng-class="{ open: AccordionOpen }" ng-repeat="item in items.list" class="accordion">
+            <md-toolbar ng-click="Accordion()" class="md-theme-indigo"> 
+              <div class="md-toolbar-tools">
+                <h5>{{item.ques}} </h5><span flex="flex"></span>
+                <div class="md-toolbar-item">
+                  <md-button aria-label="Toggle Menu">
+                    <md-icon ng-if="!AccordionOpen" class="material-icons">add</md-icon>
+                    <md-icon ng-if="AccordionOpen" class="material-icons">remove</md-icon>
+                  </md-button>
+                </div>
+              </div>
+            </md-toolbar>
+            <div class="accordion-content">{{item.desc}} </div>
+          </div>
+        </div>
+      </div>
+      <div md-is-locked-open="$mdMedia('xs')" flex-order-gt-sm="0" flex-gt-sm="30" flex-gt-md="25" class="menu">
+        <md-sidemenu>
+          <md-sidemenu-group>
+            <md-sidemenu-button ng-if="!subsupport" ui-sref="support" ui-sref-active="active" ng-class="{active:childsupport}">{{ 'Page.Support' | translate }} 
+              <md-icon class="material-icons">keyboard_arrow_right</md-icon>
+            </md-sidemenu-button>
+            <md-sidemenu-button ng-if="subsupport" ui-sref="support" ui-sref-active="active" ng-class="{active:childsupport}">{{ 'Page.Support' | translate }} 
+              <md-icon class="material-icons">keyboard_arrow_down</md-icon>
+            </md-sidemenu-button>
+            <md-sidemenu-button ng-if="subsupport" ng-repeat="item in supports" ui-sref="supportDetail({ supportID: item.Id })" ui-sref-active="active" class="submenu">{{ item.name }} </md-sidemenu-button>
+          </md-sidemenu-group>
+        </md-sidemenu>
+      </div>
+    </div>
+  </section>
+</div>

@@ -36,7 +36,7 @@ gulp.task('build', gulp.series(
 		'copy-webfonts',
 		'copy-favicon',
 		'copy-files',
-		'copy-files-prod',
+		// 'copy-files-prod',
 		'concat-css',
 		'concat-js',
 		'tao-sass',

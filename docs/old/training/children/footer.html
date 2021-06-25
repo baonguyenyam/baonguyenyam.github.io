@@ -1,0 +1,25 @@
+
+<div class="footer"> 
+  <section flex="flex" layout="column" layout-gt-sm="row" layout-align-xs="center center" layout-align-sm="center center" class="logo">
+    <div flex="flex" flex-gt-sm="20">
+      <h3 ui-sref="home"> 
+        <ext-svg data-content="config.BN_LOGO"></ext-svg>
+      </h3>
+    </div>
+    <div flex="flex" flex-gt-sm="80" class="pr">
+      <div flex="flex" layout-align="end" layout="column" layout-gt-xs="row" layout-align-xs="center center" layout-align-sm="center center">
+        <p class="mrb-sm-1r text-xs text-xs-center"> 157 Võ Thị Sáu P.6 - Q3 - Tel: 0.96.96.89.89.3</p>
+      </div>
+      <ul flex="flex" layout-align="end" layout="column" layout-gt-xs="row" layout-align-xs="center center" layout-align-sm="center center">
+        <li><a ui-sref="about" ui-sref-active="active">{{ 'Page.About' | translate }} </a></li>
+        <li><a ui-sref="page({ pageName: 'whitepaper' })" ui-sref-active="active">{{ 'Page.Resource' | translate }} </a></li>
+        <li><a ui-sref="support" ui-sref-active="active">{{ 'Page.Support' | translate }} </a></li>
+        <li><a ui-sref="contact" ui-sref-active="active">{{ 'Page.Contact' | translate }} </a></li>
+      </ul>
+    </div>
+  </section>
+  <section flex="flex" layout="column" layout-gt-sm="row" layout-align-xs="center center" layout-align-sm="center center" class="copy">
+    <div flex="flex" flex-gt-sm="50">{{ 'Global.Copyright' | translate }} <a href="//baonguyenyam.github.io" target="_blank">{{ 'Global.Name' | translate }}.</a></div>
+    <div flex="flex" flex-gt-sm="50" layout-align="end" layout-gt-sm="row" class="pr"> <a ui-sref="page({ pageName: 'privacy' })" ui-sref-active="active">{{ 'Page.Privacy' | translate }} </a>&nbsp;&&nbsp;<a ui-sref="page({ pageName: 'terms' })" ui-sref-active="active">{{ 'Page.Terms' | translate }} </a></div>
+  </section>
+</div>

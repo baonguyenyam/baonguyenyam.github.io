@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Mumbai",
+        "Id": 1
+    },
+    {
+        "name": "Phuket",
+        "Id": 2
+    },
+    {
+        "name": "Hong Kong",
+        "Id": 3
+    },
+    {
+        "name": "Bangkok",
+        "Id": 4
+    },
+    {
+        "name": "Pattaya",
+        "Id": 5
+    },
+    {
+        "name": "Singapore",
+        "Id": 6
+    },
+    {
+        "name": "Bali",
+        "Id": 7
+    },
+    {
+        "name": "Kuala Lumpur",
+        "Id": 8
+    }
+]
