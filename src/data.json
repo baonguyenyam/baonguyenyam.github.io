@@ -5,7 +5,7 @@
 			"items": [
 				{
 					"id": 1123,
-					"content": "Hi there!Want to know more about ?We have interpreters for onsite, video, and over the phone appointments.  Please call 817-289-0050 or email <a href=\"#\">tin@tintranslation.com</a> to schedule an interpreting appointment.We have interpreters for onsite, video, and over the phone appointments.  Please call 817-289-0050 or email <a href=\"#\">tin@tintranslation.com</a> to schedule an interpreting appointment.We have interpreters for onsite, video, and over the phone appointments.  Please call 817-289-0050 or email <a href=\"#\">tin@tintranslation.com</a> to schedule an interpreting appointment.",
+					"content": "Hi there!",
 					"target": "lift-chat-1"
 				},
 				{
@@ -25,77 +25,7 @@
 			"items": [
 				{
 					"id": 1126,
-					"content": "Need an interpreter?",
-					"target": "lift-chat-2"
-				},
-				{
-					"id": 1127,
-					"content": "Like to become an interpreter?",
-					"target": "lift-chat-3"
-				},
-				{
-					"id": 1128,
-					"content": "Want to know more about our consulting service?",
-					"target": "lift-chat-4"
-				},
-				{
-					"id": 1129,
-					"content": "Need a (written) translation?",
-					"target": "lift-chat-5"
-				},
-				{
-					"id": 1130,
-					"content": "Want to know more about our trainings?",
-					"target": "lift-chat-6"
-				}
-			]
-		},
-		{
-			"id": "lift-chat-2",
-			"items": [
-				{
-					"id": 1131,
-					"content": "We have interpreters for onsite, video, and over the phone appointments.  Please call 817-289-0050 or email <a href=\"#\">tin@tintranslation.com</a> to schedule an interpreting appointment.",
-					"target": ""
-				}
-			]
-		},
-		{
-			"id": "lift-chat-3",
-			"items": [
-				{
-					"id": 1132,
-					"content": "Contact Susan Tan to learn how to become a TIN interpreter at etheintan@tintranslation.com",
-					"target": ""
-				}
-			]
-		},
-		{
-			"id": "lift-chat-4",
-			"items": [
-				{
-					"id": 1133,
-					"content": "Contact Meti Dibra to learn about our consulting services at mdibra@tintranslation.com",
-					"target": ""
-				}
-			]
-		},
-		{
-			"id": "lift-chat-5",
-			"items": [
-				{
-					"id": 1134,
-					"content": "Contact Jessie Agastra for a translation project and quote at jagastra@tintranslation.com",
-					"target": ""
-				}
-			]
-		},
-		{
-			"id": "lift-chat-6",
-			"items": [
-				{
-					"id": 1135,
-					"content": "Contact Fabio Torres to learn about training options at ftorres@tintranslation.com",
+					"content": "If you need to speak to a live person immediately, call 682-2-3-1334.",
 					"target": ""
 				}
 			]

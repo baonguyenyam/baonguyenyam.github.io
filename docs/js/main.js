@@ -337,7 +337,7 @@ var LIFT_CHAT_APP = {
   },
   buildChatHTML: function buildChatHTML() {
     var t = LIFT_CHAT_APP.chat();
-    return t.innerHTML = '<header class="lift-js-chatbox__body__header"><nav class="lift-js-chatbox__body__header-cta-text"><span class="lift-js-chatbox__body__header-cta-icon"><span class="lift-js-chatbox__body__header-cta-icon-avatar"></span></span><span class="lift-js-chatbox__body__header-title-chat">Lorem Ipsum is simply dummy text of the printing and typesetting industry</span></nav></header><main class="lift-js-chatbox__body-display lift-js-chatbox__body__display"></main><footer class="lift-js-chatbox__body__footer"><div class="lift-js-chatbox__body__footer-copyright"><a href="' + b64DecodeUnicode("aHR0cHM6Ly9saWZ0Y3JlYXRpb25zLmNvbQ==") + '" target="blank">' + b64DecodeUnicode("UE9XRVJFRCBCWQ==") + " <span>" + b64DecodeUnicode("TElGVCBDUkVBVElPTlM=") + " </span></a></div></footer>", t.classList.add("lift-js-chatbox__body"), t.classList.add("chatbox--is-visible"), t;
+    return t.innerHTML = '<div class="lift-js-chatbox__body__header"><nav class="lift-js-chatbox__body__header-cta-text"><span class="lift-js-chatbox__body__header-cta-icon"><span class="lift-js-chatbox__body__header-cta-icon-avatar"></span></span><span class="lift-js-chatbox__body__header-title-chat">Chat with me!</span></nav></div><div class="lift-js-chatbox__body-display lift-js-chatbox__body__display"></div><div class="lift-js-chatbox__body__footer"><div class="lift-js-chatbox__body__footer-copyright"><a href="' + b64DecodeUnicode("aHR0cHM6Ly9iYW9uZ3V5ZW55YW0uZ2l0aHViLmlv") + '" target="blank">' + b64DecodeUnicode("UE9XRVJFRCBCWQ==") + " <span>" + b64DecodeUnicode("TkdVWUVOIFBIQU0=") + " </span></a></div></div>", t.classList.add("lift-js-chatbox__body"), t.classList.add("chatbox--is-visible"), t;
   },
   icon: function icon() {
     return document.createElement("section");
@@ -360,7 +360,7 @@ var LIFT_CHAT_APP = {
   },
   buttonEl: function buttonEl() {
     var t = LIFT_CHAT_APP.button();
-    return t.classList.add("lift-js-chatbox__body-toggle"), t.classList.add("lift-js-chatbox__body__header-cta-btn"), t.innerHTML = '<svg version="1.1" x="0px" y="0px" viewBox="0 0 492.002 492.002" xml:space="preserve"><g><g><path d="M484.136,328.473L264.988,109.329c-5.064-5.064-11.816-7.844-19.172-7.844c-7.208,0-13.964,2.78-19.02,7.844L7.852,328.265C2.788,333.333,0,340.089,0,347.297c0,7.208,2.784,13.968,7.852,19.032l16.124,16.124c5.064,5.064,11.824,7.86,19.032,7.86s13.964-2.796,19.032-7.86l183.852-183.852l184.056,184.064c5.064,5.06,11.82,7.852,19.032,7.852c7.208,0,13.96-2.792,19.028-7.852l16.128-16.132C494.624,356.041,494.624,338.965,484.136,328.473z"></path></g></g></svg>', document.querySelector("#lift-chat-box .lift-js-chatbox__body header").appendChild(t), t.addEventListener("click", function () {
+    return t.classList.add("lift-js-chatbox__body-toggle"), t.classList.add("lift-js-chatbox__body__header-cta-btn"), t.innerHTML = '<svg version="1.1" x="0px" y="0px" viewBox="0 0 492.002 492.002" xml:space="preserve"><g><g><path d="M484.136,328.473L264.988,109.329c-5.064-5.064-11.816-7.844-19.172-7.844c-7.208,0-13.964,2.78-19.02,7.844L7.852,328.265C2.788,333.333,0,340.089,0,347.297c0,7.208,2.784,13.968,7.852,19.032l16.124,16.124c5.064,5.064,11.824,7.86,19.032,7.86s13.964-2.796,19.032-7.86l183.852-183.852l184.056,184.064c5.064,5.06,11.82,7.852,19.032,7.852c7.208,0,13.96-2.792,19.028-7.852l16.128-16.132C494.624,356.041,494.624,338.965,484.136,328.473z"></path></g></g></svg>', document.querySelector("#lift-chat-box .lift-js-chatbox__body .lift-js-chatbox__body__header").appendChild(t), t.addEventListener("click", function () {
       document.querySelector("#lift-chat-box .lift-js-chatbox__body").classList.toggle("chatbox--is-visible"), document.querySelector("#lift-chat-box .lift-js-chatbox__icon").classList.toggle("chaticon--is-visible");
     }), t;
   },
@@ -408,7 +408,7 @@ var LIFT_CHAT_APP = {
         LIFT_CHAT_APP.buildHTML += "</div>\n";
       }
 
-      document.querySelector("#lift-chat-box main").innerHTML = LIFT_CHAT_APP.buildHTML;
+      document.querySelector("#lift-chat-box .lift-js-chatbox__body__display").innerHTML = LIFT_CHAT_APP.buildHTML;
     }, function (t) {});
   },
   init: function init() {
