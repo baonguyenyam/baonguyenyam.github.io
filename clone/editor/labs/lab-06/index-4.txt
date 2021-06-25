@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Lý Mạc Sầu</th>
+                <th>Cô Long</th>
+                <th>Dương Quá</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nữ</td>
+                <td>Nữ</td>
+                <td>Nam</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>10</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

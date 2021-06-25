@@ -1,0 +1,40 @@
+body {
+    padding: 0;
+    margin: 0
+}
+
+#demo {
+    background: cyan;
+    min-height: 300px;
+    padding: 10px;
+}
+
+#demo .demo-child {
+    background: #fff;
+    width: 200px;
+    height: 200px;
+}
+
+#demo .demo-child .box-a,
+#demo .demo-child .box-b,
+#demo .demo-child .box-c,
+#demo .demo-child .box-d {
+    width: 50px;
+    height: 50px;
+}
+
+#demo .demo-child .box-a {
+    background-color: green
+}
+
+#demo .demo-child .box-b {
+    background-color: yellow
+}
+
+#demo .demo-child .box-c {
+    background-color: red
+}
+
+#demo .demo-child .box-d {
+    background-color: blue
+}

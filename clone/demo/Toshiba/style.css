@@ -1,0 +1,756 @@
+@charset "UTF-8";
+/*************************************************************
+    VienSoi - the best Web Solutions Provider - http://www.canhcam.vn 
+    156 Nguyen Van Thu, District 1, Ho Chi Minh City, Viet Nam.
+    Phone: (+84) 8 38238364 â€“ Fax: (+84) 8 38238365 - Email: info@canhcam.vn
+    Facebook: https://www.facebook.com/canhcam.vn 
+*************************************************************/
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+/* line 10, style.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 10, style.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 10, style.scss */
+body {
+  line-height: 1;
+}
+
+/* line 10, style.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 10, style.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 10, style.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none;
+}
+
+/* line 10, style.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ClearFix */
+/* line 12, style.scss */
+.cf:before, .cf:after {
+  content: "";
+  display: table;
+}
+
+/* line 12, style.scss */
+.cf:after {
+  clear: both;
+}
+
+/* line 12, style.scss */
+.cf {
+  zoom: 1;
+}
+
+/* line 13, style.scss */
+em {
+  font-style: italic;
+}
+
+/* line 14, style.scss */
+.clear {
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+/* ClearFix
+--------------------------------------------------------------------------------*/
+/* line 18, style.scss */
+ul:before, ul:after, #header:before, #header:after, #footer:before, #footer:after, #navi-area:before, #navi-area:after {
+  content: "";
+  display: table;
+}
+
+/* line 19, style.scss */
+ul:after, #header:after, #footer:after, #navi-area:after {
+  clear: both;
+}
+
+/* line 20, style.scss */
+ul, #header, #footer, #navi-area {
+  zoom: 1;
+}
+
+/* line 23, style.scss */
+html {
+  overflow-y: scroll;
+}
+
+/* line 24, style.scss */
+body {
+  font: 13px/1.3 Arial,Sans-Serif;
+  *font-size: small;
+  *font: x-small;
+  background: #272727 url(images/bg.jpg) no-repeat top center;
+}
+
+/* line 25, style.scss */
+li img {
+  vertical-align: top;
+}
+
+/* line 26, style.scss */
+a:link, a:visited {
+  text-decoration: none;
+  color: inherit;
+  *color: #00f;
+}
+
+/* line 27, style.scss */
+a:hover, a:active {
+  text-decoration: none;
+  color: inherit;
+  *color: #00f;
+}
+
+/* line 28, style.scss */
+a:focus {
+  outline: 0;
+}
+
+/* line 29, style.scss */
+.right {
+  float: right;
+}
+
+/* line 30, style.scss */
+.left {
+  float: left;
+}
+
+/* line 33, style.scss */
+#wrapper {
+  text-align: left;
+  overflow: hidden;
+}
+
+/* line 35, style.scss */
+#header {
+  position: relative;
+  z-index: 1000;
+  background: #000;
+  color: #fff;
+}
+/* line 36, style.scss */
+#header .social {
+  margin-top: 30px;
+}
+
+/* line 38, style.scss */
+.inner {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 39, style.scss */
+#footer {
+  width: 100%;
+  max-width: 960px;
+  padding: 34px 0 70px;
+  text-align: right;
+  margin: 0 auto;
+}
+
+/* line 40, style.scss */
+.mobile-show {
+  display: none;
+}
+
+/* line 42, style.scss */
+.slider-wrap {
+  background: url(images/banner_shadow.png) no-repeat bottom;
+  padding-bottom: 70px;
+}
+
+/* line 43, style.scss */
+.at-slider {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 502px;
+}
+/* line 44, style.scss */
+.at-slider .slide-item {
+  position: relative;
+  display: none;
+}
+/* line 45, style.scss */
+.at-slider .slide-item .slide-content {
+  position: absolute;
+  top: 0;
+  color: #fff;
+  width: 100%;
+  font-size: 16px;
+}
+/* line 46, style.scss */
+.at-slider .slide-item .sub {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 960px;
+}
+/* line 46, style.scss */
+.at-slider .slide-item .sub img {
+  margin-left: -10px;
+}
+/* line 47, style.scss */
+.at-slider .slide-item .right {
+  width: 450px;
+}
+/* line 48, style.scss */
+.at-slider .slide-item h3 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  margin-top: 70px;
+}
+/* line 49, style.scss */
+.at-slider .slide-item p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+/* line 51, style.scss */
+.at-slider .playslider {
+  position: absolute;
+  z-index: 300;
+  top: 0;
+}
+/* line 52, style.scss */
+.at-slider .slide-prev, .at-slider .slide-next {
+  width: 45px;
+  height: 130px;
+  position: absolute;
+  top: 50%;
+  margin-top: -65px;
+  display: block;
+  z-index: 3000;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+/* line 53, style.scss */
+.at-slider .slide-prev {
+  left: 0;
+  background: url(images/btn_prev.png) no-repeat 0 0;
+}
+/* line 54, style.scss */
+.at-slider .slide-next {
+  right: 0;
+  background: url(images/btn_next.png) no-repeat right;
+}
+/* line 55, style.scss */
+.at-slider .slide-prev:hover {
+  background-position: right 0;
+}
+/* line 56, style.scss */
+.at-slider .slide-next:hover {
+  background-position: left 0;
+}
+
+/* line 60, style.scss */
+.listpro li {
+  margin-bottom: 20px;
+  background: #000;
+  position: relative;
+}
+/* line 61, style.scss */
+.listpro li .pro-img:before {
+  content: ' ';
+  display: block;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200px;
+  z-index: 300;
+}
+/* line 62, style.scss */
+.listpro li:after {
+  content: ' ';
+  display: table;
+  width: 100%;
+  clear: both;
+}
+/* line 64, style.scss */
+.listpro .pro-img {
+  float: left;
+  padding-left: 120px;
+  position: relative;
+  z-index: 300;
+  position: relative;
+}
+/* line 65, style.scss */
+.listpro .pro-link, .listpro .pro-link2 {
+  position: absolute;
+  right: 0;
+  z-index: 400;
+  width: 70px;
+  top: 0;
+  bottom: 0;
+  background: #494949 url(images/btn_right.png) no-repeat center;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+/* line 67, style.scss */
+.listpro .pro-link2 {
+  right: auto;
+  left: 0;
+  background-image: url(images/btn_left.png);
+}
+/* line 68, style.scss */
+.listpro .pro-link:hover, .listpro .pro-link2:hover {
+  background-color: #DC2E2F;
+}
+/* line 70, style.scss */
+.listpro .pro-desc {
+  width: 430px;
+  float: right;
+  margin-right: 105px;
+  color: #fff;
+  font-size: 13px;
+  line-height: 1.2;
+}
+/* line 71, style.scss */
+.listpro .pro-desc .pro-job {
+  font-size: 14px;
+  font-style: italic;
+  margin: 20px 0 0;
+}
+/* line 72, style.scss */
+.listpro .pro-desc .pro-name {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+/* line 73, style.scss */
+.listpro .pro-desc .pro-quoc {
+  margin-top: 12px;
+  font-size: 14px;
+  font-style: italic;
+}
+/* line 74, style.scss */
+.listpro .pro-desc .pro-quoc:before, .listpro .pro-desc .pro-quoc:after {
+  content: ' ';
+  display: inline-block;
+  width: 28px;
+  height: 26px;
+  position: relative;
+  z-index: 300;
+}
+/* line 75, style.scss */
+.listpro .pro-desc .pro-quoc:before {
+  background: url(images/quoc_left.png) no-repeat left;
+  margin: 0 0 -12px -33px;
+}
+/* line 76, style.scss */
+.listpro .pro-desc .pro-quoc:after {
+  background: url(images/quoc_right.png) no-repeat left;
+  margin: 0 0 -12px 5px;
+}
+/* line 78, style.scss */
+.listpro .pro-desc .pro-comming {
+  font-size: 24px;
+  line-height: 150px;
+}
+
+/* line 81, style.scss */
+.sitename {
+  margin: 80px 0 40px;
+}
+
+/* line 84, style.scss */
+.listpro li:nth-child(1) .pro-img:before, .listpro li.pro1 .pro-img:before {
+  background: url(images/vol1.png) no-repeat 10px center;
+}
+
+/* line 84, style.scss */
+.listpro li:nth-child(2) .pro-img:before, .listpro li.pro2 .pro-img:before {
+  background: url(images/vol2.png) no-repeat 10px center;
+}
+
+/* line 84, style.scss */
+.listpro li:nth-child(3) .pro-img:before, .listpro li.pro3 .pro-img:before {
+  background: url(images/vol3.png) no-repeat 10px center;
+}
+
+/* line 84, style.scss */
+.listpro li:nth-child(4) .pro-img:before, .listpro li.pro4 .pro-img:before {
+  background: url(images/vol4.png) no-repeat 10px center;
+}
+
+/* line 84, style.scss */
+.listpro li:nth-child(5) .pro-img:before, .listpro li.pro5 .pro-img:before {
+  background: url(images/vol5.png) no-repeat 10px center;
+}
+
+/* line 84, style.scss */
+.listpro li:nth-child(6) .pro-img:before, .listpro li.pro6 .pro-img:before {
+  background: url(images/vol6.png) no-repeat 10px center;
+}
+
+/* line 89, style.scss */
+.prodt-wrap {
+  padding: 60px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  margin-top: 60px;
+  color: #fff;
+  font-size: 13px;
+  border: 2px solid #78652d;
+}
+/* line 90, style.scss */
+.prodt-wrap p {
+  margin-bottom: 20px;text-align: justify;line-height: 1.5em;
+}
+/* line 91, style.scss */
+.prodt-wrap h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #F48120;
+}
+
+/* line 94, style.scss */
+.prodetail .listpro li .pro-img:before {
+  background-position: 70px center;
+  background-size: 50%;
+}
+ .bg_info_dt {background: url(images/black_85.png);padding: 40px;border: 1px solid #e0e0e0;}
+ .mb10 {margin-bottom: 10px;}
+ .bg_info_dt img {max-width: 100%;}
+.bg_info_dt h4 {font-size: 38px;margin-bottom: 20px;font-family: times new roman;}
+i {font-style: italic;font-size: 12px;}
+@media (max-width: 960px) {
+  /* line 97, style.scss */
+  img {
+    max-width: 100%;
+  }
+
+  /* line 98, style.scss */
+  .prodt-wrap {
+    padding: 5%;
+  }
+  /* line 99, style.scss */
+  .prodt-wrap .right, .prodt-wrap .left {
+    width: 50%;
+    text-align: center;
+  }
+  /* line 99, style.scss */
+  .prodt-wrap .right img, .prodt-wrap .left img {
+    max-width: 96%;
+  }
+
+  /* line 101, style.scss */
+  .listpro .pro-link, .listpro .pro-link2 {
+    width: 50px;
+  }
+}
+/*************************************************************
+    VienSoi - the best Web Solutions Provider - http://www.canhcam.vn 
+    156 Nguyen Van Thu, District 1, Ho Chi Minh City, Viet Nam.
+    Phone: (+84) 8 38238364 â€“ Fax: (+84) 8 38238365 - Email: info@canhcam.vn
+    Facebook: https://www.facebook.com/canhcam.vn 
+*************************************************************/
+@media (min-width: 740px) and (max-width: 991px) {
+  /* line 11, //192.168.1.5/brading$/choicepro/mobile.scss */
+  img {
+    max-width: 100%;
+  }
+
+  /* line 12, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .mobile-hide {
+    display: none;
+  }
+
+  /* line 14, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .at-slider {
+    min-height: 415px;
+  }
+  /* line 16, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .at-slider .slide-item .slide-content {
+    font-size: 16px;
+  }
+  /* line 17, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .at-slider .slide-item .right {
+    width: 45%;
+    margin-right: 50px;
+  }
+  /* line 18, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .at-slider .slide-item h3 {
+    margin: 30px 0 10px;
+    font-size: 24px;
+  }
+  /* line 19, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .at-slider .slide-item p {
+    margin-bottom: 10px;
+  }
+
+  /* line 23, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .listpro li {
+    padding-bottom: 20px;
+  }
+  /* line 24, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .listpro li .pro-img:before {
+    background-size: 30% !important;
+    background-position: 50px center !important;
+  }
+  /* line 25, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .listpro li .pro-img {
+    width: 30%;
+    padding-left: 50px;
+  }
+  /* line 26, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .listpro li .pro-img img {
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -20px;
+  }
+  /* line 28, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .listpro li .pro-desc {
+    width: 46%;
+    font-size: 12px;
+  }
+  /* line 29, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .listpro li .pro-desc .pro-quoc {
+    font-size: 12px;
+  }
+  /* line 30, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .listpro li .pro-desc .pro-comming {
+    line-height: 100px;
+    padding-top: 20px;
+  }
+  /* line 34, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .listpro .pro-noimg .pro-img img {
+    width: 60%;
+  }
+
+  /* line 36, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .prodt-wrap {
+    margin-top: 30px;
+    padding: 40px;
+  }
+  /* line 38, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .prodt-wrap .cop-top .left {
+    width: 47%;
+  }
+  /* line 39, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .prodt-wrap .cop-top .right {
+    width: 47%;
+  }
+}
+/* line 44, //192.168.1.5/brading$/choicepro/mobile.scss */
+* {
+  -webkit-text-size-adjust: none;
+}
+
+@media (max-width: 738px) {
+  /* line 46, //192.168.1.5/brading$/choicepro/mobile.scss */
+  img {
+    max-width: 100%;
+  }
+
+  /* line 47, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .mobile-hide, .pro-text, .pro-quoc {
+    display: none;
+  }
+
+  /* line 48, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .slider-wrap {
+    background: none;
+    padding-bottom: 0;
+  }
+
+  /* line 49, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .at-slider {
+    min-height: 490px;
+  }
+  /* line 50, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .at-slider .slide-item {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  /* line 51, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .at-slider .slide-item .right {
+    width: 100%;
+  }
+  /* line 52, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .at-slider .slide-item .slide-content {
+    position: relative;
+    font-size: 14px;
+  }
+  /* line 53, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .at-slider .slide-item .slide-content h3 {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+  /* line 54, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .at-slider .slide-item .slide-content .mobile-show {
+    display: block;
+    margin: 15px 0 10px;
+  }
+
+  /* line 58, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .inner {
+    margin: 15px 10px;
+  }
+
+  /* line 59, //192.168.1.5/brading$/choicepro/mobile.scss */
+  #header .inner {
+    width: 96%;
+  }
+
+  /* line 62, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .listpro li .pro-img:before {
+    left: 0px;
+    background-size: 30% !important;
+  }
+  /* line 63, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .listpro li .pro-img {
+    width: 20%;
+    padding-left: 70px;
+  }
+  /* line 64, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .listpro li .pro-desc {
+    width: 47%;
+    font-size: 12px;
+    margin-right: 36px;
+  }
+  /* line 65, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .listpro li .pro-desc .pro-job {
+    font-size: 11px;
+  }
+  /* line 66, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .listpro li .pro-desc .pro-name {
+    font-size: 14px;
+  }
+  /* line 67, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .listpro li .pro-desc .pro-comming {
+    line-height: 60px;
+  }
+  /* line 69, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .listpro li .pro-link, .listpro li .pro-link2, .listpro li .pro-link2 {
+    width: 30px;
+    background-size: 40%;
+  }
+
+  /* line 75, //192.168.1.5/brading$/choicepro/mobile.scss */
+  #footer {
+    padding: 10px 0 36px;
+  }
+
+  /* line 76, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .sitename {
+    margin: 40px 0 20px;
+  }
+
+  /* line 78, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .prodetail .listpro li .pro-img:before {
+    left: -40px !important;
+    background-size: 20% !important;
+  }
+  .bg_info_dt {padding: 10px;}
+  .bg_info_dt h4 {font-size: 26px;}
+}
+@media (max-width: 400px) {
+  /* line 85, //192.168.1.5/brading$/choicepro/mobile.scss */
+  #header .inner {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* line 86, //192.168.1.5/brading$/choicepro/mobile.scss */
+  #header .logo img {
+    max-width: 75%;
+  }
+
+  /* line 87, //192.168.1.5/brading$/choicepro/mobile.scss */
+  #header .social {
+    margin-right: 5px;
+  }
+
+  /* line 90, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .prodt-wrap .left, .prodt-wrap .right {
+    width: 100%;
+  }
+
+  /* line 93, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .listpro li .pro-img:before {
+    left: 0px;
+    background-size: 25% !important;
+  }
+  /* line 95, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .listpro li .pro-desc .pro-job {
+    font-size: 11px;
+    margin: 16px 0 2px;
+  }
+  /* line 96, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .listpro li .pro-desc .pro-name {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+  /* line 97, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .listpro li .pro-desc .pro-comming {
+    line-height: 3.5;
+    font-size: 14px;
+  }
+
+  /* line 103, //192.168.1.5/brading$/choicepro/mobile.scss */
+  #footer {
+    padding: 14px 0 30px;
+  }
+
+  /* line 105, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .at-slider .slide-next, .at-slider .slide-prev {
+    width: 41px;
+    height: 59px;
+    top: 21%;
+    width: 20px;
+  }
+  /* line 106, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .at-slider .slide-next {
+    background-image: url(images/btn_next2.png);
+  }
+  /* line 107, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .at-slider .slide-prev {
+    background: url(images/btn_prev2.png) left;
+  }
+
+  /* line 110, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .prodetail .listpro li .pro-img:before {
+    left: -40px !important;
+    background-size: 20% !important;
+  }
+  /* line 111, //192.168.1.5/brading$/choicepro/mobile.scss */
+  .prodetail .inner {
+    width: 100%;
+    margin: 0;
+  }
+
+}

@@ -1,0 +1,588 @@
+@import "setup";
+/* RESPONSIVE ///////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Mobile Layout:480px and below (default). */
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: 767px) {
+    /*Header*/
+    
+    #header {
+        nav {
+            .navbar-collapse {
+                margin: 50px 50px 0 50px;
+                &:before, &:after {
+                    position: absolute;
+                    top: 0;
+                }
+                &:before {
+                    background: url('../images/menu_left.png') top no-repeat;
+                    width: 39px;
+                    height: 65px;
+                    left: -24px;
+                }
+                &:after {
+                    background: url('../images/menu_right.png') top no-repeat;
+                    width: 39px;
+                    height: 65px;
+                    right: -24px;
+                }
+                .nav {
+                    width: 100%;
+                    text-align: center;
+                    background: url('../images/menu_bg.png') repeat-x;
+                    height: 65px;
+                    li {
+                        float: none;
+                        display: inline-block;
+                        margin: 0 10px;
+                        &.logo {
+                            width: 114px;
+                            position: relative;
+                            margin: 0 5px;
+                            img {
+                                width: 100%;
+                            }
+                            a {
+                                padding: 0;
+                                margin: 0;
+                                position: absolute;
+                                top: -47px;
+                                //left: -10px;
+                                &:hover {
+                                    background: none;
+                                    &:before, &:after {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                        a {
+                            margin: 9px 0 0 0;
+                           line-height: 34px;
+                            padding:0 5px;
+                            &:hover,&.active {
+                                background: url('../images/menu_bg_hoverlink.png') repeat-x;
+                                color:@color-theme-con;
+                                &:before {
+                                    bottom: 0;
+                                    left: -11px;
+                                    content: " ";
+                                    height: 100%;
+                                    width: 11px;
+                                    position: absolute;
+                                    background: url('../images/menu_bg_hover_left.png') no-repeat;
+                                }
+                                &:after {
+                                    bottom: 0;
+                                    right: -11px;
+                                    content: " ";
+                                    height: 100%;
+                                    width: 11px;
+                                    position: absolute;
+                                    background: url('../images/menu_bg_hover_right.png') no-repeat;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .tel {
+            display:block;
+            position: absolute;
+            margin-top: -40px;
+            right: 40px;
+            top: 0;
+            ul {
+                text-align: right;
+                li {
+                    i {} a {}
+                }
+            }
+        }
+    }
+    .products {
+        .daigiadinh{
+            height:253px;
+        }
+        .listproducts{
+            div{
+                &.dgd01{
+                height:80px;
+                span{
+                    height: 80px;
+                    right: 30%;
+                    top: -30%;
+                    img{
+                        height:110px;
+                    }
+                }
+            }
+            &.dgd02{
+                height:90px;
+                 span{
+                    height: 90px;
+                    left: 24%;
+                    top: -23%;
+                    img{
+                        height:130px;
+                    }
+                }
+            }
+            &.dgd03{
+                height:110px;
+                 span{
+                    height:110px;
+                    left: 61%;
+                    top: -38%;
+                    img{
+                        height:160px;
+                    }
+                }
+            }
+            &.dgd04{
+                height:125px;
+                 span{
+                    height:125px;
+                    left: 21%;
+                    top: -38%;
+                    img{
+                        height:165px;
+                    }
+                }
+            }
+            &.dgd05{
+                height:95px;
+                 span{
+                    height:95px;
+                    left: 48%;
+                    top: -38%;
+                    img{
+                        height:215px;
+                    }
+                }
+            }
+            }
+       }
+       .daigiadinh {
+            height: 253px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+    .index{
+        .iconhome{
+            display:block;      
+        }
+    	 #indexslider{
+    	 	 .tp-bullets{
+    	 	 	display:block;
+    	 	 	top:140px;
+    	 	 }
+    	 	 .tparrows {
+    	 	 	display:block
+    	 	 }
+             .tp-banner{
+                .food{
+                    img{
+                       width: initial !important;
+                       height: initial !important;
+                    }
+                }
+                .clouds{
+                }
+            }
+    	 }
+    }
+
+    
+    .news{
+        background-position: 50% 0%; 
+    }
+
+    
+    /*products*/
+    .product-detail-page{
+        .modal{
+            .modal-dialog{
+            width:450px;
+            }
+        }
+    } 
+
+    .promotion_details{
+        .tablepro{  
+            .content{
+                padding:0 250px 30px 70px;
+            }
+            .bottom{
+                .girl{
+                    bottom: 78%;
+                    right: -43px;
+                    width: 33%;
+                    z-index: 20;
+                }
+            }
+        }
+    }    
+
+    
+
+}
+/* Medium devices (desktops, 992px and up) */
+
+@media (min-width: 991px) {
+    #header {
+        nav {
+            .navbar-collapse {
+                .nav {
+                    li {
+                        &.logo {
+                            width: 110px;
+                            margin:0 30px;
+                            a {
+                                top: -44px;
+                            }
+                        }
+                        a {
+                            padding: 0 20px;
+                            //margin: 10px 0;
+                            //font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        .tel{
+        	margin-top: 10px;
+        }
+    }
+    
+    /*products*/
+    .product-detail-page{
+        .modal{
+            .modal-dialog{
+            width:900px;
+            }
+            .modal-body{
+            position:relative;
+            padding:0;
+            background:url('../images/products_detail_bg.jpg') no-repeat 157% center;
+            background-size: cover;
+            height:450px;
+            max-height: 450px;
+            overflow: hidden;
+            }
+        }
+    }      
+
+    .news{
+        .newspager{
+        //margin-left: 25%;
+        //padding-left: 15px;
+        text-align: center
+    }
+    }
+
+     /*products*/
+    .promotion{
+        .promotionlist{ 
+            position:relative;
+            .dgd01{
+                margin: 0;
+                min-height: 450px;
+                img{
+                    width: 55%;
+                    display: block;
+                }
+            }
+            .dgd02{
+                position:absolute;
+                width: inherit;
+                left: 33%;
+                top: 14%;
+            }
+            .dgd03{
+                width: inherit;
+                left: -2%;
+                top: 12%;
+                margin-top: 0;
+                img{
+                    width:73%;
+                }
+            }
+            .dgd04{
+                width:80%;
+                text-align: right;
+                img{
+                }
+            }
+            .dgd05{
+                width:80%;
+                right:0;
+                img{
+                }
+            }
+            .inbot{
+                //width:100%;
+                position:fixed;
+                bottom:0;
+            }
+       }
+    }
+
+
+    .promotion_details{
+        .tablepro{  
+            .content{
+                padding:0 200px 30px 70px;
+            }
+            .bottom{
+                .girl{
+                    bottom: 120px;
+                    right: -30px;
+                    width: 33%;
+                    z-index: 20;
+                }
+            }
+        }
+    }
+
+
+    #footer{
+        .copyright{
+            text-align: right;
+            img{
+                padding-right: 30px;
+            }
+        }
+    }
+    .products {
+        #footer{
+            display:block;
+             z-index: 200;
+        position:fixed;
+        bottom:20px;
+        width:100%;
+        }  
+    }
+
+}
+
+@media (min-width: 1023px) {
+    .products {
+        .listproducts{
+            div{
+                z-index: 200;
+            &.dgd01{
+                height:90px;
+                span{
+                    height: 90px;
+                    right: 25%;
+                    top: -38%;
+                    img{
+                        height:90px;
+                    }
+                }
+            }
+            &.dgd02{
+                height:100px;
+                 span{
+                    height: 110px;
+                    left: 51%;
+                    top: -97%;
+                    img{
+                        height:110px;
+                    }
+                }
+            }
+            &.dgd03{
+                height:100px;
+                 span{
+                    height:130px;
+                    left: 36%;
+                    top: -160%;
+                    img{
+                        height:130px;
+                    }
+                }
+            }
+            &.dgd04{
+                height:100px;
+                 span{
+                    height:140px;
+                    left: 32%;
+                    top: -148%;
+                    img{
+                        height:140px;
+                    }
+                }
+            }
+            &.dgd05{
+                height:100px;
+                 span{
+                    height:160px;
+                    left: 47%;
+                    top: -170%;
+                    img{
+                        height:160px;
+                    }
+                }
+            }
+            }
+       }
+       .daigiadinh {
+        height: 253px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        }
+    }
+
+    /*products*/
+    .promotion{
+        
+    } 
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1199px) {
+    #header {
+        nav {
+            .navbar-collapse {
+                .nav {
+                    li {
+                        &.logo {
+                            margin: 0 50px;
+                            width: 125px;
+                            a {
+                                top: -50px;
+                            }
+                        }
+                        a {
+                            padding: 0 30px;
+                            //margin: 9px 0 0 0;
+                            //font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+        /*products*/
+    .product-detail-page{
+        .thumbnails{
+            li{
+                margin:0 3px 0 3px;
+            }
+        }
+    }
+
+    /*products*/
+    .products {
+        .daigiadinh {
+            height: 253px;
+        width: 100%;
+        //position: absolute;
+        //bottom: 0;
+        }
+    }
+
+    .promotion_details{
+        .tablepro{  
+            .content{
+                padding:0 250px 30px 70px;
+            }
+            .bottom{
+                .girl{
+                    bottom: 149px;
+                    right: -34px;
+                    width: 33%;
+                    z-index: 20;
+                }
+            }
+        }
+    }    
+
+}
+
+
+@media (min-width: 1840px) {
+    /*products*/
+    .products {
+        .listproducts{
+            div{
+                z-index: 200;
+            &.dgd01{
+                height:90px;
+                span{
+                    height: 90px;
+                    right: 25%;
+                    top: -38%;
+                    img{
+                        height:90px;
+                    }
+                }
+            }
+            &.dgd02{
+                height:100px;
+                 span{
+                    height: 110px;
+                    left: 51%;
+                    top: -71%;
+                    img{
+                        height:110px;
+                    }
+                }
+            }
+            &.dgd03{
+                height:100px;
+                 span{
+                    height:150px;
+                    left: 36%;
+                    top: -105%;
+                    img{
+                        height:150px;
+                    }
+                }
+            }
+            &.dgd04{
+                height:100px;
+                 span{
+                    height:140px;
+                    left: 30%;
+                    top: -30%;
+                    img{
+                        height:140px;
+                    }
+                }
+            }
+            &.dgd05{
+                height:100px;
+                 span{
+                    height:160px;
+                    left: 44%;
+                    top: 14%;
+                    img{
+                        height:160px;
+                    }
+                }
+            }
+            }
+       }
+        .daigiadinh {
+            height: 253px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        }
+    }
+}
+/* PRINT ///////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media print {}

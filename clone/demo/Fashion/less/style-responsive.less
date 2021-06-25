@@ -1,0 +1,122 @@
+@import "setup";
+/* RESPONSIVE ///////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Mobile Layout:480px and below (default). */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width:767px) {
+
+	.topbar{
+		margin-top: 20px;
+		display:block;
+	}
+	#header{
+		.logo{
+			display:none;
+		}
+			.navbar-default{
+				background: none;
+				border:none;
+	    .navbar-collapse{
+	        //padding-right: 0;
+					padding-left: 0;
+	    }
+	  }
+	}
+
+
+ /*news*/
+  .newslist_wrap {
+  	.news_left {
+  		.news_item {
+		    width: 31%;
+		    float: left;
+		    margin-left: 3.5%;
+		    &.alpha {
+			    margin-left: 0%;
+			  }
+	  	}
+	  }
+	  .news_right {
+  		.news_item {
+		    width: 31%;
+		    float: left;
+		    margin-left: 3.5%;
+		    &.alpha {
+			    margin-left: 0%;
+			  }
+	  	}
+	  }
+  }
+
+
+
+#footer{
+    .bottom{
+    	line-height: 40px;
+    	padding:0;
+       .logo{
+            text-align: left;
+        }
+        .copyright{
+            text-align: right;
+        }
+    }
+}
+
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width:991px) {
+    
+	.contact{
+			.wrap-contact .frm-row {
+		    .border-radius(0);
+		    border: 1px solid #d1d1d1;
+		    width: 49%;
+		    clear: initial;
+		    margin-bottom: 10px;
+		    float: left;
+		    &:nth-child(2n) {
+			    margin-left: 2%;
+			  }
+			  .label {
+		    width: 15%;
+		    float: left;
+		    line-height: 30px;
+				padding: 0 10px;
+				margin: 0;
+		  }
+		  input {
+		    width: 85%;
+		    border: 0;
+		  }
+		  textarea {
+		    width: 85%;
+		    border: 0;
+		  }
+		  &.ct-button {
+		    border: 0;
+		    margin-left: 0;
+		    float: right;
+		  }
+		  
+		  
+		  .frm-btn {
+			  	input {
+			    width: initial;
+			  }
+		  }
+	}
+}
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width:1199px) {
+   
+}
+
+/* PRINT ///////////////////////////////////////////////////////////////////////////////////////////////// */
+@media print {
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Lab 02</title>
+</head>
+
+<body>
+    <h1>E=mc<sup>2</sup></h1>
+    <h2>X<sub>2</sub> + Log<sup>3<sup>88</sup></sup>
+    </h2>
+    <!-- bắt đầu bài toán -->
+    <p>
+        <em>Emphasized text</em><br>
+        <strong>Strong text</strong><br>
+        <code>A piece of computer code</code><br>
+        <samp>Sample output from a computer program</samp><br>
+        <del>blue</del><br>
+        <ins>red</ins>
+    </p>
+</body>
+
+</html>

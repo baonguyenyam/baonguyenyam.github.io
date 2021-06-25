@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Position</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        #demo .demo-child {
+            position: relative;
+        }
+        #demo .demo-child .box-a {
+            position: absolute;
+            top: 20px;
+            left: 100px
+        }
+        #demo .demo-child .box-b {
+            position: absolute;
+            bottom: 20px;
+            right: 10px
+        }
+        #demo .demo-child .box-c {
+            position: absolute;
+            bottom: -15px;
+            right: -10px
+        }
+        #demo .demo-child .box-d {
+            position: absolute;
+            top: -20px;
+            right: -10px
+        }
+    </style>
+</head>
+
+<body>
+    <div id="demo">
+
+        <div class="demo-child">
+            <div class="box-a">A</div>
+            <div class="box-b">B</div>
+            <div class="box-c">C</div>
+            <div class="box-d">D</div>
+        </div>
+
+    </div>
+</body>
+
+</html>

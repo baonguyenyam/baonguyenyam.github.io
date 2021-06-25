@@ -1,0 +1,130 @@
+/* ////////// CANHCAM ////////////////////////////////////////// */
+/* ////////// Copyright 2014 by VienSoi Team//////////// */
+/* ////////// Coding by Bao Nguyen///////////////////////////// */
+/* ////////// v1.0.1 Built by less technology////////////////// */
+/* ////////// CANHCAM ////////////////////////////////////////// */
+
+@import "../../setup.less";
+@charset "utf-8";
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* MOBILE ///////////////////////////////////////////////////////////////////////////////////////////////// */
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+.cc-pricing-basic {
+    .item {
+        margin-bottom: 50px;
+        text-align: center;
+        padding: 30px 0 30px;
+        color: @color-black;
+        border: 5px solid @color-white;
+        background: @color-clouds;
+        .transition(all 0.5s);
+        h3 {
+            font-size: 26px;
+            text-transform: uppercase;
+            color: darken(@color-white, 5%);
+            width: 150px;
+            border-radius: 50%;
+            height: 150px;
+            margin: 0 auto;
+            background: @color-link;
+            .middlediv;
+        	span{
+        		font-size: 12px;
+        		display: inline-block;
+        		color: darken(@color-white, 20%);
+        	}
+        }
+        dl {
+            padding: 0 20px;
+            font-weight: normal;
+            dt {
+                text-align: left;
+                width: 80%;
+                clear: none;
+                border-bottom: 1px solid rgba(255, 255, 255, .2);
+                float: left;
+                font-weight: normal;
+            }
+            dd {
+                width: 20%;
+                margin-left: 0;
+                float: left;
+                text-align: right;
+                border-bottom: 1px solid rgba(255, 255, 255, .2);
+                font-weight: normal;
+            }
+        }
+        .price {
+            background: @color-white;
+            margin: 30px 0 50px;
+            color: @color-white;
+            background: @color-black;
+            .middlediv;
+            h4{
+            	line-height: 80px;
+            	strong {
+	                font-size: 32px;
+	            }
+            }
+        }
+        .readmore {
+            margin: 40px auto 0 auto;
+            text-align: center;
+            display: block;
+            background: none;
+            text-decoration: none;
+            text-transform: uppercase;
+            background: transparent;
+            border: 1px solid transparent;
+            border-radius: 0;
+            font-size: 18px;
+            width: 80%;
+            padding: 10px;
+            color: @color-black;
+            i {
+                font-size: 24px;
+                line-height: 24px;
+                font-weight: bold
+            }
+        }
+        &:hover, &.active {
+            border: 5px solid @color-white;
+            .box-shadow(0px 0px 5px 0px rgba(50, 50, 50, 0.75));
+            z-index: 90;
+            background: @color-link;
+            color: @color-white;
+            h3 {
+                .box-shadow(0px 0px 2px 0px rgba(50, 50, 50, 0.3));
+                background: @color-white;
+                color: @color-link;
+                span {
+                    color: darken(@color-white, 50%);
+                }
+            }
+            .readmore {
+                color: @color-black;
+                background: rgba(255, 255, 255, 0.6);
+                border: 1px solid @color-white;
+                border-radius: 0;
+            }
+        }
+    }
+}
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* & TABLET ///////////////////////////////////////////////////////////////////////////////////////////////// */
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+@media (min-width: 767px) {} // ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* PC ///////////////////////////////////////////////////////////////////////////////////////////////// */
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+@media (min-width: 991px) {} // ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* LAGRE DEVICES ///////////////////////////////////////////////////////////////////////////////////////////////// */
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+@media (min-width: 1199px) {} // ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* PRINTS ///////////////////////////////////////////////////////////////////////////////////////////////// */
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+@media print {}

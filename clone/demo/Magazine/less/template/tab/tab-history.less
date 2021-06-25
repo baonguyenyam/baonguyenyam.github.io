@@ -1,0 +1,166 @@
+/* ////////// CANHCAM ////////////////////////////////////////// */
+/* ////////// Copyright 2014 by VienSoi Team//////////// */
+/* ////////// Coding by Bao Nguyen///////////////////////////// */
+/* ////////// v1.0.1 Built by less technology////////////////// */
+/* ////////// CANHCAM ////////////////////////////////////////// */
+@import "../../setup.less";
+@charset "utf-8";
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* MOBILE ///////////////////////////////////////////////////////////////////////////////////////////////// */
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// history
+.cc-tab-historys{
+    .tab {
+        margin-bottom: 30px;
+        .nav {
+            &.nav-tabs {
+                border: 0;
+            }
+            float: none;
+            width: 100%;
+            text-align: center;
+            li {
+                display: inline-block;
+                float: none;
+                a {
+                    display:block;
+                    border: 0;   
+                    color:@color-black;
+                    font-size: 24px;
+                    letter-spacing: 2px;
+                    padding:0;
+                    text-decoration: none;
+                    &:after{
+                        content:" / ";
+                    }
+                }
+                &.active,
+                &:hover,
+                &:focus {
+                    a{
+                        background: none;
+                        color: @color-main;
+                        font-weight: bold;
+                    }
+                }
+                &:last-child{
+                    a{
+                        &:after{
+                            content:"";
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .tab-content {
+        .tab-pane {
+            text-align: center;
+            .btn{
+                border:2px solid @color-black;
+                color: @color-black;
+                padding:10px 30px;
+                font-size: 18px;
+                text-transform: uppercase;
+                &:hover{
+                    color:@color-link;
+                    border:2px solid @color-link;
+                }
+            }
+        }
+    }
+    .imageload{
+        .item {
+            figure {
+                position: relative;
+                display: inline-flex;
+                figcaption {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    z-index: 100;
+                    border: 10px solid rgba(255,255,255,0.3);
+                    font-size: 24px;
+                    color: @color-white;
+                    .middlediv;
+                    &:after {
+                        content: "";
+                        display: block;
+                        border: 1px solid @color-white;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        position: absolute;
+                        height: 100%;
+                    }
+                    .text{
+                        .transition(all 0.5s);
+                        opacity: 0;
+                    }
+                }
+            }
+            &:hover{
+                figure{
+                    figcaption{
+                        height:100%;
+                        &:after{
+                            border: 1px solid @color-main;
+                        }
+                        .text{
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+        text-align: center;
+    }
+}
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* & TABLET ///////////////////////////////////////////////////////////////////////////////////////////////// */
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width:767px) {
+
+
+}
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* PC ///////////////////////////////////////////////////////////////////////////////////////////////// */
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width:991px) {
+
+// history
+.cc-tab-historys{
+    .tab-content {
+        .tab-pane {
+            text-align: initial;
+        }
+    }
+}
+    
+}
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* LAGRE DEVICES ///////////////////////////////////////////////////////////////////////////////////////////////// */
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width:1199px) {
+
+    
+}
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* PRINTS ///////////////////////////////////////////////////////////////////////////////////////////////// */
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+@media print {
+    
+}

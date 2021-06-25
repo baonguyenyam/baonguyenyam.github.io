@@ -1,0 +1,421 @@
+@charset "utf-8";
+/*=============================================*/
+/*                   index                     */
+/*=============================================*/
+
+#c-carousel {
+	height: 480px;
+	width:100%;
+	min-width: 1000px;
+	padding:20px 0 0 0;
+}
+#c-carousel .wrap {
+	clear: both;
+	height: 480px;
+	overflow: hidden;
+	width: 100%;
+	position:relative;
+}
+#carousel div {
+	display: block;
+	float: left;
+	height: 480px;
+	width: 1000px;
+	padding:0 5px;
+}
+#next {
+	right: -510px;
+}
+#prev {
+	left: -510px;
+}
+#prev, #next {
+	background-color: rgba(255, 255, 255, 0.5);
+	display: block;
+	height: 480px;
+	position: absolute;
+	top: 10px;
+	width: 50%;
+}
+#c-carousel * {
+	color: #333333;
+	font-family: Arial, Geneva, SunSans-Regular, sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+
+.topbl {
+	clear:both;
+	overflow:hidden;
+	background:url(../img/index/index_photo.png) no-repeat 0 0;
+	padding:0 0 0 192px;
+	margin-bottom:10px;
+}
+
+.topbox {
+	float:left;
+	width:393px;	
+}
+.topbox p {
+	padding:0 0 0 26px;
+}
+
+.facebox {
+	float:right;
+	background:url(../img/index/facebox_bg.jpg) no-repeat 0 0;
+	width:280px;
+	height:270px;
+	padding:10px 10px 5px 50px
+}
+
+
+.topbn {
+	clear:both;
+	overflow:hidden;
+	background:url(../img/index/index_bn_bg.jpg) no-repeat 0 0;
+	height:321px;
+	position:relative;
+}
+
+.topbn p, .topbn li {
+	position:absolute;
+}
+
+.topbn p {
+	bottom:0;
+	left:562px;
+	z-index:4;	
+}
+.topbn li.topbn01 {
+	top:0;
+	left:0;
+	z-index:1;
+}
+
+.topbn li.topbn02 {
+	top:0;
+	left:300px;
+	z-index:3;
+}
+
+.topbn li.topbn03 {
+	top:0;
+	right:0;
+	z-index:2;
+}
+
+
+/*=============================================*/
+/*                   party                     */
+/*=============================================*/
+
+
+
+.parbltop {
+	clear:both;
+	overflow:hidden;
+	display:block;
+	background:url(../img/party/party_bltop_bg.jpg) no-repeat 0 0;
+	height:318px;
+	padding:21px 26px 0 0;
+	margin-bottom:30px;
+}
+
+
+.parbltop dl {
+	float:right;
+	display:block;
+	width:370px;
+	margin-bottom:7px;
+}
+.parbltop dl dt {
+	width:76px;
+	float:left;
+}
+
+.parbltop dl dd {
+	float:right;
+	width:260px;
+}
+.parbltop li {
+	line-height:21px;
+}
+
+.parbltop p {
+	clear:both;
+	text-align:right;
+}
+
+
+.parbl {
+	clear:both;
+	overflow:hidden;
+	display:block;
+	background:url(../img/party/party_box_bg.png) no-repeat 0 15px;
+	padding:0 0 20px 21px;
+	margin-bottom:10px;
+}
+
+.par_photo {
+	float:left;
+	width:465px;
+	padding:35px 0 0 0;
+}
+
+.par_info {
+	float:right;
+	width:440px;
+}
+
+.parbl dl {
+	display:block;
+	background:url(../img/party/party_sub_box.png) no-repeat 0 0;
+	padding:15px 0 10px 25px;
+	margin-bottom:15px;
+}
+
+.parbl dl dt {
+	color:#b63d07;
+	font-weight:bold;
+}
+
+.parbl dl dd {
+	line-height:21px;
+}
+
+.par_info p {
+	font-size:11px;
+	line-height:16px;
+	padding-left:22px;
+}
+
+.note {
+	font-size:11px;
+	line-height:16px;
+}
+
+.shop_info {
+	clear:both;
+	overflow:hidden;
+	display:block;
+	margin-bottom:30px;
+}
+
+.box_info {
+	display:block;
+	float:right;
+}
+
+.box_info dl {
+	clear:both;
+	overflow:hidden;
+	display:block;
+	background:url(../img/shared/line.gif) repeat-x left bottom;
+	padding-bottom:5px;
+	margin-bottom:5px;
+}
+
+.box_info dl dt {
+	font-weight:bold;
+	float:left;
+	color:#b63d07;
+	padding-left:10px;
+	line-height:14px;
+}
+.box_info dl dd {
+	float:right;
+	line-height:14px;
+	width:297px;
+}
+
+
+
+/*=============================================*/
+/*                   shopinfo                  */
+/*=============================================*/
+
+.mapbox {
+	clear:both;
+	overflow:hidden;
+	display:block;
+	background:url(../img/shopinfo/mapbox_bg.jpg) no-repeat 0 0;
+	height:790px;
+	text-align:center;
+	padding:7px 0 0 0;
+	margin:0 0 30px 0;
+}
+
+
+
+
+
+/*=============================================*/
+/*                   menu                      */
+/*=============================================*/
+
+
+.menubl {
+	clear:both;
+	overflow:hidden;
+	display:block;
+	background:url(../img/menu/menu_bl_bg.png) no-repeat 0 0;
+	height:990px;
+	margin-bottom:35px;
+}
+
+.menubl dl, .menubl ul {
+	clear:both;
+	display:block;
+}
+
+
+.menubl dl.mbl01 {
+	padding:36px 0 0 520px;
+}
+
+.menubl dl.mbl02 {
+	padding:89px 0 0 20px;
+}
+
+.menubl dl.mbl03 {
+	padding:79px 0 0 573px;
+}
+
+.menubl ul.mbl04 {
+	padding:132px 0 0 166px;
+}
+
+.menubl ul.mbl04 li {
+	float:left;
+	margin-right:55px;
+}
+
+.menubl01 {
+	clear:both;
+	overflow:hidden;
+	display:block;
+}
+
+
+.pr_col01 {
+	width:300px;
+	display:block;
+	float:left;
+	margin-right:18px;
+}
+
+.pr_col02 {
+	width:300px;
+	display:block;
+	float:left;
+}
+
+.pr_col03 {
+	width:300px;
+	display:block;
+	float:right;
+}
+
+.prbox {
+	margin-bottom:30px;
+}
+
+.prbox h4 {
+	margin-bottom:15px;
+}
+
+.prbox dl {
+	clear:both;
+	overflow:hidden;
+	display:block;
+	background:url(../img/menu/line.gif) repeat-x left bottom;
+	padding:0 0 5px 0;
+	margin:0 0 5px 0;
+}
+
+.prbox dl.dlspec {
+	margin:0 0 30px 0;
+}
+
+.prbox dl dt {
+	float:left;
+}
+
+.prbox dl dd {
+	float:right;
+	font-weight:bold;
+	color:#b63d07;
+}
+
+
+
+
+/*=============================================*/
+/*                   kidsmenu                  */
+/*=============================================*/
+
+
+.kidsbl01 {
+	clear:both;
+	overflow:hidden;
+	display:block;
+	background:url(../img/kidsmenu/kidsmenu_bl01_bg.jpg) no-repeat 0 0;
+	height:822px;
+	margin-bottom:30px;
+}
+
+.kbl01 {
+	padding:55px 0 0 503px;
+}
+
+.kbl02 {
+	padding:84px 0 0 18px;
+}
+
+.kbl03 {
+	padding:97px 0 0 525px;
+}
+
+
+.kidsbl02 {
+	clear:both;
+	overflow:hidden;
+	display:block;
+	background:url(../img/kidsmenu/kidsmenu_bl02_bg.jpg) no-repeat 0 0;
+	height:341px;
+	padding:21px 0 0 7px;
+}
+
+.kidsbl02 h4 {
+	float:left;
+}
+
+.kidsbl02 .kidstext {
+	float:left;
+	padding:265px 0 0 12px;
+}
+
+
+
+
+/*=============================================*/
+/*                   oomori-menu               */
+/*=============================================*/
+
+
+.oobl {
+	clear:both;
+	overflow:hidden;
+	display:block;
+	background:url(../img/oomori-menu/oomori-menu_bn_bg.jpg) no-repeat 0 0;
+	height:133px;
+}
+
+.oobl p {
+	padding:78px 0 0 580px;
+}
+
+
+
+

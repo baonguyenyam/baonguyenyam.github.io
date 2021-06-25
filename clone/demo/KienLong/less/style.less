@@ -1,0 +1,329 @@
+/* ////////// CANHCAM ////////////////////////////////////////// */
+/* ////////// Copyright 2014 by VienSoi Team//////////// */
+/* ////////// Coding by Bao Nguyen///////////////////////////// */
+/* ////////// v1.0.1 Built by less technology////////////////// */
+/* ////////// CANHCAM ////////////////////////////////////////// */
+
+@import "setup.less";
+@charset "utf-8";
+
+/* BootStrap Libs */
+@import "bootstrap-less/bootstrap.less";
+@import "global.less";
+/* ======================================================================= */
+/* #LAYOUT BUILT========================================================== */
+/* ======================================================================= */
+
+// @font-face {
+//     font-family: 'Font';
+//     src: url('../fonts/kial-webfont.eot');
+//     src: url('../fonts/kial-webfont.eot?iefix') format('eot'), url('../fonts/kial-webfont.woff') format('woff'), url('../fonts/kial-webfont.ttf') format('truetype'), url('../fonts/kial-webfont.svg#Font') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+//@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
+//@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,vietnamese);
+//@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=latin,vietnamese);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+//@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+//@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300&subset=latin,vietnamese);
+//@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+//Thay thế cho Myriad Pro
+//@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic&subset=latin,vietnamese);
+
+@font: "Roboto";
+// @font1: "Droid Serif";
+// @font2: "Noto Sans";
+// @font3: "Open Sans Condensed";
+// @font4: "Roboto Condensed";
+
+
+html, body {
+    font-family: @font;
+    font-size: 24px;
+    height: 100%;
+    color: @color-main;
+}
+/*Global Lib*/
+a {
+    color: @color-hover;
+    &:hover {
+        color: @color-link;
+        //text-decoration: none;
+    }
+}
+h1{
+	font-size: 48px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////// MOBLIE ////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/*Global Lib*/
+
+    
+
+/*End Global Lib*/
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////// HEADER ////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////// MAIN ////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+main{
+position: relative;
+	#header{
+		display: none;
+		position: fixed;
+		top: 15px;
+		width: 100%;
+		z-index: 9999;
+	}
+
+	.wrapper-full {
+	    position: relative;
+	    margin: 0;
+	    padding: 0;
+	    top: 0;
+	    left: 0;
+	    height: 100%;
+	    width: 100%;
+	    .tp-banner{
+	    	background-color: darken(@color-white,15%);
+			.tp-caption {
+				white-space: normal !important;
+				vertical-align: top;
+				&.fullscreen{
+				    width: 100%;
+				    // top: 0 !important;
+				    // left: 0 !important;
+				    //height: 100%;
+					.container {
+					    position: relative;
+					    top: 0;
+					    left: 0;
+					    height: 100%;
+					    width: 100%;
+					}
+				}
+			}
+			.box{
+				position: relative;
+				.border-radius(10px);
+				margin: 105px 0 0 0;
+				padding: 15px;
+			}
+	    }
+
+	}
+
+	.redtable{
+		border-top:1px solid lighten(@color-base,10%);
+		caption{
+			color: @color-base;
+		}
+		thead{
+			th, td{
+				text-align: center;
+				vertical-align: middle;
+				background: @color-base;
+				color: @color-white;
+				border-color: lighten(@color-base,10%);
+			}
+		}
+		&.table-striped{
+			tbody{
+				> tr{
+					color: darken(@color-base,10%);	
+					&:nth-child(odd){
+						background: lighten(@color-base,55%);
+						color: darken(@color-base,10%);	
+					}
+				}
+			}
+		}
+	}
+
+
+	.greentable{
+		border-top:1px solid lighten(@color-main,10%);
+		caption{
+			color: @color-main;
+		}
+		thead{
+			th, td{
+				text-align: center;
+				vertical-align: middle;
+				background: @color-main;
+				color: @color-white;
+				border-color: lighten(@color-main,10%);
+			}
+		}
+		&.table-striped{
+			tbody{
+				> tr{
+					color: darken(@color-main,0%);	
+					&:nth-child(odd){
+						background: lighten(@color-main,70%);
+						color: darken(@color-main,0%);	
+					}
+				}
+			}
+		}
+	}	
+
+	.box{
+		.captiontitle{
+			position: absolute;
+			bottom: 100%;
+			margin-bottom: -15px;
+			left:0;
+			text-align: center;
+			background: @color-white; 
+			.border-radiuses (10px, 0, 0, 10px);
+			padding: 0 15px 5px 15px;
+			.box-shadow(0 -6px 15px rgba(0,0,0,0.15));
+			h2{
+				margin: 20px 30px 5px 30px;
+				font-size: 42px;
+			}
+			h3{
+				margin: 20px 10px 5px 10px;
+				font-size: 32px;
+			}
+			i{
+				font-size: 20px;
+			}
+			&.wide{
+				width: 96%;
+				left: 2%;
+			}
+		}
+	}
+
+	table{
+		&.table{
+			margin-bottom: 0;
+		}
+		td, th{
+			padding:14px 8px !important;
+		}
+	}
+	.title{
+		.desc{
+			font-size: 20px;
+			line-height: 1.3em;
+			font-weight: bold;
+		}
+
+	}
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+	/*Ty gia*/
+	.tygia{
+	}
+
+	/*Lai suat*/
+	.laisuat{
+
+	}
+
+	/*Mang luoi*/
+	.mangluoi{
+		.box{
+			.captiontitle{
+				h2{
+					margin-bottom: 20px;
+				}
+			}
+		}
+		table{
+			td, th{
+				font-size: 32px;
+			}
+		}
+	}
+   
+
+
+
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////// FOOTER ////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+footer {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	z-index: 9999;
+	width: 100%;
+	&#footer{
+		.box{
+			position: relative;
+			background: darken(@color-main,0%);	
+			.border-radius(2px);
+			//border: 0;
+			margin: 0;
+			padding: 15px;
+			min-height: initial;
+			color: @color-white;
+		}
+
+		.logo{
+			float: left;
+			width: 5%;
+		}
+		#scrollingText {
+			float: left;
+			width: 95%;
+		    overflow: hidden;
+		    position: relative;
+		}
+		ul.marquee {
+		    display: block;
+		    padding: 0;
+		    margin: 0;
+		    list-style: none;
+		    position: relative;
+		    overflow: hidden;
+		    height: 30px;
+		    line-height: 30px;
+		    li {
+		        position: absolute;
+		        top: -999em;
+		        left: 0;
+		        display: block;
+		        white-space: nowrap;
+		        line-height: 30px;
+		        font-size: 24px;
+		        background: darken(@color-main,0%);	
+		    }
+		}
+
+	}
+
+
+}
+
+
+
+
+/* PC & TABLET ///////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@import "style-vendors.less";
+@import "style-responsive.less";
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////// ADDONS ////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */

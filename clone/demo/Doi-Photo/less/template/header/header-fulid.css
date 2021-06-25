@@ -1,0 +1,237 @@
+@charset "utf-8";
+/* ////////// CANHCAM ////////////////////////////////////////// */
+/* ////////// Copyright 2014 by VienSoi Team//////////// */
+/* ////////// Coding by Bao Nguyen///////////////////////////// */
+/* ////////// v1.0.1 Built by less technology////////////////// */
+/* ////////// CANHCAM ////////////////////////////////////////// */
+/* Less Function
+>> IMG
+data-uri('image/jpeg;base64','../data/image.jpg'); 
+
+>> MIXIN
+.boxshw, #boxshw {
+  box-shadow: inset 0 0 10px #555;
+}
+.my-other-mixin() {
+  background: white;
+}
+.myclass {
+  .boxshw;
+  .my-other-mixin();
+}
+*/
+.middlediv {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+}
+/* #OPACITY*/
+/* MOBILE ///////////////////////////////////////////////////////////////////////////////////////////////// */
+/*End Global Lib*/
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////// HEADER ////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* header */
+header.cc-header-fulid #header .navbar {
+  margin-bottom: 0;
+  -webkit-box-shadow: 0px 1px 1px -1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 1px 1px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 1px -1px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  background: rgba(255, 255, 255, 0.98);
+  z-index: 1000;
+  border: 0;
+}
+header.cc-header-fulid #header .navbar.navbar-default {
+  border-color: none;
+}
+header.cc-header-fulid #header .navbar .navbar-header {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+header.cc-header-fulid #header .navbar .navbar-header .navbar-brand {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+header.cc-header-fulid #header .navbar .navbar-collapse {
+  position: relative;
+}
+header.cc-header-fulid #header .navbar .navbar-collapse .nav {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+header.cc-header-fulid #header .navbar .navbar-collapse .nav > li > a {
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  color: #000000;
+}
+header.cc-header-fulid #header .navbar .navbar-collapse .nav > li > a:hover {
+  background: none;
+  color: #3781b7;
+  -webkit-box-shadow: 3px 0 0 -1px #61a1ef inset;
+  -moz-box-shadow: 3px 0 0 -1px #61a1ef inset;
+  box-shadow: 3px 0 0 -1px #61a1ef inset;
+}
+header.cc-header-fulid #header .navbar .navbar-collapse .nav > li.active > a,
+header.cc-header-fulid #header .navbar .navbar-collapse .nav > li.open > a {
+  color: #3781b7;
+  background: #f7f7f7;
+  -webkit-box-shadow: 3px 0 0 -1px #1154a6 inset;
+  -moz-box-shadow: 3px 0 0 -1px #1154a6 inset;
+  box-shadow: 3px 0 0 -1px #1154a6 inset;
+}
+header.cc-header-fulid #header .navbar .navbar-collapse .nav > li.open > ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+header.cc-header-fulid #header .navbar .navbar-collapse .nav > li.open > ul > li > a {
+  color: #000000;
+}
+header.cc-header-fulid #header .navbar .navbar-collapse .nav > li.open > ul > li > a:hover {
+  background: #fafafa;
+  -webkit-box-shadow: 3px 0 0 -1px #61a1ef inset;
+  -moz-box-shadow: 3px 0 0 -1px #61a1ef inset;
+  box-shadow: 3px 0 0 -1px #61a1ef inset;
+}
+header.cc-header-fulid #header .navbar .navbar-collapse .nav > li.open > ul > li ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+header.cc-header-fulid #header .navbar .navbar-collapse .nav > li.open > ul > li ul > li > a {
+  color: #000000;
+  display: block;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+header.cc-header-fulid #header .navbar .navbar-collapse .nav > li.open > ul > li ul > li > a:hover {
+  background: #fafafa;
+  -webkit-box-shadow: 3px 0 0 -1px #61a1ef inset;
+  -moz-box-shadow: 3px 0 0 -1px #61a1ef inset;
+  box-shadow: 3px 0 0 -1px #61a1ef inset;
+}
+/* & TABLET ///////////////////////////////////////////////////////////////////////////////////////////////// */
+@media (min-width: 767px) {
+  /* header */
+  header.cc-header-fulid #header .navbar .navbar-header {
+    float: none;
+  }
+  header.cc-header-fulid #header .navbar .navbar-header .navbar-brand {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    display: block;
+  }
+  header.cc-header-fulid #header .navbar .navbar-header .navbar-brand img {
+    display: initial;
+  }
+  header.cc-header-fulid #header .navbar .navbar-collapse .nav > li > a:hover {
+    -webkit-box-shadow: 0 3px 0 #1154a6 inset;
+    -moz-box-shadow: 0 3px 0 #1154a6 inset;
+    box-shadow: 0 3px 0 #1154a6 inset;
+  }
+  header.cc-header-fulid #header .navbar .navbar-collapse .nav > li.active > a,
+  header.cc-header-fulid #header .navbar .navbar-collapse .nav > li.open > a {
+    background: none;
+    -webkit-box-shadow: 0 3px 0 #1154a6 inset;
+    -moz-box-shadow: 0 3px 0 #1154a6 inset;
+    box-shadow: 0 3px 0 #1154a6 inset;
+  }
+  header.cc-header-fulid #header .navbar .navbar-collapse .nav > li.open > ul {
+    -webkit-box-shadow: 0 3px 0 #1154a6 inset;
+    -moz-box-shadow: 0 3px 0 #1154a6 inset;
+    box-shadow: 0 3px 0 #1154a6 inset;
+    background: #fafafa;
+    border: 0;
+  }
+  header.cc-header-fulid #header .navbar .navbar-collapse .nav > li.open > ul > li > a:hover {
+    -webkit-box-shadow: 3px 0 0 -1px #61a1ef inset;
+    -moz-box-shadow: 3px 0 0 -1px #61a1ef inset;
+    box-shadow: 3px 0 0 -1px #61a1ef inset;
+  }
+  header.cc-header-fulid #header .navbar .navbar-collapse .nav > li.open > ul > li ul > li > a:hover {
+    -webkit-box-shadow: 3px 0 0 -1px #61a1ef inset;
+    -moz-box-shadow: 3px 0 0 -1px #61a1ef inset;
+    box-shadow: 3px 0 0 -1px #61a1ef inset;
+  }
+}
+/* PC ///////////////////////////////////////////////////////////////////////////////////////////////// */
+@media (min-width: 991px) {
+  /* header */
+  header.cc-header-fulid #header .navbar .navbar-header {
+    float: left;
+    width: initial;
+  }
+  header.cc-header-fulid #header .navbar .navbar-header .navbar-brand {
+    padding-top: 25px;
+    padding-bottom: 0;
+    margin-left: -15px;
+    width: initial;
+    text-align: initial;
+    display: block;
+  }
+  header.cc-header-fulid #header .navbar .navbar-header .navbar-brand img {
+    display: initial;
+  }
+  header.cc-header-fulid #header .navbar .navbar-collapse .nav > li > a {
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 100px;
+  }
+  header.cc-header-fulid #header .navbar .navbar-collapse .nav > li > a:hover {
+    -webkit-box-shadow: 0 3px 0 #1154a6 inset;
+    -moz-box-shadow: 0 3px 0 #1154a6 inset;
+    box-shadow: 0 3px 0 #1154a6 inset;
+  }
+  header.cc-header-fulid #header .navbar .navbar-collapse .nav > li.active > a,
+  header.cc-header-fulid #header .navbar .navbar-collapse .nav > li.open > a {
+    background: none;
+    -webkit-box-shadow: 0 3px 0 #1154a6 inset;
+    -moz-box-shadow: 0 3px 0 #1154a6 inset;
+    box-shadow: 0 3px 0 #1154a6 inset;
+  }
+  header.cc-header-fulid #header .navbar .navbar-collapse .nav > li.open > ul {
+    -webkit-box-shadow: 0 3px 0 #1154a6 inset;
+    -moz-box-shadow: 0 3px 0 #1154a6 inset;
+    box-shadow: 0 3px 0 #1154a6 inset;
+    background: #fafafa;
+    border: 0;
+  }
+  header.cc-header-fulid #header .navbar .navbar-collapse .nav > li.open > ul > li > a:hover {
+    -webkit-box-shadow: 3px 0 0 -1px #61a1ef inset;
+    -moz-box-shadow: 3px 0 0 -1px #61a1ef inset;
+    box-shadow: 3px 0 0 -1px #61a1ef inset;
+  }
+  header.cc-header-fulid #header .navbar .navbar-collapse .nav > li.open > ul > li ul > li > a:hover {
+    -webkit-box-shadow: 3px 0 0 -1px #61a1ef inset;
+    -moz-box-shadow: 3px 0 0 -1px #61a1ef inset;
+    box-shadow: 3px 0 0 -1px #61a1ef inset;
+  }
+  header.cc-header-fulid #header .navbar .navbar-collapse .navbar-form {
+    margin-top: 34px;
+    overflow: hidden;
+  }
+  header.cc-header-fulid #header .navbar .navbar-collapse .navbar-form label {
+    margin-bottom: 0;
+  }
+}
+/* LAGRE DEVICES ///////////////////////////////////////////////////////////////////////////////////////////////// */
+/* PRINTS ///////////////////////////////////////////////////////////////////////////////////////////////// */
+/*# sourceMappingURL=header-fulid.css.map */

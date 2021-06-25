@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* ////////// CANHCAM ////////////////////////////////////////// */
+/* ////////// Copyright 2014 by VienSoi Team//////////// */
+/* ////////// Coding by Bao Nguyen///////////////////////////// */
+/* ////////// v1.0.1 Built by less technology////////////////// */
+/* ////////// CANHCAM ////////////////////////////////////////// */
+/* Less Function
+>> IMG
+data-uri('image/jpeg;base64','../data/image.jpg'); 
+
+>> MIXIN
+.boxshw, #boxshw {
+  box-shadow: inset 0 0 10px #555;
+}
+.my-other-mixin() {
+  background: white;
+}
+.myclass {
+  .boxshw;
+  .my-other-mixin();
+}
+*/
+.middlebox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.middlediv {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/* #OPACITY*/
+/* MOBILE ///////////////////////////////////////////////////////////////////////////////////////////////// */
+.cc-tab-responsive .nav-tabs.responsive {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #f2f2f2;
+}
+.cc-tab-responsive .nav-tabs.responsive li {
+  margin-right: 2px;
+  cursor: pointer;
+}
+.cc-tab-responsive .nav-tabs.responsive li a {
+  font-family: Roboto Condensed;
+  font-weight: 700;
+  color: #a6a6a6;
+  background: #e6e6e6;
+  text-transform: uppercase;
+  display: block;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 0;
+}
+.cc-tab-responsive .nav-tabs.responsive li.current a,
+.cc-tab-responsive .nav-tabs.responsive li.active a,
+.cc-tab-responsive .nav-tabs.responsive li:hover a {
+  background: #f2f2f2;
+  text-decoration: none;
+  color: #c23b00;
+  border: 0;
+  cursor: pointer;
+}
+.cc-tab-responsive .tab-content {
+  padding: 15px;
+  background: #f2f2f2;
+}
+.cc-tab-responsive .panel-group {
+  font-size: 13px;
+}
+.cc-tab-responsive .panel-group.responsive .panel + .panel {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.cc-tab-responsive .panel-group.responsive .panel .panel-heading h4 a {
+  font-weight: bold;
+  display: block;
+  color: #000000;
+  text-decoration: none;
+  font-size: 13px;
+}
+.cc-tab-responsive .panel-group.responsive .panel .panel-heading h4 a i {
+  float: right;
+}
+.cc-tab-responsive .panel-group.responsive .panel .panel-heading h4 a:focus {
+  text-decoration: none;
+}
+.cc-tab-responsive .panel-group.responsive .panel .panel-heading h4 a.collapsed {
+  font-size: 13px;
+  font-weight: normal;
+  color: #000000;
+}
+.cc-tab-responsive .panel-group.responsive .panel .panel-heading h4 a.collapsed:hover {
+  color: #35424a;
+}
+/* & TABLET ///////////////////////////////////////////////////////////////////////////////////////////////// */
+/* PC ///////////////////////////////////////////////////////////////////////////////////////////////// */
+/* LAGRE DEVICES ///////////////////////////////////////////////////////////////////////////////////////////////// */
+/* PRINTS ///////////////////////////////////////////////////////////////////////////////////////////////// */

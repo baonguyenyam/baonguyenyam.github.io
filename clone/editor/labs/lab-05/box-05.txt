@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Hello</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="demo-9"></div>
+    <div class="demo-10"></div>
+    <p align="center">
+        <a href="https://baonguyenyam.github.io/fpt/docs/html-css/boxmodel/background.html" target="_blank">Xem thêm Background</a>
+    </p>
+    <p align="center">
+        <a href="https://baonguyenyam.github.io/fpt/docs/html-css/boxmodel/columns.html" target="_blank">Xem thêm Float</a>
+    </p>
+</body>
+
+</html>

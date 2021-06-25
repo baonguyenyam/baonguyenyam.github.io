@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Hello</title>
+    <style>
+        .lists .item{
+            color: red
+        }
+        .lists .item:nth-child(odd){
+            background: #333333;
+        }
+        .lists .item:nth-child(even){
+            background: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="lists">
+        <div class="item active">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+        <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+    </div>
+
+</body>
+
+</html>

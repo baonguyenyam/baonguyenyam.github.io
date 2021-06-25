@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>HTML Demo</title>
+</head>
+
+<body>
+    <h1>Hello!</h1>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Social Media & Media</title>
+</head>
+
+<body>
+    <h2>MP3 with control</h2>
+    <audio controls>
+        <source src="http://www.amclassical.com/mp3/amclassical_beethoven_fur_elise.mp3" type="audio/mpeg">
+        <source src="http://www.amclassical.com/mp3/amclassical_beethoven_fur_elise.ogg" type="audio/ogg">
+    </audio>
+    <h2>Videos with control</h2>
+    <video width="400" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+    </video>
+    <h2>Flash</h2>
+    <embed width="400" height="50" src="https://www.w3schools.com/html/bookmark.swf">
+
+</body>
+
+</html>

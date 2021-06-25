@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Hello</title>
+    <style>
+        p {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tím</h1>
+    <div>
+        <p id="firstname">Màu của ơ thờ lắm đăm chiêu</p>
+        <p id="hometown">Tím của say mê với nuông chiều</p>
+    </div>
+    <p>Thôi phôi pha bớt vài nắng hạt</p>
+    <p class="nguyen">Tình rãi rơi nhiều có được yêu?</p>
+</body>
+
+</html>

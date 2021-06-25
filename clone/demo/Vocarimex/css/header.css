@@ -1,0 +1,376 @@
+@charset "utf-8";
+/* ////////// CANHCAM ////////////////////////////////////////// */
+/* ////////// Copyright 2014 by VienSoi Team//////////// */
+/* ////////// Coding by Bao Nguyen///////////////////////////// */
+/* ////////// v1.0.1 Built by less technology////////////////// */
+/* ////////// CANHCAM ////////////////////////////////////////// */
+/* Less Function
+>> IMG
+data-uri('image/jpeg;base64','../data/image.jpg'); 
+
+>> MIXIN
+.boxshw, #boxshw {
+  box-shadow: inset 0 0 10px #555;
+}
+.my-other-mixin() {
+  background: white;
+}
+.myclass {
+  .boxshw;
+  .my-other-mixin();
+}
+*/
+.middlediv {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+}
+/* #OPACITY*/
+/* MOBILE ///////////////////////////////////////////////////////////////////////////////////////////////// */
+.yamm .nav,
+.yamm .collapse,
+.yamm .dropup,
+.yamm .dropdown {
+  position: static;
+}
+.yamm .container {
+  position: relative;
+}
+.yamm .dropdown-menu {
+  left: auto;
+}
+.yamm .yamm-content {
+  padding: 0 0;
+  overflow: hidden;
+}
+.yamm .dropdown.yamm-fw .dropdown-menu {
+  left: 0;
+  right: 0;
+}
+/*End Global Lib*/
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////// HEADER ////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* header */
+#header.scroll2fix {
+  margin-top: 0.1px;
+  margin-top: 1px\0;
+}
+#header .navbar {
+  margin-bottom: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  background: none;
+  z-index: 1000;
+  border: 0;
+}
+#header .navbar.navbar-default {
+  border-color: none;
+}
+#header .navbar .navbar-header {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+#header .navbar .navbar-header .navbar-brand {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#header .navbar .navbar-collapse {
+  position: relative;
+}
+#header .navbar .navbar-collapse .nav {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#header .navbar .navbar-collapse .nav > li > a {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  color: #000000;
+}
+#header .navbar .navbar-collapse .nav > li > a:hover {
+  background: #ffc603;
+  color: #ffffff;
+}
+#header .navbar .navbar-collapse .nav > li.active > a {
+  background: #e72028;
+  color: #ffffff;
+}
+#header .navbar .navbar-collapse .nav > li.open > a {
+  background: #ffc603;
+  color: #ffffff;
+}
+#header .navbar .navbar-collapse .nav > li.open > ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#header .navbar .navbar-collapse .nav > li.open > ul > li > a {
+  color: #000000;
+}
+#header .navbar .navbar-collapse .nav > li.open > ul > li > a:hover {
+  background: #ffc603;
+  color: #ffffff;
+}
+#header .navbar .navbar-collapse .nav > li.open > ul > li ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#header .navbar .navbar-collapse .nav > li.open > ul > li ul > li > a {
+  color: #000000;
+  display: block;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+#header .navbar .navbar-collapse .nav > li.open > ul > li ul > li > a:hover {
+  background: #ffc603;
+  color: #ffffff;
+}
+#header .navbar .navbar-collapse .navbar-form {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  position: relative;
+  border: 0;
+}
+#header .navbar .navbar-collapse .searchtoogle {
+  display: none;
+}
+#header .navbar .navbar-collapse .search .btnre,
+#header .navbar .navbar-collapse .search .btnse {
+  display: none;
+}
+/* & TABLET ///////////////////////////////////////////////////////////////////////////////////////////////// */
+@media (min-width: 767px) {
+  /* header */
+  #header .navbar .navbar-header {
+    float: none;
+  }
+  #header .navbar .navbar-header .navbar-brand {
+    display: none;
+  }
+  #header .navbar .navbar-collapse .nav > li > a {
+    padding: 0 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    line-height: 30px;
+  }
+  #header .navbar .navbar-collapse .nav > li > a:hover {
+    background: #e72028;
+    color: #ffffff;
+  }
+  #header .navbar .navbar-collapse .nav > li.active > a,
+  #header .navbar .navbar-collapse .nav > li.open > a {
+    background: #e72028;
+    color: #ffffff;
+  }
+  #header .navbar .navbar-collapse .nav > li.open > ul {
+    background: #e72028;
+    margin: 0;
+    padding: 15px 0;
+    border: 0;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+  }
+  #header .navbar .navbar-collapse .nav > li.open > ul > li > a {
+    padding: 5px 10px;
+    color: #ffffff;
+  }
+  #header .navbar .navbar-collapse .nav > li.open > ul > li > a:hover {
+    background: #ffc603;
+    color: #ffffff;
+  }
+  #header .navbar .navbar-collapse .nav > li.open > ul > li > a.divider {
+    margin: 4px 0;
+  }
+  #header .navbar .navbar-collapse .nav > li.open > ul > li ul > li > a {
+    color: #ffffff;
+    padding: 5px 10px;
+  }
+  #header .navbar .navbar-collapse .nav > li.open > ul > li ul > li > a:hover {
+    background: #ffc603;
+    color: #000000;
+  }
+  #header .navbar .navbar-collapse .navbar-right {
+    float: none;
+    text-align: center;
+  }
+  #header .navbar .navbar-collapse .navbar-right .nav li {
+    position: relative;
+  }
+  #header .navbar .navbar-collapse .navbar-right .nav li ul .yamm-content {
+    min-width: 400px;
+  }
+  #header .navbar .navbar-collapse .navbar-form {
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
+  #header .navbar .navbar-collapse .searchtoogle {
+    display: block;
+  }
+  #header .navbar .navbar-collapse .search {
+    display: none;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  #header .navbar .navbar-collapse .search .navbar-form {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  #header .navbar .navbar-collapse .search .navbar-form .form-group {
+    display: block;
+  }
+  #header .navbar .navbar-collapse .search .navbar-form .form-group #searchinput {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    width: 100%;
+    border: 0;
+    height: 50px;
+    padding: 0 30px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+  }
+  #header .navbar .navbar-collapse .search .navbar-form label {
+    display: none;
+  }
+  #header .navbar .navbar-collapse .search .navbar-form .btnse {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0 15px 0 10px;
+    line-height: 50px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+  }
+  #header .navbar .navbar-collapse .search .navbar-form .btnre {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 15px;
+    line-height: 50px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+  }
+  #header .navbar .navbar-collapse .search .navbar-form button {
+    display: none;
+  }
+  #header.scroll-to-fixed-fixed .navbar .navbar-header {
+    display: none;
+  }
+}
+/* PC ///////////////////////////////////////////////////////////////////////////////////////////////// */
+@media (min-width: 991px) {
+  .yamm .nav,
+  .yamm .collapse,
+  .yamm .dropup,
+  .yamm .dropdown {
+    position: static;
+  }
+  .yamm .container {
+    position: relative;
+  }
+  .yamm .dropdown-menu {
+    left: auto;
+  }
+  .yamm .yamm-content {
+    padding: 0 0;
+  }
+  .yamm .dropdown.yamm-fw .dropdown-menu {
+    left: 0;
+    right: 0;
+  }
+  /* header */
+  #header .navbar {
+    height: 180px;
+  }
+  #header .navbar .navbar-header {
+    float: left;
+  }
+  #header .navbar .navbar-collapse .nav {
+    margin-top: 60px;
+  }
+  #header .navbar .navbar-collapse .nav > li.open > ul {
+    border: 0;
+  }
+  #header .navbar .navbar-collapse .navbar-form {
+    margin-top: 34px;
+    overflow: hidden;
+  }
+  #header .navbar .navbar-collapse .navbar-form label {
+    margin-bottom: 0;
+  }
+  #header .navbar .navbar-collapse .search .navbar-form {
+    padding: 0;
+    margin: 0;
+  }
+  #header .navbar .navbar-collapse .search .navbar-form .btnse {
+    line-height: initial;
+  }
+  #header .navbar .navbar-collapse .search .navbar-form .btnre {
+    line-height: initial;
+  }
+  #header.scroll-to-fixed-fixed .navbar .navbar-header {
+    display: block;
+  }
+  #header.scroll-to-fixed-fixed .navbar .navbar-header .navbar-brand {
+    padding-top: 0;
+  }
+  #header.scroll-to-fixed-fixed .navbar .navbar-collapse .nav > li > a {
+    line-height: 50px;
+  }
+  #header.scroll-to-fixed-fixed .navbar .navbar-collapse .navbar-form {
+    margin-top: 8px;
+  }
+  #header.scroll-to-fixed-fixed .navbar-collapse .search .navbar-form {
+    padding: 0;
+    margin: 0;
+  }
+  #header.scroll-to-fixed-fixed .navbar-collapse .search .navbar-form .form-group #searchinput {
+    height: 50px;
+  }
+  #header.scroll-to-fixed-fixed .navbar-collapse .search .navbar-form .btnse {
+    line-height: 50px;
+  }
+  #header.scroll-to-fixed-fixed .navbar-collapse .search .navbar-form .btnre {
+    line-height: 50px;
+  }
+}
+/* LAGRE DEVICES ///////////////////////////////////////////////////////////////////////////////////////////////// */
+/* PRINTS ///////////////////////////////////////////////////////////////////////////////////////////////// */

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Hello</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="demo-1">Bài viết này dựa theo phân tích của Slack và Usersnap, đó là một công cụ theo dõi và thống kê sự phản hồi của lập trình viên về các lỗi cũng như hiệu quả trong công việc, nó cũng đưa ra những phân tích về tính khả dụng và hạn chế của một ngôn ngữ trong tương lai.</div>
+    <div class="demo-2">Như chúng ta đều biết thế giới đang đứng trước một cuộc cách mạng công nghệ 4.0 đó là xu hướng hiện thời trong việc tự động hóa và trao đổi dữ liệu trong công nghệ sản xuất nói chung cũng như là sự bùng nổ của CNTT nói riêng, máy móc trở nên thông minh hơn, con người trở nên chủ động hơn trong việc phát triển các công nghệ mới.</div>
+    <div class="demo-3">Như chúng ta đều biết thế giới đang đứng trước một cuộc cách mạng công nghệ 4.0 đó là xu hướng hiện thời trong việc tự động hóa và trao đổi dữ liệu trong công nghệ sản xuất nói chung cũng như là sự bùng nổ của CNTT nói riêng, máy móc trở nên thông minh hơn, con người trở nên chủ động hơn trong việc phát triển các công nghệ mới.</div>
+    <div class="demo-4">Như chúng ta đều biết thế giới đang đứng trước một cuộc cách mạng công nghệ 4.0 đó là xu hướng hiện thời trong việc tự động hóa và trao đổi dữ liệu trong công nghệ sản xuất nói chung cũng như là sự bùng nổ của CNTT nói riêng, máy móc trở nên thông minh hơn, con người trở nên chủ động hơn trong việc phát triển các công nghệ mới.</div>
+</body>
+
+</html>

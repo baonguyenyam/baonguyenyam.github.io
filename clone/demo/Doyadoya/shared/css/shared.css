@@ -1,0 +1,407 @@
+@charset "utf-8";
+/* 共有ベース定義
+-----------------------------------------------	*/
+
+body {
+	text-align:left;
+	color: #010101;
+	cursor: auto;
+	font: normal normal 100%/1.00 "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W4", Osaka, sans-serif;
+	letter-spacing:normal;
+	word-spacing:normal;
+	min-width:1000px;
+	font-size:12px;
+	background:url(../img/shared/bg.jpg) repeat 0 0;
+}
+
+#wrapper {
+	width:100%;
+	min-width:1000px;
+	margin:0 auto;
+	background:url(../img/shared/wrapper_bg.png) repeat-x 0 0;
+}
+*:first-child+html img {
+	vertical-align: top;
+}
+* html img {
+	vertical-align: top;
+}
+/* 強調 */
+strong {
+	font-weight: bold;
+}
+/*=============================================*/
+/*                 テキスト 変更のみ            */
+/*=============================================*/
+
+
+.txt_min {
+	font-size:85%;
+}
+.txt_middle {
+	font-size:95%;
+}
+.txt_big {
+	font-size:120%;
+}
+.txt_max {
+	font-size:140%;
+}
+.shadw2 {
+	-webkit-box-shadow: #BEBEBE 3px 3px 10px;
+	-moz-box-shadow: #BEBEBE 3px 3px 10px;
+	box-shadow: #BEBEBE 3px 3px 10px;
+	behavior: url(../../css2/pie/PIE.htc);
+}
+/*=============================================*/
+/*                テキストリンク設定           */
+/*=============================================*/
+
+/*全体のリンク*/
+a:link {
+	color: #010101;
+	text-decoration: underline;
+}
+a:visited, a:active {
+	color: #d5483b;
+	text-decoration: underline;
+}
+a:hover {
+	color: #d5483b;
+	text-decoration:none;
+}
+/*=============================================*/
+/*                ヘッド部分                   */
+/*=============================================*/
+
+
+
+/* header */
+
+
+div#header {
+	width:100%;
+	min-width:1000px;
+	margin:0 auto;
+	position:relative;
+	background:url(../img/shared/header_bg.png) no-repeat top center;
+	height:710px;
+}
+#header h1 {
+	background:url(../img/shared/light.png) repeat-x;
+	text-indent:-9999px;
+	height:50px;
+	text-align:center;
+	position:absolute;
+	top:0;
+	z-index:5;
+	width:100%;
+}
+
+#header h2 {
+	width:1000px;
+	margin:0 auto;
+	padding:20px 0 0 0;
+}
+
+
+#header #headerInner {
+	width:1000px;
+	margin:0 auto;
+	position:relative;
+	top:-7px;
+	z-index:2;
+	height:217px;
+}
+
+
+#header .light {
+	position:absolute;
+	top:0;
+	left:-48px;
+	z-index:4;
+}
+
+#header #logo {
+	position:absolute;
+	width:230px;
+	top:0;
+	left:10px;
+	z-index:3;
+}
+	
+#header #header_tel {
+	position:absolute;
+	top:30px;
+	right:0;
+}
+
+#header #header_tel li {
+	text-align:right;
+}
+	
+
+/*=============================================*/
+/*    ナビゲーション部（グローバル）   */
+/*=============================================*/
+
+
+#globalNav {
+	position:absolute;
+	top:30px;
+	left:247px;
+}
+
+
+#globalNav li {
+	float:left;
+}
+
+/*=============================================*/
+/*                1000pxメイン囲み              */
+/*=============================================*/
+
+
+#container {
+	clear:both;
+	overflow:hidden;
+	width:1000px;
+	margin:0 auto;
+	background:url(../img/shared/container_bg.jpg) no-repeat left bottom;
+	padding:0 0 8px 0;
+}
+
+#contents {
+	padding:20px 30px 57px 30px;
+	background:url(../img/shared/conents_bg.jpg) repeat-y 0 0;
+}
+
+
+a.btn_hover:hover img {
+	opacity:0.8;
+	filter: alpha(opacity=80);
+}
+
+/*=============================================*/
+/*                   フッターメニュー          */
+/*=============================================*/
+	
+	
+div#footer {
+	clear:both;
+	width:100%;
+	min-width:1000px;
+	clear:both;
+	margin:30px auto 0;
+	background:url(../img/shared/footer_bg.jpg) repeat-x;
+	height:263px;
+}
+
+#footer #footerInner {
+	overflow:hidden;
+	padding:13px 0 0 0;
+	width:1000px;
+	margin:0 auto;
+	}
+	
+#footer .fAddress {
+	margin-bottom:20px;
+}
+	
+#footer .fLogo {
+	float:left;
+	width:166px;
+	margin-right:10px;
+}
+
+#footer .footerAddress {
+	float:left;
+	width:550px;
+	padding-top:15px;
+}
+
+#footer .footer_tt {
+	font-weight:bold;
+	margin-bottom:10px;
+}
+
+#footer .footerAddress dt {
+	float:left;
+	width:60px;
+}
+
+#footer .footerAddress dd {
+	float:right;
+	width:490px;
+	line-height:20px;
+}
+
+#footer .footer_img {
+	float:right;
+	width:261px;
+}
+
+#footer .footernav {
+	float:left;
+	width:680px;
+}
+
+#footer .footernav li {
+	float:left;
+	border-left:1px solid #faf2c3;
+	padding:0 10px;
+	line-height:14px;
+}
+
+#footer .footernav li.fnavl {
+	border-right: solid 1px #faf2c3;
+}
+
+#footer .footernav li a {
+	font-size:12px;
+	color:#faf2c3;
+	text-decoration:underline;
+}
+
+#footer .footernav li a:hover {
+	color:#faf2c3;
+	text-decoration:none;
+}
+
+#footer address {
+	float:right;
+	width:269px;
+}
+
+
+
+/* =========================================================
+	CLEAR
+========================================================= */
+.clear {
+	clear: both !important;
+}
+br.clear {
+	display: block;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+/* CLEAR FIX
+--------------------------------------------------------- */
+.clearfix {
+	zoom:1 !important;
+}/* for IE 5.5-7 */
+.clearfix:after {
+	content: "." !important;
+	display: block !important;
+	height: 0px !important;
+	clear: both !important;
+	visibility: hidden !important;
+}
+/* 共通コンテンツ1000
+-----------------------------------------------	*/
+
+	
+.left_col {
+	float:left;
+	clear:both;
+}
+.right_col {
+	float:right;
+}
+.marB5 {
+	margin-bottom:5px;
+}
+.marB10 {
+	margin-bottom:10px;
+}
+.marB15 {
+	margin-bottom:15px;
+}
+.marB20 {
+	margin-bottom:20px;
+}
+.marB25 {
+	margin-bottom:25px;
+}
+.marB30 {
+	margin-bottom:30px;
+}
+.marB35 {
+	margin-bottom:35px;
+}
+.marB40 {
+	margin-bottom:40px;
+}
+.marB50 {
+	margin-bottom:50px;
+}
+.marB60 {
+	margin-bottom:60px;
+}
+.marR5 {
+	margin-right:5px;
+}
+
+.padt20 {
+	padding-top:20px;
+}
+.pl40 {
+	padding-left:40px;
+}
+.fleft {
+	float:left;
+}
+.fright {
+	float:right;
+}
+.w490 {
+	width:490px;
+}
+.w590 {
+	width:590px;
+}
+
+.w486 {
+	width:486px;
+}
+
+.w260 {
+	width:290px;
+}
+
+.w460 {
+	width:460px;
+}
+
+.w330 {
+	width:330px;
+}
+
+.w290 {
+	width:290px;
+}
+
+.w452 {
+	width:452px;
+}
+
+.alcen {
+	text-align:center;
+}
+
+.alleft {
+	text-align:left;
+}
+
+.alright {
+	text-align:right;
+}
+
+.marr20 {
+	margin-right:20px;
+}
+
+

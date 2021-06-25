@@ -1,0 +1,173 @@
+/* ////////// CANHCAM ////////////////////////////////////////// */
+/* ////////// Copyright 2014 by VienSoi Team//////////// */
+/* ////////// Coding by Bao Nguyen///////////////////////////// */
+/* ////////// v1.0.1 Built by less technology////////////////// */
+/* ////////// CANHCAM ////////////////////////////////////////// */
+@import "../../setup.less";
+@charset "utf-8";
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* MOBILE ///////////////////////////////////////////////////////////////////////////////////////////////// */
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+#topbar{
+    background:@color-main;
+    border-top: 3px solid lighten(@color-main, 10%);
+    z-index: 2000;
+    color: @color-white;
+    .navbar-nav{
+        line-height: 40px;
+        text-align: center;
+        li{
+            a{
+                color: @color-white;
+                &:hover, &:focus{
+                    background: none;
+                }
+            }
+            &.open{
+                > a{
+                    background: darken(@color-main,10%);
+                }
+            }
+            ul{
+                z-index: 2000;
+                text-align: center;
+                width: 100%;
+                a{
+                    &:hover, &.active, &:focus{
+                        background: darken(@color-main,10%);
+                    }
+                }
+            }
+        }
+    }
+    .social{
+        text-align: center;
+        ul{
+        margin: 0;
+        padding: 0;
+            li{
+                display: inline-block;
+                &.hi-icon-effect-3{
+                    &.hi-icon-effect-3b{
+                        padding-right: 0 !important;
+                        display: inline-block;
+                        padding: 0;
+                        a{
+                            padding: 0 !important;
+                            line-height: 50px;
+                            .hi-icon{
+                                .box-shadow(0 0 0 2px darken(@color-white,0%));
+                                color: darken(@color-white,0%);
+                                height: 24px;
+                                width: 24px;
+                                &:before{
+                                    font-size: 14px;
+                                    line-height: 24px;
+                                }
+                                &:hover, &:focus{
+                                    color: darken(@color-main,0%);
+                                    .box-shadow(none);
+                                    &:after{
+                                        background: rgba(red(@color-white), green(@color-white), blue(@color-white), 1);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .shoppingcart {
+        .modal-content {
+            .media{
+                border-bottom: 1px dashed darken(@color-white,15%);
+                padding-bottom: 15px;
+            }
+            img{
+                height: 64px;
+                max-height: 64px;
+                width: 64px;
+                max-width: 64px;
+            }
+        }
+    }
+}
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* & TABLET ///////////////////////////////////////////////////////////////////////////////////////////////// */
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width:767px) {
+
+#topbar{
+    .navbar-nav{
+        li{
+            &.open{
+                > a{
+                    background: darken(@color-main,10%);
+                }
+            }
+            ul{
+                background: darken(@color-main,10%);
+                margin: 0;
+                padding: 0;
+                border: 0;
+                box-shadow: none;
+                text-align: initial;
+                a{
+                    &:hover, &.active, &:focus{
+                        background: darken(@color-main,25%);
+                    }
+                }
+            }
+        }
+    }
+    .social{
+        float: left;
+        text-align: left;
+        ul{
+            margin: 0 15px;
+        }
+    }
+    .modal {
+        .modal-content {
+
+        }
+    }
+}
+
+
+}
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* PC ///////////////////////////////////////////////////////////////////////////////////////////////// */
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width:991px) {
+
+
+
+    
+}
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* LAGRE DEVICES ///////////////////////////////////////////////////////////////////////////////////////////////// */
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width:1199px) {
+
+    
+}
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* PRINTS ///////////////////////////////////////////////////////////////////////////////////////////////// */
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+@media print {
+    
+}

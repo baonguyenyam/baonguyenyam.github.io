@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+
+/* 共有ベース定義
+-----------------------------------------------	*/
+
+body {
+	text-align:left;
+	color: #996600;
+	cursor: auto;
+	font: normal normal 85%/1.45 "Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W4", Osaka, sans-serif;
+	letter-spacing:normal;
+	word-spacing:normal;
+	min-width:580px;
+	padding:5px;
+	background-color:#f2eee0;
+}
+
+*:first-child+html img {
+	vertical-align: top;
+}
+* html img {
+	vertical-align: top;
+}
+
+/* 強調 */
+strong {
+	font-weight: bold;
+}
+
+/*=============================================*/
+/*                 テキスト 変更のみ            */
+/*=============================================*/
+
+.txt_default{color:#f2e9d8;}	
+.txt_engi{color:#6d1b0c;}	
+.txt_res{color:#b00403;}
+.txt_cleam{color:#c6994d;}
+
+
+
+.txt_min{font-size:85%;}
+.txt_middle{font-size:95%;}
+.txt_big{font-size:120%;}
+.txt_max{font-size:140%;}
+
+
+.shadw2 {
+	-webkit-box-shadow: #BEBEBE 3px 3px 10px;
+	-moz-box-shadow: #BEBEBE 3px 3px 10px;
+	box-shadow: #BEBEBE 3px 3px 10px;
+	behavior: url(../../css2/pie/PIE.htc);	
+	}
+
+/*=============================================*/
+/*                テキストリンク設定           */
+/*=============================================*/
+
+/*全体のリンク*/
+a:link { color: #b00403; text-decoration: underline;}
+a:visited,a:active { color: #770404; text-decoration: underline;}
+a:hover { color: #d12322; text-decoration:underline;}
+
+
+/*=============================================*/
+/*               topics           */
+/*=============================================*/
+
+
+
+/*  メニュー */
+
+.wrap{
+	width:580px;
+	clear:both;
+	overflow:hidden;
+	margin-bottom:20px;
+	}
+
+.wrap .l{
+	width:320px;
+	float:left;
+	}
+
+.wrap .r{
+	width:250px;
+	float:right;
+	}
+.wrap .r img{
+	margin-bottom:5px;
+	}

@@ -1,0 +1,88 @@
+[{
+        "Name": "Front-End",
+        "URL": [
+            { "Name": "HTML (*)", "URL": "/docs/html-css/html", "Icon": "setup_icon.png" },
+            { "Name": "Box Model", "URL": "/docs/html-css/boxmodel", "Icon": "setup_icon.png" },
+            { "Name": "Positioning", "URL": "/docs/html-css/position", "Icon": "setup_icon.png" },
+            { "Name": "Typography", "URL": "/docs/html-css/typography", "Icon": "setup_icon.png" },
+            { "Name": "Tags", "URL": "/docs/html-css/html/tag.html", "Icon": "setup_icon.png" },
+            { "Name": "Form", "URL": "/docs/html-css/html/form.html", "Icon": "setup_icon.png" },
+            { "Name": "Table", "URL": "/docs/html-css/html/table.html", "Icon": "setup_icon.png" },
+            { "Name": "HTML6", "URL": "/docs/html-css/html/html6.html", "Icon": "setup_icon.png" },
+            { "Name": "CSS (*)", "URL": "/docs/html-css/css", "Icon": "setup_icon.png" },
+            { "Name": "CSS Selector", "URL": "/docs/html-css/css/style.html", "Icon": "setup_icon.png" },
+            { "Name": "CSS Colors", "URL": "/docs/html-css/css/colors.html", "Icon": "setup_icon.png" },
+            { "Name": "CSS Background", "URL": "/docs/html-css/boxmodel/background.html", "Icon": "setup_icon.png" },
+            { "Name": "CSS Float", "URL": "/docs/html-css/boxmodel/columns.html", "Icon": "setup_icon.png" },
+            { "Name": "CSS4", "URL": "/docs/html-css/css/css4.html", "Icon": "setup_icon.png" },
+            { "Name": "Product", "URL": "/docs/html-css/html/product.html", "Icon": "setup_icon.png" }
+
+        ],
+        "Icon": "web.png"
+    },
+    {
+        "Name": "Design",
+        "URL": [
+            { "Name": "Overview", "URL": "/docs/design/ps", "Icon": "setup_icon.png" },
+            { "Name": "Tools", "URL": "/docs/design/ps/tools.html", "Icon": "setup_icon.png" },
+            { "Name": "Brushes", "URL": "/docs/design/ps/bt.html", "Icon": "setup_icon.png" },
+            { "Name": "Text", "URL": "/docs/design/ps/text.html", "Icon": "setup_icon.png" },
+            { "Name": "Layer", "URL": "/docs/design/ps/layer.html", "Icon": "setup_icon.png" },
+            { "Name": "Layer Mark", "URL": "/docs/design/ps/mark.html", "Icon": "setup_icon.png" },
+            { "Name": "Levels", "URL": "/docs/design/ps/level.html", "Icon": "setup_icon.png" },
+            { "Name": "Curves", "URL": "/docs/design/ps/curves.html", "Icon": "setup_icon.png" },
+            { "Name": "Color", "URL": "/docs/design/ps/color.html", "Icon": "setup_icon.png" },
+            { "Name": "Filters", "URL": "/docs/design/ps/filters.html", "Icon": "setup_icon.png" },
+            { "Name": "Shortcut", "URL": "/docs/design/ps/shortcut.html", "Icon": "setup_icon.png" }
+
+        ],
+        "Icon": "design.png"
+    },
+    {
+        "Name": "Photo",
+        "URL": [
+            { "Name": "Lý thuyết màu", "URL": "/docs/photo/overview/ltm.html", "Icon": "setup_icon.png" }
+        ],
+        "Icon": "photo.png"
+    },
+    {
+        "Name": "Scripts",
+        "URL": [
+            { "Name": "JavaScript", "URL": "/docs/node", "Icon": "setup_icon.png" },
+            { "Name": "PUG/JADE", "URL": "/docs/node/pug.html", "Icon": "setup_icon.png" },
+            { "Name": "SASS/LESS", "URL": "/docs/node/sass.html", "Icon": "setup_icon.png" },
+            { "Name": "Gulp", "URL": "/docs/node/gulp.html", "Icon": "setup_icon.png" },
+            { "Name": "Webpack", "URL": "/docs/node/webpack.html", "Icon": "setup_icon.png" }
+        ],
+        "Icon": "node.png"
+    },
+    {
+        "Name": "Mobile",
+        "URL": [
+            { "Name": "Overview", "URL": "/docs/mobile/ionic", "Icon": "setup_icon.png" },
+            { "Name": "Ionic", "URL": "/docs/mobile/ionic/ionic.html", "Icon": "setup_icon.png" }
+        ],
+        "Icon": "mobile.png"
+    },
+    {
+        "Name": "Resources",
+        "URL": [
+            { "Name": "Khoai Editor", "URL": "http://baonguyenyam.github.io/editor/", "Icon": "setup_icon.png" },
+            { "Name": "MCSA-MCSE", "URL": "https://drive.google.com/drive/folders/0B1JqovD0ypgHTUIwSzQwVEFpUHc?usp=sharing", "Icon": "setup_icon.png" },
+            { "Name": "Software", "URL": "https://drive.google.com/drive/folders/0B1JqovD0ypgHWGhBaGg0R0NadG8?usp=sharing", "Icon": "setup_icon.png" },
+            { "Name": "Task-Gulp", "URL": "https://github.com/baonguyenyam/multi-task/tree/master/gulp", "Icon": "setup_icon.png" }
+        ],
+        "Icon": "security.png"
+    },
+    {
+        "Name": "High level",
+        "URL": [
+            { "Name": "K-Task", "URL": "https://github.com/baonguyenyam/k-lite-task/", "Icon": "setup_icon.png" },
+            { "Name": "K-Flex", "URL": "https://github.com/baonguyenyam/k-flex/", "Icon": "setup_icon.png" },
+            { "Name": "K-SASS-CORE", "URL": "https://github.com/baonguyenyam/k-sass-core/", "Icon": "setup_icon.png" },
+            { "Name": "K-Google-Map", "URL": "https://github.com/baonguyenyam/k-gmaps", "Icon": "setup_icon.png" },
+            { "Name": "K-Animation", "URL": "https://github.com/baonguyenyam/k-animation", "Icon": "setup_icon.png" }
+        ],
+        "Icon": "tool.png"
+    }
+]

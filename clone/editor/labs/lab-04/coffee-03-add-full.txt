@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Lab 04</title>
+    <link rel="stylesheet" href="./css/style-full.css">
+    <style>
+        #home-page .brands nav ul li a:hover{
+            color: #FFEB3B;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body id="home-page">
+    <div class="brands">
+        <!-- Phần Logo -->
+        <img src="./img/logo-cafe.png" alt="Logo Bermacla Café">
+        <!-- Phần Menu -->
+        <nav>
+            <ul>
+                <li><a href="coffee.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+        <!-- Hết Menu -->
+    </div>
+    <div class="content">
+        <!-- Phần Nội dung -->
+        <h1>Welcome to Bermacla Café</h1>
+        <p>"Long, long ago, there were a man who try to make his skill ultimate. Because of his bloody life, it's no accident he was involved in the troubles."
+        </p>
+        <!-- Hết Nội dung -->
+    </div>
+
+</body>
+
+</html>

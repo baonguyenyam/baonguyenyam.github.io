@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* ////////// CANHCAM ////////////////////////////////////////// */
+/* ////////// Copyright 2014 by VienSoi Team//////////// */
+/* ////////// Coding by Bao Nguyen///////////////////////////// */
+/* ////////// v1.0.1 Built by less technology////////////////// */
+/* ////////// CANHCAM ////////////////////////////////////////// */
+/* Less Function
+>> IMG
+data-uri('image/jpeg;base64','../data/image.jpg'); 
+
+>> MIXIN
+.boxshw, #boxshw {
+  box-shadow: inset 0 0 10px #555;
+}
+.my-other-mixin() {
+  background: white;
+}
+.myclass {
+  .boxshw;
+  .my-other-mixin();
+}
+*/
+.middlediv {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+}
+/* #OPACITY*/
+/* MOBILE ///////////////////////////////////////////////////////////////////////////////////////////////// */
+footer.cc-footer-navi {
+  color: #808080;
+  font-size: 13px;
+}
+footer.cc-footer-navi a {
+  color: #808080;
+}
+footer.cc-footer-navi a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer.cc-footer-navi h4 {
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+footer.cc-footer-navi h5 {
+  font-size: 14px;
+  color: #e6e6e6;
+  margin-bottom: 20px;
+}
+footer.cc-footer-navi .bgtop {
+  background: #191919;
+  padding: 70px 0 40px;
+}
+footer.cc-footer-navi .bgtop .links {
+  margin-bottom: 0;
+}
+footer.cc-footer-navi .bgtop .links li a {
+  position: relative;
+  display: block;
+  padding: 4px 0;
+}
+footer.cc-footer-navi .bgend {
+  padding: 30px 0 20px 0;
+  background: #050505;
+  border-top: 1px solid #b3b3b3;
+}
+footer.cc-footer-navi .bgend .copyright {
+  text-align: center;
+  margin-bottom: 10px;
+}
+footer.cc-footer-navi .bgend .social {
+  line-height: 36px;
+  text-align: center;
+}
+footer.cc-footer-navi .bgend .social li {
+  padding: 0 0 0 5px;
+}
+footer.cc-footer-navi .bgend .social li a {
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+}
+footer.cc-footer-navi .bgend .social li a em {
+  padding: 0;
+  display: block;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: #4d4d4d;
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  -webkit-transition: all box-shadow 0.2s;
+  -moz-transition: all box-shadow 0.2s;
+  -ms-transition: all box-shadow 0.2s;
+  -o-transition: all box-shadow 0.2s;
+  -webkit-box-shadow: 1px 2px 1px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 2px 1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 2px 1px 0px rgba(0, 0, 0, 0.1);
+}
+footer.cc-footer-navi .bgend .social li a em:before {
+  display: block;
+}
+footer.cc-footer-navi .bgend .social li:hover a em {
+  background: #f2f2f2;
+  -webkit-box-shadow: 2px 3px 2px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 2px 3px 2px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 3px 2px 0px rgba(0, 0, 0, 0.3);
+}
+/* & TABLET ///////////////////////////////////////////////////////////////////////////////////////////////// */
+/* PC ///////////////////////////////////////////////////////////////////////////////////////////////// */
+@media (min-width: 991px) {
+  footer.cc-footer-navi .bgtop .social {
+    text-align: left;
+  }
+  footer.cc-footer-navi .bgend .copyright {
+    text-align: left;
+    line-height: 36px;
+  }
+  footer.cc-footer-navi .bgend .copyright.only {
+    text-align: center;
+  }
+  footer.cc-footer-navi .bgend .social {
+    text-align: right;
+  }
+}
+/* LAGRE DEVICES ///////////////////////////////////////////////////////////////////////////////////////////////// */
+/* PRINTS ///////////////////////////////////////////////////////////////////////////////////////////////// */
+/*# sourceMappingURL=footer-navi.css.map */

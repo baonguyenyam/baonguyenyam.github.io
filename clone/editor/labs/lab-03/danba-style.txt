@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Lab 03</title>
+    <style>
+        body {
+            background: url('./img/girl.jpg');
+            color: #fff 
+        }
+        body h1 {
+            background-color: red
+        }
+        body h1 span {
+            color: white
+        }
+    </style>
+</head>
+
+<body>
+    <h1><span>Đàn bà - Song Ngọc</span></h1>
+    <p>
+        Ôi <i><u><b>đàn bà</b></u></i> là những niềm đau<br>
+        Hay đàn bà là ngọc ngà trăng sao<br>
+        Ôi đàn bà lại là con dao làm tim nhỏ máu<br>
+        Ôi đàn bà dịu ngọt đêm qua<br>
+        Ôi đàn bà lạnh lùng đêm (hôm) nay<br>
+        Ôi đàn bà là vần thơ say<br>
+        Khúc nhạc chua cay
+    </p>
+</body>
+
+</html>

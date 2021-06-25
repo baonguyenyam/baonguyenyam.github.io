@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Hello</title>
+</head>
+
+<body>
+    <h1>Xin chào FPOLY</h1>
+
+    <p align="right"><img src="./img/logo-slack.svg" width="50" alt="Logo Slack"></p>
+
+    <div align="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis possimus eos aliquam autem vitae, aspernatur ab magnam quisquam excepturi perferendis, praesentium voluptates, atque odit optio dicta dolore inventore porro eaque! <img src="https://baonguyenyam.github.io/fpt/images/icon/ps.png" alt="Logo PSD" align="left">
+    </div>
+
+</body>
+
+</html>

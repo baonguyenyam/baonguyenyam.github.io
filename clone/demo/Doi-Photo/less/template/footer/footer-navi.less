@@ -1,0 +1,187 @@
+/* ////////// CANHCAM ////////////////////////////////////////// */
+/* ////////// Copyright 2014 by VienSoi Team//////////// */
+/* ////////// Coding by Bao Nguyen///////////////////////////// */
+/* ////////// v1.0.1 Built by less technology////////////////// */
+/* ////////// CANHCAM ////////////////////////////////////////// */
+@import "../../setup.less";
+@charset "utf-8";
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* MOBILE ///////////////////////////////////////////////////////////////////////////////////////////////// */
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+footer{
+    &.cc-footer-navi{
+        color: darken(@color-white,50%);
+        font-size: 13px;
+        a{
+            color:darken(@color-white,50%);
+            &:hover{
+                color:@color-white;
+                text-decoration: none;
+            }
+        }
+        h4{
+            color: @color-white;
+            text-transform: uppercase;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        h5{
+            font-size: 14px;
+            color: darken(@color-white,10%);
+            margin-bottom: 20px;
+        }
+        .bgtop{
+            background: darken(@color-white,90%); 
+            padding: 70px 0 40px;
+            .subscribe{
+                display: block;
+                position: relative;
+                margin-bottom: 30px;
+                input{
+                }
+                button{
+                    .btn-danger;
+                }
+            }
+            .links{
+                margin-bottom: 0;
+                li{
+                    a{
+                        position: relative;
+                        display: block;
+                        padding: 4px 0;
+                        // margin-bottom: -1px;
+                        // border-bottom: 1px dashed darken(@color-white,60%);
+                    }
+                }
+            }
+    
+        }
+        .bgend{
+            padding: 0 0 20px 0;
+            background: darken(@color-white,90%); 
+            hr{
+                border-top: 4px solid darken(@color-white,80%);
+                margin-top: 0;
+            }
+            .copyright{
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            .social{
+                margin: 15px 0 0 0;
+                padding:0;
+                color:darken(@color-white,50%);
+                text-align: center;
+                li{
+                    display:inline-block;
+                    list-style-type: none;
+                    a{
+                        width:25px;
+                        height:25px;
+                        display:block;
+                        text-align: center;
+                        vertical-align: middle;
+                        .border-radius(0);
+                        .gradient(darken(@color-white,2%), darken(@color-white,15%));
+                        color:darken(@color-white,30%);
+                        border: 0 solid darken(@color-white,30%);
+                        .border-radius(2px);
+                        &.face{
+                            background:#2d2f93;
+                        }
+                        &.linkedin{
+                            background:#0072bb;
+                        }
+                        &.youtube{
+                            background:#A10606;
+                        }
+                        &.twitter{
+                            background:#22acc9;
+                        }
+                        &.google{
+                            background:#d3492c;
+                        }
+                        &:hover{
+                            background:#f1f1f1;
+                            color:darken(@color-white,90%);
+                            //border: 1px transparent solid;
+                        }
+                        em{
+                            line-height: 25px;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            } 
+        }
+    }
+}
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* & TABLET ///////////////////////////////////////////////////////////////////////////////////////////////// */
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width:767px) {
+
+
+}
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* PC ///////////////////////////////////////////////////////////////////////////////////////////////// */
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width:991px) {
+
+footer{
+    &.cc-footer-navi{
+        .bgtop{
+            .subscribe{
+                display: block;
+                position: relative;
+                input{
+                    max-width: 178px;
+                }
+                button{
+                    .btn-danger;
+                }
+            }
+        }
+        .bgend{
+            .copyright{
+                text-align: left;
+                line-height: 36px;
+                &.only{
+                    text-align:center;
+                }
+            }
+            .social{
+                text-align: right;
+            }
+        }
+    }
+}
+
+    
+}
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* LAGRE DEVICES ///////////////////////////////////////////////////////////////////////////////////////////////// */
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width:1199px) {
+
+    
+}
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* PRINTS ///////////////////////////////////////////////////////////////////////////////////////////////// */
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+@media print {
+    
+}
