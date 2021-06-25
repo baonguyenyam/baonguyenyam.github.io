@@ -1,0 +1,107 @@
+/* ////////// CANHCAM ////////////////////////////////////////// */
+/* ////////// Copyright 2014 by VienSoi Team//////////// */
+/* ////////// Coding by Bao Nguyen///////////////////////////// */
+/* ////////// v1.0.1 Built by less technology////////////////// */
+/* ////////// CANHCAM ////////////////////////////////////////// */
+@import "../../setup.less";
+@charset "utf-8";
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* MOBILE ///////////////////////////////////////////////////////////////////////////////////////////////// */
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// maps
+.cc-m-iframe{
+    position: relative;
+    margin: 0;
+    padding-bottom: 0;
+    color: @color-white;
+    width: 100%;
+    iframe{
+        border: 0;
+    }
+    .mapframe{
+        height: 440px;
+        overflow: hidden;    
+    }
+    a{
+        color: @color-white;
+    }
+    .info{    
+        width: 100%;
+        .bg-tran{
+            background: @color-link;
+            .desc{
+                padding: 30px 0; 
+                h4{
+                    margin-bottom: 20px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* & TABLET ///////////////////////////////////////////////////////////////////////////////////////////////// */
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width:767px) {
+
+}
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* PC ///////////////////////////////////////////////////////////////////////////////////////////////// */
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width:991px) {
+
+// maps
+.cc-m-iframe{
+    position: relative;
+    .info{    
+        .opacity(0.9);  
+        position: absolute;
+        bottom: 0;  
+        height: 100%;
+        .bg-tran{
+            background: none; /* Old browsers */
+            background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiNlNGU3ZTkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+            background: -moz-linear-gradient(left,  @color-link 50%, rgba(255,255,255,0) 50%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, right top, color-stop(50%,@color-link), color-stop(50%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(left,  @color-link 50%,rgba(255,255,255,0) 50%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(left,  @color-link 50%,rgba(255,255,255,0) 50%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(left,  @color-link 50%,rgba(255,255,255,0) 50%); /* IE10+ */
+            background: linear-gradient(to right,  @color-link 50%,rgba(255,255,255,0) 50%); /* W3C */
+            // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{@color-link}', endColorstr='none',GradientType=1 ); /* IE6-8 */
+            .address{
+                height: 440px;
+            }
+            .desc{
+                padding: 30px 0;                
+            }
+        }
+    }
+}
+
+}
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* LAGRE DEVICES ///////////////////////////////////////////////////////////////////////////////////////////////// */
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width:1199px) {
+
+    
+}
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* PRINTS ///////////////////////////////////////////////////////////////////////////////////////////////// */
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+@media print {
+    
+}

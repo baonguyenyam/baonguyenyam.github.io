@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <form name="contact">
+        <fieldset>
+            <legend>Personal information:</legend>
+            
+            <p>Username:</p>
+            <input type="text" name="firstname" value="Mickey" placeholder="Nhập tên">
+            <p>Password:</p>
+            <input type="password" name="lastname" value="Mouse" placeholder="Nhập mật khẩu">
+            <p>Number:</p>
+            <input type="number" name="number" value="1">
+            <p>Date:</p>
+            <input type="date" name="date" value="1">
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

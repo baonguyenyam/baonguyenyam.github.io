@@ -1,0 +1,153 @@
+/* ////////// CANHCAM ////////////////////////////////////////// */
+/* ////////// Copyright 2014 by VienSoi Team//////////// */
+/* ////////// Coding by Bao Nguyen///////////////////////////// */
+/* ////////// v1.0.1 Built by less technology////////////////// */
+/* ////////// CANHCAM ////////////////////////////////////////// */
+@import "../../setup.less";
+@charset "utf-8";
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* MOBILE ///////////////////////////////////////////////////////////////////////////////////////////////// */
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.cc-cb-flip{
+
+    .flip-container {
+        width: 100%;
+        min-height: 300px;
+        -webkit-perspective: 1000;
+        -moz-perspective: 1000;
+        -ms-perspective: 1000;
+        perspective: 1000;
+        -ms-transform: perspective(1000px);
+        -moz-transform: perspective(1000px);
+        -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        .flipper {
+            .transition(0.6s);
+            .transform-style(preserve-3d);
+            position: relative;
+            .front, .back {
+                -webkit-backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -ms-backface-visibility: hidden;
+                backface-visibility: hidden;
+                .transition(0.6s);
+                .transform-style(preserve-3d);
+                .transform(rotateY(0deg));
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .front {
+                .transform(rotateY(0deg));
+                z-index: 2;
+                width: 100%;
+                min-height: 300px;
+                background-position: center center;
+            }
+            .back {
+                background: darken(@color-white,5%);
+                .transform(rotateY(-180deg));
+                width: 100%;
+                min-height: 300px;
+                .info{
+                    text-align: center;
+                    padding: 50px 30px;
+                    p{
+                        font-size: 13px;
+                        margin: 15px 0;
+                        color: darken(@color-white,50%);
+                    }
+                }
+
+            }
+        }
+        &:hover{
+            .flipper {
+                .front {
+                    .transform(rotateY(180deg));
+                }
+                .back {
+                    .transform(rotateY(0deg));
+                }
+            }
+        }
+        &.vertical{
+            position: relative;
+            .flipper {
+                -webkit-transform-origin: 100% 213.5px;
+                -moz-transform-origin: 100% 213.5px;
+                -ms-transform-origin: 100% 213.5px;
+                transform-origin: 100% 213.5px;
+                .front{
+
+                }
+                .back{
+                    .transform(rotateX(180deg));
+                }
+            }
+            &:hover{
+                .flipper {
+                    .front{
+                        .transform(rotateX(180deg));
+                    }
+                    .back{
+                        .transform(rotateX(0deg));
+                    }
+                }
+            }
+        }
+    }
+
+    .name{
+        text-align: center;
+        h4{
+            letter-spacing: 1px;
+            font-size: 16px;
+            text-transform: uppercase;
+            margin-bottom: 0;
+        }
+        span{
+            color: darken(@color-white,20%);
+            margin-bottom: 30px;
+        }
+    }
+
+}
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* & TABLET ///////////////////////////////////////////////////////////////////////////////////////////////// */
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width:767px) {
+
+}
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* PC ///////////////////////////////////////////////////////////////////////////////////////////////// */
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width:991px) {
+
+
+
+}
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* LAGRE DEVICES ///////////////////////////////////////////////////////////////////////////////////////////////// */
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width:1199px) {
+
+    
+}
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* PRINTS ///////////////////////////////////////////////////////////////////////////////////////////////// */
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+@media print {
+    
+}

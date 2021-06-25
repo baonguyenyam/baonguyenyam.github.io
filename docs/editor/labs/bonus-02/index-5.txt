@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Position</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        #backtotop {
+            position: fixed;
+            bottom: 20px;
+            right: 10px;
+            width: 60px;
+            height: 60px;
+            background: red
+        }
+    </style>
+</head>
+
+<body>
+    <div id="backtotop"></div>
+    <h1>Em dỗi</h1>
+
+    <p>Chút dỗi hờn đâu e ấp trên môi<br>
+    Làn gió nhẹ chắt chiu từng ý ngọc<br>
+    Phân bua tự gã hoang đàng thất học<br>
+    Ý vụng về câu cú ráp nào xuôi</p>
+    <p>Và đôi mắt của trăng rằm sớm tuổi<br>
+    Cặp kính tròn trao gửi những thờ ơ<br>
+    Là ghét anh sao cứ để trông chờ<br>
+    Là tin nhắn theo tháng ngày vơi nửa</p>  
+    <p>Anh níu áo, em dùng dằng tay ngữa<br>
+    Châu sa dài đâu thắm dọc hàng mi<br>
+    Phải chăng anh là kẻ chẳng ra gì?<br> 
+    Để em trách để em hờn em dỗi</p>
+    <p>Chút dỗi hờn đâu e ấp trên môi<br>
+    Làn gió nhẹ chắt chiu từng ý ngọc<br>
+    Phân bua tự gã hoang đàng thất học<br>
+    Ý vụng về câu cú ráp nào xuôi</p>
+    <p>Và đôi mắt của trăng rằm sớm tuổi<br>
+    Cặp kính tròn trao gửi những thờ ơ<br>
+    Là ghét anh sao cứ để trông chờ<br>
+    Là tin nhắn theo tháng ngày vơi nửa</p>  
+    <p>Anh níu áo, em dùng dằng tay ngữa<br>
+    Châu sa dài đâu thắm dọc hàng mi<br>
+    Phải chăng anh là kẻ chẳng ra gì?<br> 
+    Để em trách để em hờn em dỗi</p>
+    <p>Chút dỗi hờn đâu e ấp trên môi<br>
+    Làn gió nhẹ chắt chiu từng ý ngọc<br>
+    Phân bua tự gã hoang đàng thất học<br>
+    Ý vụng về câu cú ráp nào xuôi</p>
+    <p>Và đôi mắt của trăng rằm sớm tuổi<br>
+    Cặp kính tròn trao gửi những thờ ơ<br>
+    Là ghét anh sao cứ để trông chờ<br>
+    Là tin nhắn theo tháng ngày vơi nửa</p>  
+    <p>Anh níu áo, em dùng dằng tay ngữa<br>
+    Châu sa dài đâu thắm dọc hàng mi<br>
+    Phải chăng anh là kẻ chẳng ra gì?<br> 
+    Để em trách để em hờn em dỗi</p>
+    <p>Chút dỗi hờn đâu e ấp trên môi<br>
+    Làn gió nhẹ chắt chiu từng ý ngọc<br>
+    Phân bua tự gã hoang đàng thất học<br>
+    Ý vụng về câu cú ráp nào xuôi</p>
+    <p>Và đôi mắt của trăng rằm sớm tuổi<br>
+    Cặp kính tròn trao gửi những thờ ơ<br>
+    Là ghét anh sao cứ để trông chờ<br>
+    Là tin nhắn theo tháng ngày vơi nửa</p>  
+    <p>Anh níu áo, em dùng dằng tay ngữa<br>
+    Châu sa dài đâu thắm dọc hàng mi<br>
+    Phải chăng anh là kẻ chẳng ra gì?<br> 
+    Để em trách để em hờn em dỗi</p>
+</body>
+
+</html>

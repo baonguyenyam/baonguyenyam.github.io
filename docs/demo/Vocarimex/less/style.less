@@ -1,0 +1,284 @@
+/* ////////// CANHCAM ////////////////////////////////////////// */
+/* ////////// Copyright 2014 by VienSoi Team//////////// */
+/* ////////// Coding by Bao Nguyen///////////////////////////// */
+/* ////////// v1.0.1 Built by less technology////////////////// */
+/* ////////// CANHCAM ////////////////////////////////////////// */
+
+@import "setup.less";
+@charset "utf-8";
+
+/* BootStrap Libs */
+@import "bootstrap-less/bootstrap.less";
+@import "global.less";
+/* ======================================================================= */
+/* #LAYOUT BUILT========================================================== */
+/* ======================================================================= */
+
+@font-face {
+    font-family: 'Font';
+    src: url('../fonts/kial-webfont.eot');
+    src: url('../fonts/kial-webfont.eot?iefix') format('eot'), url('../fonts/kial-webfont.woff') format('woff'), url('../fonts/kial-webfont.ttf') format('truetype'), url('../fonts/kial-webfont.svg#Font') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,vietnamese);
+//@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+//@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+//@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+//Thay thế cho Myriad Pro
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic&subset=latin,vietnamese);
+
+@media (min-width:1199px) {
+    .container-fluid{
+        // max-width: 80%;
+    }
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////// MOBLIE ////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/*Global Lib*/
+
+html, body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    height: 100%;
+    &.boxed{
+        #wrapper{
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    }
+}
+
+.pax{
+    background-attachment: fixed;
+}
+
+.btn{
+    &:active{
+        .box-shadow(none);
+    }
+    &.btn-primary{
+        border:2px solid @color-black;
+        color: @color-black;
+        background: none;
+        padding:10px 30px;
+        font-size: 16px;
+        text-transform: uppercase;
+        &:hover{
+            color:@color-white;
+            background: @color-link;
+            border:2px solid @color-link;
+        }
+    }
+}
+
+img{
+    max-width: 100%;
+}
+
+@-moz-document url-prefix() {
+  fieldset { display: table-cell; }
+}
+
+// LINK//////////////////////////////////////////////////////////////////////////////////
+a {
+    color: @color-link;
+    &:hover {
+        color: @color-hover;
+        //text-decoration: none;
+    }
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////// INCLUDES ////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+// Heading////////////////////////////////
+@import "template/header/header.less";
+
+// Footer////////////////////////////////
+@import "template/footer/footer.less";
+
+// Topbar ////////////////////////////////
+@import "template/header/topbar.less";
+
+// Carousel ////////////////////////////////
+@import "template/carousel/c-brands.less";
+@import "template/carousel/c-news.less";
+@import "template/carousel/c-content.less";
+@import "template/carousel/c-merge.less";
+@import "template/carousel/c-thumbnails.less";
+@import "template/carousel/c-blog.less";
+
+// Titlepage ////////////////////////////////
+@import "template/titlepage/t-linecenter.less";
+@import "template/titlepage/t-lineleft.less";
+@import "template/titlepage/t-linetext.less";
+@import "template/titlepage/t-linebasic.less";
+@import "template/titlepage/t-linemultiline.less";
+@import "template/titlepage/t-lineinline.less";
+@import "template/titlepage/t-linefull.less";
+
+// Content ////////////////////////////////
+@import "template/content/cb-accordion.less";
+@import "template/content/cb-box.less";
+@import "template/content/cb-iconleft.less";
+@import "template/content/cb-latest.less";
+@import "template/content/cb-navi.less";
+@import "template/content/cb-nobox.less";
+@import "template/content/cb-post.less";
+@import "template/content/cb-image.less";
+@import "template/content/cb-item.less";
+@import "template/content/cb-products.less";
+@import "template/content/cb-quote.less";
+
+// Maps ////////////////////////////////
+@import "template/maps/m-iframe.less";
+@import "template/maps/m-toggle.less";
+@import "template/maps/m-multi.less";
+@import "template/maps/m-gmap3.less";
+
+// Person ////////////////////////////////
+@import "template/person/p-slider.less";
+@import "template/person/p-flip.less";
+
+// Portfolio ////////////////////////////////
+@import "template/portfolio/po-sort.less";
+
+// Skills ////////////////////////////////
+@import "template/skill/s-basic.less";
+
+// Skills ////////////////////////////////
+@import "template/slider/s-slider.less";
+
+// Subscribe ////////////////////////////////
+@import "template/subscribe/su-basic.less";
+
+// Tab ////////////////////////////////
+@import "template/tab/tab-basic.less";
+@import "template/tab/tab-history.less";
+@import "template/tab/tab-responsive.less";
+
+// Tagline ////////////////////////////////
+@import "template/taglines/tagline-basic.less";
+@import "template/taglines/tagline-button.less";
+@import "template/taglines/tagline-line.less";
+@import "template/taglines/tagline-pax.less";
+@import "template/taglines/tagline-slider.less";
+@import "template/taglines/tagline-text.less";
+@import "template/taglines/tagline-blockquote.less";
+@import "template/taglines/tagline-mod.less";
+
+// Videos ////////////////////////////////
+@import "template/video/video.less";
+@import "template/video/video-bg.less";
+
+// contact ////////////////////////////////
+@import "template/contact/c-basic.less";
+
+// pricing ////////////////////////////////
+@import "template/pricing/pr-basic.less";
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////// FOOTER ////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.logo{
+  position: absolute;
+  // width: 100%;
+  left: 50%;
+  margin-left: 20px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.popover.top {
+  margin-top: -70px;
+}
+
+.newshome{
+    .item{
+        text-align: center;
+        color: @color-link;
+    }
+}
+.sc{
+    background: @color-hover;
+    height: 70px;
+    .item{
+        text-align: center;
+        position: relative;
+        span{
+            color: #fff;
+            position: absolute;
+            bottom: -95px;
+            left: 0;
+            .transition(all 0.5s);
+            .fa-inverse{
+                color: @color-link;
+                  font-size: 30px;
+            }
+            &:hover{
+                bottom: -50px;
+            }
+        }
+    }
+}
+
+.number{
+    background: @color-hover;
+    padding: 50px 0;
+    .item{
+        padding: 0 55px;
+    }
+    h5{
+        margin-bottom: 0;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .numset{
+        font-size: 60px;
+        // font-weight: bold;
+        color: @color-white
+    }
+}
+
+.info{
+    padding: 50px 0;
+}
+
+footer{
+    .bgtop{
+        .subscribe{
+            display: block;
+            position: relative;
+            input{
+                width: 100%;
+                .form-control;
+            }
+            button{
+                .form-control;
+                width: auto !important;
+                position: absolute;
+                top: 0;
+                right: 0
+            }
+        }
+    }
+}
+
+
+/* PC & TABLET ///////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@import "style-vendors.less";
+@import "style-responsive.less";
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////// ADDONS ////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */

@@ -1,0 +1,10 @@
+/*
+ ////////////////////////////////////////////////////////
+ // Bao Nguyen Apps
+ // @version v1.0
+ // @link https://baonguyenyam.github.io
+ // @license MIT
+ // @Coding by Bao Nguyen - 0969689893 - 0933112900
+ // @baonguyenyam@gmail.com
+ ////////////////////////////////////////////////////////
+*/.viensoi-position-page .demo{background:#0ff;min-height:300px;padding:10px}.viensoi-position-page .demo.demo-2{position:relative}.viensoi-position-page .demo .demo-child{background:#fff;width:200px;height:200px}.viensoi-position-page .demo .demo-child .text{line-height:1rem}.viensoi-position-page .demo .demo-child.demo-1{position:relative}.viensoi-position-page .demo .demo-child.demo-2{position:initial}.viensoi-position-page .demo .demo-child .box-a{width:50px;height:50px;text-align:center;line-height:50px;font-weight:700;color:#000;background:#0f0}.viensoi-position-page .demo .demo-child .box-a.demo-1{position:absolute;top:20px;left:100px}.viensoi-position-page .demo .demo-child .box-b{width:50px;height:50px;text-align:center;line-height:50px;font-weight:700;color:#000;background:#fff000}.viensoi-position-page .demo .demo-child .box-b.demo-1{position:absolute;bottom:20px;right:10px}.viensoi-position-page .demo .demo-child .box-b.z-1{z-index:2}.viensoi-position-page .demo .demo-child .box-c{width:50px;height:50px;text-align:center;line-height:50px;font-weight:700;color:#fff;background:red}.viensoi-position-page .demo .demo-child .box-c.demo-1{position:absolute;bottom:-15px;right:-10px}.viensoi-position-page .demo .demo-child .box-c.z-1{z-index:1}.viensoi-position-page .demo .demo-child .box-d{width:50px;height:50px;text-align:center;line-height:50px;font-weight:700;color:#fff;background:#00f}.viensoi-position-page .demo .demo-child .box-d.demo-1{position:absolute;top:-20px;right:-10px}

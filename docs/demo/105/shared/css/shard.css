@@ -1,0 +1,322 @@
+@charset "utf-8";
+
+
+/* 共有ベース定義
+-----------------------------------------------	*/
+body {
+	text-align:left;
+	color: #412c1f;
+	cursor: auto;
+	font: normal normal 15px/1.45 'メイリオ',Meiryo,'ＭＳ Ｐゴシック', Osaka, sans-serif;
+	letter-spacing:0px;
+	word-spacing:normal;
+	min-width:1000px;
+	background:url(../img/shared/bg.jpg) no-repeat top center;
+}
+#wrapper{
+	width:100%;
+	background:url(../img/shared/wrapper-bg.jpg) repeat-x bottom left;
+}
+*:first-child+html img {
+	vertical-align: top;
+}
+* html img {
+	vertical-align: top;
+}
+
+/* 強調 */
+strong {
+	font-weight: bold;
+}
+
+/*=============================================*/
+/*                 テキスト 変更のみ            */
+/*=============================================*/
+
+.txt_default{color:#a49b83;}	
+.txt_cleam{color:#faddaf;}	
+.txt_red{color:#620000;}
+.txt_brwn{color:#7e5e4f;}
+
+
+.txt_min{font-size:80%; letter-spacing:1px;}
+.txt_middle{font-size:95%;}
+.txt_big{font-size:120%;}
+.txt_max{font-size:140%;}
+
+
+.shadw2 {
+	-webkit-box-shadow: #BEBEBE 3px 3px 10px;
+	-moz-box-shadow: #BEBEBE 3px 3px 10px;
+	box-shadow: #BEBEBE 3px 3px 10px;
+	behavior: url(pie/PIE.htc);	
+	}
+
+
+
+
+
+/*=============================================*/
+/*                ヘッド部分                   */
+/*=============================================*/
+
+/* header (top)*/
+div#header_top {
+	width:1004px;
+	margin:auto;
+	height:658px;
+	position:relative;
+}
+h1{
+	position:absolute;
+	top:87px;
+	right:7px;
+	width:200px;
+	color:#4e3717;
+	font-size:11px;
+	z-index:2;
+	line-height:15px;
+}
+div#header_top .logo{
+	display:block;
+	width:156px;
+	height:310px;
+	position:absolute;
+	top:0;
+	left:27px;
+	z-index:1;
+}
+div#header_top .phone{
+	position:absolute;
+	right:-55px;
+	top:0px;
+	z-index:1;
+	width:334px;
+	height:194px;
+}
+
+div#header_top .header-txt{
+	position:absolute;
+	left:160px;
+	top:0px;
+	z-index:2;
+}
+div#header_top .light-img{
+	position:absolute;
+	left:-104px;
+	top:0px;
+	z-index:2;
+}
+#key{
+	width:100%;
+	height:512px;
+	z-index:0;
+	position:absolute;
+	top:127px;
+	text-align:center;
+	background:url(../img/shared/key-bg.png) no-repeat top center;
+	padding:10px 2px 1px 2px;
+}
+#key p{
+	width:984px;
+	height:503px;
+	margin:auto;
+}
+/*=============================================*/
+/*    ナビゲーション部（グローバル）   */
+/*=============================================*/
+#globalNav {
+	height:187px;
+	list-style: none;
+	position:absolute;
+	top:0px;
+	left:423px;
+	z-index:3;
+}
+
+#globalNav li { 
+	display: inline;
+	float:left; 
+	margin-right:2px;
+	width:58px;
+	height:187px;
+}
+
+#globalNav a {
+	display: block;
+	width:58px;
+	height:187px;
+	float:left;
+}
+
+/*=============================================*/
+/*                100%メイン囲み   top           */
+/*=============================================*/
+
+div#container {
+	width:1000px;
+	margin:auto;
+	clear:both;
+}
+.section{
+	width:1000px;
+	clear:both;
+	overflow:hidden;
+}
+
+/*=============================================*/
+/*                   フッターメニュー          */
+/*=============================================*/
+	
+div#footer_bg{
+	width:100%;
+	height:449px;
+	background:url(../img/shared/footer-bg.jpg) no-repeat bottom center;
+	overflow:hidden;
+	margin-top:26px;
+}
+	
+div#footer{
+	width:1000px;
+	padding-top:25px;
+	height:424px;
+	clear:both;
+	margin:0px auto;
+	position:relative;
+}	
+
+.footer-bnr1{
+	float:left;
+	width:300px;
+	height:201px;
+	margin-right:20px;
+}
+.bnrCenter{
+	float:left;
+	width:310px;
+	height:196px;
+	margin-top:6px;
+}
+.bnrCenter a{
+	display:block;
+	width:310px;
+	height:90px;
+}
+.footer-bnr3{
+	display:block;
+	margin-top:16px;
+}
+.footer-bnr4{
+	float:right;
+	width:350px;
+	height:195px;
+	margin-left:20px;
+	margin-top:8px;
+}
+/*=============================================*/
+/*                    vcard                 */
+/*=============================================*/
+
+.vcard {
+	color:#412c1f;
+	margin-top:57px;
+}
+.vcard h3{
+	line-height:30px;
+}
+.vcard p{
+	font-size:12px;
+	line-height:16px;
+}
+/* ナビゲーション部（フッター）
+-----------------------------------------------	*/
+
+#footnav li {
+	font-size:12px;
+	display: inline;
+	color:#716345;
+}
+a:link { color: #cd0007; text-decoration: underline;}
+a:visited,a:active { color: #cd0007; text-decoration: underline;}
+a:hover { color: #cd0007; text-decoration:underline;}
+
+#socialbuttons{
+	float:left;
+	width:300px;
+}
+
+#socialbuttons div {
+ float: left;
+}
+
+address{
+	margin-top:20px;
+}
+
+
+
+/* =========================================================
+	CLEAR
+========================================================= */
+.clear  { clear: both !important; }
+br.clear {
+	display: block;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+
+/* CLEAR FIX
+--------------------------------------------------------- */
+.clearfix {	zoom:1 !important; }/* for IE 5.5-7 */
+.clearfix:after {
+	content: "." !important;
+	display: block !important;
+	height: 0px !important;
+	clear: both !important;
+	visibility: hidden !important;
+}
+
+.div-none{
+	display:none;
+}
+
+.left_col{
+	clear:both;
+	float:left;
+}
+.right_col{
+	float:right;
+}
+
+.menulist{
+width:100%;
+}
+.menulist dl{
+	border-bottom:1px dotted #a28d6d;
+	margin-top:15px;
+}
+.menulist dt{
+	background:url(../img/howto/dot1.png) no-repeat 4px 8px;
+	padding-left:18px;
+	line-height:26px;
+	font-weight:bold;
+	color:#453c28;
+}
+.menulist dd span{
+	font-size:12px;
+	font-weight:normal;
+}
+.menulist dd.price{
+font-size:14px;
+color:#692000;
+font-weight:bold;
+margin-top:-23px;
+text-align:right;
+}
+.menulist p{
+	color:#734600 !important;
+	margin-left:14px;
+}

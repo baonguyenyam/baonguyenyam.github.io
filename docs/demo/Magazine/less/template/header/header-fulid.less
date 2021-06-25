@@ -1,0 +1,289 @@
+/* ////////// CANHCAM ////////////////////////////////////////// */
+/* ////////// Copyright 2014 by VienSoi Team//////////// */
+/* ////////// Coding by Bao Nguyen///////////////////////////// */
+/* ////////// v1.0.1 Built by less technology////////////////// */
+/* ////////// CANHCAM ////////////////////////////////////////// */
+@import "../../setup.less";
+@charset "utf-8";
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* MOBILE ///////////////////////////////////////////////////////////////////////////////////////////////// */
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/*End Global Lib*/
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////// HEADER ////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* header */
+header{
+    &.cc-header-fulid{
+        #header {
+            .navbar{
+                margin-bottom: 0;
+                .box-shadow(0px 1px 1px -1px rgba(0, 0, 0, 0.3));
+                .transition(all 0.5s);
+                background: rgba(255,255,255,0.98);
+                z-index: 1000;
+                border: 0;
+                &.navbar-default{
+                    // background: none;   
+                    border-color: none;
+                }
+                .navbar-header{
+                    .transition(all 0.5s);
+                    .navbar-toggle{
+
+                    }
+                    .navbar-brand{
+                        .transition(all 0.5s);
+                        padding-top: 0;
+                        padding-bottom: 0;
+                    }
+                }
+                .navbar-collapse{
+                    position: relative;
+                    .nav{
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        > li{
+                            > a{
+                                text-transform: uppercase;
+                                .transition(all 0.5s);
+                                color:@color-black;
+                                &:hover{
+                                    background: none; // darken(@color-white,2%);
+                                    color:@color-link;
+                                    .box-shadow(3px 0 0 -1px lighten(@color-main,30%) inset);
+                                }
+                            }
+                            &.active, &.open{
+                                > a{
+                                    color:@color-link;
+                                    background: darken(@color-white,3%);
+                                    .box-shadow(3px 0 0 -1px darken(@color-main,0%) inset);
+                                }
+                            }
+                            &.open{
+                                > ul{
+                                    margin-top: 0;
+                                    margin-bottom: 0;
+                                    > li{
+                                        > a{
+                                            color:@color-black;
+                                            &:hover{
+                                                background: darken(@color-white,2%);
+                                                .box-shadow(3px 0 0 -1px lighten(@color-main,30%) inset);
+                                            }
+                                        }
+                                        ul{
+                                            margin-top: 0;
+                                            margin-bottom: 0;
+                                            > li{
+                                                > a{
+                                                    color:@color-black;
+                                                    display: block;
+                                                    padding: 5px 15px;
+                                                    text-decoration: none;
+                                                    &:hover{
+                                                        background: darken(@color-white,2%);
+                                                        .box-shadow(3px 0 0 -1px lighten(@color-main,30%) inset);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* & TABLET ///////////////////////////////////////////////////////////////////////////////////////////////// */
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width:767px) {
+
+
+/* header */
+header{
+    &.cc-header-fulid{
+        #header {
+            .navbar{
+                &.navbar-default{
+                }
+                .navbar-header{
+                    float: none;
+                    .navbar-toggle{
+                    }
+                    .navbar-brand{
+                        width: 100%;
+                        margin-left: 0;
+                        text-align: center;
+                        display: block;
+                        img{
+                            display: initial;
+                        }
+                    }
+                }
+                .navbar-collapse{
+                    .nav{
+                        > li{
+                            > a{
+                                &:hover{
+                                    .box-shadow(0 3px 0 darken(@color-main,0%) inset);
+                                }
+                            }
+                            &.active, &.open{
+                                > a{
+                                    background: none;
+                                    .box-shadow(0 3px 0 darken(@color-main,0%) inset);
+                                }
+                            }
+                            &.open{
+                                > ul{
+                                    .box-shadow(0 3px 0 darken(@color-main,0%) inset);
+                                    background: darken(@color-white,2%);
+                                    border:0;
+                                    > li{
+                                        > a{
+                                            &:hover{
+                                                .box-shadow(3px 0 0 -1px lighten(@color-main,30%) inset);
+                                            }
+                                        }
+                                        ul{
+                                            > li{
+                                                > a{
+                                                    &:hover{
+                                                        .box-shadow(3px 0 0 -1px lighten(@color-main,30%) inset);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+}
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* PC ///////////////////////////////////////////////////////////////////////////////////////////////// */
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width:991px) {
+
+
+/* header */
+header{
+    &.cc-header-fulid{
+        #header {
+            .navbar{
+                &.navbar-default{
+                }
+                .navbar-header{
+                    float: left;
+                    width: initial;
+                    .navbar-toggle{
+                    }
+                    .navbar-brand{
+                        padding-top:25px;
+                        padding-bottom: 0;
+                        margin-left: -15px;
+                        width: initial;
+                        text-align: initial;
+                        display: block;
+                        img{
+                            display: initial;
+                        }
+                    }
+                }
+                .navbar-collapse{
+                    .nav{
+                        > li{
+                            > a{
+                                padding-top:0;
+                                padding-bottom: 0;
+                                line-height: 100px;
+                                &:hover{
+                                    .box-shadow(0 3px 0 darken(@color-main,0%) inset);
+                                }
+                            }
+                            &.active, &.open{
+                                > a{
+                                    background: none;
+                                    .box-shadow(0 3px 0 darken(@color-main,0%) inset);
+                                }
+                            }
+                            &.open{
+                                > ul{
+                                    .box-shadow(0 3px 0 darken(@color-main,0%) inset);
+                                    background: darken(@color-white,2%);
+                                    border:0;
+                                    > li{
+                                        > a{
+                                            &:hover{
+                                                .box-shadow(3px 0 0 -1px lighten(@color-main,30%) inset);
+                                            }
+                                        }
+                                        ul{
+                                            > li{
+                                                > a{
+                                                    &:hover{
+                                                        .box-shadow(3px 0 0 -1px lighten(@color-main,30%) inset);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .navbar-form{
+                        margin-top: 34px;
+                        overflow: hidden;
+                        label{
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+    
+}
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* LAGRE DEVICES ///////////////////////////////////////////////////////////////////////////////////////////////// */
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width:1199px) {
+
+    
+}
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* PRINTS ///////////////////////////////////////////////////////////////////////////////////////////////// */
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+@media print {
+    
+}

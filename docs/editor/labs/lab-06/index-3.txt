@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <form action="./abc.html">
+        <fieldset>
+            <legend>Personal information:</legend>
+            <input type="text" name="firstname" value="" placeholder="Nhập tên">
+            <br><br>
+            <select name="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select>
+            <br><br>
+            <textarea name="message" rows="10" cols="50">The cat was playing in the garden.</textarea>
+            <br><br>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

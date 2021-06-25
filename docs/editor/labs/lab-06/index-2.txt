@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <form name="contact">
+        <fieldset>
+            <legend>Personal information:</legend>
+            
+            <p>Checkbox:</p>
+            <input type="checkbox" name="chon_1" value="Bike"> I have a bike<br>
+            <input type="checkbox" name="chon_2" value="Car"> I have a car
+            <p>Radio:</p>
+            <input type="radio" name="chon" value="Bike"> I have a bike<br>
+            <input type="radio" name="chon" value="Car"> I have a car
+        </fieldset>
+        <fieldset>
+            <legend>For label:</legend>
+            
+            <p>Checkbox:</p>
+            <input type="checkbox" name="chon_1" value="Bike" id="se_01"><label for="se_01">I have a bike</label><br>
+            <input type="checkbox" name="chon_2" value="Car" id="se_02"><label for="se_02">I have a car</label>
+            <p>Radio:</p>
+            <input type="radio" name="chon" value="Bike" id="se_03"><label for="se_03">I have a bike</label><br>
+            <input type="radio" name="chon" value="Car" id="se_04"><label for="se_04">I have a car</label>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

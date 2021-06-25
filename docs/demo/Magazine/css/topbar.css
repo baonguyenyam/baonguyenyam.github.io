@@ -1,0 +1,157 @@
+@charset "utf-8";
+/* ////////// CANHCAM ////////////////////////////////////////// */
+/* ////////// Copyright 2014 by VienSoi Team//////////// */
+/* ////////// Coding by Bao Nguyen///////////////////////////// */
+/* ////////// v1.0.1 Built by less technology////////////////// */
+/* ////////// CANHCAM ////////////////////////////////////////// */
+/* Less Function
+>> IMG
+data-uri('image/jpeg;base64','../data/image.jpg'); 
+
+>> MIXIN
+.boxshw, #boxshw {
+  box-shadow: inset 0 0 10px #555;
+}
+.my-other-mixin() {
+  background: white;
+}
+.myclass {
+  .boxshw;
+  .my-other-mixin();
+}
+*/
+.middlebox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.middlediv {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/* #OPACITY*/
+/* MOBILE ///////////////////////////////////////////////////////////////////////////////////////////////// */
+#topbar {
+  background: #04a9eb;
+  border-top: 3px solid #27bffb;
+  z-index: 2000;
+  color: #ffffff;
+}
+#topbar .navbar-nav {
+  line-height: 40px;
+  text-align: center;
+}
+#topbar .navbar-nav li a {
+  color: #ffffff;
+}
+#topbar .navbar-nav li a:hover,
+#topbar .navbar-nav li a:focus {
+  background: none;
+}
+#topbar .navbar-nav li.open > a {
+  background: #0385b9;
+}
+#topbar .navbar-nav li ul {
+  z-index: 2000;
+  text-align: center;
+  width: 100%;
+}
+#topbar .navbar-nav li ul a:hover,
+#topbar .navbar-nav li ul a.active,
+#topbar .navbar-nav li ul a:focus {
+  background: #0385b9;
+}
+#topbar .social {
+  text-align: center;
+}
+#topbar .social ul {
+  margin: 0;
+  padding: 0;
+}
+#topbar .social ul li {
+  display: inline-block;
+}
+#topbar .social ul li.hi-icon-effect-3.hi-icon-effect-3b {
+  padding-right: 0 !important;
+  display: inline-block;
+  padding: 0;
+}
+#topbar .social ul li.hi-icon-effect-3.hi-icon-effect-3b a {
+  padding: 0 !important;
+  line-height: 50px;
+}
+#topbar .social ul li.hi-icon-effect-3.hi-icon-effect-3b a .hi-icon {
+  -webkit-box-shadow: 0 0 0 2px #ffffff;
+  -moz-box-shadow: 0 0 0 2px #ffffff;
+  box-shadow: 0 0 0 2px #ffffff;
+  color: #ffffff;
+  height: 24px;
+  width: 24px;
+}
+#topbar .social ul li.hi-icon-effect-3.hi-icon-effect-3b a .hi-icon:before {
+  font-size: 14px;
+  line-height: 24px;
+}
+#topbar .social ul li.hi-icon-effect-3.hi-icon-effect-3b a .hi-icon:hover,
+#topbar .social ul li.hi-icon-effect-3.hi-icon-effect-3b a .hi-icon:focus {
+  color: #04a9eb;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+#topbar .social ul li.hi-icon-effect-3.hi-icon-effect-3b a .hi-icon:hover:after,
+#topbar .social ul li.hi-icon-effect-3.hi-icon-effect-3b a .hi-icon:focus:after {
+  background: #ffffff;
+}
+#topbar .shoppingcart .modal-content .media {
+  border-bottom: 1px dashed #d9d9d9;
+  padding-bottom: 15px;
+}
+#topbar .shoppingcart .modal-content img {
+  height: 64px;
+  max-height: 64px;
+  width: 64px;
+  max-width: 64px;
+}
+/* & TABLET ///////////////////////////////////////////////////////////////////////////////////////////////// */
+@media (min-width: 767px) {
+  #topbar .navbar-nav li.open > a {
+    background: #0385b9;
+  }
+  #topbar .navbar-nav li ul {
+    background: #0385b9;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+    text-align: initial;
+  }
+  #topbar .navbar-nav li ul a:hover,
+  #topbar .navbar-nav li ul a.active,
+  #topbar .navbar-nav li ul a:focus {
+    background: #024f6e;
+  }
+  #topbar .social {
+    float: left;
+    text-align: left;
+  }
+  #topbar .social ul {
+    margin: 0 15px;
+  }
+}
+/* PC ///////////////////////////////////////////////////////////////////////////////////////////////// */
+/* LAGRE DEVICES ///////////////////////////////////////////////////////////////////////////////////////////////// */
+/* PRINTS ///////////////////////////////////////////////////////////////////////////////////////////////// */

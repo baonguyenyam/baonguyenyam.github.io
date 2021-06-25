@@ -1,0 +1,300 @@
+@charset "utf-8";
+/* 共有ベース定義
+-----------------------------------------------	*/
+body {
+	text-align:left;
+	color: #e5d1b4;
+	cursor: auto;
+	font: normal normal 83%/1.45 "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro", Osaka, sans-serif;
+	letter-spacing:1px;
+	word-spacing:normal;
+	min-width:1000px;
+	background:#1c0a00 url(../img/shared/bg.jpg) repeat-x top center;
+}
+#wrapper{
+	width:100%;
+	background:url(../img/shared/wrapper.jpg) no-repeat top center;
+}
+*:first-child+html img {
+	vertical-align: top;
+}
+* html img {
+	vertical-align: top;
+	zoom:1;
+}
+/* 強調 */
+strong {
+	font-weight: bold;
+}
+th{
+	text-align:left;
+}
+/*=============================================*/
+/*                 テキスト 変更のみ            */
+/*=============================================*/
+
+
+.txt_min {
+	font-size:85%;
+}
+.txt_middle {
+	font-size:95%;
+}
+.txt_big {
+	font-size:120%;
+}
+.txt_max {
+	font-size:140%;
+}
+.shadw2 {
+	-webkit-box-shadow: #BEBEBE 3px 3px 10px;
+	-moz-box-shadow: #BEBEBE 3px 3px 10px;
+	box-shadow: #BEBEBE 3px 3px 10px;
+	behavior: url(../../css2/pie/PIE.htc);
+}
+.txt-red{
+	color:#6f140d !important;
+	font-size:12px;
+	line-height:18px;
+}
+/*=============================================*/
+/*                テキストリンク設定           */
+/*=============================================*/
+
+/*全体のリンク*/
+a:link { color: #930b0b; text-decoration: underline;}
+a:visited,a:active { color: #6f0808; text-decoration: underline;}
+a:hover { color: #c32f2f; text-decoration:underline;}
+/*=============================================*/
+/*                ヘッド部分                   */
+/*=============================================*/
+
+/* header */
+div#header {
+	width:100%;
+	position:relative;
+	background:url(../img/shared/header-bg.png) repeat-x top left;
+	height:609px;
+}
+div#headerInner {
+	width:100%;
+	position:absolute;
+	height:609px;
+	z-index:10;
+	background:url(../img/shared/header-bg.png) repeat-x top left;
+}
+div#headerCenter{
+	width:1000px;
+	margin:auto;
+	height:609px;
+}
+h1{
+	width:650px;	
+	float:left;
+	height:30px;
+	line-height:30px;
+	color:#e4d9b4;
+	font-size:10px;
+	letter-spacing:1px;
+	text-indent:20px;
+}
+.phone{
+	float:right;
+	width:290px;
+	height:30px;
+}
+#belt{
+	height:550px;
+	width:184px;
+	margin-top:20px;
+	margin-left:20px;
+}
+a.logo{
+	display:block;
+	width:184px;
+	height:225px;
+}
+
+#key{
+	width:100%;
+	min-width:1000px;
+	height:609px;
+	position:absolute;
+	z-index:0;
+	top:0px;
+	left:0;
+}
+
+/*=============================================*/
+/*    ナビゲーション部（グローバル）   */ 
+/*=============================================*/
+#globalNav{
+	width:184px;
+	margin-top:37px;
+}
+#globalNav li {
+	display:block;
+	width:184px;
+}
+#globalNav li a {
+	display:block;
+	width:184px;
+}
+
+
+/*=============================================*/
+/*                1000pxメイン囲み              */
+/*=============================================*/
+#container{
+	clear:both;
+	display:block;
+	width:1000px;
+	margin:auto;
+	overflow:hidden;
+	margin-bottom:40px;
+}
+.section{
+	width:1000px;
+	clear:both;
+	overflow:hidden;
+}
+
+/*=============================================*/
+/*                   フッターメニュー          */
+/*=============================================*/
+div#footer {
+	clear:both;
+	width:100%;
+	min-width:1000px;
+	background:url(../img/shared/footer-bg.jpg) repeat-x center bottom;
+	height:230px;
+	overflow:hidden;
+}
+#footerInner{
+	width:1000px;
+	margin:auto;
+	height:196px;
+	padding-top:34px;
+	position:relative;
+}
+#footerInner h3{
+	color:#914c16;
+}
+.logo-footer{
+	position:absolute;
+	right:0;
+	top:0;
+}
+.footer-info{
+	color:#1c0a00;
+	height:142px;
+}
+.footer-info p{
+	line-height:20px;
+}
+.footernav{
+	float:left;
+	width:680px;
+	height:20px;
+	color:#fffffe;
+	margin-top:18px;
+}
+.footernav li{
+	line-height:normal;
+	display:inline;
+}
+
+.footernav li a {
+	line-height:18px;
+	color:#8d7956;
+	font-size:11px;
+	text-transform:uppercase;
+	text-decoration:none;
+}
+.footer-info a:hover,.footernav li a:hover{
+	text-decoration:underline;
+}
+address {
+	float:right;
+	height:23px;
+	width:301px;
+	margin-top:21px;
+}
+/* =========================================================
+	CLEAR
+========================================================= */
+.clear {
+	clear: both !important;
+}
+br.clear {
+	display: block;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+/* CLEAR FIX
+--------------------------------------------------------- */
+.clearfix {
+	zoom:1 !important;
+}/* for IE 5.5-7 */
+.clearfix:after {
+	content: "." !important;
+	display: block !important;
+	height: 0px !important;
+	clear: both !important;
+	visibility: hidden !important;
+}
+/* 共通コンテンツ1000
+-----------------------------------------------	*/
+
+	
+.left_col {
+	float:left;
+	clear:both;
+}
+.right_col {
+	float:right;
+}
+.hidden {
+    margin-left: -9999em;
+}
+.menulist{
+	width:990px;
+	margin-left:10px;
+	padding-bottom:10px;
+}
+.list li,.menulist li{
+	margin-left:20px;
+	width:300px;
+	float:left;
+	border-top:3px solid #c12328;
+	padding-top:12px;
+	color:#a18c6d;
+	margin-bottom:13px;
+}
+.price{
+	color:#c12328;
+	font-weight:bold;
+}
+.menulist2{
+	width:1050px;
+}
+.menulist2 .list li{
+	margin-right:20px;
+	width:485px;
+}
+.list dl{
+	border-bottom:1px dotted #9e8573;
+	padding:5px 0px;
+}
+.list dt{
+	font-weight:bold;
+}
+.list dd.price{
+	text-align:right;
+	margin-top:-23px;
+}
+.list dd.txt{
+	color:#a18c6d;
+}

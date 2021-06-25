@@ -1,0 +1,251 @@
+
+.wowbook {
+  color: #333;
+}
+.wowbook-page-content {
+  background: white;
+}
+.wowbook-left .wowbook-gutter-shadow {
+  /*background-image: url('../images/page_left_background.png');*/
+  opacity: 0.5;
+  width: 60px;
+}
+.wowbook-right .wowbook-gutter-shadow {
+  background-image: url('../images/page_right_background.png');
+  background-position: 0 0;
+  width: 75px;
+}
+
+nav.barbrochure {
+  height: 46px;
+  position: relative;
+  z-index: 2147483647;
+  zoom: 1;
+}
+nav.barbrochure li {
+  width: 48px;
+  list-style: none;
+  list-style-type: none;
+  
+}
+nav.barbrochure a {
+  display: block;
+  height: 46px;
+  width: 48px;
+  padding: 0;
+  background: #003b79 no-repeat;
+  background-position: 8px 7px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+nav.barbrochure #zoomin {
+  background-image: url(../images/icons/zoom_in.png);
+}
+nav.barbrochure #zoomout {
+  background-image: url(../images/icons/zoom_out.png);
+}
+nav.barbrochure #first {
+  background-image: url(../images/icons/arrow_double_left.png);
+}
+nav.barbrochure #last {
+  background-image: url(../images/icons/arrow_double_right.png);
+}
+nav.barbrochure #next {
+  background-image: url(../images/icons/arrow_right.png);
+}
+nav.barbrochure #back {
+  background-image: url(../images/icons/arrow_left.png);
+}
+nav.barbrochure #slideshow {
+  background-image: url(../images/icons/slideshow_play.png);
+}
+nav.barbrochure #slideshow.wowbook-disabled {
+  background-image: url(../images/icons/slideshow_pause.png);
+}
+nav.barbrochure #flipsound {
+  background-image: url(../images/icons/sound_on.png);
+}
+nav.barbrochure #flipsound.wowbook-disabled {
+  background-image: url(../images/icons/sound_off.png);
+}
+nav.barbrochure a:hover {
+  background-color: #898989;
+}
+nav.barbrochure a:active,
+nav.barbrochure a:hover,
+nav.barbrochure a {
+  outline: none;
+}
+.wowbook-page-content {
+  padding: 1em;
+}
+
+
+#click_to_open {
+  position: absolute;
+  left: 80px;
+  top: 190px;
+}
+.js #features {
+  mmargin-left: -12000px;
+}
+#features {
+  mmargin: auto;
+}
+
+#features .wowbook-page-number{
+  display: none;
+}
+
+#features h1 {
+  font-size: 32px;
+  color: white;
+  background: #aa2b2b;
+  line-height: 1.5;
+  padding: 5px 5px 0px;
+  margin: 0;
+}
+#features .subtitle {
+  font-size: 18px;
+  color: black;
+  line-height: 1.5;
+  padding: 5px 5px 0px;
+  font-style: italic;
+}
+#features p,
+#features ul {
+  font-size: 24px;
+  margin-top: 0.5em;
+}
+#features li {
+  list-style: none;
+}
+#cover {
+  /*background: #ffffff url("../images/cover.jpg") no-repeat;*/
+}
+.feature {
+  padding: 1em 1em;
+  height: 500px;
+  width: 400px;
+  background: white;
+}
+.feature h1,
+.feature h2 {
+  font-size: 38px;
+  color: black;
+}
+#features .feature.pagefx p {
+  font-size: 22px;
+}
+#features .feature.pagefx .subtitle {
+  margin-top: 0;
+  font-size: 18px;
+}
+#features .feature.pagefx h1 {
+  font-size: 48px;
+  color: #aa2b2b;
+  background: none;
+  line-height: 0.7;
+  padding: 5px 0px 0px;
+  margin: 0;
+}
+#features .easy {
+  position: relative;
+  padding: 0;
+}
+#features .wowbook-right .easy {
+  background-position: right top;
+
+}
+#feature .easy.wowbook-page-content{
+  
+}
+#features .easy .bgtext{
+  background: #0d5cab;
+  opacity: 0.75;
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  min-height: 60px;
+  line-height: 60px;
+  width: 100%;
+}
+#features .easy h4{
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: right;
+  padding-right:40px;
+  margin: 0;
+  line-height: 60px;
+}
+
+.doc {
+  display: none;
+  background: url("../images/doc_page.png");
+  font-size: 32px;
+  line-height: 128px;
+  width: 128px;
+  height: 128px;
+  position: relative;
+  text-align: center;
+}
+
+#zoom-feature {
+  background: #ffffff url("../images/zoom.jpg") no-repeat;
+}
+#zoom-feature h1 {
+  font-size: 100px;
+  color: #333;
+  background: none;
+  line-height: 1.1;
+  padding: 5px 0px 0px;
+  text-align: right;
+}
+#zoom-feature2 {
+  background: #ffffff url("../images/zoom.jpg") right top no-repeat;
+}
+.deeplinking {
+  color: white;
+  background: url("../images/chain.jpg") no-repeat;
+}
+.deeplinking h1 {
+  color: white;
+  background: #3d567d !important;
+}
+.deeplinking a,
+.deeplinking a:active,
+.deeplinking a:visited {
+  color: #f8f8f8;
+  text-decoration: underline;
+}
+.wowbook-right .deeplinking {
+  background-position: top right;
+}
+
+.feature.flash-demo {
+  background: url("../images/flash.png") #ffffff no-repeat;
+  background-position: top right;
+  padding-top: 100px;
+  text-align: center;
+  line-height: 2em;
+  font-size: 1.2em;
+}
+.more {
+  background: url("../images/more.png") #ffffff no-repeat;
+  padding-top: 30px;
+}
+.more h1 {
+  display: none;
+}
+.more ul {
+  margin-left: 1em;
+}
+.more li {
+  margin-bottom: 0.7em;
+}
+.wowbook-right .more {
+  background-position: top right;
+}

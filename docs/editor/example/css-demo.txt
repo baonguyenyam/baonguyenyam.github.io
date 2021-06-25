@@ -1,0 +1,13 @@
+body {
+    font-family: Georgia;
+    color: red;
+    background-color: #d8da3d
+}
+
+h1 {
+    font-size: 14px
+}
+
+h1 span {
+    color: rgba(30, 0, 255, 0.5)
+}

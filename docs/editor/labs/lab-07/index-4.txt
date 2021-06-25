@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Social Media & Media</title>
+</head>
+
+<body>
+    <h2>Gmaps</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2670159540476!2d106.68019835044716!3d10.790849661840136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528d35939c66f%3A0xe52e3ed732b15272!2zRlBUIFBvbHl0ZWNobmljIEhDTSAtIENhbyDEkeG6s25nIHRo4buxYyBow6BuaA!5e0!3m2!1sen!2s!4v1507398584436"
+        width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <h2>Facebook</h2>
+    <p>URL: <a href="https://developers.facebook.com/docs/plugins/like-button/#example" target="_blank">https://developers.facebook.com/docs/plugins/like-button/#example</a></p>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=688213608004081";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Your like button code -->
+    <iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fbaonguyenyam.github.io%2Feditor%2F&width=81&layout=button_count&action=like&size=large&show_faces=false&share=false&height=21&appId=1214387478609739" width="81" height="30" style="border:none;overflow:hidden"
+        scrolling="no" frameborder="0" allowTransparency="true"></iframe><br>
+    <!-- Your share button code -->
+    <iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fbaonguyenyam.github.io%2Feditor%2F&layout=button_count&size=large&mobile_iframe=true&appId=1214387478609739&width=91&height=28" width="91" height="28" style="border:none;overflow:hidden"
+        scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+    <!-- Your comments code -->
+    <div class="fb-comments" data-href="http://baonguyenyam.github.io/editor/" data-numposts="5"></div>
+</body>
+
+</html>

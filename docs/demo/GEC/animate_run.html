@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Animated Run</title>
+    <!-- Meta Tag-->
+    <meta name="keywords" content="Demo">
+    <meta name="description" content="Demo">
+    <!-- Meta Tag-->
+    <!-- Mobile Specific Metas ==================================================-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="canonical" href="http://www.xxxxxx.com/">
+    <!-- CSS Styles ==================================================-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/tool.css">
+    <link rel="stylesheet" type="text/css" href="css/plugins.css">
+    <link rel="stylesheet" type="text/css" href="css/addons.css">
+    <!--if lt IE 9-->
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <!-- Favicons ==================================================-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2 col-sm-3 mrt10"><img src="images/logo.png"></div>
+        <div class="col-md-10 col-sm-9">
+          <h2>VienSoi Documents</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 col-sm-3">
+          <div class="list-group"><a href="canhcam.html" class="list-group-item active">MENU</a><a href="animate_run.html" class="list-group-item">Animate Libs</a><a href="box.html" class="list-group-item">Box Shadow</a><a href="color.html" class="list-group-item">Color</a><a href="text.html" class="list-group-item">Text & Form & Table</a><a href="ribbon.html" class="list-group-item">Ribbon</a><a href="visibility.html" class="list-group-item">Visibility</a><a href="hover.html" class="list-group-item">Hover & Icon Hover</a><a href="scrollbar.html" class="list-group-item">Scrollbar</a><a href="caroulsel.html" class="list-group-item">Caroulsel</a><a href="accordion.html" class="list-group-item">Accordion</a><a href="tab.html" class="list-group-item">Tab Responsive</a><a href="maps.html" class="list-group-item">Google Maps</a><a href="slider.html" class="list-group-item">Slider</a><a href="image-album.html" class="list-group-item">Image Album</a><a href="image.html" class="list-group-item">Image Filter</a><a href="lightbox.html" class="list-group-item">Image Gallery</a><a href="video.html" class="list-group-item">Video Gallery</a><a href="wizard.html" class="list-group-item">Sort & Form Wizard</a></div>
+        </div>
+        <div class="col-md-10 col-sm-9">
+          <h3>Animated Run</h3><div class="row">
+
+    <div class="col-md-4">
+        <div class="animatordemo">
+            <div id="timing" class=""><span class="iconfont-fire"><img src="images/image.jpg"></span>
+            </div>
+        </div>
+        <div class="animatordemo2">
+            <div id="timing2" class=""></div>
+        </div>
+    </div>
+
+    <div class="col-md-8">
+        <select class="btn mb10 selectanimated text-left" size="20">
+            <optgroup label="Attention Seekers">
+                <option value="bounce">bounce</option>
+                <option value="flash">flash</option>
+                <option value="pulse">pulse</option>
+                <option value="shake">shake</option>
+                <option value="swing">swing</option>
+                <option value="tada">tada</option>
+                <option value="wobble">wobble</option>
+            </optgroup>
+            <optgroup label="Bouncing Entrances">
+                <option value="bounceIn">bounceIn</option>
+                <option value="bounceInDown">bounceInDown</option>
+                <option value="bounceInLeft">bounceInLeft</option>
+                <option value="bounceInRight">bounceInRight</option>
+                <option value="bounceInUp">bounceInUp</option>
+            </optgroup>
+            <optgroup label="Bouncing Exits">
+                <option value="bounceOut">bounceOut</option>
+                <option value="bounceOutDown">bounceOutDown</option>
+                <option value="bounceOutLeft">bounceOutLeft</option>
+                <option value="bounceOutRight">bounceOutRight</option>
+                <option value="bounceOutUp">bounceOutUp</option>
+            </optgroup>
+            <optgroup label="Fading Entrances">
+                <option value="fadeIn">fadeIn</option>
+                <option value="fadeInDown">fadeInDown</option>
+                <option value="fadeInDownBig">fadeInDownBig</option>
+                <option value="fadeInLeft">fadeInLeft</option>
+                <option value="fadeInLeftBig">fadeInLeftBig</option>
+                <option value="fadeInRight">fadeInRight</option>
+                <option value="fadeInRightBig">fadeInRightBig</option>
+                <option value="fadeInUp">fadeInUp</option>
+                <option value="fadeInUpBig">fadeInUpBig</option>
+            </optgroup>
+            <optgroup label="Fading Exits">
+                <option value="fadeOut">fadeOut</option>
+                <option value="fadeOutDown">fadeOutDown</option>
+                <option value="fadeOutDownBig">fadeOutDownBig</option>
+                <option value="fadeOutLeft">fadeOutLeft</option>
+                <option value="fadeOutLeftBig">fadeOutLeftBig</option>
+                <option value="fadeOutRight">fadeOutRight</option>
+                <option value="fadeOutRightBig">fadeOutRightBig</option>
+                <option value="fadeOutUp">fadeOutUp</option>
+                <option value="fadeOutUpBig">fadeOutUpBig</option>
+            </optgroup>
+            <optgroup label="Flippers">
+                <option value="flip">flip</option>
+                <option value="flipInX">flipInX</option>
+                <option value="flipInY">flipInY</option>
+                <option value="flipOutX">flipOutX</option>
+                <option value="flipOutY">flipOutY</option>
+                <option value="flipLeft">flipLeft</option>
+                <option value="flipRight">flipRight</option>
+                <option value="flipTop">flipTop</option>
+                <option value="flipBottom">flipBottom</option>
+            </optgroup>
+            <optgroup label="Lightspeed">
+                <option value="lightSpeedIn">lightSpeedIn</option>
+                <option value="lightSpeedOut">lightSpeedOut</option>
+            </optgroup>
+            <optgroup label="Rotating Entrances">
+                <option value="rotateIn">rotateIn</option>
+                <option value="rotateInDownLeft">rotateInDownLeft</option>
+                <option value="rotateInDownRight">rotateInDownRight</option>
+                <option value="rotateInUpLeft">rotateInUpLeft</option>
+                <option value="rotateInUpRight">rotateInUpRight</option>
+            </optgroup>
+            <optgroup label="Rotating Exits">
+                <option value="rotateOut">rotateOut</option>
+                <option value="rotateOutDownLeft">rotateOutDownLeft</option>
+                <option value="rotateOutDownRight">rotateOutDownRight</option>
+                <option value="rotateOutUpLeft">rotateOutUpLeft</option>
+                <option value="rotateOutUpRight">rotateOutUpRight</option>
+            </optgroup>
+            <optgroup label="Sliders">
+                <option value="slideInDown">slideInDown</option>
+                <option value="slideInLeft">slideInLeft</option>
+                <option value="slideInRight">slideInRight</option>
+                <option value="slideOutLeft">slideOutLeft</option>
+                <option value="slideOutRight">slideOutRight</option>
+                <option value="slideOutUp">slideOutUp</option>
+            </optgroup>
+            <optgroup label="Specials">
+                <option value="hinge">hinge</option>
+                <option value="rollIn">rollIn</option>
+                <option value="rollOut">rollOut</option>
+            </optgroup>
+            <optgroup label="Entrances (MINI)">
+                <option value="slideUp">Slide Up &#8593;</option>
+                <option value="slideDown">Slide Down &#8595;</option>
+                <option value="slideLeft">Slide Left &#8592;</option>
+                <option value="slideRight">Slide Right &#8594;</option>
+                <option value="slideExpandUp">Slide Expand Up &#8593;</option>
+                <option value="expandUp">Expand Up &#8593;</option>
+                <option value="fadeIn">Fade In</option>
+                <option value="expandOpen">Expand Open</option>
+                <option value="bigEntrance">Big Entrance</option>
+                <option value="hatch">Hatch</option>
+            </optgroup>
+            <optgroup label="Misc">
+                <option value="bounce">Bounce</option>
+                <option value="pulse">Pulse</option>
+                <option value="float">Floating</option>
+                <option value="tossing">Tossing</option>
+                <option value="pullUp">Pull Up &#8593;</option>
+                <option value="pullDown">Pull Down &#8595;</option>
+                <option value="stretchLeft">Stretch Left &#8592;</option>
+                <option value="stretchRight">Stretch Right &#8594;</option>
+            </optgroup>
+            <optgroup label="Magic Effects (MAGIC)">
+                <option value="magic">magic</option>
+                <option value="twisterInDown">twisterInDown</option>
+                <option value="twisterInUp">twisterInUp</option>
+                <option value="swap">swap</option>
+            </optgroup>
+            <optgroup label="Bling">
+                <option value="puffIn">puffIn</option>
+                <option value="puffOut">puffOut</option>
+                <option value="vanishIn">vanishIn</option>
+                <option value="vanishOut">vanishOut</option>
+            </optgroup>
+            <optgroup label="Static Effects">
+                <option value="openDownLeft">openDownLeft</option>
+                <option value="openDownRight">openDownRight</option>
+                <option value="openUpLeft">openUpLeft</option>
+                <option value="openUpRight">openUpRight</option>
+                <option value="openDownLeftRetourn">openDownLeftRetourn</option>
+                <option value="openDownRightRetourn">openDownRightRetourn</option>
+                <option value="openUpLeftRetourn">openUpLeftRetourn</option>
+                <option value="openUpRightRetourn">openUpRightRetourn</option>
+            </optgroup>
+            <optgroup label="Static Effects Out">
+                <option value="openDownLeftOut">openDownLeftOut</option>
+                <option value="openDownRightOut">openDownRightOut</option>
+                <option value="openUpLeftOut">openUpLeftOut</option>
+                <option value="openUpRightOut">openUpRightOut</option>
+            </optgroup>
+            <optgroup label="Perspective">
+                <option value="perspectiveDown">perspectiveDown</option>
+                <option value="perspectiveUp">perspectiveUp</option>
+                <option value="perspectiveLeft">perspectiveLeft</option>
+                <option value="perspectiveRight">perspectiveRight</option>
+                <option value="perspectiveDownRetourn">perspectiveDownRetourn</option>
+                <option value="perspectiveUpRetourn">perspectiveUpRetourn</option>
+                <option value="perspectiveLeftRetourn">perspectiveLeftRetourn</option>
+                <option value="perspectiveRightRetourn">perspectiveRightRetourn</option>
+            </optgroup>
+            <optgroup label="Rotate">
+                <option value="rotateDown">rotateDown</option>
+                <option value="rotateUp">rotateUp</option>
+                <option value="rotateLeft">rotateLeft</option>
+                <option value="rotateRight">rotateRight</option>
+            </optgroup>
+            <optgroup label="Slide">
+                <option value="slideDown">slideDown</option>
+                <option value="slideUp">slideUp</option>
+                <option value="slideLeft">slideLeft</option>
+                <option value="slideRight">slideRight</option>
+                <option value="slideDownRetourn">slideDownRetourn</option>
+                <option value="slideUpRetourn">slideUpRetourn</option>
+                <option value="slideLeftRetourn">slideLeftRetourn</option>
+                <option value="slideRightRetourn">slideRightRetourn</option>
+            </optgroup>
+            <optgroup label="Math">
+                <option value="swashOut">swashOut</option>
+                <option value="swashIn">swashIn</option>
+                <option value="foolishOut">foolishOut</option>
+                <option value="foolishIn">foolishIn</option>
+                <option value="holeOut">holeOut</option>
+            </optgroup>
+            <optgroup label="Tin">
+                <option value="tinRightOut">tinRightOut</option>
+                <option value="tinLeftOut">tinLeftOut</option>
+                <option value="tinUpOut">tinUpOut</option>
+                <option value="tinDownOut">tinDownOut</option>
+            </optgroup>
+            <option value="tinRightIn">tinRightIn</option>
+            <option value="tinLeftIn">tinLeftIn</option>
+            <option value="tinUpIn">tinUpIn</option>
+            <option value="tinDownIn">tinDownIn</option>
+            </optgroup>
+            <optgroup label="Bomb">
+                <option value="bombRightOut">bombRightOut</option>
+                <option value="bombLeftOut">bombLeftOut</option>
+            </optgroup>
+            <optgroup label="Other">
+                <option value="rotate360">rotate360</option>
+                <option value="rotate360L">rotate360 Left</option>
+            </optgroup>
+        </select>
+        <button class="btn btn-large btn-danger callanimated mr15">Animate it</button>
+        <input class="btn btn-default result" type="text" value="" placeholder="Animated name">
+        <script>
+        function testAnim(x) {
+            $('.result').val(x);
+            $('#timing, #timing2').removeClass().addClass(x + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+                $(this).removeClass();
+            });
+        };
+        $(document).ready(function() {
+            $('.result').click(function() {
+                $(this).select();
+            });
+
+            $('.callanimated').click(function() {
+                var anim = $('.selectanimated').val();
+                testAnim(anim);
+            });
+
+            $('.selectanimated').change(function() {
+                var anim = $(this).val();
+                testAnim(anim);
+            });
+        });
+        </script>
+    </div>
+
+</div>
+
+<table class="table">
+    <caption>
+        Data Animated
+    </caption>
+    <thead>
+        <tr>
+            <th>Element</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>.runloop</code>
+            </td>
+            <td>Run forver</td>
+        </tr>
+        <tr>
+            <td><code>[data-animated]</code>
+            </td>
+            <td>The effect for run check in <a href="_animate.html" target="_blank">Animated table</a>
+            </td>
+        </tr>
+        <tr>
+            <td><code>[data-animated-auto]</code>
+            </td>
+            <td>The effect for auto-run check in <a href="_animate.html" target="_blank">Animated table</a>
+            </td>
+        </tr>
+        <tr>
+            <td><code>[data-type]</code>
+            </td>
+            <td>With <span class="text-danger">hover|click|focus</span> function</td>
+        </tr>
+        <tr>
+            <td><code>[data-fade]</code>
+            </td>
+            <td>The effect for auto-run check in <a href="_animate.html" target="_blank">Animated table</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<h2>Image Hover & Click</h2>
+<figure> <img src="images/image.jpg" data-animated="flash" data-type="hover" alt="">&nbsp;<img src="images/image.jpg" class="img-rounded" data-animated="opacity8 img-circle" data-type="hover" alt="">&nbsp;<img src="images/image.jpg" data-animated="swing" data-type="click" alt="">&nbsp;<img src="images/image.jpg" data-animated="flip runloop" data-type="hover" alt="">
+</figure>
+<pre class="html">&lt;figure&gt;<br>    &lt;img src=&quot;images/image.jpg&quot; <span class="text-danger">data-animated</span>=&quot;flash&quot; <span class="text-danger">data-type</span>=&quot;hover&quot;&gt;
+    &lt;img src=&quot;images/image.jpg&quot; class=&quot;img-rounded&quot; <span class="text-danger">data-animated</span>=&quot;opacity8 img-circle&quot; <span class="text-danger">data-type</span>=&quot;hover&quot; alt=&quot;&quot;&gt;
+    &lt;img src=&quot;images/image.jpg&quot; <span class="text-danger">data-animated</span>=&quot;swing&quot; <span class="text-danger">data-type</span>=&quot;click&quot; alt=&quot;&quot;&gt;<br>    &lt;img src=&quot;images/image1.jpg&quot; data-animated=&quot;flip runloop&quot; data-type=&quot;hover&quot; alt=&quot;&quot;&gt;
+&lt;/figure&gt;</pre>
+<h2>Image Auto </h2>
+<figure> <img src="images/image.jpg" data-animated-auto="shake runloop" alt="">
+</figure>
+<pre class="html">&lt;figure&gt;<br>    &lt;img src=&quot;images/image1.jpg&quot; class=&quot;border-circle&quot; data-animated-auto=&quot;shake runloop&quot; alt=&quot;&quot;&gt;
+&lt;/figure&gt;</pre>
+<h2>Focus</h2>
+<input type="text" data-animated="flash" data-type="focus">
+<table class="table">
+    <caption>
+        Opacity
+    </caption>
+    <thead>
+        <tr>
+            <th>Element</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>.opacity0</code>
+            </td>
+            <td>Opacity 0%</td>
+        </tr>
+        <tr>
+            <td><code>.opacity1</code>
+            </td>
+            <td>Opacity 100%</td>
+        </tr>
+        <tr>
+            <td><code>.opacity5</code>
+            </td>
+            <td>Opacity 50%</td>
+        </tr>
+        <tr>
+            <td><code>.opacity6</code>
+            </td>
+            <td>Opacity 60%</td>
+        </tr>
+        <tr>
+            <td><code>.opacity7</code>
+            </td>
+            <td>Opacity 70%</td>
+        </tr>
+        <tr>
+            <td><code>.opacity8</code>
+            </td>
+            <td>Opacity 80%</td>
+        </tr>
+        <tr>
+            <td><code>.opacity9</code>
+            </td>
+            <td>Opacity 90%</td>
+        </tr>
+    </tbody>
+</table>
+<h2>Multi Animated</h2>
+<div data-animated-box="hover" style="background:#dfdfdf">
+    <div class="opacity0" data-animated-in="fadeInDown" data-animated-out="fadeOutUp"><img src="images/image.jpg">
+    </div>
+    <div class="opacity0" data-animated-in="fadeInUp" data-animated-out="fadeOutDown"><img src="images/image.jpg">
+    </div>
+</div>
+<pre class="html">&lt;div<span class="text-danger"> data-animated-box</span>=&quot;<span class="text-success">hover</span>&quot;&gt;<br>      &lt;div class=&quot;opacity0&quot; <span class="text-danger">data-animated-in</span>=&quot;<span class="text-success">fadeInDown</span>&quot; <span class="text-danger">data-animated-out</span>=&quot;<span class="text-success">fadeOutUp</span>&quot;&gt;<br>            &lt;img src=&quot;images/image.jpg&quot;&gt;<br>      &lt;/div&gt;<br>      &lt;div class=&quot;opacity0&quot; <span class="text-danger">data-animated-in</span>=&quot;<span class="text-success">fadeInUp</span>&quot; <span class="text-danger">data-animated-out</span>=&quot;<span class="text-success">fadeOutDown</span>&quot;&gt;<br>            &lt;img src=&quot;images/image.jpg&quot;&gt;<br>      &lt;/div&gt;<br>&lt;/div&gt;</pre>
+<table class="table">
+    <caption>
+        Data Animated
+    </caption>
+    <thead>
+        <tr>
+            <th>Element</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>[data-animated-box]</code>
+            </td>
+            <td>hover|click</td>
+        </tr>
+        <tr>
+            <td><code>[data-animated-in]</code>
+            </td>
+            <td>The effect for run check in <a href="_animate.html" target="_blank">Animated table</a>
+            </td>
+        </tr>
+        <tr>
+            <td><code>[data-animated-out]</code>
+            </td>
+            <td>The effect for auto-run check in <a href="_animate.html" target="_blank">Animated table</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<h2>Deplay</h2>
+<figure> <img src="images/image.jpg" data-animated-auto="flash" data-replay="2500" alt=""> <img src="images/image.jpg" data-animated-auto="swing" data-replay="3000" alt=""> <img src="images/image.jpg" data-animated-auto="tada" data-replay="4000" alt="">
+</figure>
+<h2>Deplay & Duration</h2>
+<table class="table">
+    <caption>
+        Time Duration
+    </caption>
+    <thead>
+        <tr>
+            <th>Element</th>
+            <th>Element</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="2"><code>[data-replay]</code>
+            </td>
+
+            <td>value is (ms)</a>
+            </td>
+        </tr>
+        <tr>
+            <td><code>.deplay0</code>
+            </td>
+            <td><code>.duration0</code>
+            </td>
+            <td>200ms</a>
+            </td>
+        </tr>
+        <tr>
+            <td><code>.deplay1</code>
+            </td>
+            <td><code>.duration1</code>
+            </td>
+            <td>400ms</a>
+            </td>
+        </tr>
+        <tr>
+            <td><code>.deplay2</code>
+            </td>
+            <td><code>.duration2</code>
+            </td>
+            <td>600ms</a>
+            </td>
+        </tr>
+        <tr>
+            <td><code>.deplay3</code>
+            </td>
+            <td><code>.duration3</code>
+            </td>
+            <td>800ms</a>
+            </td>
+        </tr>
+        <tr>
+            <td><code>.deplay4</code>
+            </td>
+            <td><code>.duration4</code>
+            </td>
+            <td>1s</a>
+            </td>
+        </tr>
+        <tr>
+            <td><code>.deplay5</code>
+            </td>
+            <td><code>.duration5</code>
+            </td>
+            <td>1.5s</a>
+            </td>
+        </tr>
+        <tr>
+            <td><code>.deplay6</code>
+            </td>
+            <td><code>.duration6</code>
+            </td>
+            <td>2s</a>
+            </td>
+        </tr>
+        <tr>
+            <td><code>.deplay7</code>
+            </td>
+            <td><code>.duration7</code>
+            </td>
+            <td>2.5s</a>
+            </td>
+        </tr>
+        <tr>
+            <td><code>.deplay8</code>
+            </td>
+            <td><code>.duration8</code>
+            </td>
+            <td>3s</a>
+            </td>
+        </tr>
+        <tr>
+            <td><code>.deplay9</code>
+            </td>
+            <td><code>.duration9</code>
+            </td>
+            <td>3.5s</a>
+            </td>
+        </tr>
+        <tr>
+            <td><code>.deplay10</code>
+            </td>
+            <td><code>.duration10</code>
+            </td>
+            <td>4s</a>
+            </td>
+        </tr>
+        <tr>
+            <td><code>.deplay11</code>
+            </td>
+            <td><code>.duration11</code>
+            </td>
+            <td>4.5s</a>
+            </td>
+        </tr>
+        <tr>
+            <td><code>.deplay12</code>
+            </td>
+            <td><code>.duration12</code>
+            </td>
+            <td>5s</a>
+            </td>
+        </tr>
+        <tr>
+            <td><code>.deplay13</code>
+            </td>
+            <td><code>.duration13</code>
+            </td>
+            <td>5.5s</a>
+            </td>
+        </tr>
+        <tr>
+            <td><code>.deplay14</code>
+            </td>
+            <td><code>.duration14</code>
+            </td>
+            <td>6s</a>
+            </td>
+        </tr>
+        <tr>
+            <td><code>.deplay15</code>
+            </td>
+            <td><code>.duration15</code>
+            </td>
+            <td>6.5s</a>
+            </td>
+        </tr>
+        <tr>
+            <td><code>.deplay16</code>
+            </td>
+            <td><code>.duration16</code>
+            </td>
+            <td>7s</a>
+            </td>
+        </tr>
+        <tr>
+            <td><code>.deplay17</code>
+            </td>
+            <td><code>.duration17</code>
+            </td>
+            <td>7.5s</a>
+            </td>
+        </tr>
+        <tr>
+            <td><code>.deplay18</code>
+            </td>
+            <td><code>.duration18</code>
+            </td>
+            <td>8s</a>
+            </td>
+        </tr>
+        <tr>
+            <td><code>.deplay19</code>
+            </td>
+            <td><code>.duration19</code>
+            </td>
+            <td>8.5s</a>
+            </td>
+        </tr>
+        <tr>
+            <td><code>.deplay20</code>
+            </td>
+            <td><code>.duration20</code>
+            </td>
+            <td>9s</a>
+            </td>
+        </tr>
+        <tr>
+            <td><code>.deplay21</code>
+            </td>
+            <td><code>.duration21</code>
+            </td>
+            <td>9.5s</a>
+            </td>
+        </tr>
+        <tr>
+            <td><code>.deplay22</code>
+            </td>
+            <td><code>.duration22</code>
+            </td>
+            <td>10s</a>
+            </td>
+        </tr>
+        <tr>
+            <td><code>.deplay23</code>
+            </td>
+            <td><code>.duration23</code>
+            </td>
+            <td>15s</a>
+            </td>
+        </tr>
+        <tr>
+            <td><code>.deplay24</code>
+            </td>
+            <td><code>.duration24</code>
+            </td>
+            <td>20s</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <div id="footer">
+            <p>Copyright (c) VienSoi</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/plugins.min.js"></script>
+  <script src="js/customize.min.js"></script>
+  <script src="js/canhcam.js"></script>
+</html>

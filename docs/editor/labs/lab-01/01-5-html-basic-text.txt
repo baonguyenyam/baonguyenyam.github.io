@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Hello</title>
+</head>
+
+<body>
+    <h1>Xin chào FPOLY</h1>
+    <hr>
+    <h2>Kén chọn</h2>
+
+    <p>
+        Đương xuân, đặng sắc ra kiêu hãnh<br> Đến độ thu vàng mảnh tàn không<br> Xuân thì <span style="color:red">cái thuở</span> còn chong<br> Má hồng mặt <u>phấn tình</u> rong đuổi tình
+    </p>
+
+    <p>
+        <b>Ta hỏi sắc:</b> mấy từ là hiếm?<br>
+        <strong>Ta hỏi tình:</strong> mấy độ tình chung?<br>
+        Xuân thì cái thuở mong lung<br>
+        Hương tàn, phai sắc tình run rẩy tình...
+    </p>
+
+    <p><i>Bao Nguyen</i></p>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CMS</title>
+    <!-- Meta Tag-->
+    <meta name="keywords" content="Demo">
+    <meta name="description" content="Demo">
+    <!-- Meta Tag-->
+    <!-- Mobile Specific Metas ==================================================-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="canonical" href="http://www.xxxxxx.com/">
+    <!-- CSS Styles ==================================================-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/plugins.min.css">
+    <link rel="stylesheet" type="text/css" href="css/addons.min.css">
+    <!--if lt IE 9-->
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <!-- Favicons ==================================================-->
+    <link rel="shortcut icon" href="css/favicon/favicon.ico">
+    <link rel="apple-touch-icon" href="css/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="css/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="css/favicon/apple-touch-icon-114x114.png">
+</head>
+
+<body class="admin">
+    <div id="wrapper">
+
+        
+
+        <!-- MAIN -->
+        <main id="main">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-sm-6 col-sm-offset-3">
+
+
+
+                    <!-- panel -->
+                    <div class="row mrt50 mrb50">
+                        <div class="col-sm-12">
+
+                        <h3>Login</h3>
+
+                        <div class="alert alert-danger" role="alert">Enter your username & password</div>
+
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">Enter your username & password</div>
+                                <div class="panel-body">
+                                        <form class="form-horizontal">
+                                          <div class="form-group">
+                                            <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                                            <div class="col-sm-10">
+                                              <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                            </div>
+                                          </div>
+                                          <div class="form-group">
+                                            <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                                            <div class="col-sm-10">
+                                              <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                            </div>
+                                          </div>
+                                          <div class="form-group">
+                                            <div class="col-sm-offset-2 col-sm-10">
+                                              <div class="checkbox">
+                                                <label>
+                                                  <input type="checkbox"> Remember me
+                                                </label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="form-group">
+                                            <div class="col-sm-offset-2 col-sm-10">
+                                              <button type="submit" class="btn btn-primary">Sign in</button>
+                                            </div>
+                                          </div>
+                                        </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end panel -->
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </main>
+        <!-- END MAIN -->
+
+        <!-- FOOTER -->
+        <footer id="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <section class="copyright">
+                            <p>CMS Admin 4.2.0 · Created by <a href="#">VienSoi</a>
+                            </p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- END FOOTER -->
+
+
+        <!-- Panel -->
+        <section class="cmsadminpanel">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <nav>
+                        <ul class="nav navbar-nav listmenu">
+                            <li><a href="#"><i class="fa fa-folder-open"></i> Quản trị</a></li>
+                            <li><a href="#"><i class="fa fa-folder-open"></i> Quản lý Tập tin</a></li>
+                            <li><a href="#"><i class="fa fa-folder-open"></i> Trang mới</a></li>
+                            <li><a href="#"><i class="fa fa-folder-open"></i> Sửa trang</a></li>
+                            <li><a href="#"><i class="fa fa-folder-open"></i> Cấu hình trang</a></li>
+                            <li><a href="#"><i class="fa fa-folder-open"></i> Tạo chuyên mục</a></li>
+                            <li><a href="#"><i class="fa fa-folder-open"></i> Sửa chuyên mục</a></li>
+                            <li>
+                                <ul class="nav" id="setposet">
+                                    <li><a href="javascript:void(0);" data-poset="up"><i class="fa fa-level-up fa-flip-horizontal"></i></a>
+                                    </li>
+                                    <li><a href="javascript:void(0);" data-poset="down"><i class="fa fa-level-up"></i></a>
+                                    </li>
+                                    <li><a href="javascript:void(0);" data-poset="left"><i class="fa fa-level-down fa-flip-horizontal"></i></a>
+                                    </li>
+                                    <li class="active"><a href="javascript:void(0);" data-poset="right"><i class="fa fa-level-down"></i></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="form-inline">
+                                    <div class="form-group">
+                                        <label class="sr-only">Mode</label>
+                                      </div>
+                                      <div class="form-group">
+                                        <select class="ddviewmode">
+                                            <option selected="selected" value="View">View Mode</option>
+                                            <option value="Edit">Edit Mode</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="nav">
+                            <li><a href="#" id="pullmenucms"><i class="fa fa-chevron-circle-right"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <!-- end Panel -->
+
+
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/plugins.min.js"></script>
+<script src="js/canhcam.js"></script>
+
+</html>

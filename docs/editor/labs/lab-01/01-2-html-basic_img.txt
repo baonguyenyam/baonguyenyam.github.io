@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Hello</title>
+</head>
+
+<body>
+    <h1>Xin chào FPOLY</h1>
+
+    <p><img src="./img/logo-slack.svg" alt="Logo Slack"></p>
+
+    <div>Thế giới này là của anh và anh có quyền đi với em Bất sáng tất cả đèn xanh,anh chạy thật nhanh Với em kề bên vai và chai champaine em cầm trên tay Hết đêm nay uống không say đến ngày mai tiếp vài chai Em thích gì anh cho đó,em thích bentley anh vẫn cho Em thích villa anh vẫn lo,cho đến LV anh cũng có. Chỉ cần em chới với anh là cả thế giới này thuộc về em Chỉ cần em đi với anh là những vấn để của em anh dẹp Nhưng em ơi đó là nếu,đó là mơ em vẩn rất kêu Thằng cường nó đi với em trong Ferrari còn anh thì kiếu Anh lớn lên từ đường phố chỗ xe hơi không có đường vô <img src="https://baonguyenyam.github.io/fpt/images/icon/ps.png" alt="Logo PSD">
+    </div>
+
+</body>
+
+</html>

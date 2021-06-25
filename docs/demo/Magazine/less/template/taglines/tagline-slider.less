@@ -1,0 +1,189 @@
+/* ////////// CANHCAM ////////////////////////////////////////// */
+/* ////////// Copyright 2014 by VienSoi Team//////////// */
+/* ////////// Coding by Bao Nguyen///////////////////////////// */
+/* ////////// v1.0.1 Built by less technology////////////////// */
+/* ////////// CANHCAM ////////////////////////////////////////// */
+@import "../../setup.less";
+@charset "utf-8";
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* MOBILE ///////////////////////////////////////////////////////////////////////////////////////////////// */
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.cc-tagline-slider{
+    padding: 100px 0;
+    position: relative;
+    color: @color-white;
+    > * {
+        position: relative;
+        z-index: 2;
+    }
+    .title{
+        text-align: center;
+        h3{
+            margin-top: 0;
+            text-transform: uppercase;
+        }
+        .desc{
+            letter-spacing:3px;
+            color:@color-link;
+            display: block;
+            font-size: 32px;
+            text-transform: uppercase;
+        }            
+    }
+    .grouplinks{
+        text-align: center;
+        margin-top: 30px;
+        .btn{
+            margin:0 5px 15px 5px;
+            border:2px solid @color-link;
+            color: @color-link;
+            padding:15px 30px;
+            font-size: 24px;
+            text-transform: uppercase;
+            &:hover{
+                color:@color-white;
+                background: rgba(255,255,255,0.3);
+                border:2px solid @color-white;
+            }
+            
+        }
+    }
+    &:after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        min-height: 100px;
+        background: rgba(0,0,0,0.5);
+        position: absolute;
+        top: 0;
+    }
+    .slider{
+        .owl-carousel {
+            margin: 0;
+            .owl-stage-outer{
+                z-index: 100;
+            }
+            .owl-controls{
+                z-index: 90;
+                .owl-nav{
+                    >div{
+                        .border-radius(0);
+                        padding: 5px 10px;
+                        background: none;
+                        color: @color-link;
+                        i{
+                            font-size: 42px;
+                        }
+                        &:hover{
+                            background: none;
+                            color:@color-hover;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* & TABLET ///////////////////////////////////////////////////////////////////////////////////////////////// */
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width:767px) {
+
+
+}
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* PC ///////////////////////////////////////////////////////////////////////////////////////////////// */
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width:991px) {
+
+.cc-tagline-slider{
+    .title{
+        .desc{
+            font-size: 60px;
+        }            
+    }
+    .grouplinks{
+    }
+    .slider{
+        margin: 0 50px;
+        .owl-carousel {
+            .owl-controls{
+                width: 100%;
+                .owl-nav{
+                    display: none;
+                    position: absolute;
+                    top: 50%;
+                    margin: -30px 0 0 0;
+                    padding: 0 0;
+                    width: 100%;
+                    > div{
+                        background: rgba(255,255,255,0.3);
+                        padding: 5px 18px;
+                        i{
+                            font-size: 40px;
+                            color: @color-white;
+                        }
+                        &:hover{
+                            background: rgba(0,0,0,0.8);
+                        }
+                    }
+                    .owl-prev{
+                        float: left;
+                        margin-left: -50px;
+                    }
+                    .owl-next{
+                        float: right;
+                        margin-right: -50px;
+                    }
+                }
+                .owl-dots{
+                    .owl-dot{
+                        &.active{
+                            span{
+                                background: @color-link;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &:hover{
+        .slider{
+            .owl-carousel {
+                .owl-controls{
+                    .owl-nav{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+    
+}
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* LAGRE DEVICES ///////////////////////////////////////////////////////////////////////////////////////////////// */
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width:1199px) {
+
+    
+}
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* PRINTS ///////////////////////////////////////////////////////////////////////////////////////////////// */
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+@media print {
+    
+}

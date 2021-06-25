@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Social Media & Media</title>
+</head>
+
+<body>
+    <h2>Youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/l45DAuXYSIs" frameborder="0" allowfullscreen></iframe>
+    <h2>Nhạc của tui</h2>
+    <iframe src="http://www.nhaccuatui.com/mh/normal/V5cxegVNqOvt" width="620" height="382" frameborder="0" allowfullscreen></iframe>
+
+</body>
+
+</html>

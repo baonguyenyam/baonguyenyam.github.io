@@ -1,0 +1,257 @@
+@import "setup";
+/* RESPONSIVE ///////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Mobile Layout:480px and below (default). */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width:767px) {
+
+.tinynav_label, .tinynav {
+    display: none;
+}	
+.tinynavmain{
+    display: block;
+}
+
+/* header */
+#header {
+    .box-shadow(none);
+    .navbar{
+        min-height: 110px;
+        .container-fluid{
+            .navbar-header{ 
+                .navbar-brand{
+                    padding: 15px 0px;
+
+                }
+                .navbar-toggle{
+                    .border-radius(0);
+                }
+            }
+            //Phan Hien thi
+            .navbar-collapse{ 
+                .nav{
+                    margin-top: 15px;
+                    > li{
+                        margin-left: 2px;
+                        a{
+                            font-size: 14px;
+                            padding: 5px 5px;
+                            .transition(all 0.5s);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// TOP Bar/////////////////////////////////////
+.topbar{
+    text-align: right;
+}
+
+
+// breadcrumb////////////////////////////////////////////////////////
+.breadcrumb{
+    line-height: 30px;
+    margin: 10px 0 0 0;
+}
+
+// Page Header////////////////////////////////////////////////////////
+.page-header{
+    h1{
+        font-size: 24px;
+    }
+}
+
+
+// Silder//////////////////////////////////////////////////////////
+.indexslider{
+    .boxslder{
+        display: block;
+    }
+}
+
+
+footer{
+    .bgend{
+        ul{
+            li{
+                margin-bottom: 0;
+            }
+        }
+        .copyright{
+            text-align: left;
+            line-height: 30px;
+        }
+        .sitemaps{
+            text-align: right;
+            line-height: 30px;
+        }
+    }
+}
+
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width:991px) {
+    
+/* header */
+#header {
+    .box-shadow(none);
+    .navbar{
+        min-height: 100px;
+        .container-fluid{
+        	padding-right: 0px;
+            padding-left: 0px;
+            .navbar-header{ 
+                .navbar-brand{
+                    padding: 15px 15px;
+                    img{
+                        height: 70px;
+                    }
+                }
+                .navbar-toggle{
+                    .border-radius(0);
+                }
+            }
+            //Phan Hien thi
+            .navbar-collapse{ 
+                .nav{
+                    margin-top: 8px;
+                    > li{
+                        margin-left: 2px;
+                        a{
+                            font-size: 14px;
+                            padding: 5px 6px;
+                            font-weight: bold;
+                            letter-spacing: -0.5px;
+                        }
+                        &.active{
+                            
+                        }
+                        &.open{
+                            > a{
+                               .border-radiuses (5px ,0 ,0,  5px);
+                            }
+                            ul{
+                                .border-radiuses ( 0, 5px ,5px ,5px);
+                                background: darken(@color-main,0%);
+                                padding: 0 0;
+                                li{
+                                    a{
+                                        border:0;
+                                        background: none;
+                                        color: lighten(@color-main,50%);
+                                        &:hover{
+                                            color:@color-white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        //Sub menu
+                        
+                    }
+                }
+                .navbar-right{
+                    position:inherit;
+                    .menu{
+                        display: inline-block;
+                    }
+                    .social{
+                        display: inline-block;
+                        float: right;
+                        line-height: 36px;
+                        margin-top: 15px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+    &.scroll-to-fixed-fixed{
+        .box-shadow(0px 0px 4px 0px rgba(0, 0, 0, 0.3));
+        .navbar{
+            min-height: 50px;
+            .container-fluid{
+                .navbar-header{ 
+                    .navbar-brand{
+                        padding: 5px 15px;
+                        img{
+                            height: 40px;
+                        }
+                    }
+                }
+                //Phan Hien thi
+                .navbar-collapse{ 
+                    .nav{
+                        > li{
+                            a{
+                                line-height: 50px;
+                            }
+                            //Sub menu
+                            
+                        }
+                    }
+                    .navbar-right{
+                        position:inherit;
+                    }
+
+                    
+                }
+            }
+        }
+    }
+}
+
+
+// breadcrumb////////////////////////////////////////////////////////
+.breadcrumb{
+    line-height: 30px;
+    margin: 10px 0 0 0;
+}
+
+// Page Header////////////////////////////////////////////////////////
+.page-header{
+    h1{
+        font-size: 32px;
+    }
+}
+
+
+
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width:1199px) {
+
+
+/* header */
+#header {
+    .navbar{
+        .container-fluid{
+            //Phan Hien thi
+            .navbar-collapse{ 
+                .nav{
+                    margin-top: 15px;
+                    > li{
+                        a{
+                            padding: 5px 12px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+   
+}
+
+/* PRINT ///////////////////////////////////////////////////////////////////////////////////////////////// */
+@media print {
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        table {
+            border: 1px solid #333
+        }
+        
+        table tr th,
+        table tr td {
+            border: 1px solid #333
+        }
+        
+        table tr th {
+            background: green;
+            color: #fff
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Lý Mạc Sầu</th>
+                <th>Cô Long</th>
+                <th>Dương Quá</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nữ</td>
+                <td>Nữ</td>
+                <td>Nam</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>10</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>Lý Mạc Sầu</th>
+                <th>Cô Long</th>
+                <th>Dương Quá</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">Nữ</td>
+                <td>Nam</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td colspan="2">10</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>Lý Mạc Sầu</th>
+                <th>Cô Long</th>
+                <th>Dương Quá</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Nữ</td>
+                <td>Nữ</td>
+                <td>Nam</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td rowspan="2">0</td>
+            </tr>
+            <tr>
+                <td>Hello</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

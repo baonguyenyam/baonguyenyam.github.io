@@ -1,0 +1,327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Trang chủ</title>
+
+<link href="styles/styles.css" rel="stylesheet" type="text/css" />
+<link href="styles/slideshow.css" rel="stylesheet" type="text/css" />
+<link href="styles/ddsmoothmenu.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="scripts/jquery-1.7.2.min.js"></script>
+<script src="scripts/jquery.tools.min.js"	 type="text/javascript"></script>
+<script src="scripts/ddsmoothmenu.js"	 type="text/javascript"></script>
+<script src="scripts/script.js" type="text/javascript"></script>
+<script>
+var $j = jQuery.noConflict();
+
+$j(document).ready(function(){
+	// Banner Home Page
+	var listSlide = $j(".slideshow").children();
+	var listNumber = $j(".slide_number").find("a");
+	var currentSlide = 0;
+	
+	slideTimeout = setInterval(function(){runSlide();}, 4000);
+	
+	function runSlide() {
+		$j(listSlide[currentSlide]).fadeOut(700);
+		$j(listNumber[currentSlide]).removeClass("active");
+		currentSlide += 1;
+		if(currentSlide > listSlide.length - 1) {
+			currentSlide = 0;
+		}
+		$j(listSlide[currentSlide]).fadeIn(700);
+		$j(listNumber[currentSlide]).addClass("active");
+	}
+	
+	$j(".slide_number ul li a").click(function () {
+		clearTimeout(slideTimeout);
+		$j(listSlide[currentSlide]).fadeOut(700);
+		$j(listNumber[currentSlide]).removeClass("active");
+		currentSlide = parseInt($j(this).attr("rel"));
+		$j(listSlide[currentSlide]).fadeIn(700);
+		$j(listNumber[currentSlide]).addClass("active");
+		//slideTimeout = setInterval(function(){runSlide();}, 4000);
+	});
+	// Home Scroll Content
+	
+	
+	var totalItems = $j(".scrollable .list_items .item").size();
+	$j(".scrollable").scrollable({circular: true,
+		onSeek: function(event, i) {
+			if(i > 0) $j(".scrollable").parent().find(".prev").css("visibility", "visible");
+			if(i == 0) $j(".scrollable").parent().find(".prev").css("visibility", "hidden");
+			if((totalItems - 3) == i) {
+				if(i % 3 < 3) $j(".scrollable").parent().find(".next").css("visibility", "hidden");
+			}
+			else if((totalItems - 3) > i) {
+				$j(".scrollable").parent().find(".next").css("visibility", "visible");
+			}
+			
+		}}).autoscroll({ autoplay: true,interval:5000});
+});
+</script>
+</head>
+
+<body>
+<div class="header_wrapper">
+<div class="header">
+	<div class="logo_phatdat"><a href="#"><img src="images/logo_phatdat.png" /></a></div>
+    <div class="main_menu ">
+    <div id="navmenu" class="ddsmoothmenu-v">
+    	<ul>
+        	<li><a href="index.html" class="home active home_active">Trang chủ</a></li>
+            <li>
+            	<a href="about.html" class="about">Giới thiệu</a>
+				
+            	 <ul class="sub h-sub sub-about">
+                  <li>
+                  	<div class="arrow"><div class="bg-arrow"></div></div>
+                    <div class="subItems">
+                    	<div><a href="about.html">Giới thiệu công ty</a></div>
+                        <div><a href="">Tầm nhìn - sứ mệnh</a></div>
+                        <div><a href="">Hội đồng quản trị</a></div>
+                        <div><a href="">Đối tác</a></div>
+                    </div>
+                  </li>
+               </ul>
+            </li>
+            <li>
+            	<a href="products.html" class="products">Sản phẩm</a>
+                 <ul class="sub v-sub sub-product">
+                      <li>
+                        <div class="arrow"><div class="bg-arrow"></div></div>
+                        <div class="subItems">
+                             	<div class="prev" style="visibility:hidden"><a></a></div>
+        						<div class="menuScrollItems productSubItems">
+       								<div class="list_items">
+                                    	<div class="item">
+                                            <div class="img"><a href="products.html"><img src="images/product-1.jpg" /></a></div>
+                                            <div class="title"><a href="products.html">Biệt thự</a></div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="img"><a href="products.html"><img src="images/product-2.jpg" /></a></div>
+                                            <div class="title"><a href="products.html">Nhà phố</a></div>
+                                        </div>
+                                          <div class="item">
+                                            <div class="img"><a href="products.html"><img src="images/product-3.jpg" /></a></div>
+                                            <div class="title"><a href="products.html">Căn hộ</a></div>
+                                        </div>
+                                          <div class="item">
+                                            <div class="img"><a href="products.html"><img src="images/product-4.jpg" /></a></div>
+                                            <div class="title"><a href="products.html">Penthouse</a></div>
+                                        </div>
+                                          <div class="item">
+                                            <div class="img"><a href="products.html"><img src="images/product-5.jpg" /></a></div>
+                                            <div class="title"><a href="products.html">Đất nền</a></div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="img"><a href="products.html"><img src="images/product-1.jpg" /></a></div>
+                                            <div class="title"><a href="products.html">Biệt thự</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="next"><a></a></div>
+                        	</div>
+                      </li>
+              	 </ul>
+            </li>
+            <li>
+            	<a href="projects.html" class="projects">Dự án</a>
+					<ul class="sub v-sub sub-project">
+                      <li>
+                        <div class="arrow"><div class="bg-arrow"></div></div>
+                        <div class="subItems">
+                            <div class="prev" style="visibility:hidden"><a></a></div>
+                            <div class="menuScrollItems projectSubItems">
+                                <div class="list_items">
+                                    <div class="item">
+                                        <div class="img"><a href="projects.html"><img src="images/product-1.jpg" /></a></div>
+                                        <div class="title"><a href="projects.html">The EverRich 1</a></div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img"><a href="projects.html"><img src="images/product-2.jpg" /></a></div>
+                                        <div class="title"><a href="projects.html">The EverRich 2</a></div>
+                                    </div>
+                                      <div class="item">
+                                        <div class="img"><a href="projects.html"><img src="images/product-3.jpg" /></a></div>
+                                        <div class="title"><a href="projects.html">The EverRich 3</a></div>
+                                    </div>
+                                      <div class="item">
+                                        <div class="img"><a href="projects.html"><img src="images/product-4.jpg" /></a></div>
+                                        <div class="title"><a href="projects.html">Hậu Giang Plaza</a></div>
+                                    </div>
+                                      <div class="item">
+                                        <div class="img"><a href="projects.html"><img src="images/product-5.jpg" /></a></div>
+                                        <div class="title"><a href="projects.html">The Westin Resort & Spa Cam Ranh</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="next" style="visibility:hidden"><a></a></div>
+                       </div>
+                      </li>
+              	 </ul>
+            </li>
+            <li>
+            	<a href="news_document.html" class="news">Tin tức</a>
+                <ul class="sub h-sub sub-news">
+                  <li>
+                  	<div class="arrow"><div class="bg-arrow"></div></div>
+                    <div class="subItems">
+                    	<div><a href="news_document.html">Tin Phát Đạt</a></div>
+                        <div><a href="news_document.html">Báo cáo</a></div>
+                        <div><a href="news_document.html">Hình ảnh</a></div>
+                        <div><a href="news_document.html">Video</a></div>
+                    </div>
+                  </li>
+               </ul>
+            </li>
+            <li><a href="#" class="shareholders">Cổ đông</a></li>
+            <li><a href="#" class="career">Tuyển dụng</a></li>
+            <li><a href="contact.html" class="contact">Liên hệ</a></li>
+        </ul>
+        <div class="clear_both"><!-- --></div>
+    </div>
+     <div class="lang">
+    	<div class="en"><a href=""><img src="images/icon_flag_en.jpg" /></a></div>
+        <div class="vn"><a href=""><img src="images/icon_flag_vn.jpg" /></a></div>
+    </div>
+    </div>
+    <div class="clear_both"><!-- --></div>
+</div>
+</div>
+
+<div class="banner">
+	<div class="slideshow">
+		<div class="slide active" style="background: url(images/banner_1.jpg) no-repeat 50% 0; "></div>
+		<div class="slide " style="background: url(images/e2-new.jpg) no-repeat 50% 0; "></div>
+		<div class="slide " style="background: url(images/banner_3.jpg) no-repeat 50% 0; "></div>
+	</div>
+    <div class="slide_number_help">
+		<div class="slide_number">
+			<ul>
+				<li class="active n1"><a rel="0" ><img src="images/banner_thumb_1.png" /></a></li>
+				<li class="active n2"><a rel="1" ><img src="images/banner_thumb_2.png" /></a></li>
+				<li class="active n3"><a rel="2" ><img src="images/banner_thumb_3.png" /></a></li>
+			</ul>
+		</div>
+    </div>
+	<div class="bannerText">
+		<div class="wrapper slogan">
+			<div class="sloganText">Phú quý an lành, trăm anh hội tụ</div>
+		</div>
+	</div>
+</div>
+
+<div class="main_body">
+	<div class="home_products_wrapper">
+	<div class="home_products">
+        <div class="prev" style="visibility: hidden"><a></a></div>
+        <div class="scrollable">
+        <div class="list_items">
+        	<div class="item">
+                <div class="title"><a href="#">Biệt thự</a></div>
+                <div class="img"><a href="#"><img src="images/bietthu-home.jpg" /></a></div>
+                <div class="des">Một không gian dường như không bị giới hạn giữa đất và trời mà chỉ có sự cảm nhận: Sang trọng và tiện nghi từ mọi góc nhìn.</div>
+                <div class="read_more"><a href="#">Xem tiếp</a></div>
+            </div>
+			 <div class="item">
+                <div class="title"><a href="#">Penthouse</a></div>
+                <div class="img"><a href="#"><img src="images/penhouse-home.jpg" /></a></div>
+                <div class="des">Một không gian dường như không bị giới hạn giữa đất và trời mà chỉ có sự cảm nhận: Sang trọng và tiện nghi từ mọi góc nhìn.</div>
+                <div class="read_more"><a href="#">Xem tiếp</a></div>
+            </div>
+			<div class="item">
+                <div class="title"><a href="#">Căn hộ</a></div>
+                <div class="img"><a href="#"><img src="images/canho-home.jpg" /></a></div>
+                <div class="des">Một không gian dường như không bị giới hạn giữa đất và trời mà chỉ có sự cảm nhận: Sang trọng và tiện nghi từ mọi góc nhìn.</div>
+                <div class="read_more"><a href="#">Xem tiếp</a></div>
+            </div>
+            <div class="item">
+                <div class="title"><a href="#">Nhà phố</a></div>
+                <div class="img"><a href="#"><img src="images/nhapho-home.jpg" /></a></div>
+                <div class="des">Một không gian dường như không bị giới hạn giữa đất và trời mà chỉ có sự cảm nhận: Sang trọng và tiện nghi từ mọi góc nhìn.</div>
+                <div class="read_more"><a href="#">Xem tiếp</a></div>
+            </div>
+            <div class="item">
+                <div class="title"><a href="#">Đất nền</a></div>
+                <div class="img"><a href="#"><img src="images/datnen-home.jpg" /></a></div>
+                <div class="des">Một không gian dường như không bị giới hạn giữa đất và trời mà chỉ có sự cảm nhận: Sang trọng và tiện nghi từ mọi góc nhìn.</div>
+                <div class="read_more"><a href="#">Xem tiếp</a></div>
+            </div>
+        </div>
+        </div>
+        <div class="next"><a></a></div>
+    </div>
+    <div class="clear_both"><!-- --></div>
+    </div>
+    
+    <div class="home_news">
+    	<div class="hot_news">
+        	<div class="news_label">Tin tức mới</div>
+            <div class="news">
+            	<div class="title"><a href="#">Chương Trình “Dạ tiệc vàng - giới thiệu Penhouse vàng”</a></div>
+                <div class="date">Cập nhật: 18.03.1900 8:00 am</div>
+                <div class="img"><a href="#"><img src="images/pic_news.jpg" /></a></div>
+                <div class="des">Vào tối ngày 07/04, tại sân thượng Penthouse tòa nhà The EverRich 1 đã diễn ra chương trình “Dạ tiệc vàng- Giới thiệu Penthouse vàng” </div>
+                <div class="read_more"><a href="#">Xem tiếp</a></div>
+            </div>
+            <div class="more_news">
+            	<ul>
+                	<li><a href="#">THÔNG BÁO: Tài liệu gửi cổ đông dự Đại hội cổ đông thường niên năm 2012</a></li>
+                    <li><a href="#">THÔNG BÁO: Về ngày đăng ký cuối cùng dự Đại hội cổ đông thường niên </a></li>
+                    <li><a href="#">TRAO 260 SUẤT HỌC BỔNG “NGĂN DÒNG BỎ HỌC”</a></li>
+                </ul>
+            </div>
+            <div class="clear_both"><!-- --></div>
+        </div>
+        <div class="ads_banner hot_news">
+			<div class="news_label">Chương trình bán hàng</div>
+			<div class="content">
+				<a href="#"><img src="images/pic_sale.jpg" height="160px" width="260px" /></a>
+			</div>
+		</div>
+        <div class="clear_both"><!-- --></div>
+    </div>
+</div>
+
+<div class="footer">
+	<div class="block_quotes">
+    	<div class="left">
+        	<div class="quote">
+            	<div class="img"><img src="images/portrait_1.jpg" /></div>
+                <div class="saying">The Everrich 3 chào đón bạn như một điểm sáng về môi trường sống xứng tầm, là nơi phong cách sống đỉnh cao được khẳng định, một chuẩn mực của kiến trúc được thể hiện bên dòng sông Cả Cấm bình yên.</div>
+                <div class="author">- Nguyễn Văn Đạt - Chủ tịch hội đồng quản trị Phát Đạt - </div>
+                <div class="clear_both"><!-- --></div>
+            </div>
+        </div>
+        <div class="right">
+        	<div class="quote">
+            	<div class="img"><img src="images/portrait_2.jpg" /></div>
+                <div class="saying">Tôi đã mua căn hộ thuộc dự án EverRich 1 của Phát Đạt và được kiểm chứng chất lượng công trình cũng như dịch vụ tận tâm. Với ưu điểm vượt trội, tôi tiếp tục đầu tư vào EverRich 2 và tin tưởng khả năng sinh lợi từ dự án.</div>
+                <div class="author">- Ông Thái Châu - Khách hàng mua căn hộ EverRich - </div>
+                <div class="clear_both"><!-- --></div>
+            </div>
+        </div>
+        <div class="clear_both"><!-- --></div>
+    </div>
+    <div class="copyright_wrapper">
+    <div class="copyright">
+    	<div class="left">
+        	© 2012 Công Ty Cổ Phần Phát Triển Bất Động Sản Phát Đạt<br />
+422 Đào Trí, Phường Phú Thuận, Quận 7, TP. Hồ Chí Minh, Việt Nam<br />
+ĐT: +848.3773.2222 (Số NB: 149)  |  Fax: +848.3773.8908
+        </div>
+        <div class="right">
+            <ul class="footer_menu">
+            	<li><a href="#">ĐIỀU KHOẢN</a></li>
+                <li><a href="#">CHÍNH SÁCH BẢO MẬT</a></li>
+                <li><a href="#">TUYỂN DỤNG</a></li>
+                <li><a href="#">SƠ ĐỒ SITE</a></li>
+            </ul>
+        </div>
+        <div class="clear_both"><!-- --></div>
+    </div>
+    </div>
+</div>
+</body>
+</html>

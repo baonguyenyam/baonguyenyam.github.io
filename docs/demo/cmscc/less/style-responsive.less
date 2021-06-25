@@ -1,0 +1,138 @@
+@import "setup";
+/* RESPONSIVE ///////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Mobile Layout:480px and below (default). */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width:767px) {
+
+.cmsadminpanel{
+    ul{
+        display: inline-block;
+        float: left;
+        li{
+            float: left;
+
+            a{
+
+            }
+        }
+    }
+}	
+
+.metromini{
+    .item{
+        width: 25%;
+    }
+}
+
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width:991px) {
+    
+/* header */
+#header {
+    .navbar{
+        .container-fluid{
+        	padding-right: 0px;
+            padding-left: 0px;
+            //Phan Hien thi
+            .navbar-collapse{ 
+                .nav{
+                    > li{
+                        &.open{
+                            //Sub menu
+                            ul{
+                                li{
+                                    &.open{
+                                        ul{
+                                            position: absolute;
+                                            top: 0;
+                                            left: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .nav{
+                    &.navbar-right{
+                        position:inherit;
+                        > li{
+                            &.open{
+                                //Sub menu
+                                ul{
+                                    li{
+                                        &.open{
+                                            ul{
+                                                position: absolute;
+                                                top: 0;
+                                                left:initial;
+                                                right: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .tel{
+                    display: inline-block;
+                    min-height: 48px;
+                }
+            }
+        }
+    }
+}
+#subheader {
+    .navbarsub{
+        margin-left: -15px;
+        .container-fluid{
+            padding-right: 0px;
+            padding-left: 0px;
+            .navbar-header{
+                .navbar-brand{
+                    display: none;
+                }
+            }
+            //Phan Hien thi
+            .navbar-collapse{ 
+                .navbar-right{
+                    position:inherit;
+                }
+                .tel{
+                    display: inline-block;
+                    min-height: 48px;
+                }
+            }
+        }
+    }
+}
+
+.metromini{
+    .item{
+        width: 20%;
+    }
+}
+    
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width:1199px) {
+
+
+.metromini{
+    .item{
+        width: 12.5%;
+    }
+}
+
+}
+
+/* PRINT ///////////////////////////////////////////////////////////////////////////////////////////////// */
+@media print {
+}

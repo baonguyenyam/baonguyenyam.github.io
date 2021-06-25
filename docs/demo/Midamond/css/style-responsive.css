@@ -1,0 +1,224 @@
+/* Less Function
+>> IMG
+data-uri('image/jpeg;base64','../data/image.jpg'); 
+
+>> MIXIN
+.boxshw, #boxshw {
+  box-shadow: inset 0 0 10px #555;
+}
+.my-other-mixin() {
+  background: white;
+}
+.myclass {
+  .boxshw;
+  .my-other-mixin();
+}
+*/
+/* #OPACITY*/
+/* RESPONSIVE ///////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Mobile Layout:480px and below (default). */
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 767px) {
+  .tinynav_label,
+  .tinynav {
+    display: none;
+  }
+  .tinynavmain {
+    display: block;
+  }
+  /* header */
+  #header {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+  #header .navbar {
+    min-height: 110px;
+  }
+  #header .navbar .container-fluid .navbar-header .navbar-brand {
+    padding: 15px 0px;
+  }
+  #header .navbar .container-fluid .navbar-header .navbar-toggle {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+  }
+  #header .navbar .container-fluid .navbar-collapse .nav {
+    margin-top: 15px;
+  }
+  #header .navbar .container-fluid .navbar-collapse .nav > li {
+    margin-left: 2px;
+  }
+  #header .navbar .container-fluid .navbar-collapse .nav > li a {
+    font-size: 14px;
+    padding: 5px 5px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+  }
+  .topbar {
+    text-align: right;
+  }
+  .breadcrumb {
+    line-height: 30px;
+    margin: 10px 0 0 0;
+  }
+  .page-header h1 {
+    font-size: 24px;
+  }
+  .indexslider .boxslder {
+    display: block;
+  }
+  footer .bgend ul li {
+    margin-bottom: 0;
+  }
+  footer .bgend .copyright {
+    text-align: left;
+    line-height: 30px;
+  }
+  footer .bgend .sitemaps {
+    text-align: right;
+    line-height: 30px;
+  }
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 991px) {
+  /* header */
+  #header {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+  #header .navbar {
+    min-height: 100px;
+  }
+  #header .navbar .container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  #header .navbar .container-fluid .navbar-header .navbar-brand {
+    padding: 15px 15px;
+  }
+  #header .navbar .container-fluid .navbar-header .navbar-brand img {
+    height: 70px;
+  }
+  #header .navbar .container-fluid .navbar-header .navbar-toggle {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+  }
+  #header .navbar .container-fluid .navbar-collapse .nav {
+    margin-top: 8px;
+  }
+  #header .navbar .container-fluid .navbar-collapse .nav > li {
+    margin-left: 2px;
+  }
+  #header .navbar .container-fluid .navbar-collapse .nav > li a {
+    font-size: 14px;
+    padding: 5px 6px;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+  }
+  #header .navbar .container-fluid .navbar-collapse .nav > li.open > a {
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 0;
+    -moz-border-radius-bottomleft: 0;
+    -moz-border-radius-topleft: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+  }
+  #header .navbar .container-fluid .navbar-collapse .nav > li.open ul {
+    -webkit-border-top-right-radius: 0;
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-topright: 0;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-topleft: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background: #00ab4e;
+    padding: 0 0;
+  }
+  #header .navbar .container-fluid .navbar-collapse .nav > li.open ul li a {
+    border: 0;
+    background: none;
+    color: #abffd1;
+  }
+  #header .navbar .container-fluid .navbar-collapse .nav > li.open ul li a:hover {
+    color: #ffffff;
+  }
+  #header .navbar .container-fluid .navbar-collapse .navbar-right {
+    position: inherit;
+  }
+  #header .navbar .container-fluid .navbar-collapse .navbar-right .menu {
+    display: inline-block;
+  }
+  #header .navbar .container-fluid .navbar-collapse .navbar-right .social {
+    display: inline-block;
+    float: right;
+    line-height: 36px;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+  #header.scroll-to-fixed-fixed {
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+  }
+  #header.scroll-to-fixed-fixed .navbar {
+    min-height: 50px;
+  }
+  #header.scroll-to-fixed-fixed .navbar .container-fluid .navbar-header .navbar-brand {
+    padding: 5px 15px;
+  }
+  #header.scroll-to-fixed-fixed .navbar .container-fluid .navbar-header .navbar-brand img {
+    height: 40px;
+  }
+  #header.scroll-to-fixed-fixed .navbar .container-fluid .navbar-collapse .nav > li a {
+    line-height: 50px;
+  }
+  #header.scroll-to-fixed-fixed .navbar .container-fluid .navbar-collapse .navbar-right {
+    position: inherit;
+  }
+  .breadcrumb {
+    line-height: 30px;
+    margin: 10px 0 0 0;
+  }
+  .page-header h1 {
+    font-size: 32px;
+  }
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1199px) {
+  /* header */
+  #header .navbar .container-fluid .navbar-collapse .nav {
+    margin-top: 15px;
+  }
+  #header .navbar .container-fluid .navbar-collapse .nav > li a {
+    padding: 5px 12px;
+  }
+}
+/* PRINT ///////////////////////////////////////////////////////////////////////////////////////////////// */

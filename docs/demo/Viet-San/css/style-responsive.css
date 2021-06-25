@@ -1,0 +1,65 @@
+/* Less Function
+>> IMG
+data-uri('image/jpeg;base64','../data/image.jpg'); 
+
+>> MIXIN
+.boxshw, #boxshw {
+  box-shadow: inset 0 0 10px #555;
+}
+.my-other-mixin() {
+  background: white;
+}
+.myclass {
+  .boxshw;
+  .my-other-mixin();
+}
+
+*/
+/* RESPONSIVE ///////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Mobile Layout:480px and below (default). */
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .logo {
+    display: block;
+  }
+  /* index */
+  #index {
+    /* slider */
+  }
+  #index .tp-banner .listslider .bg {
+    width: 20%;
+    height: 100%;
+    float: left;
+    cursor: pointer;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 0;
+  }
+  #index .tp-banner .listslider .bg .content {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 30px;
+  }
+  #index .tp-banner .listslider .bg .content h2 {
+    font-size: 30px;
+    bottom: 150px;
+    letter-spacing: 1px;
+    padding: 0 0 50px ;
+  }
+  #index .tp-banner .listslider .bg .content a {
+    bottom: 150px;
+    right: initial;
+  }
+  #index .tp-banner .listslider .bg.active {
+    opacity: 0.8;
+  }
+  #index .tp-banner .listslider .bg:last-child {
+    border: 0;
+  }
+  .footer {
+    display: block;
+  }
+}
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
+/* PRINT ///////////////////////////////////////////////////////////////////////////////////////////////// */
