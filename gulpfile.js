@@ -23,6 +23,7 @@ gulp.task('default', gulp.series(
 		'tao-sass',
 		'tao-js',
 		'tao-html',
+		'base64',
 		'watch',
 		'browser-sync',
 		function (done) {
