@@ -1,7 +1,7 @@
 {
-	"name": "fullstackvietnam",
+	"name": "baonguyenyam",
 	"version": "1.0.0",
-	"description": "Fullstack Vietnam lò đào tạo lập trình viên, designer chuyên nghiệp tại Sài Gòn. Chúng tôi là các chuyên gia uy tín trong lĩnh vực lập trình ứng dụng, thiết kế và sáng tạo. Gọi: 0 96 96 89 89 3",
+	"description": "Tôi là Bảo Nguyên hiện là Full-Stack Developer tại nhiều công ty Nhật, USA, Singapore... Tôi cũng là giảng viên tại FPT. Tôi có hơn 8 năm làm việc trên Single Page Applications (SPA), ứng dụng mobile và website. Tôi có nhiều kinh nghiệm về Design, HTML, SASS, PUG, Ionic, Angular, NodeJS, several version control systems... là tác giả của nhiều sản phẩm phần mềm IT tại VN.",
 	"main": "index.js",
 	"scripts": {
 		"start": "gulp",
@@ -11,14 +11,14 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/fullstackvietnam/myweb.git"
+		"url": "git+https://github.com/baonguyenyam/baonguyenyam.github.io.git"
 	},
 	"author": "FullStack VietNam",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/fullstackvietnam/myweb/issues"
+		"url": "https://github.com/baonguyenyam/baonguyenyam.github.io/issues"
 	},
-	"homepage": "https://fullstackvietnam.com",
+	"homepage": "https://baonguyenyam.github.io",
 	"dependencies": {
 		"babel-core": "^6.26.3",
 		"babel-preset-env": "^1.7.0",
