@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"start": "gulp",
-		"pro": "gulp build --production",
+		"prod": "gulp build --production",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"update": "ncu -u && ncu -u -m bower && npm i && npm i sass node-sass && bower update"
 	},
