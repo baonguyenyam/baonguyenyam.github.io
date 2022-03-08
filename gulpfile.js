@@ -49,7 +49,7 @@ gulp.task('build', gulp.series(
 		'html-min',
 		'css-min',
 		'js-min',
-		'inline',
+		// 'inline',
 		'base64',
 		'autoprefixer',
 		'browser-sync',

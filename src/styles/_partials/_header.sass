@@ -39,6 +39,10 @@ header
 
 			.navbar-brand
 				margin-left: 0
+				svg 
+					width: 40px
+					height: 40px
+					fill: $sen
 				img
 					filter: none
 					&.mobile
@@ -126,6 +130,13 @@ header
 			.dropdown-menu
 				position: absolute
 	.navbar-brand
+		svg 
+			width: 40px
+			height: 40px
+			fill: #fff
+			+media-breakpoint-up(lg)
+				// width: 60px
+				// height: 60px
 		img 
 			&.mobile 
 				display: none
