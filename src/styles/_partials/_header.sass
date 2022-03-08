@@ -37,8 +37,14 @@ header
 							background: rgba(255,255,255,1)
 							box-shadow: 0 0 3px 3px  rgba(0,0, 0,.25)
 
-			.navbar-brand img
-				filter: none
+			.navbar-brand
+				margin-left: 0
+				img
+					filter: none
+					&.mobile
+						display: block
+					&.desktop
+						display: none
 			.menu 
 				svg 
 					stroke: $main
@@ -55,7 +61,7 @@ header
 			.navbar-nav
 				.nav-item
 					.nav-link 
-						// text-transform: uppercase
+						text-transform: uppercase
 						font-weight: 700
 						letter-spacing: 1px
 					.dropdown-menu
@@ -66,19 +72,17 @@ header
 						border: 0
 						.dropdown-item 
 							color: #fff
-							&:hover, 
-							&:active, 
-							&:focus
-								color: #ee3e96
+							&:hover 
+								color: $main
 								background: none
 					&.active,
 					&:hover
 						.nav-link 
-							color: #ee3e96
+							color: $main
 			+media-breakpoint-down(md)
 				width: 100% 
 				.navbar-nav
-					background: rgba(0,0,0,.7)
+					background: rgba(0,0,0,.3)
 					overflow-y: auto
 					padding: 2rem
 					text-align: center
@@ -122,11 +126,17 @@ header
 			.dropdown-menu
 				position: absolute
 	.navbar-brand
+		img 
+			&.mobile 
+				display: none
+			&.desktop 
+				display: block
+			
 		+media-breakpoint-up(lg)
 			margin-right: auto
 		img 
 			max-height: 2rem
-			filter: invert(1) grayscale(1) brightness(100)
+			// filter: invert(1) grayscale(1) brightness(100)
 	.menu
 		width: 36px
 		height: 36px
@@ -190,5 +200,12 @@ header
 			+pad(20px 25px)
 	+media-breakpoint-up(md)
 		.navbar-brand
+			margin-left: 2rem
 			img 
 				max-height: 3rem
+	+media-breakpoint-up(lg)
+		.navbar-brand
+			margin-left: 3rem
+	+media-breakpoint-up(xl)
+		.navbar-brand
+			margin-left: 4rem

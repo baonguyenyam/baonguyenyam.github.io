@@ -1,6 +1,6 @@
 
 html, body
-	font-family: 'Poppins', sans-serif
+	font-family: 'Comfortaa', sans-serif
 	font-size: 14px
 	height: 100%
 	width: 100%
@@ -13,6 +13,10 @@ html, body
 	+media-breakpoint-up(sm)
 		padding-left: 5%
 		padding-right: 5%
+.text-num 
+	font-family: 'Space Grotesk', sans-serif
+.text-text 
+	font-family: 'Poppins', sans-serif
 .text-main
 	color: $main
 .text-sen
@@ -58,37 +62,34 @@ html, body
 	text-transform: uppercase
 	font-weight: 700
 	border: 0
+	border-radius: 15px 5px 15px 5px
 	padding: .75rem 1.5rem
-	background: rgb(45,56,141)
-	background: -moz-linear-gradient(340deg, rgba(45,56,141,1) 33%, rgba(238,62,150,1) 100%)
-	background: -webkit-linear-gradient(340deg, rgba(45,56,141,1) 33%, rgba(238,62,150,1) 100%)
-	background: linear-gradient(340deg, rgba(45,56,141,1) 33%, rgba(238,62,150,1) 100%)
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2d388d",endColorstr="#ee3e96",GradientType=1)
+	background: $sen
+	box-shadow: 3px 3px 0px 0px $main
 	&:hover
-		color: #000
-		background: #ff3399
-		background: -moz-linear-gradient(320deg, #ff3399 43%,#ffcbac 100%)
-		background: -webkit-linear-gradient(320deg, #ff3399 43%,#ffcbac 100%)
-		background: linear-gradient(320deg, #ff3399 43%,#ffcbac 100%)
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff3399",endColorstr="#ffcbac",GradientType=1)
+		color: darken($sen, 20%)
+		background: $main
+		box-shadow: 3px 3px 0px 0px $sen
+
 .btn-call-to-action-active
 	letter-spacing: 1px
 	text-transform: uppercase
 	font-weight: 700
 	border: 0
 	padding: .75rem 1.5rem
+	border-radius: 15px 5px 15px 5px
 	color: #000
-	background: #ff3399
-	background: -moz-linear-gradient(320deg, #ff3399 43%,#ffcbac 100%)
-	background: -webkit-linear-gradient(320deg, #ff3399 43%,#ffcbac 100%)
-	background: linear-gradient(320deg, #ff3399 43%,#ffcbac 100%)
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff3399",endColorstr="#ffcbac",GradientType=1)
+	background: #f7941d
+	background: -moz-linear-gradient(320deg, #f7941d 30%,#283891 100%)
+	background: -webkit-linear-gradient(320deg, #f7941d 30%,#283891 100%)
+	background: linear-gradient(320deg, #f7941d 30%,#283891 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7941d",endColorstr="#283891",GradientType=1)
 	&:hover
 		color: #fff
-		background: rgb(45,56,141)
-		background: -moz-linear-gradient(340deg, rgba(45,56,141,1) 33%, rgba(238,62,150,1) 100%)
-		background: -webkit-linear-gradient(340deg, rgba(45,56,141,1) 33%, rgba(238,62,150,1) 100%)
-		background: linear-gradient(340deg, rgba(45,56,141,1) 33%, rgba(238,62,150,1) 100%)
+		background: rgb(40,56,145)
+		background: -moz-linear-gradient(340deg, rgba(40,56,145,1) 30%, rgba(247,148,29,1) 100%)
+		background: -webkit-linear-gradient(340deg, rgba(40,56,145,1) 30%, rgba(247,148,29,1) 100%)
+		background: linear-gradient(340deg, rgba(40,56,145,1) 30%, rgba(247,148,29,1) 100%)
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2d388d",endColorstr="#ee3e96",GradientType=1)
 .anim-text-flow
 	$animationSteps: 20
@@ -121,10 +122,10 @@ html, body
 	-webkit-background-clip: text
 	font-weight: 700
 	text-transform: uppercase
-	background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #ff8a00), color-stop(0.15, #da1b60), color-stop(0.3,$sen), color-stop(0.45, #20e5ff), color-stop(0.6, $main), color-stop(0.75, $main), color-stop(0.9, #8922ff), color-stop(1, #ff8a00))
-	background-image: gradient(linear, left top, right top, color-stop(0, #ff8a00), color-stop(0.15, #da1b60), color-stop(0.3,$sen), color-stop(0.45, #20e5ff), color-stop(0.6, $main), color-stop(0.75, $main), color-stop(0.9, #8922ff), color-stop(1, #ff8a00))
-	background-image: -moz-gradient(linear, left top, right top, color-stop(0, #ff8a00), color-stop(0.15, #da1b60), color-stop(0.3,$sen), color-stop(0.45, #20e5ff), color-stop(0.6, $main), color-stop(0.75, $main), color-stop(0.9, #8922ff), color-stop(1, #ff8a00))
-	background-image: -o-gradient(linear, left top, right top, color-stop(0, #ff8a00), color-stop(0.15, #da1b60), color-stop(0.3,$sen), color-stop(0.45, #20e5ff), color-stop(0.6, $main), color-stop(0.75, $main), color-stop(0.9, #8922ff), color-stop(1, #ff8a00))
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #ff8a00), color-stop(0.15, #da1b60), color-stop(0.3,$vang), color-stop(0.45, #20e5ff), color-stop(0.6, $clouds), color-stop(0.75, $clouds), color-stop(0.9, #8922ff), color-stop(1, #ff8a00))
+	background-image: gradient(linear, left top, right top, color-stop(0, #ff8a00), color-stop(0.15, #da1b60), color-stop(0.3,$vang), color-stop(0.45, #20e5ff), color-stop(0.6, $clouds), color-stop(0.75, $clouds), color-stop(0.9, #8922ff), color-stop(1, #ff8a00))
+	background-image: -moz-gradient(linear, left top, right top, color-stop(0, #ff8a00), color-stop(0.15, #da1b60), color-stop(0.3,$vang), color-stop(0.45, #20e5ff), color-stop(0.6, $clouds), color-stop(0.75, $clouds), color-stop(0.9, #8922ff), color-stop(1, #ff8a00))
+	background-image: -o-gradient(linear, left top, right top, color-stop(0, #ff8a00), color-stop(0.15, #da1b60), color-stop(0.3,$vang), color-stop(0.45, #20e5ff), color-stop(0.6, $clouds), color-stop(0.75, $clouds), color-stop(0.9, #8922ff), color-stop(1, #ff8a00))
 	color: transparent
 	-webkit-text-fill-color: transparent
 	animation: h 8s ease infinite

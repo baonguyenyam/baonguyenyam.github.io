@@ -1,3 +1,4 @@
+
 ///////////////////////////////////
 // MENU BUTTON
 ///////////////////////////////////
@@ -16,37 +17,38 @@ $(".anim-text-flow").html(function (i, html) {
 });
 
 ///////////////////////////////////
-// HEADER
+// FANCY BOX
 ///////////////////////////////////
-function setHeader(elm) {
-	var mmn;
-	if ($(window).width <= 768) {
-		mmn = 70;
-	} else {
-		mmn = 120;
-	}
-	if (elm >= mmn) {
-		$("header").addClass("active");
-	} else {
-		$("header").removeClass("active");
-	}
-}
-$(document).ready(function () {
-	var mmn;
-	if ($(window).width <= 768) {
-		mmn = 70;
-	} else {
-		mmn = 120;
-	}
-	$("header").addClass("fixedheader");
-	if ($(window).scrollTop() >= mmn) {
-		setHeader($(window).scrollTop());
-	}
-	if ($("header").hasClass("fixedheader")) {
-		$("main").addClass("main-fixedheader");
-	}
+Fancybox.bind('[data-fancybox]', {
+	groupAll: true, // Group all items
+	Image: {
+		zoom: true,
+	},
+	Panzoom: {
+		zoomFriction: 0.7,
+		maxScale: function () {
+			return 5;
+		},
+	},
+	Thumbs: {
+		Carousel: {
+			Sync: {
+				friction: 0.9
+			}
+		},
+	},
+	Toolbar: {
+		display: [
+			{ id: "prev", position: "center" },
+			{ id: "counter", position: "center" },
+			{ id: "next", position: "center" },
+			"zoom",
+			"slideshow",
+			"fullscreen",
+			"download",
+			"thumbs",
+			"close",
+		],
+	},
 });
-// Fixed Header
-$(window).scroll(function () {
-	setHeader($(document).scrollTop());
-});
+// Fancybox.Plugins.Thumbs.defaults.Carousel.preload = 0;

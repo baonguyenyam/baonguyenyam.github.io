@@ -1,20 +1,5 @@
 include ../_include/_variables
 doctype html
-//
-	.
-	 _   _  _____ _    ___     ________ _   _
-	| \ | |/ ____| |  | \ \   / /  ____| \ | |
-	|  \| | |  __| |  | |\ \_/ /| |__  |  \| |
-	| . ` | | |_ | |  | | \   / |  __| | . ` |
-	| |\  | |__| | |__| |  | |  | |____| |\  |
-	|_| \_|\_____|\____/   |_|  |______|_| \_|
-	Coding by: Nguyen Pham
-	Tel: 682-203-1334
-	Email: baonguyenyam@gmail.com
-	URL: fb.com/pham.nguyen.bao.nguyen,
-	baonguyenyam.github.io
-	baonguyenyam.blogspot.com
-	License Name: NGUYEN PHAM
 html(dir='ltr', lang=config.SEO.seo_lang, itemscope, itemtype="http://schema.org/WebSite", prefix="og: http://ogp.me/ns#", class="no-js")
 	head
 		meta(charset='utf-8')
@@ -26,9 +11,15 @@ html(dir='ltr', lang=config.SEO.seo_lang, itemscope, itemtype="http://schema.org
 		meta(name='theme-color', content=config.SEO.mobile_color)
 		meta(name='msapplication-navbutton-color', content=config.SEO.mobile_color)
 		meta(name='apple-mobile-web-app-status-bar-style', content=config.SEO.mobile_color)
-		title #{title || AppName}
+		title #{title || AppName} - Create something great
+		link(href="https://fonts.googleapis.com" rel="preconnect")
 		link(href="https://fonts.gstatic.com" rel="preconnect")
-		link(href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700;800&display=swap" rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet")
+		//- link(href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet")
+		//- link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet")
+		//- link(href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700;900&display=swap" rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;&display=swap" rel="stylesheet")
 		include ../_include/_seo
 		<!-- ////////////// CSS Include ////////////// -->
 		include ../_include/_css
@@ -54,7 +45,7 @@ html(dir='ltr', lang=config.SEO.seo_lang, itemscope, itemtype="http://schema.org
 			block body
 		<!-- ////////////// End Main ////////////// -->
 		<!-- ////////////// Footer ////////////// -->
-		//- include footer
+		include footer
 		
 		<!-- ////////////// End Footer ////////////// -->
 		<!-- ////////////// Javascript Include ////////////// -->
