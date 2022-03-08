@@ -1,24 +1,24 @@
 {
-	"name": "fullstackvietnam",
+	"name": "baonguyenyam",
 	"version": "1.0.0",
-	"description": "Fullstack Vietnam lò đào tạo lập trình viên, designer chuyên nghiệp tại Sài Gòn. Chúng tôi là các chuyên gia uy tín trong lĩnh vực lập trình ứng dụng, thiết kế và sáng tạo. Gọi: 0 96 96 89 89 3",
+	"description": "Tôi là Bảo Nguyên hiện là Full-Stack Developer tại nhiều công ty Nhật, USA, Singapore... Tôi cũng là giảng viên tại FPT. Tôi có hơn 8 năm làm việc trên Single Page Applications (SPA), ứng dụng mobile và website. Tôi có nhiều kinh nghiệm về Design, HTML, SASS, PUG, Ionic, Angular, NodeJS, several version control systems... là tác giả của nhiều sản phẩm phần mềm IT tại VN.",
 	"main": "index.js",
 	"scripts": {
 		"start": "gulp",
-		"pro": "gulp build --production",
+		"prod": "gulp build --production",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"update": "ncu -u && ncu -u -m bower && npm i && npm i sass node-sass && bower update"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/fullstackvietnam/myweb.git"
+		"url": "git+https://github.com/baonguyenyam/baonguyenyam.github.io.git"
 	},
 	"author": "FullStack VietNam",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/fullstackvietnam/myweb/issues"
+		"url": "https://github.com/baonguyenyam/baonguyenyam.github.io/issues"
 	},
-	"homepage": "https://fullstackvietnam.com",
+	"homepage": "https://baonguyenyam.github.io",
 	"dependencies": {
 		"babel-core": "^6.26.3",
 		"babel-preset-env": "^1.7.0",
@@ -28,23 +28,28 @@
 		"gulp": "^4.0.2",
 		"gulp-autoprefixer": "^7.0.1",
 		"gulp-babel": "^8.0.0",
+		"gulp-base64-inline": "^1.0.6",
 		"gulp-clean": "^0.4.0",
 		"gulp-clean-css": "^4.2.0",
 		"gulp-concat": "^2.6.1",
 		"gulp-data": "^1.3.1",
 		"gulp-htmlmin": "^5.0.1",
+		"gulp-image64": "^1.0.0",
 		"gulp-load-plugins": "^2.0.1",
 		"gulp-notify": "^3.2.0",
 		"gulp-plumber": "^1.2.1",
 		"gulp-pug": "^4.0.1",
 		"gulp-rename": "^1.4.0",
+		"gulp-replace": "^1.1.3",
 		"gulp-sass": "^4.0.2",
 		"gulp-sourcemaps": "^2.6.5",
 		"gulp-strip-comments": "^2.5.2",
 		"gulp-uglify": "^3.0.2",
 		"gulp-util": "^3.0.8",
+		"i": "^0.3.6",
 		"js-yaml": "^3.13.1",
 		"node-sass": "^4.12.0",
+		"npm": "^7.19.0",
 		"npm-check-updates": "^3.1.24",
 		"run-sequence": "^2.2.1",
 		"sass": "^1.23.0"
