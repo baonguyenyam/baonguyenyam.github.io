@@ -7891,91 +7891,91 @@ html, body {
 
 @-webkit-keyframes anim-text-flow-keys {
   0% {
-    color: #b65cd6; }
+    color: #72d65c; }
   5% {
-    color: #d6c45c; }
+    color: #915cd6; }
   10% {
-    color: #d6785c; }
+    color: #d6725c; }
   15% {
-    color: #6e5cd6; }
+    color: #d65cc2; }
   20% {
-    color: #d65c62; }
+    color: #a75cd6; }
   25% {
-    color: #5cd6ca; }
+    color: #d6d05c; }
   30% {
-    color: #5cd66c; }
+    color: #c6d65c; }
   35% {
-    color: #be5cd6; }
+    color: #85d65c; }
   40% {
-    color: #d65c7c; }
+    color: #d6705c; }
   45% {
-    color: #5cd6be; }
+    color: #955cd6; }
   50% {
     color: #d25cd6; }
   55% {
-    color: #b8d65c; }
+    color: #ba5cd6; }
   60% {
-    color: #d65ca7; }
+    color: #8dd65c; }
   65% {
-    color: #5cd670; }
+    color: #d68b5c; }
   70% {
-    color: #d65cc0; }
+    color: #5ca7d6; }
   75% {
-    color: #5cc4d6; }
+    color: #645cd6; }
   80% {
-    color: #be5cd6; }
+    color: #745cd6; }
   85% {
-    color: #6ed65c; }
+    color: #d67e5c; }
   90% {
-    color: #c6d65c; }
+    color: #5cd65e; }
   95% {
-    color: #d65c76; }
+    color: #5cd69d; }
   100% {
-    color: #d68f5c; } }
+    color: #d2d65c; } }
 
 @keyframes anim-text-flow-keys {
   0% {
-    color: #b65cd6; }
+    color: #72d65c; }
   5% {
-    color: #d6c45c; }
+    color: #915cd6; }
   10% {
-    color: #d6785c; }
+    color: #d6725c; }
   15% {
-    color: #6e5cd6; }
+    color: #d65cc2; }
   20% {
-    color: #d65c62; }
+    color: #a75cd6; }
   25% {
-    color: #5cd6ca; }
+    color: #d6d05c; }
   30% {
-    color: #5cd66c; }
+    color: #c6d65c; }
   35% {
-    color: #be5cd6; }
+    color: #85d65c; }
   40% {
-    color: #d65c7c; }
+    color: #d6705c; }
   45% {
-    color: #5cd6be; }
+    color: #955cd6; }
   50% {
     color: #d25cd6; }
   55% {
-    color: #b8d65c; }
+    color: #ba5cd6; }
   60% {
-    color: #d65ca7; }
+    color: #8dd65c; }
   65% {
-    color: #5cd670; }
+    color: #d68b5c; }
   70% {
-    color: #d65cc0; }
+    color: #5ca7d6; }
   75% {
-    color: #5cc4d6; }
+    color: #645cd6; }
   80% {
-    color: #be5cd6; }
+    color: #745cd6; }
   85% {
-    color: #6ed65c; }
+    color: #d67e5c; }
   90% {
-    color: #c6d65c; }
+    color: #5cd65e; }
   95% {
-    color: #d65c76; }
+    color: #5cd69d; }
   100% {
-    color: #d68f5c; } }
+    color: #d2d65c; } }
 
 .anim-text-flow span:nth-of-type(1) {
   -webkit-animation-delay: -19.8s;
