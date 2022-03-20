@@ -4,11 +4,16 @@ $(document).ready(function () {
 		itemSelector: '.item'
 	})
 	$('.allitems').masonry('layout');
-	$grid.on('layoutComplete', function () {
-		$('.allitems').masonry('layout');
-	});
+	// $grid.on('layoutComplete', function () {
+	// 	$('.allitems').masonry('layout');
+	// });
 	setTimeout(function () {
 		$('.allitems').masonry('layout');
-	}, 1000);
+	}, 3000);
+
+	$(window).on('resize', function() {
+		$('.allitems').masonry('layout')
+	});
+
 
 });
