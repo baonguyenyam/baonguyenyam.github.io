@@ -14,8 +14,9 @@ html, body
 		padding-left: 5%
 		padding-right: 5%
 +media-breakpoint-up(xxl)
-	.main-fixedheader
-		width: calc(100% - 400px
+	.main-fixedheader,
+	footer
+		width: calc(100% - 400px)
 		margin-left: 400px
 .text-num 
 	font-family: 'Space Grotesk', sans-serif
@@ -182,6 +183,7 @@ html, body
 	border: 0
 	background: $sen
 	box-shadow: 2px 2px 0px 0px $main
+	color: #fff
 	&:hover
 		color: darken($sen, 20%)
 		background: $main

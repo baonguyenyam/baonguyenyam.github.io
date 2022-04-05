@@ -8,6 +8,37 @@ block variables
 
 block body
 	section.section-fullwidth
+		//- #particles-js
+		.background-slider
+		//- .video-inner
+			video.video-bg(preload='auto' loop='' autoplay='' muted='' playsinline='')
+				source(type='video/mp4' src='./img/bg-7.mp4')
+				source(type='video/webm' src='./img/bg-7.webm')
+			noscript
+				video.video-bg(preload='auto' loop autoplay muted playsinline)
+					source(src='./img/bg-7.mp4' type='video/mp4')
+					source(src='./img/bg-7.webm' type='video/webm')
+		.welcomeblock
+			//- h1 EMPIRE 360
+			h1
+				span NGUYEN 
+					em P.
+				span NGUYEN 
+					em P.
+				span NGUYEN 
+					em P.
+		.welcomeblock_sec
+			h2 Brand Designer and Web Developer
+		
+		h3.text-rotate.text-rotate-create Creations
+		h3.text-rotate.text-rotate-marketing Marketing 
+		h3.text-rotate.text-rotate-website website
+		a.linkdown(href='#portfolio')
+			span(class='link__arrow')
+				span
+				span
+			span(class='link__line')
+			span(class='link__text') Projects
 
 	section.section-services#about-us
 		.background-slider
@@ -34,28 +65,28 @@ block body
 							span.highlight thiết kế web chuyên nghiệp. 
 							| Mình yêu cái đẹp vì thế mọi sản phẩm mình tạo ra đều có sự chỉn chu đến từng chi tiết và đẹp mắt. Ngoài ra những website mình thiết kế cũng có đầy đủ những hiệu ứng và tính năng phức tạp. 
 					p.mb-3.flit-animation.fast(data-animation="fadeInUp") 
-						a.btn.btn-call-to-action.mb-2.mr-3.text-num(href="https://baonguyenyam.github.io/cv" target="_blank") Hồ sơ cá nhân
+						a.btn.btn-call-to-action.mb-2.me-3.text-num(href="https://baonguyenyam.github.io/cv" target="_blank") Hồ sơ cá nhân
 						a.btn.btn-call-to-action.mb-2.text-num(href="/data/Resume_full.pdf" target="_blank") Bản PDF
 					h4.text-num Một số mức giá tham khảo
 					ul.list-group.mt-2
 						li.list-group-item.d-flex.justify-content-between 
-							span.mr-3 Thiết kế thương hiệu 
+							span.me-3 Thiết kế thương hiệu 
 								strong 
 									a.btn.btn-xs.text-num(href="/data/brandidentity.pdf" target="_blank") DEMO
 							strong.text-main.text-right.text-num.text-nowrap ~ $800
 						li.list-group-item.d-flex.justify-content-between 
-							span.mr-3 Xây dựng website/web bán hàng 
+							span.me-3 Xây dựng website/web bán hàng 
 								strong 
 									a.btn.btn-xs.text-num(href="https://baonguyenyam.github.io/demo/Crawfish7/" target="_blank") DEMO
 							strong.text-main.text-right.text-num.text-nowrap ~ $1500 - $2500
 						li.list-group-item.d-flex.justify-content-between 
-							span.mr-3 Xây dựng phần mềm quản lý bán hàng, booking...
+							span.me-3 Xây dựng phần mềm quản lý bán hàng, booking...
 							strong.text-main.text-right.text-num.text-nowrap ~ $3000
 						li.list-group-item.d-flex.justify-content-between 
-							span.mr-3 Xây dựng phần mềm quản lý văn phòng luật sư, quản lý hồ sơ thuế, quản lý hồ sơ di trú...
+							span.me-3 Xây dựng phần mềm quản lý văn phòng luật sư, quản lý hồ sơ thuế, quản lý hồ sơ di trú...
 							strong.text-main.text-right.text-num.text-nowrap ~ $7000
 						li.list-group-item.d-flex.justify-content-between 
-							span.mr-3 Xây dựng phần mềm quản lý kho hàng (inventory system)
+							span.me-3 Xây dựng phần mềm quản lý kho hàng (inventory system)
 							strong.text-main.text-right.text-num.text-nowrap contact
 
 				.col-xl-6.order-xl-1.mt-5.mt-xl-0.pr-xl-5
@@ -63,11 +94,11 @@ block body
 						a(href="./img/brands.jpg" data-fancybox="images-flyer" data-caption="My caption")
 							figure.mb-0
 								img.img-fluid(src="./img/brands.jpg", alt="", srcset="") 
-	//- section.section-plan#services
-		.innetplan
+	section.section-plan#services
+		.innetplan.px-3
 			.container-fluid
 				.row
-					.col-lg-6
+					.col-xxl-6
 						.d-flex.align-items-center
 						h2 
 							b.text-main Những gì
@@ -106,7 +137,7 @@ block body
 					.col-md-12
 						p Mình có thể giúp quý vị xây dựng 1 thương hiệu từ Zero hoặc cải thiện lại thương hiệu hiện có của quý vị chuyên nghiệp hơn. Các công việc bao gồm từ sáng tạo Logo, slogan, chụp ảnh, quay video, viết phần mềm quản lý, thiết kế & xây dựng website.... cho đến việc viết nội dung, sửa lỗi chính tả và dịch thuật. Mình có đủ trình độ và chuyên môn cao để giúp quý vị xây dựng thương hiệu tốt nhất.
 						p Mình có thể hướng dẫn quý vị tự tạo fanpage và quản lý cho thương hiệu của mình. Song song với việc tự vận hành online marketing một cách tiết kiệm và hiệu quả mà không cần phải thuê bất kỳ một công ty nào.
-	//- section.home-details#details
+	section.home-details#details
 		.container-fluid
 			.row
 				.col.text-center 
@@ -120,32 +151,32 @@ block body
 					p Bao gồm các tính năng cơ bản sau:
 					ul.list-unstyled.mb-5
 						li.list-item 
-								i.fas.fa-check.mr-2
-								span MIỄN PHÍ thiết kế 1 logo 
+							i.fas.fa-check.me-2
+							span MIỄN PHÍ thiết kế 1 logo 
 						li.list-item 
-							i.fas.fa-check.mr-2
+							i.fas.fa-check.me-2
 							span Xây dựng các trang web, trang nhà, trang báo giá dịch vụ, trang giới thiệu, trang liên lạc, trang menu...
 						li.list-item
-							i.fas.fa-check.mr-2
+							i.fas.fa-check.me-2
 							span Miễn phí 1 domain + miễn phí nơi lưu trữ trong thời hạn 1 năm (hết thời hạn quý vị có thể gia hạn thêm)
 						li.list-item
-							i.fas.fa-check.mr-2
+							i.fas.fa-check.me-2
 							span Đảm bảo sự an toàn và bảo mật cho website của quý vị
 						li.list-item
-							i.fas.fa-check.mr-2
+							i.fas.fa-check.me-2
 							span Cung cấp một tài khoản email để quý vị tương tác với khách hàng
 						li.list-item ...
 					h3.mt-3.text-num Về brand 
 					p Bao gồm các tính năng cơ bản sau:
 					ul.list-unstyled
 						li.list-item 
-							i.fas.fa-check.mr-2
+							i.fas.fa-check.me-2
 							span Thiết kế logo (x3), business card (x2), flyer (x1), poster (x1).
 						li.list-item
-							i.fas.fa-check.mr-2
+							i.fas.fa-check.me-2
 							span Thiết kế bộ nhân dạng thương hiệu (brand identity), đưa ra các quy tắc phong cách, màu sắc và chính sách thương hiệu cho quý vị. 
 						li.list-item
-							i.fas.fa-check.mr-2
+							i.fas.fa-check.me-2
 							span Tạo các bản mockup cho thương hiệu.
 						li.list-item ...
 					p.small.text-main Mình tự hào là nhà thiết kế và xây dựng web cho báo TRẺ (TRE Magazine) một tờ báo lớn của người Việt tại hải ngoại, cũng như là giúp xây dựng các thương hiệu sang trọng khác tại Hoa Kỳ.
@@ -155,7 +186,7 @@ block body
 						a(href="./img/bg2.jpg" data-fancybox="images-flyer" data-caption="My caption")
 							figure.mb-0
 								img.img-fluid(src="./img/bg2.jpg", alt="", srcset="") 
-	//- section.home-news#portfolio
+	section.home-news#portfolio
 		.container-fluid
 			.row
 				.col.text-center 
