@@ -230,12 +230,12 @@ $('a[href*="#"]') // Remove links that don't actually link to anything
 }); ///////////////////////////////////
 // MENU BUTTON
 ///////////////////////////////////
-
-document.querySelectorAll(".menu").forEach(function (btn) {
-  btn.addEventListener("click", function (e) {
-    btn.classList.toggle("active");
-  });
-}); ///////////////////////////////////
+// document.querySelectorAll(".menu").forEach((btn) => {
+// 	btn.addEventListener("click", (e) => {
+// 		btn.classList.toggle("active");
+// 	});
+// });
+///////////////////////////////////
 // HOME ANIMATION TEXT
 ///////////////////////////////////
 
