@@ -354,7 +354,10 @@
 					font-size: 11rem
 			@media (min-width: 1600px)
 				h1 
-					font-size: 15rem
+					font-size: 11rem
+			@media (min-width: 1800px)
+				h1 
+					font-size: 14rem
 		.welcomeblock_sec
 			padding: 0 2rem
 			text-align: center
@@ -513,6 +516,21 @@
 	position: relative
 	// background:	rgba(0,0,0,.15)
 	overflow: hidden
+	&:before 
+		background: $sen
+		opacity: .3
+		display: block
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		z-index: -2
+		+media-breakpoint-up(lg)
+			background: $sen url('../img/bg.jpg') center center no-repeat
+			background-size: cover
+			background-attachment: fixed
 	+media-breakpoint-up(md)
 		padding: 5rem 0
 	@media (min-width: 1400px)
