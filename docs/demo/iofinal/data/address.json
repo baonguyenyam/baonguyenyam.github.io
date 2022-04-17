@@ -1,0 +1,30 @@
+{
+	"results": [
+		{
+			"address_id": 1,
+			"address_name": "In Putin",
+			"address_code": "jdsfio34598908dfgdfgljgdflkljg"
+		},
+		{
+			"address_id": 2,
+			"address_name": "In Biden",
+			"address_code": "jdsfio34dfgljgdflkljg"
+		},
+		{
+			"address_id": 3,
+			"address_name": "In North Korea",
+			"address_code": "USDT-jdsfio34dfgljgdflkljgjdsfio34dfgljgdflkljg"
+		},
+		{
+			"address_id": 4,
+			"address_name": "In Ukraine",
+			"address_code": "8978978978978gljgdflkljg"
+		}, 
+		{
+			"address_id": 5,
+			"address_name": "In Iran",
+			"address_code": "LKDJHShflkljg"
+		}
+	],
+	"total": 5
+}

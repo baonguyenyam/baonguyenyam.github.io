@@ -1,0 +1,45 @@
+{
+	"results": [
+		{
+			"bank_id": 1,
+			"bank_name": "Industrial Bank of Putin",
+			"bank_group": "USDT",
+			"bank_tax": "1.25",
+			"bank_code": "USDT-TRC20",
+			"bank_address": "dfk90845khHhe3lJKHsHGfYUUYGRJsssHGSDLlkhdbss"
+		},
+		{
+			"bank_id": 2,
+			"bank_name": "Industrial Bank of Biden",
+			"bank_group": "USDT",
+			"bank_tax": "5.25",
+			"bank_code": "USDT-IBP",
+			"bank_address": "dfT769HDH34KJHjgD3997754gdEESSSGGVGJdfgfgk90845khHhe3lJKH997754gdEESSSGGVGJdfgfgUYGRJsssHGSDLlkhdbss"
+		},
+		{
+			"bank_id": 3,
+			"bank_name": "Industrial Bank of North Korea",
+			"bank_group": "USDT",
+			"bank_tax": "7.25",
+			"bank_code": "USDT-Omni",
+			"bank_address": "HDH34KJHjgD3997754gdEESSSGGVGJdfgfgUYGRJsssHGSDLdfk90845khHhe3lJKHsHGfYUT769lkhdbss"
+		},
+		{
+			"bank_id": 4,
+			"bank_name": "Industrial Bank of Ukraine",
+			"bank_group": "VNVN",
+			"bank_tax": "10.25",
+			"bank_code": "AAAA",
+			"bank_address": "SSSGGVGJdfgfgUYGRJsssHGSDLkhHhe3lJKHsHGfYUT769HDH34KJHjgD3997754gdEElkhdbss"
+		}, 
+		{
+			"bank_id": 5,
+			"bank_name": "Industrial Bank of Iran",
+			"bank_group": "VNVN",
+			"bank_tax": "9.25",
+			"bank_code": "BBBB",
+			"bank_address": "e3lJKHsHGfYUT769HDH34KJHjgD3997754gdEESSSGGVGJdfgfgUYGRJssdfk90845khHhsHGSDLlkhdbss"
+		}
+	],
+	"total": 5
+}
