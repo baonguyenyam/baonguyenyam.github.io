@@ -1,4 +1,5 @@
 module.exports = function (gulp, $, browserSync) {
+	const sass = require('gulp-sass')(require('sass'));
 	gulp.task('tao-sass', function () {
 		let defaultNotification = function (err) {
 			return {
@@ -13,7 +14,7 @@ module.exports = function (gulp, $, browserSync) {
 				'!./src/styles/{**/\_*,**/\_*/**}'
 			])
 			.pipe($.sourcemaps.init())
-			.pipe($.sass().on('error', function (err) {
+			.pipe(sass().on('error', function (err) {
 				$.util.log(err);
 			}).on('error', $.notify.onError(defaultNotification)))
 			.pipe($.sourcemaps.write(''))

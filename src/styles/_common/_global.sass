@@ -96,30 +96,30 @@ html, body
 		background: -webkit-linear-gradient(340deg, rgba(40,56,145,1) 30%, rgba(247,148,29,1) 100%)
 		background: linear-gradient(340deg, rgba(40,56,145,1) 30%, rgba(247,148,29,1) 100%)
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2d388d",endColorstr="#ee3e96",GradientType=1)
-.anim-text-flow
-	$animationSteps: 20
-	$animationDuration: 50
-	$animationElement: span
-	$animationElementsCount: 100
-	$delayBetweenLetters: 0.2
+// .anim-text-flow
+// 	$animationSteps: 20
+// 	$animationDuration: 50
+// 	$animationElement: span
+// 	$animationElementsCount: 100
+// 	$delayBetweenLetters: 0.2
 
-	#{$animationElement}
-		animation-name: anim-text-flow-keys
-		animation-duration: #{$animationDuration}s
-		animation-iteration-count: infinite
-		animation-direction: alternate
-		animation-fill-mode: forwards
+// 	#{$animationElement}
+// 		animation-name: anim-text-flow-keys
+// 		animation-duration: #{$animationDuration}s
+// 		animation-iteration-count: infinite
+// 		animation-direction: alternate
+// 		animation-fill-mode: forwards
 
-	@keyframes anim-text-flow-keys
-		@for $i from 0 through $animationSteps
-			#{percentage($i * 1 / $animationSteps)}
-				color: hsla(random(365), 60, 60, 1)
+// 	@keyframes anim-text-flow-keys
+// 		@for $i from 0 through $animationSteps
+// 			#{math.div($i * 1 / $animationSteps)}
+// 				color: hsla(random(365), 60, 60, 1)
 
-	$totalDelayTime: $animationElementsCount * $delayBetweenLetters
+// 	$totalDelayTime: $animationElementsCount * $delayBetweenLetters
 
-	@for $i from 1 through $animationElementsCount
-		#{$animationElement}:nth-of-type(#{$i})
-			animation-delay: #{$i * $delayBetweenLetters - $totalDelayTime}s
+// 	@for $i from 1 through $animationElementsCount
+// 		#{$animationElement}:nth-of-type(#{$i})
+// 			animation-delay: #{$i * $delayBetweenLetters - $totalDelayTime}s
 .bgtrans2
 	-webkit-background-clip: text
 
