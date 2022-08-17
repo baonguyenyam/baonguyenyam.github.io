@@ -13003,9 +13003,65 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@font-face {
+  font-family: "Neue Kabel Book";
+  src: url("../webfonts/d27b5a52-5146-429c-9e0d-1f4c08266f3d.woff2") format("woff2"), url("../webfonts/a3ca3efa-bd2f-42c1-a590-e7ac56f71088.woff") format("woff");
+}
+@font-face {
+  font-family: "Neue Kabel W05 Medium Italic";
+  src: url("../webfonts/0ca27ac4-0585-44a3-a093-68fe63b8747a.woff2") format("woff2"), url("../webfonts/edc5e109-0f46-45e9-b7e6-f117a7747bc6.woff") format("woff");
+}
+@font-face {
+  font-family: "Neue Kabel";
+  src: url("../webfonts/bf49b70e-906b-40c3-bd00-aae63ae2a55b.woff2") format("woff2"), url("../webfonts/c904605a-490f-475e-8bda-3d64711907d2.woff") format("woff");
+}
+@font-face {
+  font-family: "Neue Kabel W05 Black Italic";
+  src: url("../webfonts/f5d818a7-2d87-43dc-8f3d-ea39fd5ce193.woff2") format("woff2"), url("../webfonts/9a2ec82e-280d-407c-bfdc-869ac1edd08a.woff") format("woff");
+}
+@font-face {
+  font-family: "ITC Serif Gothic Black";
+  src: url("../webfonts/SerifGothic-Black.eot");
+  src: url("../webfonts/SerifGothic-Black.eot?#iefix") format("embedded-opentype"), url("../webfonts/SerifGothic-Black.woff2") format("woff2"), url("../webfonts/SerifGothic-Black.woff") format("woff"), url("../webfonts/SerifGothic-Black.ttf") format("truetype"), url("../webfonts/SerifGothic-Black.svg#SerifGothic-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ITC Serif Gothic ExtraBold";
+  src: url("../webfonts/SerifGothic-ExtraBold.eot");
+  src: url("../webfonts/SerifGothic-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../webfonts/SerifGothic-ExtraBold.woff2") format("woff2"), url("../webfonts/SerifGothic-ExtraBold.woff") format("woff"), url("../webfonts/SerifGothic-ExtraBold.ttf") format("truetype"), url("../webfonts/SerifGothic-ExtraBold.svg#SerifGothic-ExtraBold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ITC Serif Gothic Heavy";
+  src: url("../webfonts/SerifGothic-Heavy.eot");
+  src: url("../webfonts/SerifGothic-Heavy.eot?#iefix") format("embedded-opentype"), url("../webfonts/SerifGothic-Heavy.woff2") format("woff2"), url("../webfonts/SerifGothic-Heavy.woff") format("woff"), url("../webfonts/SerifGothic-Heavy.ttf") format("truetype"), url("../webfonts/SerifGothic-Heavy.svg#SerifGothic-Heavy") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ITC Serif Gothic Light";
+  src: url("../webfonts/SerifGothic-Light.eot");
+  src: url("../webfonts/SerifGothic-Light.eot?#iefix") format("embedded-opentype"), url("../webfonts/SerifGothic-Light.woff2") format("woff2"), url("../webfonts/SerifGothic-Light.woff") format("woff"), url("../webfonts/SerifGothic-Light.ttf") format("truetype"), url("../webfonts/SerifGothic-Light.svg#SerifGothic-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ITC Serif Gothic";
+  src: url("../webfonts/SerifGothic.eot");
+  src: url("../webfonts/SerifGothic.eot?#iefix") format("embedded-opentype"), url("../webfonts/SerifGothic.woff2") format("woff2"), url("../webfonts/SerifGothic.woff") format("woff"), url("../webfonts/SerifGothic.ttf") format("truetype"), url("../webfonts/SerifGothic.svg#SerifGothic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 html, body {
-  font-family: "Comfortaa", sans-serif;
-  font-size: 16px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
   height: 100%;
   width: 100%;
 }
@@ -13038,7 +13094,7 @@ footer {
 }
 
 .text-text {
-  font-family: "Poppins", sans-serif;
+  font-family: "ITC Serif Gothic Heavy", sans-serif;
 }
 
 .text-main {
@@ -13074,6 +13130,11 @@ footer {
   -webkit-text-decoration: underline dotted #f7941d;
   text-decoration: underline dotted #f7941d;
   color: #283891;
+}
+
+.btn {
+  font-family: "ITC Serif Gothic Heavy", sans-serif;
+  letter-spacing: 2px;
 }
 
 .liner {
@@ -13299,6 +13360,7 @@ header {
   left: 0;
   margin: 0 15px;
   z-index: 1000;
+  font-family: "Neue Kabel";
 }
 @media (max-width: 991.98px) {
   header.fixedheader.active {
@@ -13352,6 +13414,10 @@ header {
   header.fixedheader.active .menu svg {
     stroke: #f7941d;
   }
+}
+header .offcanvas-body .navbar-nav .nav-item .nav-link {
+  font-family: "ITC Serif Gothic ExtraBold", sans-serif;
+  text-transform: uppercase;
 }
 header .navbar {
   padding: 10px 15px;
@@ -13595,6 +13661,8 @@ header .navbar-expand-xxl .navbar-nav {
   }
   header .navbar-expand-xxl .navbar-nav .nav-item .nav-link {
     color: #000;
+    font-family: "ITC Serif Gothic Heavy", serif;
+    letter-spacing: 2px;
   }
   header .navbar-expand-xxl .navbar-nav .nav-item .nav-link:hover {
     color: #f7941d;
@@ -13903,7 +13971,7 @@ footer .list-inline a:hover {
 }
 .index-fullwidth .section-fullwidth .text-rotate {
   z-index: 100;
-  font-family: "Poppins", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   position: absolute;
   color: rgb(255, 255, 255);
   opacity: 0.075;
@@ -14037,7 +14105,7 @@ footer .list-inline a:hover {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "ITC Serif Gothic ExtraBold", sans-serif;
   font-size: 5rem;
   color: rgba(255, 255, 255, 0.5);
   font-weight: 200;
@@ -14068,6 +14136,7 @@ footer .list-inline a:hover {
   display: block;
   font-style: normal;
   font-weight: 600;
+  font-family: "ITC Serif Gothic Black", sans-serif;
 }
 .index-fullwidth .section-fullwidth .welcomeblock h1 span:first-child, .index-fullwidth .section-fullwidth .welcomeblock .h1 span:first-child, .index-fullwidth .section-fullwidth .welcomeblock h1 span:last-child, .index-fullwidth .section-fullwidth .welcomeblock .h1 span:last-child {
   position: absolute;
@@ -14137,7 +14206,9 @@ footer .list-inline a:hover {
 }
 .index-fullwidth .section-fullwidth .welcomeblock_sec h2, .index-fullwidth .section-fullwidth .welcomeblock_sec .h2 {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+  font-family: "Neue Kabel";
+  text-transform: uppercase;
 }
 @media (min-width: 768px) {
   .index-fullwidth .section-fullwidth .welcomeblock_sec {
@@ -14407,6 +14478,8 @@ footer .list-inline a:hover {
   font-size: 2rem;
   margin-top: 2rem;
   line-height: 2rem;
+  text-transform: uppercase;
+  font-family: "Neue Kabel Book";
 }
 .section-services h2 .tricker, .section-services .h2 .tricker {
   overflow: hidden;
@@ -14733,10 +14806,11 @@ footer .list-inline a:hover {
 }
 .home-details h2, .home-details .h2 {
   font-weight: 100;
-  font-size: 2rem;
+  font-size: 4rem;
   margin-top: 2rem;
-  line-height: 2rem;
   color: #fff;
+  font-family: "ITC Serif Gothic Black";
+  text-transform: uppercase;
 }
 .home-details h2 em, .home-details .h2 em {
   font-weight: 500;
@@ -14746,8 +14820,7 @@ footer .list-inline a:hover {
 }
 @media (min-width: 992px) {
   .home-details h2, .home-details .h2 {
-    font-size: 3.5rem;
-    line-height: 3.5rem;
+    font-size: 6rem;
   }
 }
 .home-details h3, .home-details .h3 {
@@ -14887,18 +14960,19 @@ footer .list-inline a:hover {
   font-weight: 100;
   font-size: 2rem;
   margin-top: 2rem;
-  line-height: 2rem;
+  font-family: "ITC Serif Gothic Black";
+  text-transform: uppercase;
 }
 .home-news h2 em, .home-news .h2 em {
   font-weight: 500;
+  font-family: "ITC Serif Gothic ExtraBold";
 }
 .home-news h2 span, .home-news .h2 span {
   font-weight: 700;
 }
 @media (min-width: 992px) {
   .home-news h2, .home-news .h2 {
-    font-size: 3.5rem;
-    line-height: 3.5rem;
+    font-size: 6rem;
   }
 }
 .home-news h3, .home-news .h3 {
