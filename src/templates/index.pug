@@ -2,8 +2,7 @@ extends _layout/layout
 
 block variables
 	- var title = 'Nguyen Pham '
-	- var description = 'Mình có thể giúp quý vị xây dựng 1 thương hiệu từ Zero hoặc cải thiện lại thương hiệu hiện có của quý vị chuyên nghiệp hơn. Các công việc bao gồm từ sáng tạo Logo, slogan, chụp ảnh, quay video, viết phần mềm quản lý, thiết kế & xây dựng website.... cho đến việc viết nội dung, sửa lỗi chính tả và dịch thuật. Mình có đủ trình độ và chuyên môn cao để giúp quý vị xây dựng thương hiệu tốt nhất.'
-	- var bodyclass = 'home'
+	- var description = 'I live in the United States and am a professional creator and web designer. I love beauty, so I strive to create products that are careful, beautiful, and full of intricate features.'
 	- var href = "/index.html"
 
 block body
@@ -57,37 +56,36 @@ block body
 			.row.align-items-center
 				.col-xxxl-6.order-xl-2
 					.flit-animation.faster(data-animation="fadeInUp")
-						h4.text-muted Chào mọi người! Mình là Nguyen Pham
-						p Hiện đang sống tại Hoa Kỳ, mình là 
-							span.highlight nhà sáng tạo
-							| 
-							| chuyên nghiệp và 
-							span.highlight thiết kế web chuyên nghiệp. 
-							| Mình yêu cái đẹp vì thế mọi sản phẩm mình tạo ra đều có sự chỉn chu đến từng chi tiết và đẹp mắt. Ngoài ra những website mình thiết kế cũng có đầy đủ những hiệu ứng và tính năng phức tạp. 
+						h4.text-muted Hi there! I'm Nguyen Pham
+						p I live in the United States and am a 
+							span.highlight professional creative 
+							| and 
+							span.highlight professional web developer. 
+							| I love beauty, so I strive to create products that are careful, beautiful, and full of intricate features.
 					//- p.mb-3.flit-animation.fast(data-animation="fadeInUp") 
 						a.btn.btn-call-to-action.mb-2.me-3.text-num(href="https://baonguyenyam.github.io/cv" target="_blank") Hồ sơ cá nhân
 						a.btn.btn-call-to-action.mb-2.text-num(href="/data/Resume_full.pdf" target="_blank") Bản PDF
-					h4.text-num Một số mức giá tham khảo
+					h4.text-num What can I do for you?
 					ul.list-group.mt-2
 						li.list-group-item.d-flex.justify-content-between 
-							span.me-3 Thiết kế thương hiệu 
+							span.me-3 Create Brand Identity
 								strong 
 									a.btn.btn-xs.text-num(href="/data/brandidentity.pdf" target="_blank") DEMO
-							strong.text-main.text-right.text-num.text-nowrap ~ $800
+							//- strong.text-main.text-right.text-num.text-nowrap ~ $800
 						li.list-group-item.d-flex.justify-content-between 
-							span.me-3 Xây dựng website/web bán hàng 
+							span.me-3 Build a Website/Shop Online
 								strong 
 									a.btn.btn-xs.text-num(href="https://baonguyenyam.github.io/demo/Crawfish7/" target="_blank") DEMO
-							strong.text-main.text-right.text-num.text-nowrap ~ $1500 - $2500
+							//- strong.text-main.text-right.text-num.text-nowrap ~ $1500 - $2500
 						li.list-group-item.d-flex.justify-content-between 
-							span.me-3 Xây dựng phần mềm quản lý bán hàng, booking...
-							strong.text-main.text-right.text-num.text-nowrap ~ $3000
+							span.me-3 Build the Marketing Strategy
+							//- strong.text-main.text-right.text-num.text-nowrap ~ $3000
 						li.list-group-item.d-flex.justify-content-between 
-							span.me-3 Xây dựng phần mềm quản lý văn phòng luật sư, quản lý hồ sơ thuế, quản lý hồ sơ di trú...
-							strong.text-main.text-right.text-num.text-nowrap ~ $7000
+							span.me-3 Build a system for your business
+							//- strong.text-main.text-right.text-num.text-nowrap ~ $7000
 						li.list-group-item.d-flex.justify-content-between 
-							span.me-3 Xây dựng phần mềm quản lý kho hàng (inventory system)
-							strong.text-main.text-right.text-num.text-nowrap contact
+							span.me-3 Build a inventory system
+							//- strong.text-main.text-right.text-num.text-nowrap contact
 
 				.col-xxxl-6.order-xl-1.mt-5.mt-xl-0.pr-xl-5
 					.pr-xl-5.mb-5.mb-xxxl-0
@@ -100,25 +98,27 @@ block body
 		.innetplan.px-3
 			.container-fluid
 				.row
-					.col-xxxl-6
+					//- .col-xxxl-6
+					.col-xl-12
 						.d-flex.align-items-center
 						h2 
-							b.text-main Những gì
+							b.text-main What is
 							| 
-							| mình
+							| everything
 							| 
-							span.text-white.text-shadow đã sáng tạo.
-						h3.mt-3.text-num Tất cả vì sự đam mê là chính yếu
+							span.text-white.text-shadow I did?
+						h3.mt-3.text-num Passion is all around me
 						.liner
-						h4 Cách nhanh nhất để thành công là chăm chút cho thương hiệu ngay từ những buổi đầu.
-						.lead Trong mọi thương hiệu và sản phẩm mình tạo ra luôn có những câu chuyện đi cùng, bên cạnh đó là sự khác biệt về phong cách lẫn cảm xúc màu sắc, hay nói khác hơn là mình sẽ 
+						h4 The best way to get things done is to do them very well when starting from the beginning
+						//- .lead Trong mọi thương hiệu và sản phẩm mình tạo ra luôn có những câu chuyện đi cùng, bên cạnh đó là sự khác biệt về phong cách lẫn cảm xúc màu sắc, hay nói khác hơn là mình sẽ 
 							span.text-main "đo ni đóng giày" 
 							| cho quý vị. Nếu quý vị đang tìm kiếm một điều gì đó chất lượng, hãy liên lạc mình.
-				.row.mt-5.pt-lg-5.pb-lg-5
+						.lead In each product I create, I try to make it unique and different from the rest. I will garment on the style, the color, and the feel of the product. IF you are looking for a great one, please contact me.
+				//- .row.mt-5.pt-lg-5.pb-lg-5
 					.col-md-6.col-xxxl-3.mb-4
 						h3.d-flex.align-items-center.item
 							//- img(src="/img/circle-4.png", alt="", srcset="")
-							span.text-num Độc đáo
+							span.text-num Specials
 						p Mình luôn tìm và sáng tạo sự độc đáo nhất cho quý vị.
 					.col-md-6.col-xxxl-3.mb-4
 						h3.d-flex.align-items-center.item
@@ -135,7 +135,7 @@ block body
 							//- //- img(src="/img/circle-4.png", alt="", srcset="")
 							span.text-num Chuyên nghiệp
 						p Chỉ cần đưa yêu cầu, mọi sự mình sẽ sáng tạo cho quý vị.
-				.row.mt-3
+				//- .row.mt-3
 					.col-md-12
 						p Mình có thể giúp quý vị xây dựng 1 thương hiệu từ Zero hoặc cải thiện lại thương hiệu hiện có của quý vị chuyên nghiệp hơn. Các công việc bao gồm từ sáng tạo Logo, slogan, chụp ảnh, quay video, viết phần mềm quản lý, thiết kế & xây dựng website.... cho đến việc viết nội dung, sửa lỗi chính tả và dịch thuật. Mình có đủ trình độ và chuyên môn cao để giúp quý vị xây dựng thương hiệu tốt nhất.
 						p Mình có thể hướng dẫn quý vị tự tạo fanpage và quản lý cho thương hiệu của mình. Song song với việc tự vận hành online marketing một cách tiết kiệm và hiệu quả mà không cần phải thuê bất kỳ một công ty nào.
@@ -145,43 +145,48 @@ block body
 				.col.text-center 
 					h2
 						span Features 
-					h3.text-num Chi tiết các dịch vụ của mình
+					h3.text-num My services
 					.liner.center
 			.row.align-items-center.mt-5
 				.col-xxxl-6
-					h3.mt-3.text-num Về website 
-					p Bao gồm các tính năng cơ bản sau:
+					h3.mt-3.text-num Webiste 
+					p I can build your website from zero or improve your existing website.
 					ul.list-unstyled.mb-5
 						li.list-item 
 							i.fas.fa-check.me-2
-							span MIỄN PHÍ thiết kế 1 logo 
+							span FREE Logo Design 
 						li.list-item 
 							i.fas.fa-check.me-2
-							span Xây dựng các trang web, trang nhà, trang báo giá dịch vụ, trang giới thiệu, trang liên lạc, trang menu...
+							span Build the Homepage, About Page, Services Page, Contact Page...
 						li.list-item
 							i.fas.fa-check.me-2
-							span Miễn phí 1 domain + miễn phí nơi lưu trữ trong thời hạn 1 năm (hết thời hạn quý vị có thể gia hạn thêm)
-						li.list-item
-							i.fas.fa-check.me-2
-							span Đảm bảo sự an toàn và bảo mật cho website của quý vị
-						li.list-item
-							i.fas.fa-check.me-2
-							span Cung cấp một tài khoản email để quý vị tương tác với khách hàng
+							span Help you get your domain name and hosting
 						li.list-item ...
-					h3.mt-3.text-num Về brand 
-					p Bao gồm các tính năng cơ bản sau:
+						
+					h3.mt-3.text-num Branding
+					p I can build your brand identity from zero or improve your existing brand identity.
 					ul.list-unstyled
 						li.list-item 
 							i.fas.fa-check.me-2
-							span Thiết kế logo (x3), business card (x2), flyer (x1), poster (x1).
+							span Logo Design, T-Shirt Design, Brochure Design, Packaging Design...
 						li.list-item
 							i.fas.fa-check.me-2
-							span Thiết kế bộ nhân dạng thương hiệu (brand identity), đưa ra các quy tắc phong cách, màu sắc và chính sách thương hiệu cho quý vị. 
+							span Create your own brand rules, color, fonts, etc.
 						li.list-item
 							i.fas.fa-check.me-2
-							span Tạo các bản mockup cho thương hiệu.
+							span Create mockup for your brand identity
 						li.list-item ...
-					p.small.text-main.mb-5 Mình tự hào là nhà thiết kế và xây dựng web cho báo TRẺ (TRE Magazine) một tờ báo lớn của người Việt tại hải ngoại, cũng như là giúp xây dựng các thương hiệu sang trọng khác tại Hoa Kỳ.
+					h3.mt-3.text-num Sevrers
+					p I can build your website from zero or improve your existing website.
+					ul.list-unstyled
+						li.list-item 
+							i.fas.fa-check.me-2
+							span Build Cloud Server, Build Dedicated Server, Build VPS Server, Build Dedicated Server...
+						li.list-item
+							i.fas.fa-check.me-2
+							span Build your own server GIT repository, Auto Deploy, Auto Backup, Auto Update...
+						li.list-item ...	
+					p.small.text-main.mb-5 
 
 				.col-xxxl-6.mt-5.mt-xl-0.pl-xl-5
 					.pl-xl-5
