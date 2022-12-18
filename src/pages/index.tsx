@@ -124,19 +124,19 @@ const IndexPage: React.FC<PageProps> = () => {
                     <h2 className="str">UNDERSTANDING</h2>
                     <div className="num"> 10010001010</div>
                   </div>
-                  <p className="nextol">
-                  <span className="block text-bold text-white text-2xl">
+                  <p className="nextol leading-[1]">
+                  <span className="block text-bold text-white text-2xl leading-normal">
                   # Professional FullStack developer
                   </span>
-                  <span className="block text-bold text-white text-2xl">
+                  <span className="block text-bold text-white text-2xl leading-normal">
                   # Professional WordPress developer
                   </span>
-                  <span className="block text-bold text-white text-2xl mb-5">
+                  <span className="block text-bold text-white text-2xl mb-5 leading-normal">
                   # Professional Designer
                   </span>
-                  React, NextJS, Ionic, Shopifly, Zoho, Gatsby, TailwindCSS, Photoshop, Illustrator, InDesign, JavaScript, PHP, HTML/CSS, Pug, SASS, GIT, jQuery, Bootstrap, Bower, TypeScript, Babel, NodeJS, Gulp, Composer, iOS, Android, Symfony, APIs, Angular, Plesk, cPanel, MCSA, IIS, Chrome Extension...
+                  <span className="text-sm">React, NextJS, Ionic, Shopifly, Zoho, Gatsby, TailwindCSS, Photoshop, Illustrator, InDesign, JavaScript, PHP, HTML/CSS, Pug, SASS, GIT, jQuery, Bootstrap, Bower, TypeScript, Babel, NodeJS, Gulp, Composer, iOS, Android, Symfony, APIs, Angular, Plesk, cPanel, MCSA, IIS, Chrome Extension...</span>
                   </p>
-                  <ol className="font-light text-lg text-white">
+                  <ol className="font-light text-lg text-white mt-3">
                     <li className="inline-block" dangerouslySetInnerHTML={{ __html: '{ Web design },&nbsp;' }}></li>
                     <li className="inline-block" dangerouslySetInnerHTML={{ __html: '{ Web solution },&nbsp;' }}></li>
                     <li className="inline-block" dangerouslySetInnerHTML={{ __html: '{ Web development },&nbsp;' }}></li>
@@ -144,6 +144,14 @@ const IndexPage: React.FC<PageProps> = () => {
                     <li className="inline-block" dangerouslySetInnerHTML={{ __html: '{ Cloud/Server },&nbsp;' }}></li>
                     <li className="inline-block" dangerouslySetInnerHTML={{ __html: '{ SEO/SEM },&nbsp;' }}></li>
                     <li className="inline-block" dangerouslySetInnerHTML={{ __html: '{ Writer/Poem }' }}></li>
+                  </ol>
+                  <ol>
+                  <li className="mb-2 mt-10">
+                      <a className="font-light text-xl text-white" href="//wow-wp.com" target="_blank">wow-wp.com</a>
+                    </li>
+                    <li>
+                      <a className="font-light text-xl text-white" href="//myseo.website" target="_blank ">myseo.website</a>
+                    </li>
                   </ol>
                 </div>
               </div>
