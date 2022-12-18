@@ -18,32 +18,27 @@
       };
     }
   };
-
   _npnb.init();
-})(); ///////////////////////////////////
+})();
+///////////////////////////////////
 // ANIMATION
 ///////////////////////////////////
-
-
 $(function () {
   var $window = $(window),
-      win_height_padded = $window.height() * 1.1,
-      isTouch = Modernizr.touch;
-
+    win_height_padded = $window.height() * 1.1,
+    isTouch = Modernizr.touch;
   if (isTouch) {
     $('.flit-animation').addClass('animated');
   }
-
   $window.on('scroll', revealOnScroll);
-
   function revealOnScroll() {
     var scrolled = $window.scrollTop(),
-        win_height_padded = $window.height() * 1.1; // Showed...
+      win_height_padded = $window.height() * 1.1;
 
+    // Showed...
     $(".flit-animation:not(.animated)").each(function () {
       var $this = $(this),
-          offsetTop = $this.offset().top;
-
+        offsetTop = $this.offset().top;
       if (scrolled + win_height_padded > offsetTop) {
         if ($this.data('timeout')) {
           window.setTimeout(function () {
@@ -53,20 +48,20 @@ $(function () {
           $this.addClass('animated ' + $this.data('animation'));
         }
       }
-    }); // Hidden...
-
+    });
+    // Hidden...
     $(".flit-animation.animated").each(function (index) {
       var $this = $(this),
-          offsetTop = $this.offset().top;
-
+        offsetTop = $this.offset().top;
       if (scrolled + win_height_padded < offsetTop) {
         $(this).removeClass('animated fadeInUp flipInX lightSpeedIn');
       }
     });
   }
-
   revealOnScroll();
-}); // ///////////////////////////////////
+});
+
+// ///////////////////////////////////
 // // SLIDER
 // ///////////////////////////////////
 // $(document).ready(function () {
@@ -136,46 +131,40 @@ $(document).ready(function () {
   if (navigator.userAgent.match(/(iPad|iPhone|iPod|webOS|Safari)/gi) && $(window).width() < 1366) {
     $('head').append('<style>.section-services:before, .home-news:after, .home-news:before, .home-clients:before{background-attachment: scroll !important;}</style>');
   }
-}); ///////////////////////////////////
+});
+
+///////////////////////////////////
 // HEADER
 ///////////////////////////////////
-
 function setHeader(elm) {
   var mmn;
-
   if ($(window).width <= 768) {
     mmn = 70;
   } else {
     mmn = 120;
   }
-
   if (elm >= mmn) {
     $("header").addClass("active");
   } else {
     $("header").removeClass("active");
   }
 }
-
 $(document).ready(function () {
   var mmn;
-
   if ($(window).width <= 768) {
     mmn = 70;
   } else {
     mmn = 120;
   }
-
   $("header").addClass("fixedheader");
-
   if ($(window).scrollTop() >= mmn) {
     setHeader($(window).scrollTop());
   }
-
   if ($("header").hasClass("fixedheader")) {
     $("main").addClass("main-fixedheader");
   }
-}); // Fixed Header
-
+});
+// Fixed Header
 $(window).scroll(function () {
   setHeader($(document).scrollTop());
 });
@@ -193,7 +182,9 @@ $(document).ready(function () {
   $(window).on('resize', function () {
     $grid.masonry("layout");
   });
-}); // ///////////////////////////////////
+});
+
+// ///////////////////////////////////
 // // SMOOTHLY SCROLL
 // ///////////////////////////////////
 // $('a[href*="#"]')
@@ -238,6 +229,7 @@ $(document).ready(function () {
 // 			}
 // 		}
 // 	});
+
 ///////////////////////////////////
 // MENU BUTTON
 ///////////////////////////////////
@@ -246,17 +238,18 @@ $(document).ready(function () {
 // 		btn.classList.toggle("active");
 // 	});
 // });
+
 ///////////////////////////////////
 // HOME ANIMATION TEXT
 ///////////////////////////////////
-
 $(".anim-text-flow").html(function (i, html) {
   var chars = $.trim(html).split("");
   return "<span>" + chars.join("</span><span>") + "</span>";
-}); ///////////////////////////////////
+});
+
+///////////////////////////////////
 // FANCY BOX
 ///////////////////////////////////
-
 Fancybox.bind('[data-fancybox]', {
   groupAll: true,
   // Group all items
@@ -288,5 +281,6 @@ Fancybox.bind('[data-fancybox]', {
       position: "center"
     }, "zoom", "slideshow", "fullscreen", "download", "thumbs", "close"]
   }
-}); // Fancybox.Plugins.Thumbs.defaults.Carousel.preload = 0;
+});
+// Fancybox.Plugins.Thumbs.defaults.Carousel.preload = 0;
 //# sourceMappingURL=main.js.map
