@@ -165,8 +165,8 @@ const IndexPage: React.FC<PageProps> = () => {
                 </div>
               </div>
 
-              <p className="mt-16">
-                <img src={chuky} alt="" />
+              <p className="mt-16 px-10">
+                <img src={chuky} alt="" className="mx-auto max-w-[450px]" />
               </p>
 
             </div>
@@ -212,11 +212,11 @@ const IndexPage: React.FC<PageProps> = () => {
               } else {
                 setTimeout(function () {
                   if (index <= 16) {
-                    let m = (index/35)*1.6;
+                    let m = (index/65)*1.6;
                     path.style.opacity = 1;
                     path.style.stroke = 'rgba(255,255,244,'+m+')';
                   } else {
-                    let m = 1- (index/35)*1.1;
+                    let m = 1- (index/33)*1.1;
                     path.style.opacity = 1;
                     path.style.stroke = 'rgba(255,255,244,'+m+')';
                   }

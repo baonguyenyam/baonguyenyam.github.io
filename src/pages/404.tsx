@@ -11,7 +11,7 @@ const codeStyles = {
 
 const NotFoundPage: React.FC<PageProps> = () => {
   return (
-    <main className="container mx-auto my-10">
+    <main className="container mx-auto my-10 text-white">
       <h1 className="text-3xl mb-3">Page not found</h1>
       <p>
         Sorry!, we couldn’t find what you were looking for.
