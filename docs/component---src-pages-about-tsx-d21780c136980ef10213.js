@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunknguyen_app=self.webpackChunknguyen_app||[]).push([[49],{2766:function(e,n,a){a.r(n),a.d(n,{Head:function(){return l}});var t=a(7294);n.default=()=>t.createElement("main",{className:"p-10"},t.createElement("h2",null,"sadsadsa"));const l=()=>t.createElement("title",null,"Home Page")}}]);
+//# sourceMappingURL=component---src-pages-about-tsx-d21780c136980ef10213.js.map
