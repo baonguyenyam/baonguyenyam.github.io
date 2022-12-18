@@ -6,8 +6,7 @@ Homestead.yaml
 Homestead.json
 package-lock.json
 .env
-node_modules
-bower_components
+
 # @BAONGUYEN
 
 *~
