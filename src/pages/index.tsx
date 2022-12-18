@@ -6,19 +6,8 @@ import { Script, withPrefix } from "gatsby"
 // import svgAnimation from "../scripts/core.js";
 import chuky from "../images/chuky.svg";
 import opengraph from "../images/nguyen.png";
+const url = "https://nguyenpham.pro/";
 
-const docLinks = [
-  {
-    text: "TypeScript Documentation",
-    url: "https://www.gatsbyjs.com/docs/how-to/custom-configuration/typescript/",
-    color: "#8954A8",
-  },
-  {
-    text: "GraphQL Typegen Documentation",
-    url: "https://www.gatsbyjs.com/docs/how-to/local-development/graphql-typegen/",
-    color: "#8954A8",
-  }
-]
 const IndexPage: React.FC<PageProps> = () => {
 
   // window.onload = () => {
@@ -31,7 +20,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
       <Helmet>
         <script src={withPrefix('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js')}></script>
-        <meta property="og:image" content={opengraph} />
+        <meta property="og:image" content={url + opengraph} />
         <meta property="og:title" content="Nguyen Pham" />
         <meta property="og:description" content="As a creative and professional web developer, I live and work in the United States. Having a passion for beauty, I strive to create products that are elegant, beautiful, and full of detail." />
       </Helmet>
