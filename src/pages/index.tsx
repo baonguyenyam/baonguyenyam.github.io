@@ -137,13 +137,13 @@ const IndexPage: React.FC<PageProps> = () => {
                   </div>
                   <p className="nextol">
                   <span className="block text-bold text-white text-2xl">
-                    Professional FrontEnd developer
+                  # Professional FullStack developer
                   </span>
                   <span className="block text-bold text-white text-2xl">
-                    Professional WordPress developer
+                  # Professional WordPress developer
                   </span>
                   <span className="block text-bold text-white text-2xl mb-5">
-                    Professional Designer
+                  # Professional Designer
                   </span>
                   React, NextJS, Ionic, Shopifly, Zoho, Gatsby, TailwindCSS, Photoshop, Illustrator, InDesign, JavaScript, PHP, HTML/CSS, Pug, SASS, GIT, jQuery, Bootstrap, Bower, TypeScript, Babel, NodeJS, Gulp, Composer, iOS, Android, Symfony, APIs, Angular, Plesk, cPanel, MCSA, IIS, Chrome Extension...
                   </p>
