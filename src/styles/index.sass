@@ -79,19 +79,19 @@ a
 			h1
 				font-size: 154px
 			p
-				font-size: 1.8em
+				font-size: 1.3em
 				white-space: nowrap
 		@media screen and (min-width: 992px)
 			h1
 				font-size: 190px
 			p
-				font-size: 2em
+				font-size: 1.5em
 				letter-spacing: 3px
 		@media screen and (min-width: 1200px)
 			h1
 				font-size: 250px
 			p
-				font-size: 2.5em
+				font-size: 2em
 		@media screen and (min-width: 1400px)
 			h1
 				font-size: 272px
@@ -107,17 +107,17 @@ a
 			h1
 				font-size: 352px
 			p
-				font-size: 3.5em
+				font-size: 3.2em
 		@media screen and (min-width: 2000px)
 			h1
 				font-size: 398px
 			p
-				font-size: 4em
+				font-size: 3.5em
 		@media screen and (min-width: 2200px)
 			h1
 				font-size: 420px
 			p
-				font-size: 4.5em
+				font-size: 4em
 
 #home-list-action
 	color: #fff
@@ -242,6 +242,15 @@ a
 				width: 22px
 				height: 4px
 				background: #dfdfdf
+			&.md 
+				&:after
+					width: 18px
+			&.xl 
+				&:after
+					width: 24px
+			&.xxl 
+				&:after
+					width: 30px
 		&.style-1
 			.made-icon
 				border: 2px solid #7895A4
@@ -286,6 +295,30 @@ a
 				-webkit-background-clip: text
 				background-clip: text
 				-webkit-text-fill-color: transparent
+				-webkit-text-fill-color: transparent
+		&.style-5
+			.made-icon
+				border: 2px solid #447e45
+				color: #447e45
+				&:after
+					background: #447e45
+			.made-title h2
+				background: radial-gradient(#447e45, #447e45)
+				-webkit-background-clip: text
+				background-clip: text
+				-webkit-text-fill-color: transparent
+				-webkit-text-fill-color: transparent
+		&.style-6
+			.made-icon
+				border: 2px solid #5e669a
+				color: #5e669a
+				&:after
+					background: #5e669a
+			.made-title h2
+				background: radial-gradient(#5e669a, #5e669a)
+				-webkit-background-clip: text
+				background-clip: text
+				-webkit-text-fill-color: transparent
 	@media screen and (min-width: 768px)
 		.item
 			.desc
@@ -306,6 +339,15 @@ a
 				&:after
 					width: 26px
 					height: 5px
+				&.md 
+					&:after
+						width: 24px
+				&.xl 
+					&:after
+						width: 30px
+				&.xxl 
+					&:after
+						width: 34px
 			.desc
 				p
 					margin-top: 3rem

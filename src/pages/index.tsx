@@ -69,7 +69,7 @@ const IndexPage: React.FC<PageProps> = () => {
         </svg>
         <div className="madeinfo">
           <h1 className="word">N.PHAM</h1>
-          <p>BRAND DESIGNER AND WEB DEVELOPER</p>
+          <p>BRAND CREATIVE AND WEB DEVELOPMENT</p>
         </div>
       </div>
 
@@ -82,7 +82,7 @@ const IndexPage: React.FC<PageProps> = () => {
                 <div className="desc">
                   <div className="made-title">
                     <h2 className="str">ABOUT ME</h2>
-                    <div className="num" dangerouslySetInnerHTML={{ __html: '{ let me = doIT; }' }} />
+                    <div className="num leading-[1.1]" dangerouslySetInnerHTML={{ __html: '{ let me = doIT; }' }} />
                   </div>
                   <p className="nextol">
                   As a creative and professional web developer, I live and work in the United States. Having a passion for beauty, I strive to create products that are elegant, beautiful, and full of detail.
@@ -97,12 +97,12 @@ const IndexPage: React.FC<PageProps> = () => {
                   </ol>
                 </div>
               </div>
-              <div className="item style-2 active">
-                <div className="made-icon">N </div>
+              <div className="item style-3 active">
+                <div className="made-icon md">P </div>
                 <div className="desc">
                   <div className="made-title">
                     <h2 className="str">PORTFOLIO</h2>
-                    <div className="num"> lint(`What do I do?`)</div>
+                    <div className="num leading-[1.1]"> lint(`What do I do?`)</div>
                   </div>
                   <p className="nextol">
                     <span className="text-replace" id="text-replace"><span className="main">print</span><span className="text3">('Hello, I am Nguyen Pham!')</span>  <br/><span className="main">IamWorkingOn</span><span className="text3">('my monster's computer, drinking coffee, and thinking about some food...')</span>  <br /><span className="include">let</span> projects <span className="text3">&gt;</span> <span className="main2">100</span>  <br /><span className="include">let</span> skillsEngineers <span className="text3">≈</span> <span className="main2">'90%'</span>  <br /><span className="include">let</span> labs <span className="text3">=</span> <span className="text2">Taco Bell</span>  <br /><span className="include">let</span> hire <span className="text3">=</span> <span className="text2">available</span>  <br /><span className="include">let</span> DOB <span className="text3">=</span> <span className="main">'Aug 16-1983'</span>  <br /><span className="include">let</span> location <span className="text3">=</span> <span className="text2">"Fort Worth, Texas"</span>  <br /><span className="include">let</span> Companies <span className="text3">&gt;</span> <span className="text2">6</span><br /><br /></span>
@@ -117,12 +117,12 @@ const IndexPage: React.FC<PageProps> = () => {
                   </ol>
                 </div>
               </div>
-              <div className="item style-3 active">
-                <div className="made-icon">N </div>
+              <div className="item style-6 active">
+                <div className="made-icon">H </div>
                 <div className="desc">
                   <div className="made-title">
                     <h2 className="str">UNDERSTANDING</h2>
-                    <div className="num"> 10010001010</div>
+                    <div className="num leading-[1.1]"> 01001110 01010000</div>
                   </div>
                   <p className="nextol leading-[1]">
                   <span className="block text-bold text-white text-2xl leading-normal">
@@ -156,11 +156,21 @@ const IndexPage: React.FC<PageProps> = () => {
                 </div>
               </div>
               <div className="item style-4 active">
-                <div className="made-icon">N </div>
+                <div className="made-icon xl">A </div>
+                <div className="desc">
+                  <div className="made-title">
+                    <h2 className="str">THINK</h2>
+                    <div className="num leading-[1.1]" dangerouslySetInnerHTML={{ __html: '&gt;＿' }} />
+                  </div>
+                  <p>It used to be my belief: Design and code were my passion until I suddenly realized it was <span className="text-white">my life.</span></p>
+                </div>
+              </div>
+              <div className="item style-5 active">
+                <div className="made-icon xl">M </div>
                 <div className="desc">
                   <div className="made-title">
                     <h2 className="str">TOUCH</h2>
-                    <div className="num" dangerouslySetInnerHTML={{ __html: '&lt;!-- ping --&gt;' }} />
+                    <div className="num leading-[1.1]" dangerouslySetInnerHTML={{ __html: '&lt;!— ping —&gt;' }} />
                   </div>
                   <p>Would you like to speak to a live person right away? Please cal 911. Alternatively, you can send me an email at <span className="text-white">bAoNgUyEnYaM@gmail.com</span></p>
                 </div>
