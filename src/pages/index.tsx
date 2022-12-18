@@ -141,8 +141,8 @@ const IndexPage: React.FC<PageProps> = () => {
                     <li className="inline-block" dangerouslySetInnerHTML={{ __html: '{ Web solution },&nbsp;' }}></li>
                     <li className="inline-block" dangerouslySetInnerHTML={{ __html: '{ Web development },&nbsp;' }}></li>
                     <li className="inline-block" dangerouslySetInnerHTML={{ __html: '{ Web system },&nbsp;' }}></li>
-                    <li className="inline-block" dangerouslySetInnerHTML={{ __html: '{ Cloud/Server,&nbsp;}' }}></li>
-                    <li className="inline-block" dangerouslySetInnerHTML={{ __html: '{ SEO/SEM,&nbsp; }' }}></li>
+                    <li className="inline-block" dangerouslySetInnerHTML={{ __html: '{ Cloud/Server },&nbsp;' }}></li>
+                    <li className="inline-block" dangerouslySetInnerHTML={{ __html: '{ SEO/SEM },&nbsp;' }}></li>
                     <li className="inline-block" dangerouslySetInnerHTML={{ __html: '{ Writer/Poem }' }}></li>
                   </ol>
                 </div>
