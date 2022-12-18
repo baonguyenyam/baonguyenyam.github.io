@@ -119,7 +119,7 @@ const IndexPage: React.FC<PageProps> = () => {
                       <a className="font-light text-xl text-white" href="//baonguyenyam.github.io/cv" target="_blank">résume();</a>
                     </li>
                     <li>
-                      <a className="font-light text-xl text-white" href="//baonguyenyam.github.io/portfolio/docs" target="_blank">portfolio();</a>
+                      <a className="font-light text-xl text-white" href="//baonguyenyam.github.io/portfolio" target="_blank">portfolio();</a>
                     </li>
                   </ol>
                 </div>
