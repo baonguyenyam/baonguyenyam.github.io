@@ -196,7 +196,7 @@ const IndexPage: React.FC<PageProps> = () => {
             svg.style.transform = 'translateX(' + stranslateX + 'px)';
             if(svgHeight > windowHeight) {
               var svgTop = svg.getBoundingClientRect().top;
-              var stranslateY = (svgHeight - windowHeight) + (svgTop / 2);
+              var stranslateY = (svgHeight - windowHeight + 40) / 2;
               document.getElementById('home-madelayout').style.transform = 'translateY(-' + stranslateY + 'px)';
             }
           }
