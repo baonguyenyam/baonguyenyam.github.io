@@ -1,5 +1,10 @@
 .text-replace 
 	color: #d7d7d7
+	display: block
+	padding: 2rem
+	background: #131517
+	border-radius: 18px
+	margin-bottom: 2rem
 .text-replace .include,
 .text-replace .include2
 	color: #f92672
@@ -15,6 +20,7 @@
 
 .text-replace .text2
 	color: #e6db74
+
 
 a 
 	border-bottom: 1px dashed #fff
@@ -132,10 +138,12 @@ a
 		background-size: contain
 	.item
 		display: flex
-		flex-direction: row
+		flex-direction: column
 		transition: opacity .3s ease-in-out
 		position: relative
 		padding: 3rem 0
+		@media screen and (min-width: 760px)
+			flex-direction: row
 		&:first-child
 			padding-top: 0 !important
 		&:after
@@ -152,6 +160,7 @@ a
 			left: 50%
 			transform: translateX(-50%)
 		.desc
+			padding-right: 1rem
 			padding-left: 1rem
 			display: flex
 			flex-direction: column
@@ -204,13 +213,14 @@ a
 					// -webkit-background-clip: unset
 					// background-clip: unset
 					// -webkit-text-fill-color: #fff
-					padding-left: 1rem
+					color: #535353
+					// padding-left: 1rem
 					position: relative
 					@media screen and (min-width: 750px)
 						margin-left: 1rem
+						padding-left: 1rem
 					&:before
 						content: ''
-						display: block
 						width: 2px
 						height: 80%
 						top: 10%
@@ -218,6 +228,10 @@ a
 						background: #fff
 						background-size: 100% 100%
 						position: absolute
+						display: none
+						@media screen and (min-width: 750px)
+							display: block
+
 		.made-icon
 			width: 48px
 			height: 48px
@@ -236,6 +250,7 @@ a
 			flex-direction: column
 			user-select: none
 			position: relative
+			margin-left: 1rem
 			&:after
 				content: ''
 				display: block

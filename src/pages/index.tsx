@@ -88,7 +88,7 @@ const IndexPage: React.FC<PageProps> = () => {
                   As a creative and professional web developer, I live and work in the United States. Having a passion for beauty, I strive to create products that are elegant, beautiful, and full of detail.
                   </p>
                   <ol>
-                  <li className="mb-2">
+                  <li className="mt-8 mb-2">
                       <a className="font-light text-xl text-white" href="//nguyenfamily.us" target="_blank">nguyenfamily.us</a>
                     </li>
                     <li>
@@ -105,7 +105,7 @@ const IndexPage: React.FC<PageProps> = () => {
                     <div className="num leading-[1.1]"> lint(`What do I do?`)</div>
                   </div>
                   <p className="nextol">
-                    <span className="text-replace" id="text-replace"><span className="main">print</span><span className="text3">('Hello, I am Nguyen Pham!')</span>  <br/><span className="main">IamWorkingOn</span><span className="text3">('my monster's computer, drinking coffee, and thinking about some food...')</span>  <br /><span className="include">let</span> projects <span className="text3">&gt;</span> <span className="main2">100</span>  <br /><span className="include">let</span> skillsEngineers <span className="text3">≈</span> <span className="main2">'90%'</span>  <br /><span className="include">let</span> labs <span className="text3">=</span> <span className="text2">Taco Bell</span>  <br /><span className="include">let</span> hire <span className="text3">=</span> <span className="text2">available</span>  <br /><span className="include">let</span> DOB <span className="text3">=</span> <span className="main">'Aug 16-1983'</span>  <br /><span className="include">let</span> location <span className="text3">=</span> <span className="text2">"Fort Worth, Texas"</span>  <br /><span className="include">let</span> Companies <span className="text3">&gt;</span> <span className="text2">6</span><br /><br /></span>
+                    <span className="text-replace" id="text-replace"><span className="main">print</span><span className="text3">('Hello, I am Nguyen Pham!')</span>  <br/><span className="main">IamWorkingOn</span><span className="text3">('my monster's computer, drinking coffee, and thinking about some food...')</span>  <br /><span className="include">let</span> projects <span className="text3">&gt;</span> <span className="main2">100</span>  <br /><span className="include">let</span> skillsEngineers <span className="text3">≈</span> <span className="main2">'90%'</span>  <br /><span className="include">let</span> labs <span className="text3">=</span> <span className="text2">Taco Bell</span>  <br /><span className="include">let</span> hire <span className="text3">=</span> <span className="text2">available</span>  <br /><span className="include">let</span> DOB <span className="text3">=</span> <span className="main">'Aug 16-1983'</span>  <br /><span className="include">let</span> location <span className="text3">=</span> <span className="text2">"Fort Worth, Texas"</span>  <br /><span className="include">let</span> Companies <span className="text3">&gt;</span> <span className="text2">6</span></span>
                   </p>
                   <ol>
                     <li className="mb-2">
