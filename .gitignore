@@ -9,6 +9,9 @@ package-lock.json
 node_modules
 bower_components
 # @BAONGUYEN
+node_modules/
+.cache/
+src/gatsby-types.d.ts
 
 *~
 *.sw[mnpcod]
