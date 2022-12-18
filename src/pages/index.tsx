@@ -69,7 +69,7 @@ const IndexPage: React.FC<PageProps> = () => {
         </svg>
         <div className="madeinfo">
           <h1 className="word">N.PHAM</h1>
-          <p>BRAND CREATIVE AND WEB DEVELOPMENT</p>
+          <p>BRAND CREATIVE <span className="block md:inline">AND WEB DEVELOPMENT</span></p>
         </div>
       </div>
 
@@ -126,10 +126,10 @@ const IndexPage: React.FC<PageProps> = () => {
                   </div>
                   <p className="nextol leading-[1]">
                   <span className="block text-bold text-white text-2xl leading-normal">
-                  # Professional FullStack developer
+                  # Professional FullStack <span className="hidden md:inline"> developer</span>
                   </span>
                   <span className="block text-bold text-white text-2xl leading-normal">
-                  # Professional WordPress developer
+                  # Professional WordPress <span className="hidden md:inline"> developer</span>
                   </span>
                   <span className="block text-bold text-white text-2xl mb-5 leading-normal">
                   # Professional Designer
