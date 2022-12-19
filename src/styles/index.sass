@@ -139,9 +139,15 @@ a
 	.item
 		display: flex
 		flex-direction: column
-		transition: opacity .3s ease-in-out
+		transition: ease-in-out all 1s
 		position: relative
 		padding: 3rem 0
+		opacity: 0
+		transform: translateY(100px)
+		&.active 
+			opacity: calc(var(--visible-y))
+			transform: translateY(0px)
+
 		@media screen and (min-width: 760px)
 			flex-direction: row
 		&:first-child
@@ -334,6 +340,20 @@ a
 				-webkit-background-clip: text
 				background-clip: text
 				-webkit-text-fill-color: transparent
+		&.active
+			opacity: calc(var(--visible-y))
+			// .desc 
+			// 	p 
+			// 		color: #fff
+			// 		animation: madeflip 0.5s .5s ease-in-out forwards
+			// 	.made-title 
+			// 		h2 
+			// 			&:before 
+			// 				animation: animstr .5s ease-in-out forwards
+			// 		.num 
+			// 			animation: num .5s .25s ease-in-out forwards
+			// &:after
+			// 	animation: fullwidth 0.5s ease-in-out forwards
 	@media screen and (min-width: 768px)
 		.item
 			.desc

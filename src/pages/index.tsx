@@ -77,7 +77,7 @@ const IndexPage: React.FC<PageProps> = () => {
         <div className="container mx-auto pt-5 md:pt-20">
           <div className="mx-auto max-w-[800px]">
             <div className="px-3 lg:px-5 xl:px-8" id="home-list-action-list">
-              <div className="item style-1 active">
+              <div className="item style-1" data-scroll data-class="active">
                 <div className="made-icon">N </div>
                 <div className="desc">
                   <div className="made-title">
@@ -97,7 +97,7 @@ const IndexPage: React.FC<PageProps> = () => {
                   </ol>
                 </div>
               </div>
-              <div className="item style-3 active">
+              <div className="item style-3" data-scroll data-class="active">
                 <div className="made-icon md">P </div>
                 <div className="desc">
                   <div className="made-title">
@@ -117,7 +117,7 @@ const IndexPage: React.FC<PageProps> = () => {
                   </ol>
                 </div>
               </div>
-              <div className="item style-6 active">
+              <div className="item style-6" data-scroll data-class="active">
                 <div className="made-icon">H </div>
                 <div className="desc">
                   <div className="made-title">
@@ -134,7 +134,7 @@ const IndexPage: React.FC<PageProps> = () => {
                   <span className="block text-bold text-white text-2xl mb-5 leading-normal">
                   # Professional Designer
                   </span>
-                  <span className="text-sm">React, NextJS, Ionic, Shopifly, Zoho, Gatsby, TailwindCSS, Photoshop, Illustrator, InDesign, JavaScript, PHP, HTML/CSS, Pug, SASS, GIT, jQuery, Bootstrap, Bower, TypeScript, Babel, NodeJS, Gulp, Composer, iOS, Android, Symfony, APIs, Angular, Plesk, cPanel, MCSA, IIS, Chrome Extension...</span>
+                  <span className="text-sm">React, NextJS, Ionic, Shopifly, Zoho, Gatsby, TailwindCSS, Photoshop, Illustrator, InDesign, JavaScript, PHP, mySQL, GraphiQL, HTML/CSS, Pug, SASS, GIT, jQuery, Bootstrap, TypeScript, Babel, NodeJS, Gulp, Composer, iOS, Android, Symfony, APIs, Angular, Plesk, cPanel, MCSA, IIS, Chrome Extension...</span>
                   </p>
                   <ol className="font-light text-lg text-white mt-3">
                     <li className="inline-block" dangerouslySetInnerHTML={{ __html: '{ Web design },&nbsp;' }}></li>
@@ -155,7 +155,7 @@ const IndexPage: React.FC<PageProps> = () => {
                   </ol>
                 </div>
               </div>
-              <div className="item style-4 active">
+              <div className="item style-4" data-scroll data-class="active">
                 <div className="made-icon xl">A </div>
                 <div className="desc">
                   <div className="made-title">
@@ -165,7 +165,7 @@ const IndexPage: React.FC<PageProps> = () => {
                   <p>It used to be my belief: Design and code were my passion until I suddenly realized it was <span className="text-white">my life.</span></p>
                 </div>
               </div>
-              <div className="item style-5 active">
+              <div className="item style-5" data-scroll data-class="active">
                 <div className="made-icon xl">M </div>
                 <div className="desc">
                   <div className="made-title">
@@ -187,6 +187,29 @@ const IndexPage: React.FC<PageProps> = () => {
 
       <Script>
         {`
+          function elmOnScroll() {
+            var scroll = document.documentElement.scrollTop || document.body.scrollTop;
+            var elms = document.querySelectorAll("#home-list-action-list .item");
+            var whp = window.innerHeight/5;
+            elms.forEach(function (elm, index) {
+              var elmTop = elm.getBoundingClientRect().top;
+              var elmHeight = elm.getBoundingClientRect().height;
+              var elmBottom = elmTop + elmHeight;
+              if((elmTop < window.innerHeight && elmTop > 0) || (elmBottom > 0 && elmBottom < window.innerHeight)) {
+                var qs = elm.getAttribute("data-class");
+                elm.classList.add(qs);
+                if((elmTop + 200) >= (window.innerHeight + scroll)) {
+                  var opacity = 0.8 - ((elmTop + 200) - (window.innerHeight + scroll)) / 200;
+                  elm.setAttribute("style", '--visible-y: '+opacity+';');
+                } else {
+                  elm.setAttribute("style", '--visible-y: 1');
+                }
+              } else {
+                var qs = elm.getAttribute("data-class");
+                // elm.classList.remove(qs);
+              }
+            })
+          }
           function svgFullWidthHeight() {
             var svg = document.querySelector('#home-madelayout svg');
             var svgWidth = svg.getBoundingClientRect().width;
@@ -213,28 +236,39 @@ const IndexPage: React.FC<PageProps> = () => {
           }
           var path = document.querySelectorAll('#home-madelayout svg path');
           path.forEach(function (path, index) {
-              if (index === 0) {
-                path.style.strokeDasharray = 8500;
-                path.style.strokeDashoffset = 8500;
-                path.style.stroke = '#fff';
-                path.getBoundingClientRect();
-                path.style.transition = path.style.WebkitTransition = 'stroke-dashoffset 4s ease-in-out';
-                path.style.strokeDashoffset = '0';
-              } else {
-                setTimeout(function () {
-                  if (index <= 16) {
-                    let m = (index/65)*1.6;
-                    path.style.opacity = 1;
-                    path.style.stroke = 'rgba(255,255,244,'+m+')';
-                  } else {
-                    let m = 1- (index/33)*1.1;
-                    path.style.opacity = 1;
-                    path.style.stroke = 'rgba(255,255,244,'+m+')';
-                  }
-                }, (1800 + (index * 100)));
-              }
+            if (index === 0) {
+              path.style.strokeDasharray = 8500;
+              path.style.strokeDashoffset = 8500;
+              path.style.stroke = '#fff';
+              path.getBoundingClientRect();
+              path.style.transition = path.style.WebkitTransition = 'stroke-dashoffset 4s ease-in-out';
+              path.style.strokeDashoffset = '0';
+            } else {
+              setTimeout(function () {
+                if (index <= 16) {
+                  let m = (index/65)*1.6;
+                  path.style.opacity = 1;
+                  path.style.stroke = 'rgba(255,255,244,'+m+')';
+                } else {
+                  let m = 1- (index/33)*1.1;
+                  path.style.opacity = 1;
+                  path.style.stroke = 'rgba(255,255,244,'+m+')';
+                }
+              }, (1800 + (index * 100)));
+            }
           });
           svgFullWidthHeight()
+          setTimeout(function () {
+            elmOnScroll();
+          }, 5500);
+          window.onscroll = function () {
+            elmOnScroll();
+          };
+          var Winscroll = document.documentElement.scrollTop || document.body.scrollTop;
+          if (Winscroll > 100)  {
+            elmOnScroll();
+          }
+
       `}
       </Script>
 
