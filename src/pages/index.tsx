@@ -16,7 +16,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
   return (
 
-    <main>
+    <main className="bg-black">
 
       <Helmet>
         <script src={withPrefix('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js')}></script>
@@ -25,7 +25,7 @@ const IndexPage: React.FC<PageProps> = () => {
         <meta property="og:description" content="As a creative and professional web developer, I live and work in the United States. Having a passion for beauty, I strive to create products that are elegant, beautiful, and full of detail." />
       </Helmet>
 
-      <div id="home-madelayout" className="mt-10 xl:mt-30 bg-black">
+      <div id="home-madelayout" className="pt-10 xl:pt-30 bg-black">
 
         <svg version="1.1" id="homemade-svg" x="0px" y="0px" viewBox="0 0 1305.4 862.3">
           
