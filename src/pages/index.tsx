@@ -19,7 +19,6 @@ const IndexPage: React.FC<PageProps> = () => {
     <main className="bg-black">
 
       <Helmet>
-        <script src={withPrefix('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js')}></script>
         <meta property="og:image" content={url + opengraph} />
         <meta property="og:title" content="Nguyen Pham" />
         <meta property="og:description" content="As a creative and professional web developer, I live and work in the United States. Having a passion for beauty, I strive to create products that are elegant, beautiful, and full of detail." />
@@ -132,7 +131,7 @@ const IndexPage: React.FC<PageProps> = () => {
                   # Professional WordPress <span className="hidden md:inline"> developer</span>
                   </span>
                   <span className="block text-bold text-white text-2xl mb-5 leading-normal">
-                  # Professional Designer
+                  # Professional Creative Designer
                   </span>
                   <span className="text-sm">React, NextJS, Ionic, Shopifly, Zoho, Gatsby, TailwindCSS, Photoshop, Illustrator, InDesign, JavaScript, PHP, mySQL, GraphiQL, HTML/CSS, Pug, SASS, GIT, jQuery, Bootstrap, TypeScript, Babel, NodeJS, Gulp, Composer, iOS, Android, Symfony, APIs, Angular, Plesk, cPanel, MCSA, IIS, Chrome Extension...</span>
                   </p>
