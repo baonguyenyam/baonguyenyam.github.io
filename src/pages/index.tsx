@@ -132,7 +132,7 @@ const IndexPage: React.FC<PageProps> = () => {
                   # Professional WordPress <span className="hidden md:inline"> developer</span>
                   </span>
                   <span className="block text-bold text-white text-2xl mb-5 leading-normal">
-                  # Professional Designer
+                  # Professional Creative <span className="hidden md:inline"> designer</span>
                   </span>
                   <span className="text-sm">React, NextJS, Ionic, Shopifly, Zoho, Gatsby, TailwindCSS, Photoshop, Illustrator, InDesign, JavaScript, PHP, mySQL, GraphiQL, HTML/CSS, Pug, SASS, GIT, jQuery, Bootstrap, TypeScript, Babel, NodeJS, Gulp, Composer, iOS, Android, Symfony, APIs, Angular, Plesk, cPanel, MCSA, IIS, Chrome Extension...</span>
                   </p>

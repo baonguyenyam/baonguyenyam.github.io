@@ -1,5 +1,4 @@
 echo CleanUP...
-rm -rf public
 rm -rf docs/static
 rm -rf docs/*.js
 rm -rf docs/*.json

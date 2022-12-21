@@ -11,7 +11,7 @@
     "develop": "gatsby develop",
     "start": "sh app.sh",
     "dev": "gatsby develop",
-    "build": "gatsby build && sh clean.sh && sh copy.sh",
+    "build": "rm -rf public && gatsby build && sh clean.sh && sh copy.sh",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit"
