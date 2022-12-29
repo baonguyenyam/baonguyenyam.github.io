@@ -6,6 +6,7 @@ import { Script, withPrefix } from "gatsby"
 // import svgAnimation from "../scripts/core.js";
 import chuky from "../images/chuky.svg";
 import opengraph from "../images/nguyen.png";
+import resume from "../data/resume.pdf";
 const url = "https://nguyenpham.pro/";
 
 const IndexPage: React.FC<PageProps> = () => {
@@ -109,7 +110,10 @@ const IndexPage: React.FC<PageProps> = () => {
                   </p>
                   <ol>
                     <li className="mb-2">
-                      <a className="font-light text-xl text-white" href="//baonguyenyam.github.io/cv" target="_blank">résume();</a>
+                      <a className="font-light text-xl text-white" href={resume} target="_blank">résume();</a>
+                    </li>
+                    <li className="mb-2">
+                      <a className="font-light text-xl text-white" href="//baonguyenyam.github.io/cv" target="_blank">Curriculum Vitae();</a>
                     </li>
                     <li>
                       <a className="font-light text-xl text-white" href="//baonguyenyam.github.io/portfolio" target="_blank">portfolio();</a>
