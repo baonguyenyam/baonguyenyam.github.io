@@ -69,7 +69,7 @@ const IndexPage: React.FC<PageProps> = () => {
           
         </svg>
         <div className="madeinfo">
-          <h1 className="word">N.PHAM</h1>
+          <h1 className="word">NGUYEN</h1>
           <p>BRAND CREATIVE <span className="block md:inline">AND WEB DEVELOPMENT</span></p>
         </div>
       </div>
@@ -106,7 +106,28 @@ const IndexPage: React.FC<PageProps> = () => {
                     <div className="num leading-[1.1]"> lint(`What do I do?`)</div>
                   </div>
                   <p className="nextol">
-                    <span className="text-replace" id="text-replace"><span className="main">print</span><span className="text3">('Hello, I am Nguyen Pham!')</span>  <br/><span className="main">IamWorkingOn</span><span className="text3">('my monster's computer, drinking coffee, and thinking about some food...')</span>  <br /><span className="include">let</span> projects <span className="text3">&gt;</span> <span className="main2">100</span>  <br /><span className="include">let</span> skillsEngineers <span className="text3">≈</span> <span className="main2">'90%'</span>  <br /><span className="include">let</span> labs <span className="text3">=</span> <span className="text2">Taco Bell</span>  <br /><span className="include">let</span> hire <span className="text3">=</span> <span className="text2">available</span>  <br /><span className="include">let</span> DOB <span className="text3">=</span> <span className="main">'Aug 16-1983'</span>  <br /><span className="include">let</span> location <span className="text3">=</span> <span className="text2">"Fort Worth, Texas"</span>  <br /><span className="include">let</span> Companies <span className="text3">&gt;</span> <span className="text2">6</span></span>
+                    <span className="text-replace" id="text-replace">
+                      
+                      <span className="note">// nguyenProfile.tsx</span><br />
+                      <span className="style-1">import</span> <span className="style-2">&#123;</span> <span className="style-3">nguyenPham</span> <span className="style-2">&#125;</span> <span className="style-1">from</span> <span className="style-4">DFW</span><span className="style-5">;</span><br />
+                      <span className="style-1">import</span> <span className="style-2">&#123;</span> <span className="style-3">Web design, App, Web development, Cloud/Server, SEO/SEM, Writer/Poem</span> <span className="style-2">&#125;</span> <span className="style-1">from</span> <span className="style-4">Self<span className="style-5">;</span></span><br /><br />
+                      <span className="style-6">type</span> <span className="style-5">skillsEngineers =</span> <span className="style-2">&#123;</span> <br />
+                          &nbsp;&nbsp;&nbsp;&nbsp;<span className="style-3">hire?: </span><span className="style-8">available</span><span className="style-5">;</span><br />
+                      &nbsp;&nbsp;&nbsp;&nbsp;<span className="style-3">dob?: </span><span className="style-9">'Aug 16-1983'</span><span className="style-5">;</span><br />
+                      &nbsp;&nbsp;&nbsp;&nbsp;<span className="style-3">location?: </span><span className="style-4">"Fort Worth, Texas"</span><span className="style-5">;</span><br />
+                      <span className="style-2">&#125;</span>;<br /><br />
+                      <span className="style-6">class</span> <span className="style-7">Resume</span> <span className="style-6">extends</span> <span className="style-7">Docs</span> <span className="style-2">&#123;</span><br />
+                          &nbsp;&nbsp;&nbsp;&nbsp;<span className="style-2">render</span><span className="style-1">() &#123;</span> <br />
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="style-1">return</span> <span className="style-2">(</span><br />
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="style-3">&lt;</span><span className="style-9">Hello</span><span className="style-3">&gt;</span><span className="style-5">I am Nguyen Pham!</span><span className="style-3">&lt;/</span><span className="style-9">Hello<span className="style-3">&gt;</span></span><br />
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span className="style-3">&lt;</span><span className="style-9">IamWorking</span> <span className="style-3">on</span><span className="style-5">=</span><span className="style-2">&#123;</span> <span className="style-4">`my monster's computer, drinking coffee, and thinking about some food...`<span className="style-2">&#125; </span></span><span className="style-3">/&gt;</span><br />
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="style-2">)</span><span className="style-5">;</span><br />
+                      &nbsp; &nbsp; <span className="style-1">&#125;</span><br />
+                      <span className="style-2">&#125;</span><br />
+                      <span className="style-1">export default</span> <span className="style-7">Resume<span className="style-5">;</span></span>
+                      
+                      
+                      </span>
                   </p>
                   <ol>
                     <li className="mb-2">
