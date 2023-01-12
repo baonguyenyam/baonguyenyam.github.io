@@ -159,8 +159,53 @@ const IndexPage: React.FC<PageProps> = () => {
                   <span className="block text-bold text-white text-2xl mb-5 leading-normal">
                   # Professional Creative <span className="hidden md:inline"> designer</span>
                   </span>
-                  <span className="text-sm">React, NextJS, Ionic, Shopifly, Zoho, Gatsby, TailwindCSS, Photoshop, Illustrator, InDesign, JavaScript, PHP, mySQL, GraphiQL, HTML/CSS, Pug, SASS, GIT, jQuery, Bootstrap, TypeScript, Babel, NodeJS, Gulp, Composer, iOS, Android, Symfony, APIs, Angular, Plesk, cPanel, MCSA, IIS, Chrome Extension...</span>
+                  <span className="text-sm">React, NextJS, Ionic, Shopifly, Prisma, Zoho, Gatsby, TailwindCSS, Photoshop, Illustrator, InDesign, JavaScript, PHP, mySQL, GraphiQL, HTML/CSS, Pug, SASS, GIT, jQuery, Bootstrap, TypeScript, Babel, NodeJS, Gulp, Composer, iOS, Android, Symfony, APIs, Angular, Plesk, cPanel, MCSA, IIS, Chrome Extension...</span>
                   </p>
+                  <div className="md:pr-[3rem]">
+                    <div className="mb-1 text-base flex justify-between">
+                      <span className="text-stone-400">FrontEnd</span>
+                      <span className="text-stone-300 font-light">Master</span>
+                    </div>
+                    <div className="w-full r-[3rem] bg-stone-600 rounded-full h-1.5 mb-4">
+                      <div className="bg-stone-800 h-1.5 rounded-full" style={{width: '96%'}}></div>
+                    </div>
+                  </div>
+                  <div className="md:pr-[3rem]">
+                    <div className="mb-1 text-base flex justify-between">
+                      <span className="text-stone-400">PHP/WordPress</span>
+                      <span className="text-stone-300 font-light">Very strong</span>
+                    </div>
+                    <div className="w-full r-[3rem] bg-stone-600 rounded-full h-1.5 mb-4">
+                      <div className="bg-stone-800 h-1.5 rounded-full" style={{width: '90%'}}></div>
+                    </div>
+                  </div>
+                  <div className="md:pr-[3rem]">
+                    <div className="mb-1 text-base flex justify-between">
+                      <span className="text-stone-400">React/Vue/Node</span>
+                      <span className="text-stone-300 font-light">Strong</span>
+                    </div>
+                    <div className="w-full r-[3rem] bg-stone-600 rounded-full h-1.5 mb-4">
+                      <div className="bg-stone-800 h-1.5 rounded-full" style={{width: '85%'}}></div>
+                    </div>
+                  </div>
+                  <div className="md:pr-[3rem]">
+                    <div className="mb-1 text-base flex justify-between">
+                      <span className="text-stone-400">PS/Ai/In</span>
+                      <span className="text-stone-300 font-light">Strong</span>
+                    </div>
+                    <div className="w-full r-[3rem] bg-stone-600 rounded-full h-1.5 mb-4">
+                      <div className="bg-stone-800 h-1.5 rounded-full" style={{width: '94%'}}></div>
+                    </div>
+                  </div>
+                  <div className="md:pr-[3rem]">
+                    <div className="mb-1 text-base flex justify-between">
+                      <span className="text-stone-400">Server</span>
+                      <span className="text-stone-300 font-light">Strong</span>
+                    </div>
+                    <div className="w-full r-[3rem] bg-stone-600 rounded-full h-1.5 mb-4">
+                      <div className="bg-stone-800 h-1.5 rounded-full" style={{width: '80%'}}></div>
+                    </div>
+                  </div>
                   <ol className="font-light text-lg text-white mt-3">
                     <li className="inline-block" dangerouslySetInnerHTML={{ __html: '{ Web design },&nbsp;' }}></li>
                     <li className="inline-block" dangerouslySetInnerHTML={{ __html: '{ Web solution },&nbsp;' }}></li>
