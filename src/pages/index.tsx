@@ -159,7 +159,7 @@ const IndexPage: React.FC<PageProps> = () => {
                   <span className="block text-bold text-white text-2xl mb-5 leading-normal">
                   # Professional Creative <span className="hidden md:inline"> designer</span>
                   </span>
-                  <span className="text-sm">React, NextJS, Ionic, Shopifly, Prisma, Zoho, Gatsby, TailwindCSS, Photoshop, Illustrator, InDesign, JavaScript, PHP, mySQL, GraphiQL, HTML/CSS, Pug, SASS, GIT, jQuery, Bootstrap, TypeScript, Babel, NodeJS, Gulp, Composer, iOS, Android, Symfony, APIs, Angular, Plesk, cPanel, MCSA, IIS, Chrome Extension...</span>
+                  <span className="text-sm">React, NextJS, StrAPI, Ionic, Shopifly, Prisma, Zoho, Gatsby, TailwindCSS, Photoshop, Illustrator, InDesign, JavaScript, PHP, mySQL, GraphiQL, HTML/CSS, Pug, SASS, GIT, jQuery, Bootstrap, TypeScript, Babel, NodeJS, Gulp, Composer, iOS, Android, Symfony, APIs, Angular, Plesk, cPanel, MCSA, IIS, Chrome Extension...</span>
                   </p>
                   <div className="md:pr-[3rem]">
                     <div className="mb-1 text-base flex justify-between">
