@@ -6,7 +6,7 @@ import { Script, withPrefix } from "gatsby"
 // import svgAnimation from "../scripts/core.js";
 import chuky from "../images/chuky.svg";
 import opengraph from "../images/nguyen.png";
-import resume from "../data/resume.pdf";
+import resume from "../data/resume2024.pdf";
 const url = "https://nguyenpham.pro/";
 
 const IndexPage: React.FC<PageProps> = () => {
@@ -134,10 +134,10 @@ const IndexPage: React.FC<PageProps> = () => {
                       <a className="font-light text-xl text-white" href={resume} target="_blank">résume();</a>
                     </li>
                     <li className="mb-2">
-                      <a className="font-light text-xl text-white" href="//baonguyenyam.github.io/portfolio" target="_blank">Curriculum Vitae();</a>
+                      <a className="font-light text-xl text-white" href="//baonguyenyam.github.io/cv" target="_blank">Curriculum Vitae();</a>
                     </li>
                     <li>
-                      <a className="font-light text-xl text-white" href="//letgoface.com/gallery/" target="_blank">portfolio();</a>
+                      <a className="font-light text-xl text-white" href="//lessgap.com/gallery/" target="_blank">portfolio();</a>
                     </li>
                   </ol>
                 </div>
@@ -242,7 +242,7 @@ const IndexPage: React.FC<PageProps> = () => {
                     <h2 className="str">TOUCH</h2>
                     <div className="num leading-[1.1]" dangerouslySetInnerHTML={{ __html: '&lt;!— ping —&gt;' }} />
                   </div>
-                  <p>Would you like to speak to a live person right away? Please cal 911. Alternatively, you can send me an email at <span className="text-white">bAoNgUyEnYaM@gmail.com</span></p>
+                  <p>Alternatively, you can send me an email at <span className="text-white">bAoNgUyEnYaM@gmail.com</span></p>
                 </div>
               </div>
 
