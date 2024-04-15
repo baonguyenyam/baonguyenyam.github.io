@@ -10,7 +10,7 @@ import think from "../images/main.png";
 import think1 from "../images/001.jpg";
 import think2 from "../images/002.jpg";
 import think3 from "../images/003.jpg";
-import resume from "../data/resume.pdf";
+import resume from "../data/resume2024.pdf";
 const url = "https://nguyenpham.pro/";
 
 const IndexPage: React.FC<PageProps> = () => {
@@ -138,10 +138,10 @@ const IndexPage: React.FC<PageProps> = () => {
                       <a className="font-light text-xl text-white" href={resume} target="_blank">résume();</a>
                     </li>
                     <li className="mb-2">
-                      <a className="font-light text-xl text-white" href="//baonguyenyam.github.io/portfolio" target="_blank">Curriculum Vitae();</a>
+                      <a className="font-light text-xl text-white" href="//baonguyenyam.github.io/cv" target="_blank">Curriculum Vitae();</a>
                     </li>
                     <li>
-                      <a className="font-light text-xl text-white" href="//letgoface.com/gallery/" target="_blank">portfolio();</a>
+                      <a className="font-light text-xl text-white" href="//lessgap.com/gallery/" target="_blank">portfolio();</a>
                     </li>
                   </ol>
                 </div>
