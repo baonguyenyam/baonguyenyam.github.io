@@ -233,6 +233,18 @@ const IndexPage: React.FC<PageProps> = () => {
                     <div className="num leading-[1.1]" dangerouslySetInnerHTML={{ __html: '&gt;＿' }} />
                   </div>
                   <p>It used to be my belief: Design and code were my passion until I suddenly realized it was <span className="text-white">my life.</span></p>
+                  <div className="mb-10"><img src={think} alt="" className="mx-auto rounded-lg" /></div>
+                  <div className="grid grid-cols-3 gap-10">
+                    <div className="col-span-1">
+                      <img src={think1} alt="" className="mx-auto rounded-lg" />
+                    </div>
+                    <div className="col-span-1">
+                      <img src={think2} alt="" className="mx-auto rounded-lg" />
+                    </div>
+                    <div className="col-span-1">
+                      <img src={think3} alt="" className="mx-auto rounded-lg" />
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="item style-5" data-scroll data-class="active">
