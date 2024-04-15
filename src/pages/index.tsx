@@ -2,7 +2,7 @@ import * as React from "react"
 import Helmet from "react-helmet"
 import type { HeadFC, PageProps } from "gatsby"
 import { Script, withPrefix } from "gatsby"
-
+import { Image } from "antd" ;
 // import svgAnimation from "../scripts/core.js";
 import chuky from "../images/chuky.svg";
 import opengraph from "../images/nguyen.png";
@@ -237,17 +237,25 @@ const IndexPage: React.FC<PageProps> = () => {
                     <div className="num leading-[1.1]" dangerouslySetInnerHTML={{ __html: '&gt;＿' }} />
                   </div>
                   <p>It used to be my belief: Design and code were my passion until I suddenly realized it was <span className="text-white">my life.</span></p>
-                  <div className="mb-10"><img src={think} alt="" className="mx-auto rounded-lg" /></div>
+                  <div className="mb-10">
+                  <Image
+                        src={think} alt="" className="mx-auto rounded-lg"
+                      />
+                    </div>
                   <div className="grid grid-cols-3 gap-10">
                     <div className="col-span-1">
-                      <img src={think1} alt="" className="mx-auto rounded-lg" />
+                      <Image
+                        src={think1} alt="" className="mx-auto rounded-lg"
+                      />
                     </div>
                     <div className="col-span-1">
-                      <img src={think2} alt="" className="mx-auto rounded-lg" />
-                    </div>
+                    <Image
+                        src={think2} alt="" className="mx-auto rounded-lg"
+                      />                    </div>
                     <div className="col-span-1">
-                      <img src={think3} alt="" className="mx-auto rounded-lg" />
-                    </div>
+                    <Image
+                        src={think3} alt="" className="mx-auto rounded-lg"
+                      />                    </div>
                   </div>
                 </div>
               </div>
