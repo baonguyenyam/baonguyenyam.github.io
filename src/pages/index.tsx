@@ -223,9 +223,9 @@ const IndexPage: React.FC<PageProps> = () => {
                   <li className="mb-2 mt-10">
                       <a className="font-light text-xl text-white" href="//wow-wp.com" target="_blank">wow-wp.com</a>
                     </li>
-                    <li>
+                    {/* <li>
                       <a className="font-light text-xl text-white" href="//myseo.website" target="_blank ">myseo.website</a>
-                    </li>
+                    </li> */}
                   </ol>
                 </div>
               </div>
