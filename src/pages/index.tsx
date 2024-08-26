@@ -91,6 +91,9 @@ const IndexPage: React.FC<PageProps> = (props) => {
                   </div>
                   <p className="nextol">
                   As a creative and professional web developer, I live and work in the United States. Having a passion for beauty, I strive to create products that are elegant, beautiful, and full of detail.
+                  <span className="mt-2 block text-bold text-white text-lg mb-5 leading-normal">
+                    A full-stack developer with over 15 years of experience in coding and web design, I approaches my work holistically, catering to both user UX and functionality. My expertise covers NodeJS, PHP, postgreSQL, React, Vue, WordPress, Photoshop, Illustrator, UX/UI, CentOS/Windows, and MacOS. In my web and app development, I employs technologies and languages, including TypeScript, SASS, PHP...
+                  </span>
                   </p>
                   <ol>
                   <li className="mt-8 mb-2">
@@ -154,6 +157,7 @@ const IndexPage: React.FC<PageProps> = (props) => {
                     <div className="num leading-[1.1]"> 01001110 01010000</div>
                   </div>
                   <p className="nextol leading-[1]">
+                  
                   <span className="block text-bold text-white text-2xl leading-normal">
                   # Professional FullStack <span className="hidden md:inline"> developer</span>
                   </span>
@@ -163,6 +167,7 @@ const IndexPage: React.FC<PageProps> = (props) => {
                   <span className="block text-bold text-white text-2xl mb-5 leading-normal">
                   # Professional Creative <span className="hidden md:inline"> designer</span>
                   </span>
+
                   <span className="text-sm">React, NextJS, StrAPI, Ionic, Shopifly, Prisma, Zoho, Gatsby, TailwindCSS, Photoshop, Illustrator, InDesign, JavaScript, PHP, mySQL, GraphiQL, HTML/CSS, Pug, SASS, GIT, jQuery, Bootstrap, TypeScript, Babel, NodeJS, Gulp, Composer, iOS, Android, Symfony, APIs, Angular, Plesk, cPanel, MCSA, IIS, Chrome Extension...</span>
                   </p>
                   <div className="md:pr-[3rem]">
