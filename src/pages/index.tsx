@@ -271,7 +271,10 @@ const IndexPage: React.FC<PageProps> = (props) => {
                     <h2 className="str">TOUCH</h2>
                     <div className="num leading-[1.1]" dangerouslySetInnerHTML={{ __html: '&lt;!— ping —&gt;' }} />
                   </div>
-                  <p>Would you like to speak to a live person right away? Please send me an email at <span className="text-white">bAoNgUyEnYaM@gmail.com</span></p>
+                  <p>Would you like to speak to a live person right away? Please send me an email at <span className="text-white">bAoNgUyEnYaM@gmail.com</span>
+                  . Or 
+                    Schedule a meeting with me at <a href="https://nguyenpham.setmore.com/nguyen" target="_blank" className="text-white">Set More</a>
+                  </p>
                   
                 </div>
               </div>
