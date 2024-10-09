@@ -3,14 +3,14 @@ import Helmet from "react-helmet"
 import type { HeadFC, PageProps } from "gatsby"
 import { Script, withPrefix } from "gatsby"
 import { Image } from "antd" ;
-// import svgAnimation from "../scripts/core.js";
-import chuky from "../images/chuky.svg";
-import opengraph from "../images/nguyen.png";
-import think from "../images/main.png";
-import think1 from "../images/001.jpg";
-import think2 from "../images/002.jpg";
-import think3 from "../images/003.jpg";
-import resume from "../data/resume2024.pdf";
+// import svgAnimation from "@scripts/core.js";
+import chuky from "@images/chuky.svg";
+import opengraph from "@images/nguyen.png";
+import think from "@images/main.png";
+import think1 from "@images/001.jpg";
+import think2 from "@images/002.jpg";
+import think3 from "@images/003.jpg";
+import resume from "@data/resume2024.pdf";
 const url = "https://nguyenpham.pro/";
 
 const IndexPage: React.FC<PageProps> = (props) => {
@@ -74,7 +74,8 @@ const IndexPage: React.FC<PageProps> = (props) => {
         </svg>
         <div className="madeinfo">
           <h1 className="word">NGUYEN</h1>
-          <p>BRAND CREATIVE <span className="block md:inline">AND WEB DEVELOPMENT</span></p>
+          <p>Full-Stact <span className="block md:inline">And Front-End Developer
+            </span></p>
         </div>
       </div>
 
@@ -96,8 +97,11 @@ const IndexPage: React.FC<PageProps> = (props) => {
                   </span>
                   </p>
                   <ol>
-                  <li className="mt-8 mb-2">
+                  {/* <li className="mt-8 mb-2">
                       <a className="font-light text-xl text-white" href="//nguyenfamily.us" target="_blank">nguyenfamily.us</a>
+                    </li> */}
+                    <li className="mt-8 mb-2">
+                      <span className="font-light text-xl text-white">My profile at</span> <a className="font-light text-xl text-white" href="https://web.archive.org/web/20241009132701/https://madelab.io/about/nguyen-pham" target="_blank">MADE Lab</a>
                     </li>
                     <li>
                       <a className="font-light text-xl text-white" href="//coirieng.com" target="_blank">coirieng.com</a>
@@ -271,6 +275,9 @@ const IndexPage: React.FC<PageProps> = (props) => {
                     <h2 className="str">TOUCH</h2>
                     <div className="num leading-[1.1]" dangerouslySetInnerHTML={{ __html: '&lt;!— ping —&gt;' }} />
                   </div>
+
+                 
+
                   <p>Would you like to speak to a live person right away? Please send me an email at <span className="text-white">bAoNgUyEnYaM@gmail.com</span>
                   . Or 
                     Schedule a meeting with me at <a href="https://nguyenpham.setmore.com/nguyen" target="_blank" className="text-white">Set More</a>

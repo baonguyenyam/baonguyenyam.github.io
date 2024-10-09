@@ -26,7 +26,23 @@ const config: GatsbyConfig = {
       "path": "./src/images/"
     },
     __key: "images"
-  }]
+  }, 
+  {
+    resolve: 'gatsby-plugin-alias-imports',
+    options: {
+      alias: {
+        "@": "./src",
+        "@data": "./src/data",
+        "@images": "./src/images",
+        "@pages": "./src/pages",
+        "@styles": "./src/styles",
+        "@scripts": "./src/styles",
+        "@webfonts": "./src/webfonts",
+      }, 
+      extensions: ["js", "jsx", "ts", "tsx"],
+    }
+  }
+]
 };
 
 export default config;
