@@ -1,0 +1,438 @@
+.text-replace 
+	color: #d7d7d7
+	display: block
+	padding: 2rem
+	background: #131517
+	border-radius: 18px
+	margin-bottom: 2rem
+	font-size: 16px
+	filter: grayscale(1)
+	transition: ease-in-out all 1s
+	&:hover
+		filter: grayscale(.2)
+.text-replace .include,
+.text-replace .include
+	color: #f92672
+
+.text-replace .text
+	color: #66d9ef
+
+.text-replace .main
+	color: #a6e22a
+
+.text-replace .main2
+	color: #b784f7
+
+.text-replace .text2
+	color: #e6db74
+
+.style-1
+	color: #ff2180
+.style-2
+	color: #f1c40f
+.style-3
+	color: #4deaff
+.style-4
+	color: #e67e23
+.style-5
+	color: #ecf0f1
+.style-6
+	color: #03a9f4
+.style-7
+	color: #00ffdb
+.style-8
+	color: #fbeeb8
+.style-9
+	color: #2dc26b
+.note
+	color: #4d4d4d
+
+a 
+	border-bottom: 1px dashed #fff
+	cursor: alias
+
+#home-madelayout
+	width: 100%
+	position: relative
+	svg 
+		rect, path, *
+			fill: transparent
+			stroke: transparent
+		path:nth-child(1)
+			animation-name: animate_m
+			animation-duration: .5s
+			animation-delay: 2s
+			animation-fill-mode: forwards
+			animation-iteration-count: 1
+	.madeinfo
+		position: absolute
+		top: 50%
+		left: 50%
+		opacity: 0
+		transform: translate(-50%, -50%)
+		z-index: 1000
+		animation-name: animate_re
+		animation-duration: 1s
+		animation-delay: 5s
+		animation-fill-mode: forwards
+		animation-iteration-count: 1
+		p
+			color: #fff
+			font-weight: 200
+			letter-spacing: 1px
+			text-transform: uppercase
+			text-align: center
+			margin: 0
+			line-height: 1
+			font-size: 1em
+			user-select: none
+			
+		h1
+			color: transparent
+			font-weight: 700
+			font-family: 'Untitled-Sans'
+			text-align: center
+			margin: 0
+			white-space: nowrap
+			font-size: 66px
+			background: linear-gradient(0deg, #5b5b5b 0%, #ffffff 100%)
+			background-size: 100% 100%
+			-webkit-background-clip: text
+			background-clip: text
+			line-height: .8
+			overflow: hidden
+			user-select: none
+			white-space: nowrap
+		@media screen and (min-width: 370px)
+			h1
+				font-size: 76px
+		@media screen and (min-width: 768px)
+			h1
+				font-size: 154px
+			p
+				font-size: 1.3em
+				white-space: nowrap
+		@media screen and (min-width: 992px)
+			h1
+				font-size: 190px
+			p
+				font-size: 1.5em
+				letter-spacing: 3px
+		@media screen and (min-width: 1200px)
+			h1
+				font-size: 250px
+			p
+				font-size: 2em
+		@media screen and (min-width: 1400px)
+			h1
+				font-size: 272px
+			p
+				font-size: 2.5em
+				letter-spacing: 4px
+		@media screen and (min-width: 1600px)
+			h1
+				font-size: 296px
+			p
+				font-size: 3em
+		@media screen and (min-width: 1800px)
+			h1
+				font-size: 352px
+			p
+				font-size: 3.2em
+		@media screen and (min-width: 2000px)
+			h1
+				font-size: 398px
+			p
+				font-size: 3.5em
+		@media screen and (min-width: 2200px)
+			h1
+				font-size: 420px
+			p
+				font-size: 4em
+
+#home-list-action
+	color: #fff
+	width: 100%
+	background: #000
+	padding-bottom: 5rem
+	background: #000 url(/images/bgg.svg) repeat-y top center
+	background-size: contain
+	@media screen and (min-width: 2000px)
+		padding-bottom: 10rem
+		background: #000 url(/images/bgg.svg) repeat-y top center
+		background-size: cover
+	.item
+		display: flex
+		flex-direction: column
+		transition: ease-in-out all 1s
+		position: relative
+		padding: 3rem 0
+		opacity: 0
+		transform: translateY(100px)
+		&.active 
+			opacity: calc(var(--visible-y))
+			transform: translateY(0px)
+
+		@media screen and (min-width: 760px)
+			flex-direction: row
+		&:first-child
+			padding-top: 0 !important
+		&:after
+			content: ''
+			display: block
+			width: 100%
+			height: 3px
+			margin-top: 2rem
+			color: #fff
+			background: linear-gradient(90deg, #5b5b5b00 0%, #5b5b5b 30%, #fff 50%, #5b5b5b 70%, #ffffff00 100%)
+			background-size: 100% 100%
+			position: absolute
+			bottom: .5rem
+			left: 50%
+			transform: translateX(-50%)
+		.desc
+			padding-right: 1rem
+			padding-left: 1rem
+			display: flex
+			flex-direction: column
+			p
+				margin-top: 2rem
+				color: #777777
+				font-weight: 300
+				margin-bottom: 0
+				font-size: 1.2rem
+				&.nextol
+					padding-bottom: 1rem
+			.made-title
+				// background: radial-gradient(#eff1ff, #000)
+				// background-size: 200% 100%
+				// background-position: 50% 50%
+				// -webkit-background-clip: text
+				// background-clip: text
+				// -webkit-text-fill-color: transparent
+				margin: 0
+				padding: 0
+				line-height: 48px
+				font-weight: 600
+				font-size: 1.3rem
+				display: flex
+				flex-direction: column
+				align-items: flex-start
+				justify-content: flex-start
+				width: 100%
+				@media screen and (min-width: 750px)
+					display: inline-flex
+					align-items: center
+					justify-content: flex-start
+					flex-direction: row
+				h2
+					background: radial-gradient(#eff1ff, #000)
+					background-size: 200% 100%
+					background-position: 50% 50%
+					-webkit-background-clip: text
+					background-clip: text
+					-webkit-text-fill-color: transparent
+					position: relative
+					margin: 0
+					padding: 0
+					line-height: 48px
+					font-weight: 600
+					font-size: 1.3rem
+					display: inline-flex
+				.num
+					color: #ffffff
+					// -webkit-background-clip: unset
+					// background-clip: unset
+					// -webkit-text-fill-color: #fff
+					color: #535353
+					// padding-left: 1rem
+					position: relative
+					@media screen and (min-width: 750px)
+						margin-left: 1rem
+						padding-left: 1rem
+					&:before
+						content: ''
+						width: 2px
+						height: 80%
+						top: 10%
+						left: 0
+						background: #fff
+						background-size: 100% 100%
+						position: absolute
+						display: none
+						@media screen and (min-width: 750px)
+							display: block
+
+		.made-icon
+			width: 48px
+			height: 48px
+			min-width: 48px
+			min-height: 48px
+			display: flex
+			justify-content: center
+			align-items: center
+			font-weight: 600
+			font-size: 30px
+			border: 2px solid #dfdfdf
+			color: #000
+			line-height: 1
+			padding-bottom: 5px
+			border-radius: 5px
+			flex-direction: column
+			user-select: none
+			position: relative
+			margin-left: 1rem
+			&:after
+				content: ''
+				display: block
+				width: 22px
+				height: 4px
+				background: #dfdfdf
+			&.md 
+				&:after
+					width: 18px
+			&.xl 
+				&:after
+					width: 24px
+			&.xxl 
+				&:after
+					width: 30px
+		&.style-1
+			.made-icon
+				border: 2px solid #7895A4
+				color: #7895A4
+				&:after
+					background: #7895A4
+			.made-title h2
+				background: radial-gradient(#7895A4, #7895A4)
+				-webkit-background-clip: text
+				background-clip: text
+				-webkit-text-fill-color: transparent
+		&.style-2
+			.made-icon
+				border: 2px solid #C9AC68
+				color: #C9AC68
+				&:after
+					background: #C9AC68
+			.made-title h2
+				background: radial-gradient(#C9AC68, #C9AC68)
+				-webkit-background-clip: text
+				background-clip: text
+				-webkit-text-fill-color: transparent
+		&.style-3
+			.made-icon
+				border: 2px solid #737144
+				color: #737144
+				&:after
+					background: #737144
+			.made-title h2
+				background: radial-gradient(#737144, #737144)
+				-webkit-background-clip: text
+				background-clip: text
+				-webkit-text-fill-color: transparent
+		&.style-4
+			.made-icon
+				border: 2px solid #994C3D
+				color: #994C3D
+				&:after
+					background: #994C3D
+			.made-title h2
+				background: radial-gradient(#994C3D, #994C3D)
+				-webkit-background-clip: text
+				background-clip: text
+				-webkit-text-fill-color: transparent
+				-webkit-text-fill-color: transparent
+		&.style-5
+			.made-icon
+				border: 2px solid #447e45
+				color: #447e45
+				&:after
+					background: #447e45
+			.made-title h2
+				background: radial-gradient(#447e45, #447e45)
+				-webkit-background-clip: text
+				background-clip: text
+				-webkit-text-fill-color: transparent
+				-webkit-text-fill-color: transparent
+		&.style-6
+			.made-icon
+				border: 2px solid #5e669a
+				color: #5e669a
+				&:after
+					background: #5e669a
+			.made-title h2
+				background: radial-gradient(#5e669a, #5e669a)
+				-webkit-background-clip: text
+				background-clip: text
+				-webkit-text-fill-color: transparent
+		&.active
+			opacity: calc(var(--visible-y))
+			// .desc 
+			// 	p 
+			// 		color: #fff
+			// 		animation: madeflip 0.5s .5s ease-in-out forwards
+			// 	.made-title 
+			// 		h2 
+			// 			&:before 
+			// 				animation: animstr .5s ease-in-out forwards
+			// 		.num 
+			// 			animation: num .5s .25s ease-in-out forwards
+			// &:after
+			// 	animation: fullwidth 0.5s ease-in-out forwards
+	@media screen and (min-width: 768px)
+		.item
+			.desc
+				padding-left: 2rem
+				p
+					margin-top: 3rem
+					padding: 5rem 0
+			&:after
+				bottom: 0rem
+	@media screen and (min-width: 1200px)
+		.item
+			.made-icon
+				width: 58px
+				height: 58px
+				min-width: 58px
+				min-height: 58px
+				font-size: 36px
+				&:after
+					width: 26px
+					height: 5px
+				&.md 
+					&:after
+						width: 24px
+				&.xl 
+					&:after
+						width: 30px
+				&.xxl 
+					&:after
+						width: 34px
+			.desc
+				p
+					margin-top: 3rem
+	@media screen and (min-width: 1600px)
+		.item
+			padding: 6rem 0
+@keyframes animate_re
+	0%
+		opacity: 0
+	100%
+		opacity: 1
+@keyframes animate_m
+	0%
+		opacity: 1
+	100%
+		opacity: 0
+@keyframes animatebg
+	0%
+		background: #000
+	100%
+		background: #000 url(/images/bgg.svg) repeat-y top center
+		background-size: contain
+@keyframes animatebgL
+	0%
+		background: #000
+	100%
+		background: #000 url(/images/bgg.svg) repeat-y top center
+		background-size: contain

@@ -1,0 +1,3 @@
+.main {
+    @apply flex flex-col h-screen bg-black text-white;
+}
