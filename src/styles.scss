@@ -7,3 +7,9 @@ html, body {
     height: 100%;
     background-color: #000000;
 }
+
+.ant-image-preview-root .ant-image-preview-img-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

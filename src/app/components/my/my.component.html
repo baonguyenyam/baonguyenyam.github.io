@@ -196,20 +196,31 @@
             </div>
             <p>It used to be my belief: Design and code were my passion until I suddenly realized it was <span
                 class="text-white">my life.</span></p>
-            <div class="mb-10">
-              <p-image src={{think}} alt="" class="mx-auto rounded-lg cursor-pointer" width="" [preview]="true" />
+                <nz-image-group>
+            <div class="mb-10 relative">
+              <img
+              nz-image
+              nzSrc={{think}} alt="" class="mx-auto rounded-lg cursor-pointer"
+              />
             </div>
             <div class="grid grid-cols-3 gap-10">
-              <div class="col-span-1">
-                <p-image src={{think1}} alt="" class="mx-auto rounded-lg cursor-pointer" width="250" [preview]="true" />
+              <div class="col-span-1 relative">
+                <img 
+                nz-image
+                nzSrc={{think1}} alt="" class="mx-auto rounded-lg cursor-pointer" />
               </div>
-              <div class="col-span-1">
-                <p-image src={{think2}} alt="" class="mx-auto rounded-lg cursor-pointer" width="250" [preview]="true" />
+              <div class="col-span-1 relative">
+                <img 
+                nz-image
+                nzSrc={{think2}} alt="" class="mx-auto rounded-lg cursor-pointer" />
               </div>
-              <div class="col-span-1">
-                <p-image src={{think3}} alt="" class="mx-auto rounded-lg cursor-pointer" width="250" [preview]="true" />
+              <div class="col-span-1 relative">
+                <img 
+                nz-image
+                nzSrc={{think3}} alt="" class="mx-auto rounded-lg cursor-pointer" />
               </div>
             </div>
+          </nz-image-group>
           </div>
         </div>
         <div class="item style-5" data-scroll data-class="active">

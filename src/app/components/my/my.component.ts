@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { ImageModule } from 'primeng/image';
+import { NzImageModule } from 'ng-zorro-antd/image';
 
 @Component({
   selector: 'app-my',
   standalone: true,
-  imports: [ImageModule],
+  imports: [NzImageModule],
   templateUrl: './my.component.html',
   styleUrl: './my.component.css'
 })

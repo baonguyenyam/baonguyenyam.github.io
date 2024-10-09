@@ -27,14 +27,19 @@
               {
                 "glob": "**/*",
                 "input": "assets"
+              },
+              {
+                "glob": "**/*",
+                "input": "./node_modules/@ant-design/icons-angular/src/inline-svg/",
+                "output": "/assets/"
               }
             ],
             "styles": [
+              "src/theme.less",
               "src/styles.scss",
               "src/app/styles/global.sass",
               "src/app/styles/index.sass",
-              "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
-              "node_modules/primeng/resources/primeng.min.css",
+              "node_modules/ng-zorro-antd/ng-zorro-antd.min.css"
             ],
             "scripts": [
               // "src/app/scripts/main.js"
