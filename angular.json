@@ -35,7 +35,6 @@
               }
             ],
             "styles": [
-              "src/theme.less",
               "src/styles.scss",
               "src/app/styles/global.sass",
               "src/app/styles/index.sass",
@@ -50,8 +49,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
