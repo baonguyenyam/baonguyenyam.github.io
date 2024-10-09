@@ -40,10 +40,10 @@ const { page, frontmatter } = useData()
           <span class="mr-2 ml-2">·</span>
           <a
             class="hover:text-gray-700 dark:hover:text-gray-200"
-            href="https://vuejs.org"
+            href="https://coirieng.com"
             target="_blank"
             rel="noopener"
-            >Vuejs.org →</a
+            >coirieng.com →</a
           >
         </div>
       </nav>

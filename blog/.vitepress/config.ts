@@ -12,7 +12,7 @@ export default defineConfig({
       'meta',
       {
         name: 'twitter:image',
-        content: 'https://vuejs.org/images/logo.png'
+        content: 'https://coirieng.com/images/logo.png'
       }
     ],
     [

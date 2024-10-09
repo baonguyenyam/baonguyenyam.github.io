@@ -3,7 +3,7 @@ import { writeFileSync } from 'fs'
 import { Feed } from 'feed'
 import { createContentLoader, type SiteConfig } from 'vitepress'
 
-const baseUrl = `https://blog.vuejs.org`
+const baseUrl = `https:/coirieng.com`
 
 export async function genFeed(config: SiteConfig) {
   const feed = new Feed({
@@ -12,7 +12,7 @@ export async function genFeed(config: SiteConfig) {
     id: baseUrl,
     link: baseUrl,
     language: 'en',
-    image: 'https://vuejs.org/images/logo.png',
+    image: 'https://coirieng.com/images/logo.png',
     favicon: `${baseUrl}/favicon.ico`,
     copyright:
       'Copyright (c) 2021-present, Yuxi (Evan) You and blog contributors'
