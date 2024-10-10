@@ -1,4 +1,4 @@
-;$(document).ready(function() {
+﻿;$(document).ready(function() {
 "use strict";
 
   $(".cc-carousel.brands .owl-carousel").owlCarousel({

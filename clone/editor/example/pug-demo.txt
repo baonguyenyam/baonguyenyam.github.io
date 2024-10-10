@@ -1,8 +1,0 @@
-doctype html
-html(lang="en")
-	head
-		title Pug Demo
-
-	body
-		h1 Hello
-		#container.content Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s

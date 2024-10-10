@@ -1,4 +1,4 @@
-;$(window).trigger("scroll");
+﻿;$(window).trigger("scroll");
 $(window).trigger("resize");
 function autoCutStr(prefix) {
 

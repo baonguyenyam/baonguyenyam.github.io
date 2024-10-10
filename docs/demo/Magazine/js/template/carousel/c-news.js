@@ -1,4 +1,4 @@
-;$(document).ready(function() {
+﻿;$(document).ready(function() {
 "use strict";
 
   $(".cc-carousel.news .owl-carousel").owlCarousel({

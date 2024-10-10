@@ -1,4 +1,4 @@
-;function autoCutStr(prefix) {
+﻿;function autoCutStr(prefix) {
 
     if (!prefix || prefix === undefined) {
         prefix = "autoCutStr_";

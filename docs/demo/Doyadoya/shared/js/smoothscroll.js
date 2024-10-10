@@ -1,4 +1,4 @@
-$(function () {
+﻿$(function () {
         // PageTopヘッダ分ずらす
         var headH = 0;
 
