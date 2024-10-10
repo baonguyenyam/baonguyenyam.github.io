@@ -2,7 +2,7 @@
  ////////////////////////////////////////////////////////
  // Bao Nguyen Apps
  // @version v1.0
- // @link https://baonguyenyam.github.io
+ // @link https://nguyenpham.pro
  // @license MIT
  // @Coding by Bao Nguyen - 0969689893 - 0933112900
  // @baonguyenyam@gmail.com

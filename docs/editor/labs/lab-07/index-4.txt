@@ -26,13 +26,13 @@
     </script>
 
     <!-- Your like button code -->
-    <iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fbaonguyenyam.github.io%2Feditor%2F&width=81&layout=button_count&action=like&size=large&show_faces=false&share=false&height=21&appId=1214387478609739" width="81" height="30" style="border:none;overflow:hidden"
+    <iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fnguyenpham.pro%2Feditor%2F&width=81&layout=button_count&action=like&size=large&show_faces=false&share=false&height=21&appId=1214387478609739" width="81" height="30" style="border:none;overflow:hidden"
         scrolling="no" frameborder="0" allowTransparency="true"></iframe><br>
     <!-- Your share button code -->
-    <iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fbaonguyenyam.github.io%2Feditor%2F&layout=button_count&size=large&mobile_iframe=true&appId=1214387478609739&width=91&height=28" width="91" height="28" style="border:none;overflow:hidden"
+    <iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fnguyenpham.pro%2Feditor%2F&layout=button_count&size=large&mobile_iframe=true&appId=1214387478609739&width=91&height=28" width="91" height="28" style="border:none;overflow:hidden"
         scrolling="no" frameborder="0" allowTransparency="true"></iframe>
     <!-- Your comments code -->
-    <div class="fb-comments" data-href="http://baonguyenyam.github.io/editor/" data-numposts="5"></div>
+    <div class="fb-comments" data-href="http://nguyenpham.pro/editor/" data-numposts="5"></div>
 </body>
 
 </html>

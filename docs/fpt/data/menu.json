@@ -67,7 +67,7 @@
     {
         "Name": "Resources",
         "URL": [
-            { "Name": "Khoai Editor", "URL": "http://baonguyenyam.github.io/editor/", "Icon": "setup_icon.png" },
+            { "Name": "Khoai Editor", "URL": "http://nguyenpham.pro/editor/", "Icon": "setup_icon.png" },
             { "Name": "MCSA-MCSE", "URL": "https://drive.google.com/drive/folders/0B1JqovD0ypgHTUIwSzQwVEFpUHc?usp=sharing", "Icon": "setup_icon.png" },
             { "Name": "Software", "URL": "https://drive.google.com/drive/folders/0B1JqovD0ypgHWGhBaGg0R0NadG8?usp=sharing", "Icon": "setup_icon.png" },
             { "Name": "Task-Gulp", "URL": "https://github.com/baonguyenyam/multi-task/tree/master/gulp", "Icon": "setup_icon.png" }

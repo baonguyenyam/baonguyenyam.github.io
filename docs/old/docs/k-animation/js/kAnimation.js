@@ -4,7 +4,7 @@
  *  Project: jQuery Animation
  *  Author: Bao Nguyen
  *  License: MIT
- *  Website: http://baonguyenyam.github.io
+ *  Website: http://nguyenpham.pro
  *  Version: 6.0.1
  */
 
