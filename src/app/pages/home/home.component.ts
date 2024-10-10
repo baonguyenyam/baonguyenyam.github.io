@@ -17,7 +17,74 @@ export class HomeComponent implements OnInit {
   ) { }
   title = 'Nguyen App';
 
+  applySEO() {
+
+    let seo = {
+      title: 'Nguyen Pham Resume',
+      description: 'A full-stack developer with over 15 years of experience in coding and web design, I approaches my work holistically, catering to both user UX and functionality. My expertise covers NodeJS, PHP, postgreSQL, React, Vue, WordPress, Photoshop, Illustrator, UX/UI, CentOS/Windows, and MacOS. In my web and app development, I employs technologies and languages, including TypeScript, SASS, PHP...',
+      image: 'https://nguyenpham.pro/images/teach.jpg',
+      canonical: 'https://nguyenpham.pro'
+    }
+    // add SEO to head
+    let head = {
+      title: seo.title,
+      meta: [
+        {
+          name: 'description',
+          content: seo.description
+        },
+        {
+          property: 'og:title',
+          content: seo.title
+        },
+        {
+          property: 'og:description',
+          content: seo.description
+        },
+        {
+          property: 'og:image',
+          content: seo.image
+        },
+        {
+          property: 'og:url',
+          content: seo.canonical
+        },
+        {
+          name: 'twitter:card',
+          content: 'summary_large_image'
+        },
+        {
+          name: 'twitter:title',
+          content: seo.title
+        },
+        {
+          name: 'twitter:description',
+          content: seo.description
+        },
+        {
+          name: 'twitter:image',
+          content: seo.image
+        }
+      ]
+    }
+
+    // Set Title
+    document.title = head.title
+    head.meta.forEach((meta: any) => {
+      let tag = this._renderer2.createElement('meta');
+      Object.keys(meta).forEach((key: string) => {
+        let metas = meta[key];
+        this._renderer2.setAttribute(tag, key, metas);
+      });
+      this._renderer2.appendChild(this._document.head, tag);
+    })
+
+  }
+
+  // Append SEO
   public ngOnInit() {
+    this.applySEO();
+
     let script = this._renderer2.createElement('script'); 
     script.type = `text/javascript`;
     script.text = `
